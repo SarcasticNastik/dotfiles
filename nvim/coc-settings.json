@@ -1,0 +1,36 @@
+{
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args": ["start"],
+            "filetypes": ["sh"]
+        },
+        "racket": {
+            "command": "racket",
+            "args": [
+                "--lib",
+                "racket-langserver"
+            ],
+            "filetypes": [
+                "scheme"
+            ]
+        }
+    },
+    "coc.preferences.formatOnSaveFiletypes": ["dart" , "rust", "c", "cpp",
+        "python", "javascript", "javascriptreact",
+        "typescript", "typescriptreact","go"],
+
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+
+        "snippets.ultisnips.directories":
+        [
+            "UltiSnips",
+            "~/.local/share/nvim/Ultisnips"
+        ],
+
+        "python.linting.pylintArgs": ["--extension-pkg-whitelist=numpy,cv2", "--disable=C0103"],
+        "python.formatting.provider": "black",
+        "coc.source.dictionary.filetypes": ["text", "markdown"],
+        "diagnostic.displayByAle": true
+}

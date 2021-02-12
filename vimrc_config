@@ -1,0 +1,175 @@
+" Plugin Manager: vim-plug
+
+call plug#begin('~/.vim/plugged')                                                                     
+Plug 'romainl/vim-cool'
+Plug 'scrooloose/NERDTree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'w0rp/ale'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/vim-easy-align'
+Plug 'chriskempson/base16-vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'Yggdroot/indentLine'
+
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-T>'
+
+Plug 'kovetskiy/sxhkd-vim'
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+Plug 'ryanoasis/vim-devicons'   
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'lervag/vimtex'
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+
+Plug 'KeitaNakamura/tex-conceal.vim'
+let g:tex_conceal_frac=1
+set conceallevel=3
+let g:tex_conceal='sabdmg'
+" hi Conceal ctermbg=none
+
+" In big files, tends to have issues with rendering.
+"Plug 'wellle/context.vim'
+Plug 'psliwka/vim-smoothie'
+call plug#end()
+filetype plugin indent on
+
+set guifont=DroidSansMono\ Nerd\ Font\ 12
+set encoding=UTF-8
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set nu rnu
+set smartindent
+set foldmethod=syntax
+
+" Prevents swap file generation and autoreads any external changes in the file
+set nobackup noswapfile nowb
+set autoread
+
+set noshowmode
+set showcmd
+set cursorline
+
+" Xclipboard compatibility
+set clipboard=unnamed
+set clipboard+=unnamedplus
+
+set virtualedit=onemore
+
+" Context {{{
+let g:context_enabled = 1
+" Separate the context from your buffer context
+let g:context_highlight_normal = 'Normal'
+let g:context_highlight_border = 'Comment'
+let g:context_highlight_tag    = 'Special'
+" }}}
+
+
+" base16-shell {{{
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+" }}}
+
+
+" NERDTree {{{
+nnoremap <leader>nt :NERDTreeToggle<CR>
+" }}}
+
+" UltiSnips {{{
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger = "<C-j>"
+let g:UltiSnipsJumpForwardTrigger = "<C-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
+" }}}
+
+"  AirLine {{{
+"let g:airline_theme='base16color'
+"let g:airline_theme='hybrid'
+"let g:airline_theme='solarized'
+let g:airline_theme='onehalfdark'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#ale#enabled=1
+"let g:airline#extensions#tabline#formatter = 'default'
+
+
+" EasyAlign {{{
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+"}}}
+
+" Comfortable Motion {{{
+"let g:comfortable_motion_scroll_down_key = "j"
+"let g:comfortable_motion_scroll_up_key = "k"
+"noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
+"noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
+" }}}
+
+" Mapping Esc -> jk and kj {{{
+inoremap jk <esc>
+inoremap kj <esc>
+"}}}
+
+" Setting <SPACE> as leader {{{
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+" }}}
+
+" Configuring Tab movement {{{
+"" Go to tab by number
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>tab mappings
+noremap <leader><Tab> gt
+" }}}
+
+" Configuring MouseSettings {{{
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
+" }}}
+
+" Enable Autocorrection {{{
+setlocal spell
+set spelllang=en_us
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+"}}}
+
+" Enable Left-term debugger {{{
+let g:termdebug_wide=1
+" }}}
+
+" Setting Background{{{
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+colorscheme onehalfdark
+"}}}
+"
+" hi clear Conceal

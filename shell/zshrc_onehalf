@@ -1,0 +1,106 @@
+# Reference:- https://github.com/bollu/dotfiles/blob/master/zshrc
+
+# Benchmark the zsh 
+# zmodload zsh/zprof 
+
+# Print colormap for the terminal
+# for i in {0..255}; do print -Pn "%${i}F${(l:3::0:)i}%f " ${${(M)$((i%8)):#7}:+$'\n'}; done
+
+
+HISTSIZE=5000           # How many lines of history to keep in memory
+HISTFILE=~/.zsh_history # Where to save history to disk
+SAVEHIST=5000           # Number of history entries to save to disk
+                        # HISTDUP=erase
+                        # Erase duplicates in the history file
+setopt    appendhistory # Append history to the history file (no overwriting)
+setopt    sharehistory  # Share history across terminals
+setopt incappendhistory # Immediately append to the history file, not just when a term is killed
+
+export EDITOR=nvim
+
+# Trying to improve load times ;-;
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
+################################################
+
+# Clipboard interactions
+alias copyfile='xclip -selection clipboard'
+alias pastefile='xclip -selection clipboard -o'
+alias xcopy='xclip -selection clipboard'
+alias xpaste='xclip -selection clipboard -o'
+alias vim="nvim"
+alias top="bashtop"
+alias reddit="tuir"
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias audio-reset="puleaudio -k && sudo alsa force-reload && pulseaudio --start"
+
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/therojjha/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="agnoster"
+
+#ENABLE_CORRECTION="true"
+#COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+plugins=(
+    sudo 
+    zsh-autosuggestions 
+    zsh-syntax-highlighting
+)
+
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+alias py="python3"
+alias irc="weechat"
+source $ZSH/oh-my-zsh.sh
+source ~/.custom.sh
+
+# Hacky fix for running gh autocomplete on zsh
+if [ $commands[gh] ]; then
+  source <(gh completion --shell zsh)
+  compdef _gh gh
+  compdump
+fi
+
+# User configuration
+export MANPATH="/usr/local/man:$MANPATH"
+
+export LANG=en_US.UTF-8
+cat ~/Desktop/LearningTechnologies/todo.md
+export PATH="$HOME/anaconda3/bin:$PATH"
+
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+# Base16-SHELL management
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+# For alacritty 
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Benchmark the zsh
+# zprof
