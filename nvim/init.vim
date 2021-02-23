@@ -7,11 +7,7 @@ source $HOME/.config/nvim/keys/mappings.vim
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))
   source $HOME/.config/nvim/paths.vim
-endif
-
-
-if has('nvim') && !empty($CONDA_PREFIX)
-  let g:python3_host_prog = $CONDA_PREFIX . '/bin/python'
+  let g:webdevicons_conceal_nerdtree_brackets = 1
 endif
 
 " {{{ internal vim packages
@@ -21,6 +17,12 @@ packadd matchit
 " Rainbow {{{
 let g:rainbow_active = 1
 " }}}
+
+
+" Startify {{{
+let g:webdevicons_enable_startify = 1
+" }}}
+
 
 " Context {{{
 let g:context_enabled = 1
@@ -40,28 +42,29 @@ let g:vimtex_quickfix_mode=0
 
 " TeX-Conceal {{{
 let g:tex_conceal_frac=1
+" Figure out setting different conceallevel for markdown and tex
 " set conceallevel=3
 let g:tex_conceal='sabdmg'
-" hi Conceal ctermbg=none
 " }}}
 
 " NERDTree {{{
 nnoremap <leader>nt :NERDTreeToggle<CR>
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_conceal_nerdtree_brackets = 1
 " }}}
 
 "  AirLine {{{
 "let g:airline_theme='base16color'
 "let g:airline_theme='hybrid'
-"let g:airline_theme='solarized'
-let g:airline_theme='onehalfdark'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#ale#enabled=1
-let g:airline#extensions#tabline#buffer_idx_mode = 1
 "have buffer names be unique
+let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 "let g:airline#extensions#tabline#formatter = 'default'
-
+let g:webdevicons_enable_airline_tabline = 1
+let g:webdevicons_enable_airline_statusline = 1
 " EasyAlign {{{
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -107,7 +110,13 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-colorscheme onehalfdark 
+colorscheme onehalfdark
 "}}}
 
+" Set linewrap
+" set textwidth=80
+
+let g:coc_root_patterns = ['.git', '.env']
+
 source $HOME/.config/nvim/coc-init.vim 
+

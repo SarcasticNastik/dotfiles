@@ -4,7 +4,6 @@ syntax enable
 " }}}
 
 " General Settings {{{
-set guifont=DroidSansMono\ Nerd\ Font\ 12
 set encoding=UTF-8
 set fileencoding=UTF-8
 "set nowrap
@@ -17,6 +16,7 @@ set nu rnu
 set smartindent
 set hidden
 set mouse=a
+syntax sync minlines=200        "speed-up vim
 
 " Spawned window orientation {{{
 set splitbelow                          
@@ -24,7 +24,8 @@ set splitright
 "}}}
 
 " treat dash separated words as a word text object
-set iskeyword+=-                      	
+set iskeyword+=-
+set iskeyword+=_
 
 " Prevents swap file generation and autoreads any external changes in the file
 set nobackup nowritebackup noswapfile nowb
@@ -53,6 +54,13 @@ if filereadable(expand("~/.config/nvim/nvim_bg"))
 endif
 " }}}
 "
+
+" Comment highlighting for C and py files {{{
+au! BufEnter *.c syn match specialComment #//!!.*#  " C files (*.c)
+au! BufEnter *.py syn match specialComment /#!!.*/  " Python files (*.py)
+hi specialComment ctermfg=red guifg=red
+"}}}
+
 
 " Editing req. files in sudo mode 
 cmap w!! w !sudo tee %                  

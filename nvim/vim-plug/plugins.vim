@@ -10,7 +10,8 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin(stdpath('data') . '/plugged') 
-
+" Syntax Highlighting
+Plug 'sheerun/vim-polyglot'
 Plug 'romainl/vim-cool'
 Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
@@ -22,30 +23,20 @@ Plug 'chriskempson/base16-vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'Yggdroot/indentLine'
 Plug 'luochen1990/rainbow'
-Plug '~/.local/share/nvim/plugged/fzf.vim'
-Plug 'ryanoasis/vim-devicons'   
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lervag/vimtex'
 Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'psliwka/vim-smoothie'
-Plug 'francoiscabrol/ranger.vim'
 Plug 'tpope/vim-commentary'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'wellle/context.vim'
+"Plug 'wellle/context.vim'
 Plug 'mhinz/vim-startify'
-Plug 'mhinz/vim-rfc'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'mattn/emmet-vim'
-"
+Plug '~/.fzf'
+Plug 'tommcdo/vim-ninja-feet'
 " Don't know how to use :(
-Plug 'jpalardy/vim-slime', {'branch': 'main'}
-
-
-" Add language specific Plugins
-" Plug 'tmhedberg/SimpylFold'
-" Plug 'thosakwe/vim-flutter'
-" Plug 'dart-lang/dart-vim-plugin'
-
+" Plug 'jpalardy/vim-slime', {'branch': 'main'}
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'plasticboy/vim-markdown'
+Plug 'ryanoasis/vim-devicons'   
 call plug#end()
