@@ -14,3 +14,14 @@ Repo containing custom configuration files for ~~Monjaro i3~~ Ubuntu-i3.
 
 - Script to link config files to respective directories.
 - Add the `config` files (for `i3-ready_for_fall` and `xmonad`) {Using multiple environments}
+
+## How to install nvim config?
+
+- Run the following command 
+```bash
+sudo apt install neovim
+```
+- Copy the nvim directory to `~/.config/nvim` by :
+```bash
+cp -r nvim ~/.config
+```
