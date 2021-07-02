@@ -1,0 +1,76 @@
+{
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ]
+        }
+   },
+    "coc.preferences.formatOnSaveFiletypes": [
+        "dart",
+        "rust",
+        "c",
+        "cpp",
+        "dart",
+        "python",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "go"
+    ],
+    "tsserver.formatOnType": true,
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.local/share/nvim/Ultisnips"
+    ],
+    "python.venvPath": "~/.local/share/virtualenvs/",
+    "python.jediPath": "~/.local/share/virtualenvs/jedi/lib/python3.8/site-packages/",
+    "python.jediEnabled": true,
+    "suggest.timeout": 5000,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "~/.local/share/virtualenvs/black/bin/black",
+    /* "python.linting.pylintPath": "~/.local/share/virtualenvs/pylint/bin/pylint", */
+    /* "python.linting.enabled": false, */
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "~/.local/share/virtualenvs/flake8/bin/flake8",
+    "python.linting.lintOnSave": true,
+    "diagnostic.displayByAle": true,
+    "suggest.completionItemKindLabels": {
+        "method": "  ",
+        "function": "  ",
+        "variable": "[]",
+        "field": "  ",
+        "typeParameter": "<>",
+        "constant": "  ",
+        "class": " פּ ",
+        "interface": " 蘒",
+        "struct": "  ",
+        "event": "  ",
+        "operator": "  ",
+        "module": "  ",
+        "property": "  ",
+        "enum": " 練",
+        "reference": "  ",
+        "keyword": "  ",
+        "file": "  ",
+        "folder": " ﱮ ",
+        "color": "  ",
+        "unit": " 塞 ",
+        "snippet": "  ",
+        "text": "  ",
+        "constructor": "  ",
+        "value": "  ",
+        "enumMember": "  "
+      },
+    "coc.source.emoji.filetypes": [
+      "markdown"
+    ],
+    "clangd.path": "/home/therojjha/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
+}
