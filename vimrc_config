@@ -1,6 +1,6 @@
-" Plugin Manager: vim-plug
-
-call plug#begin('~/.vim/plugged')                                                                     
+call plug#begin(stdpath('data') . '/plugged') 
+" Syntax Highlighting
+Plug 'sheerun/vim-polyglot'
 Plug 'romainl/vim-cool'
 Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
@@ -11,124 +11,41 @@ Plug 'junegunn/vim-easy-align'
 Plug 'chriskempson/base16-vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'Yggdroot/indentLine'
-
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsJumpForwardTrigger = '<C-j>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-T>'
-
-Plug 'kovetskiy/sxhkd-vim'
-"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
-Plug 'ryanoasis/vim-devicons'   
+Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 Plug 'lervag/vimtex'
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
-
 Plug 'KeitaNakamura/tex-conceal.vim'
-let g:tex_conceal_frac=1
-set conceallevel=3
-let g:tex_conceal='sabdmg'
-" hi Conceal ctermbg=none
-
-" In big files, tends to have issues with rendering.
-"Plug 'wellle/context.vim'
 Plug 'psliwka/vim-smoothie'
+Plug 'tpope/vim-commentary'
+"Plug 'wellle/context.vim'
+Plug 'mhinz/vim-startify'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug '~/.fzf'
+Plug 'tommcdo/vim-ninja-feet'
+" Plug 'dbeniamine/cheat.sh-vim'
+" Don't know how to use :(
+" Plug 'jpalardy/vim-slime', {'branch': 'main'}
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'plasticboy/vim-markdown'
+Plug 'ryanoasis/vim-devicons'   
 call plug#end()
-filetype plugin indent on
 
-set guifont=DroidSansMono\ Nerd\ Font\ 12
-set encoding=UTF-8
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set nu rnu
-set smartindent
-set foldmethod=syntax
-
-" Prevents swap file generation and autoreads any external changes in the file
-set nobackup noswapfile nowb
-set autoread
-
-set noshowmode
-set showcmd
-set cursorline
-
-" Xclipboard compatibility
-set clipboard=unnamed
-set clipboard+=unnamedplus
-
-set virtualedit=onemore
-
-" Context {{{
-let g:context_enabled = 1
-" Separate the context from your buffer context
-let g:context_highlight_normal = 'Normal'
-let g:context_highlight_border = 'Comment'
-let g:context_highlight_tag    = 'Special'
+" Configuring MouseSettings {{{
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
 " }}}
 
-
-" base16-shell {{{
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
-" }}}
-
-
-" NERDTree {{{
-nnoremap <leader>nt :NERDTreeToggle<CR>
-" }}}
-
-" UltiSnips {{{
-let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsExpandTrigger = "<C-j>"
-let g:UltiSnipsJumpForwardTrigger = "<C-j>"
-let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
-" }}}
-
-"  AirLine {{{
-"let g:airline_theme='base16color'
-"let g:airline_theme='hybrid'
-"let g:airline_theme='solarized'
-let g:airline_theme='onehalfdark'
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#ale#enabled=1
-"let g:airline#extensions#tabline#formatter = 'default'
-
-
-" EasyAlign {{{
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-"}}}
-
-" Comfortable Motion {{{
-"let g:comfortable_motion_scroll_down_key = "j"
-"let g:comfortable_motion_scroll_up_key = "k"
-"noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
-"noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
-" }}}
+" Use alt + hjkl to resize windows
+nnoremap <M-j>    :resize -2<CR>
+nnoremap <M-k>    :resize +2<CR>
+nnoremap <M-h>    :vertical resize -2<CR>
+nnoremap <M-l>    :vertical resize +2<CR>
 
 " Mapping Esc -> jk and kj {{{
 inoremap jk <esc>
 inoremap kj <esc>
 "}}}
-
-" Setting <SPACE> as leader {{{
-nnoremap <SPACE> <Nop>
-let mapleader=" "
-" }}}
 
 " Configuring Tab movement {{{
 "" Go to tab by number
@@ -145,31 +62,84 @@ noremap <leader>0 :tablast<cr>tab mappings
 noremap <leader><Tab> gt
 " }}}
 
-" Configuring MouseSettings {{{
-set mouse=a
-map <ScrollWheelUp> <C-Y>
-map <ScrollWheelDown> <C-E>
+" TAB Movement in general mode b/w buffers {{{
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR>
+" }}}
+ 
+" Alternate way to save
+nnoremap <C-s> :w<CR>
+" Alternate way to quit
+nnoremap <C-Q> :wq!<CR>
+" Use control-c instead of escape
+nnoremap <C-c> <Esc>
+
+" Enable ftplugins {{{
+filetype plugin indent on
+syntax enable
 " }}}
 
-" Enable Autocorrection {{{
-setlocal spell
-set spelllang=en_us
-inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+" General Settings {{{
+set encoding=UTF-8
+set fileencoding=UTF-8
+"set nowrap
+
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set nu rnu
+set smartindent
+set hidden
+set mouse=a
+syntax sync minlines=200        "speed-up vim
+
+" Spawned window orientation {{{
+set splitbelow                          
+set splitright                          
 "}}}
 
-" Enable Left-term debugger {{{
-let g:termdebug_wide=1
+" treat dash separated words as a word text object
+set iskeyword+=-
+set iskeyword+=_
+
+" Prevents swap file generation and autoreads any external changes in the file
+set nobackup nowritebackup noswapfile nowb
+set autoread
+
+" What is this?
+set viminfo='100,<1000,s100,h
+
+set noshowmode
+set showcmd
+set cursorline
 " }}}
 
-" Setting Background{{{
+"
+" Xclipboard compatibility {{{
+set clipboard=unnamed
+set clipboard+=unnamedplus
+set virtualedit=onemore
+" }}}
 
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
+
+" Comment highlighting for C and py files {{{
+au! BufEnter *.c syn match specialComment #//!!.*#  " C files (*.c)
+au! BufEnter *.py syn match specialComment /#!!.*/  " Python files (*.py)
+hi specialComment ctermfg=red guifg=red
+"}}}
+
+
+" Editing req. files in sudo mode 
+cmap w!! w !sudo tee %                  
+set runtimepath^=~/.vim
+let &packpath = &runtimepath
+
+" auto-install vim-plug
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    "autocmd VimEnter * PlugInstall
+    "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-colorscheme onehalfdark
-"}}}
-"
-" hi clear Conceal

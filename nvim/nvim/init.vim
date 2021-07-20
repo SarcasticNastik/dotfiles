@@ -186,4 +186,9 @@ let g:fzf_colors =
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 " }}}
 
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 source $HOME/.config/nvim/coc-init.vim 

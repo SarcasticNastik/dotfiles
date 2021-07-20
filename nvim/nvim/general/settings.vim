@@ -1,4 +1,4 @@
-" Enable ftplugins {{{
+
 filetype plugin indent on
 syntax enable
 " }}}
@@ -64,3 +64,8 @@ hi specialComment ctermfg=red guifg=red
 
 " Editing req. files in sudo mode 
 cmap w!! w !sudo tee %                  
+
+" Detect Sage files
+augroup filetypedetect
+  au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
+augroup END

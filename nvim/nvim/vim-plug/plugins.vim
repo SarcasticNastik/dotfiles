@@ -11,7 +11,7 @@ endif
 
 call plug#begin(stdpath('data') . '/plugged') 
 " Syntax Highlighting
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'romainl/vim-cool'
 Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
@@ -41,4 +41,10 @@ Plug 'dart-lang/dart-vim-plugin'
 " Plug 'plasticboy/vim-markdown'
 Plug 'ryanoasis/vim-devicons'   
 Plug 'kristijanhusak/orgmode.nvim'
+
+" Debugging in vim
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
