@@ -1,0 +1,247 @@
+2021-07-16 23:37:43	*status	Cannot connect to IRC (Network is unreachable). Retrying...
+2021-07-16 23:38:13	*status	Cannot connect to IRC (Network is unreachable). Retrying...
+2021-07-16 23:38:43	*status	Cannot connect to IRC (Network is unreachable). Retrying...
+2021-07-16 23:39:14	*status	Disconnected from IRC (Connection reset by peer). Reconnecting...
+2021-07-16 23:39:14	*status	Disconnected from IRC. Reconnecting...
+2021-07-16 23:39:44	*status	Cannot connect to IRC (Network is unreachable). Retrying...
+2021-07-16 23:40:14	*status	Cannot connect to IRC (Network is unreachable). Retrying...
+2021-07-16 23:40:45	*status	Disconnected from IRC (Connection reset by peer). Reconnecting...
+2021-07-16 23:40:45	*status	Disconnected from IRC. Reconnecting...
+2021-07-16 23:41:15	*status	Cannot connect to IRC (Network is unreachable). Retrying...
+2021-07-16 23:41:33	--	irc: disconnected from server
+2021-07-16 23:56:34	*status	IRC connection timed out.  Reconnecting...
+2021-07-16 23:56:34	*status	Disconnected from IRC. Reconnecting...
+2021-07-16 23:56:44	*status	Connected!
+2021-07-16 23:57:27	--	irc: disconnected from server
+2021-07-17 04:34:07	*status	No such module playback
+2021-07-17 04:34:13	*status	No such module playback
+2021-07-17 04:35:43	--	irc: disconnected from server
+2021-07-17 04:35:58	*status	Hello. How may I help you?
+2021-07-17 04:36:43	*status	Unknown command, try 'Help'
+2021-07-17 04:36:49	*status	In the following list all occurrences of <#chan> support wildcards (* and ?) except ListNicks
+2021-07-17 04:36:49	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 04:36:49	*status	| Command                                                | Description                                                                                                     |
+2021-07-17 04:36:49	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 04:36:49	*status	| Version                                                | Print which version of ZNC this is                                                                              |
+2021-07-17 04:36:49	*status	| ListMods                                               | List all loaded modules                                                                                         |
+2021-07-17 04:36:49	*status	| ListAvailMods                                          | List all available modules                                                                                      |
+2021-07-17 04:36:49	*status	| ListChans                                              | List all channels                                                                                               |
+2021-07-17 04:36:49	*status	| ListNicks <#chan>                                      | List all nicks on a channel                                                                                     |
+2021-07-17 04:36:49	*status	| ListClients                                            | List all clients connected to your ZNC user                                                                     |
+2021-07-17 04:36:49	*status	| ListServers                                            | List all servers of current IRC network                                                                         |
+2021-07-17 04:36:49	*status	| AddNetwork <name>                                      | Add a network to your user                                                                                      |
+2021-07-17 04:36:49	*status	| DelNetwork <name>                                      | Delete a network from your user                                                                                 |
+2021-07-17 04:36:49	*status	| ListNetworks                                           | List all networks                                                                                               |
+2021-07-17 04:36:49	*status	| JumpNetwork <network>                                  | Jump to another network (Alternatively, you can connect to ZNC several times, using `user/network` as username) |
+2021-07-17 04:36:49	*status	| AddServer <host> [[+]port] [pass]                      | Add a server to the list of alternate/backup servers of current IRC network.                                    |
+2021-07-17 04:36:49	*status	| DelServer <host> [port] [pass]                         | Remove a server from the list of alternate/backup servers of current IRC network                                |
+2021-07-17 04:36:49	*status	| AddTrustedServerFingerprint <fi:ng:er>                 | Add a trusted server SSL certificate fingerprint (SHA-256) to current IRC network.                              |
+2021-07-17 04:36:49	*status	| DelTrustedServerFingerprint <fi:ng:er>                 | Delete a trusted server SSL certificate from current IRC network.                                               |
+2021-07-17 04:36:49	*status	| ListTrustedServerFingerprints                          | List all trusted server SSL certificates of current IRC network.                                                |
+2021-07-17 04:36:49	*status	| EnableChan <#chans>                                    | Enable channels                                                                                                 |
+2021-07-17 04:36:49	*status	| DisableChan <#chans>                                   | Disable channels                                                                                                |
+2021-07-17 04:36:49	*status	| Attach <#chans>                                        | Attach to channels                                                                                              |
+2021-07-17 04:36:49	*status	| Detach <#chans>                                        | Detach from channels                                                                                            |
+2021-07-17 04:36:49	*status	| Topics                                                 | Show topics in all your channels                                                                                |
+2021-07-17 04:36:49	*status	| PlayBuffer <#chan|query>                               | Play back the specified buffer                                                                                  |
+2021-07-17 04:36:49	*status	| ClearBuffer <#chan|query>                              | Clear the specified buffer                                                                                      |
+2021-07-17 04:36:49	*status	| ClearAllBuffers                                        | Clear all channel and query buffers                                                                             |
+2021-07-17 04:36:49	*status	| ClearAllChannelBuffers                                 | Clear the channel buffers                                                                                       |
+2021-07-17 04:36:49	*status	| ClearAllQueryBuffers                                   | Clear the query buffers                                                                                         |
+2021-07-17 04:36:49	*status	| SetBuffer <#chan|query> [linecount]                    | Set the buffer count                                                                                            |
+2021-07-17 04:36:49	*status	| SetBindHost <host (IP preferred)>                      | Set the bind host for this network                                                                              |
+2021-07-17 04:36:49	*status	| SetUserBindHost <host (IP preferred)>                  | Set the default bind host for this user                                                                         |
+2021-07-17 04:36:49	*status	| ClearBindHost                                          | Clear the bind host for this network                                                                            |
+2021-07-17 04:36:49	*status	| ClearUserBindHost                                      | Clear the default bind host for this user                                                                       |
+2021-07-17 04:36:49	*status	| ShowBindHost                                           | Show currently selected bind host                                                                               |
+2021-07-17 04:36:49	*status	| Jump [server]                                          | Jump to the next or the specified server                                                                        |
+2021-07-17 04:36:49	*status	| Disconnect [message]                                   | Disconnect from IRC                                                                                             |
+2021-07-17 04:36:49	*status	| Connect                                                | Reconnect to IRC                                                                                                |
+2021-07-17 04:36:49	*status	| Uptime                                                 | Show for how long ZNC has been running                                                                          |
+2021-07-17 04:36:49	*status	| LoadMod [--type=global|user|network] <module> [args]   | Load a module                                                                                                   |
+2021-07-17 04:36:49	*status	| UnloadMod [--type=global|user|network] <module>        | Unload a module                                                                                                 |
+2021-07-17 04:36:49	*status	| ReloadMod [--type=global|user|network] <module> [args] | Reload a module                                                                                                 |
+2021-07-17 04:36:49	*status	| ShowMOTD                                               | Show ZNC's message of the day                                                                                   |
+2021-07-17 04:36:49	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 04:37:00	*status	+----------------+---------+------------+
+2021-07-17 04:37:00	*status	| Host           | Network | Identifier |
+2021-07-17 04:37:00	*status	+----------------+---------+------------+
+2021-07-17 04:37:00	*status	| 122.161.66.163 | libera  |            |
+2021-07-17 04:37:00	*status	+----------------+---------+------------+
+2021-07-17 04:37:19	*status	Running for 4h 46m 54s
+2021-07-17 04:37:27	*status	There is no MOTD set.
+2021-07-17 04:38:13	--	irc: disconnected from server
+2021-07-17 05:24:58	*status	+-----------------------------------+------------------------------------------------------------------------------+
+2021-07-17 05:24:58	*status	| Command                           | Description                                                                  |
+2021-07-17 05:24:58	*status	+-----------------------------------+------------------------------------------------------------------------------+
+2021-07-17 05:24:58	*status	| AddServer <host> [[+]port] [pass] | Add a server to the list of alternate/backup servers of current IRC network. |
+2021-07-17 05:24:58	*status	+-----------------------------------+------------------------------------------------------------------------------+
+2021-07-17 05:25:11	--	irc: disconnected from server
+2021-07-17 15:01:38	*status	Channel ##crypto is linked to another channel and was thus disabled.
+2021-07-17 15:06:27	*status	In the following list all occurrences of <#chan> support wildcards (* and ?) except ListNicks
+2021-07-17 15:06:27	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 15:06:27	*status	| Command                                                | Description                                                                                                     |
+2021-07-17 15:06:27	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 15:06:27	*status	| Version                                                | Print which version of ZNC this is                                                                              |
+2021-07-17 15:06:27	*status	| ListMods                                               | List all loaded modules                                                                                         |
+2021-07-17 15:06:27	*status	| ListAvailMods                                          | List all available modules                                                                                      |
+2021-07-17 15:06:27	*status	| ListChans                                              | List all channels                                                                                               |
+2021-07-17 15:06:27	*status	| ListNicks <#chan>                                      | List all nicks on a channel                                                                                     |
+2021-07-17 15:06:27	*status	| ListClients                                            | List all clients connected to your ZNC user                                                                     |
+2021-07-17 15:06:27	*status	| ListServers                                            | List all servers of current IRC network                                                                         |
+2021-07-17 15:06:27	*status	| AddNetwork <name>                                      | Add a network to your user                                                                                      |
+2021-07-17 15:06:27	*status	| DelNetwork <name>                                      | Delete a network from your user                                                                                 |
+2021-07-17 15:06:27	*status	| ListNetworks                                           | List all networks                                                                                               |
+2021-07-17 15:06:27	*status	| JumpNetwork <network>                                  | Jump to another network (Alternatively, you can connect to ZNC several times, using `user/network` as username) |
+2021-07-17 15:06:27	*status	| AddServer <host> [[+]port] [pass]                      | Add a server to the list of alternate/backup servers of current IRC network.                                    |
+2021-07-17 15:06:27	*status	| DelServer <host> [port] [pass]                         | Remove a server from the list of alternate/backup servers of current IRC network                                |
+2021-07-17 15:06:27	*status	| AddTrustedServerFingerprint <fi:ng:er>                 | Add a trusted server SSL certificate fingerprint (SHA-256) to current IRC network.                              |
+2021-07-17 15:06:27	*status	| DelTrustedServerFingerprint <fi:ng:er>                 | Delete a trusted server SSL certificate from current IRC network.                                               |
+2021-07-17 15:06:27	*status	| ListTrustedServerFingerprints                          | List all trusted server SSL certificates of current IRC network.                                                |
+2021-07-17 15:06:27	*status	| EnableChan <#chans>                                    | Enable channels                                                                                                 |
+2021-07-17 15:06:27	*status	| DisableChan <#chans>                                   | Disable channels                                                                                                |
+2021-07-17 15:06:27	*status	| Attach <#chans>                                        | Attach to channels                                                                                              |
+2021-07-17 15:06:27	*status	| Detach <#chans>                                        | Detach from channels                                                                                            |
+2021-07-17 15:06:27	*status	| Topics                                                 | Show topics in all your channels                                                                                |
+2021-07-17 15:06:27	*status	| PlayBuffer <#chan|query>                               | Play back the specified buffer                                                                                  |
+2021-07-17 15:06:27	*status	| ClearBuffer <#chan|query>                              | Clear the specified buffer                                                                                      |
+2021-07-17 15:06:27	*status	| ClearAllBuffers                                        | Clear all channel and query buffers                                                                             |
+2021-07-17 15:06:27	*status	| ClearAllChannelBuffers                                 | Clear the channel buffers                                                                                       |
+2021-07-17 15:06:27	*status	| ClearAllQueryBuffers                                   | Clear the query buffers                                                                                         |
+2021-07-17 15:06:27	*status	| SetBuffer <#chan|query> [linecount]                    | Set the buffer count                                                                                            |
+2021-07-17 15:06:27	*status	| SetBindHost <host (IP preferred)>                      | Set the bind host for this network                                                                              |
+2021-07-17 15:06:27	*status	| SetUserBindHost <host (IP preferred)>                  | Set the default bind host for this user                                                                         |
+2021-07-17 15:06:27	*status	| ClearBindHost                                          | Clear the bind host for this network                                                                            |
+2021-07-17 15:06:27	*status	| ClearUserBindHost                                      | Clear the default bind host for this user                                                                       |
+2021-07-17 15:06:27	*status	| ShowBindHost                                           | Show currently selected bind host                                                                               |
+2021-07-17 15:06:27	*status	| Jump [server]                                          | Jump to the next or the specified server                                                                        |
+2021-07-17 15:06:27	*status	| Disconnect [message]                                   | Disconnect from IRC                                                                                             |
+2021-07-17 15:06:27	*status	| Connect                                                | Reconnect to IRC                                                                                                |
+2021-07-17 15:06:27	*status	| Uptime                                                 | Show for how long ZNC has been running                                                                          |
+2021-07-17 15:06:27	*status	| LoadMod [--type=global|user|network] <module> [args]   | Load a module                                                                                                   |
+2021-07-17 15:06:27	*status	| UnloadMod [--type=global|user|network] <module>        | Unload a module                                                                                                 |
+2021-07-17 15:06:27	*status	| ReloadMod [--type=global|user|network] <module> [args] | Reload a module                                                                                                 |
+2021-07-17 15:06:27	*status	| ShowMOTD                                               | Show ZNC's message of the day                                                                                   |
+2021-07-17 15:06:27	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 15:06:48	*status	In the following list all occurrences of <#chan> support wildcards (* and ?) except ListNicks
+2021-07-17 15:06:48	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 15:06:48	*status	| Command                                                | Description                                                                                                     |
+2021-07-17 15:06:48	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 15:06:48	*status	| Version                                                | Print which version of ZNC this is                                                                              |
+2021-07-17 15:06:48	*status	| ListMods                                               | List all loaded modules                                                                                         |
+2021-07-17 15:06:48	*status	| ListAvailMods                                          | List all available modules                                                                                      |
+2021-07-17 15:06:48	*status	| ListChans                                              | List all channels                                                                                               |
+2021-07-17 15:06:48	*status	| ListNicks <#chan>                                      | List all nicks on a channel                                                                                     |
+2021-07-17 15:06:48	*status	| ListClients                                            | List all clients connected to your ZNC user                                                                     |
+2021-07-17 15:06:48	*status	| ListServers                                            | List all servers of current IRC network                                                                         |
+2021-07-17 15:06:48	*status	| AddNetwork <name>                                      | Add a network to your user                                                                                      |
+2021-07-17 15:06:48	*status	| DelNetwork <name>                                      | Delete a network from your user                                                                                 |
+2021-07-17 15:06:48	*status	| ListNetworks                                           | List all networks                                                                                               |
+2021-07-17 15:06:48	*status	| JumpNetwork <network>                                  | Jump to another network (Alternatively, you can connect to ZNC several times, using `user/network` as username) |
+2021-07-17 15:06:48	*status	| AddServer <host> [[+]port] [pass]                      | Add a server to the list of alternate/backup servers of current IRC network.                                    |
+2021-07-17 15:06:48	*status	| DelServer <host> [port] [pass]                         | Remove a server from the list of alternate/backup servers of current IRC network                                |
+2021-07-17 15:06:48	*status	| AddTrustedServerFingerprint <fi:ng:er>                 | Add a trusted server SSL certificate fingerprint (SHA-256) to current IRC network.                              |
+2021-07-17 15:06:48	*status	| DelTrustedServerFingerprint <fi:ng:er>                 | Delete a trusted server SSL certificate from current IRC network.                                               |
+2021-07-17 15:06:48	*status	| ListTrustedServerFingerprints                          | List all trusted server SSL certificates of current IRC network.                                                |
+2021-07-17 15:06:48	*status	| EnableChan <#chans>                                    | Enable channels                                                                                                 |
+2021-07-17 15:06:48	*status	| DisableChan <#chans>                                   | Disable channels                                                                                                |
+2021-07-17 15:06:48	*status	| Attach <#chans>                                        | Attach to channels                                                                                              |
+2021-07-17 15:06:48	*status	| Detach <#chans>                                        | Detach from channels                                                                                            |
+2021-07-17 15:06:48	*status	| Topics                                                 | Show topics in all your channels                                                                                |
+2021-07-17 15:06:48	*status	| PlayBuffer <#chan|query>                               | Play back the specified buffer                                                                                  |
+2021-07-17 15:06:48	*status	| ClearBuffer <#chan|query>                              | Clear the specified buffer                                                                                      |
+2021-07-17 15:06:48	*status	| ClearAllBuffers                                        | Clear all channel and query buffers                                                                             |
+2021-07-17 15:06:48	*status	| ClearAllChannelBuffers                                 | Clear the channel buffers                                                                                       |
+2021-07-17 15:06:48	*status	| ClearAllQueryBuffers                                   | Clear the query buffers                                                                                         |
+2021-07-17 15:06:48	*status	| SetBuffer <#chan|query> [linecount]                    | Set the buffer count                                                                                            |
+2021-07-17 15:06:48	*status	| SetBindHost <host (IP preferred)>                      | Set the bind host for this network                                                                              |
+2021-07-17 15:06:48	*status	| SetUserBindHost <host (IP preferred)>                  | Set the default bind host for this user                                                                         |
+2021-07-17 15:06:48	*status	| ClearBindHost                                          | Clear the bind host for this network                                                                            |
+2021-07-17 15:06:48	*status	| ClearUserBindHost                                      | Clear the default bind host for this user                                                                       |
+2021-07-17 15:06:48	*status	| ShowBindHost                                           | Show currently selected bind host                                                                               |
+2021-07-17 15:06:48	*status	| Jump [server]                                          | Jump to the next or the specified server                                                                        |
+2021-07-17 15:06:48	*status	| Disconnect [message]                                   | Disconnect from IRC                                                                                             |
+2021-07-17 15:06:48	*status	| Connect                                                | Reconnect to IRC                                                                                                |
+2021-07-17 15:06:48	*status	| Uptime                                                 | Show for how long ZNC has been running                                                                          |
+2021-07-17 15:06:48	*status	| LoadMod [--type=global|user|network] <module> [args]   | Load a module                                                                                                   |
+2021-07-17 15:06:48	*status	| UnloadMod [--type=global|user|network] <module>        | Unload a module                                                                                                 |
+2021-07-17 15:06:48	*status	| ReloadMod [--type=global|user|network] <module> [args] | Reload a module                                                                                                 |
+2021-07-17 15:06:48	*status	| ShowMOTD                                               | Show ZNC's message of the day                                                                                   |
+2021-07-17 15:06:48	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-17 15:07:09	*status	+------------------+------+-----+----------+
+2021-07-17 15:07:09	*status	| Host             | Port | SSL | Password |
+2021-07-17 15:07:09	*status	+------------------+------+-----+----------+
+2021-07-17 15:07:09	*status	| irc.libera.chat* | 6697 | SSL |          |
+2021-07-17 15:07:09	*status	+------------------+------+-----+----------+
+2021-07-17 23:54:57	*status	No such module playback
+2021-07-17 23:55:10	*status	No such module playback
+2021-07-17 23:55:40	--	irc: disconnected from server
+2021-07-17 23:59:10	*status	No such module playback
+2021-07-18 00:01:30	*status	No such module playback
+2021-07-18 00:01:41	*status	No such module playback
+2021-07-18 00:01:55	*status	No such module playback
+2021-07-18 00:01:58	*status	Hello. How may I help you?
+2021-07-18 00:02:08	*status	No such module playback
+2021-07-18 00:03:09	*status	No such module backlog
+2021-07-18 00:04:06	amanr	LoadMod alias
+2021-07-18 00:04:06	*status	Loaded module alias: [/usr/lib/znc/alias.so]
+2021-07-18 00:04:45	*status	No such module backlog
+2021-07-18 00:06:47	--	irc: disconnected from server
+2021-07-18 01:18:26	*status	Unable to load playback: Unable to find module playback.
+2021-07-18 01:19:10	*status	In the following list all occurrences of <#chan> support wildcards (* and ?) except ListNicks
+2021-07-18 01:19:10	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-18 01:19:10	*status	| Command                                                | Description                                                                                                     |
+2021-07-18 01:19:10	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-18 01:19:10	*status	| Version                                                | Print which version of ZNC this is                                                                              |
+2021-07-18 01:19:10	*status	| ListMods                                               | List all loaded modules                                                                                         |
+2021-07-18 01:19:10	*status	| ListAvailMods                                          | List all available modules                                                                                      |
+2021-07-18 01:19:10	*status	| ListChans                                              | List all channels                                                                                               |
+2021-07-18 01:19:10	*status	| ListNicks <#chan>                                      | List all nicks on a channel                                                                                     |
+2021-07-18 01:19:10	*status	| ListClients                                            | List all clients connected to your ZNC user                                                                     |
+2021-07-18 01:19:10	*status	| ListServers                                            | List all servers of current IRC network                                                                         |
+2021-07-18 01:19:10	*status	| AddNetwork <name>                                      | Add a network to your user                                                                                      |
+2021-07-18 01:19:10	*status	| DelNetwork <name>                                      | Delete a network from your user                                                                                 |
+2021-07-18 01:19:10	*status	| ListNetworks                                           | List all networks                                                                                               |
+2021-07-18 01:19:10	*status	| JumpNetwork <network>                                  | Jump to another network (Alternatively, you can connect to ZNC several times, using `user/network` as username) |
+2021-07-18 01:19:10	*status	| AddServer <host> [[+]port] [pass]                      | Add a server to the list of alternate/backup servers of current IRC network.                                    |
+2021-07-18 01:19:10	*status	| DelServer <host> [port] [pass]                         | Remove a server from the list of alternate/backup servers of current IRC network                                |
+2021-07-18 01:19:10	*status	| AddTrustedServerFingerprint <fi:ng:er>                 | Add a trusted server SSL certificate fingerprint (SHA-256) to current IRC network.                              |
+2021-07-18 01:19:10	*status	| DelTrustedServerFingerprint <fi:ng:er>                 | Delete a trusted server SSL certificate from current IRC network.                                               |
+2021-07-18 01:19:10	*status	| ListTrustedServerFingerprints                          | List all trusted server SSL certificates of current IRC network.                                                |
+2021-07-18 01:19:10	*status	| EnableChan <#chans>                                    | Enable channels                                                                                                 |
+2021-07-18 01:19:10	*status	| DisableChan <#chans>                                   | Disable channels                                                                                                |
+2021-07-18 01:19:10	*status	| Attach <#chans>                                        | Attach to channels                                                                                              |
+2021-07-18 01:19:10	*status	| Detach <#chans>                                        | Detach from channels                                                                                            |
+2021-07-18 01:19:10	*status	| Topics                                                 | Show topics in all your channels                                                                                |
+2021-07-18 01:19:10	*status	| PlayBuffer <#chan|query>                               | Play back the specified buffer                                                                                  |
+2021-07-18 01:19:10	*status	| ClearBuffer <#chan|query>                              | Clear the specified buffer                                                                                      |
+2021-07-18 01:19:10	*status	| ClearAllBuffers                                        | Clear all channel and query buffers                                                                             |
+2021-07-18 01:19:10	*status	| ClearAllChannelBuffers                                 | Clear the channel buffers                                                                                       |
+2021-07-18 01:19:10	*status	| ClearAllQueryBuffers                                   | Clear the query buffers                                                                                         |
+2021-07-18 01:19:10	*status	| SetBuffer <#chan|query> [linecount]                    | Set the buffer count                                                                                            |
+2021-07-18 01:19:10	*status	| SetBindHost <host (IP preferred)>                      | Set the bind host for this network                                                                              |
+2021-07-18 01:19:10	*status	| SetUserBindHost <host (IP preferred)>                  | Set the default bind host for this user                                                                         |
+2021-07-18 01:19:10	*status	| ClearBindHost                                          | Clear the bind host for this network                                                                            |
+2021-07-18 01:19:10	*status	| ClearUserBindHost                                      | Clear the default bind host for this user                                                                       |
+2021-07-18 01:19:10	*status	| ShowBindHost                                           | Show currently selected bind host                                                                               |
+2021-07-18 01:19:10	*status	| Jump [server]                                          | Jump to the next or the specified server                                                                        |
+2021-07-18 01:19:10	*status	| Disconnect [message]                                   | Disconnect from IRC                                                                                             |
+2021-07-18 01:19:10	*status	| Connect                                                | Reconnect to IRC                                                                                                |
+2021-07-18 01:19:10	*status	| Uptime                                                 | Show for how long ZNC has been running                                                                          |
+2021-07-18 01:19:10	*status	| LoadMod [--type=global|user|network] <module> [args]   | Load a module                                                                                                   |
+2021-07-18 01:19:10	*status	| UnloadMod [--type=global|user|network] <module>        | Unload a module                                                                                                 |
+2021-07-18 01:19:10	*status	| ReloadMod [--type=global|user|network] <module> [args] | Reload a module                                                                                                 |
+2021-07-18 01:19:10	*status	| ShowMOTD                                               | Show ZNC's message of the day                                                                                   |
+2021-07-18 01:19:10	*status	+--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+2021-07-18 01:19:21	*status	+---------------+---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+2021-07-18 01:19:21	*status	| Channel       | Set By                                | Topic                                                                                                                                                                                                                                                                                                                                                                          |
+2021-07-18 01:19:21	*status	+---------------+---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+2021-07-18 01:19:21	*status	| ##math        | int-e!~noone@int-e.eu                 | Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving                                                        |
+2021-07-18 01:19:21	*status	| ##miniscript  |                                       |                                                                                                                                                                                                                                                                                                                                                                                |
+2021-07-18 01:19:21	*status	| ##programming | InPhase!~InPhase@openscad/inphase     | Programming/Computer Science Discussion & Community Chat | Be respectful and friendly. Full channel rules: https://libera-programming.github.io | Put pastes in a pastebin, e.g. https://bpaste.net https://ideone.com                                                                                                                                                         |
+2021-07-18 01:19:21	*status	| #bitcoin      | dodo!~nkuttler@user/dodo              | Bitcoin 0.21.1 https://bitcoincore.org/ | bitcoinwiki dot org is a PHISHING SCAM | Price chat > #bitcoin-pricetalk | Trade #bitcoin-otc | Rules https://goo.gl/SJMlSL | Most wallets sell your info and lie | Web wallets steal!                                                                                                                                               |
+2021-07-18 01:19:21	*status	| #haskell      | geekosaur!~geekosaur@xmonad/geekosaur | https://www.reddit.com/r/haskell | Admin: #haskell-ops | Offtopic: #haskell-offtopic | https://downloads.haskell.org | Paste code/errors: https://paste.tomsmeding.com | tunes.org-style logging should be coming soon | Logs: https://ircbrowse.tomsmeding.com/browse/lchaskell                                                                                               |
+2021-07-18 01:19:21	*status	| ##crypto      |                                       |                                                                                                                                                                                                                                                                                                                                                                                |
+2021-07-18 01:19:21	*status	| #crypto       | MacGyver                              | Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6                                                                                                                                                                                                                           |
+2021-07-18 01:19:21	*status	| #linux        | lacroix                               | Welcome to #Linux. Help/support for any Linux distribution. Discussion about the various aspects of Linux and Free/Open Source software is also encouraged. Rules at https://linux.chat/linux-on-libera/channel-rules/ -- Pastebin: "<command> | nc termbin.com 9999" (please don't use pastebin.com) -- No SMS (u, thx, etc.) -- Need an op? !ops <reason> or Join #linux-ops |
+2021-07-18 01:19:21	*status	+---------------+---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

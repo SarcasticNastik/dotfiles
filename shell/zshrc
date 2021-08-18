@@ -27,6 +27,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # custom command for piping z to fzf
 alias fd="fdfind"
 alias cat="bat"
+alias diff="delta"
 alias man="$HOME/dotfiles/man_custom.sh"
 alias irc="weechat"
 alias ssh="kitty +kitten ssh"
@@ -36,8 +37,9 @@ alias img="kitty +kitten icat"
 export WORKON_HOME=~/.local/share/virtualenvs
 export PYENV_ROOT=${HOME}/.pyenv
 export PIPENV_PYTHON=${PYENV_ROOT}/shims/python
-export PATH="/home/therojjha/.local/bin:/home/therojjha/.pyenv/bin:/usr/local/go/bin:$PATH"  # commented out by conda initialize
-
+export PATH="$PATH:/home/therojjha/.local/share/anaconda3/bin:/home/therojjha/.local/bin:/home/therojjha/.pyenv/bin:/usr/local/go/bin"  # commented out by conda initialize
+# move the `clear` binary in conda bin to some other name, and link system's infocmp to anaconda's library.
+#
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

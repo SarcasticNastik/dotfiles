@@ -41,5 +41,3 @@ nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 
-" Hover action for accessing the documentation
-nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>

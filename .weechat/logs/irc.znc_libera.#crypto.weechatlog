@@ -1,0 +1,1500 @@
+2021-07-17 15:01:38	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-17 15:01:38	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-17 15:01:38	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-17 15:01:39	--	Channel #crypto: 232 nicks (0 ops, 0 voices, 232 normals)
+2021-07-17 15:01:40	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-17 15:10:46	<--	Ohlov31153402689 (~Ohlov3@dyndsl-095-033-063-232.ewe-ip-backbone.de) has quit (Ping timeout: 252 seconds)
+2021-07-17 15:18:33	-->	gggp__ (~gggp@60.10.194.48) has joined #crypto
+2021-07-17 15:21:30	<--	gggp_ (~gggp@123.113.179.166) has quit (Ping timeout: 258 seconds)
+2021-07-17 15:26:57	-->	gggp_ (~gggp@123.113.188.14) has joined #crypto
+2021-07-17 15:29:52	<--	gggp__ (~gggp@60.10.194.48) has quit (Ping timeout: 246 seconds)
+2021-07-17 15:47:24	<--	dez (uid92154@user/dez) has quit (Quit: Connection closed for inactivity)
+2021-07-17 15:49:06	<--	chomwitt (~Pitsikoko@athedsl-32487.home.otenet.gr) has quit (Ping timeout: 258 seconds)
+2021-07-17 15:54:48	-->	ze26zefo (bfa39a78db@ircbox.informatik.uni-erlangen.de) has joined #crypto
+2021-07-17 16:00:59	<--	qbt (~edun@user/edun) has quit (Ping timeout: 258 seconds)
+2021-07-17 16:05:49	-->	PJBoy (~PJBoy@user/pjboy) has joined #crypto
+2021-07-17 16:13:37	<--	mrus (~mrus@2001:19f0:5:3fd4:5400:3ff:fe48:1820) has quit (Ping timeout: 246 seconds)
+2021-07-17 16:15:08	<--	Warped (~Warped@user/warped) has quit (Quit: We Gone! Bye Bye)
+2021-07-17 16:18:52	<--	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2021-07-17 16:23:08	-->	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has joined #crypto
+2021-07-17 16:24:04	-->	gggp__ (~gggp@60.10.194.48) has joined #crypto
+2021-07-17 16:27:03	<--	gggp_ (~gggp@123.113.188.14) has quit (Ping timeout: 258 seconds)
+2021-07-17 16:29:21	-->	gggp (~gggp@60.10.194.48) has joined #crypto
+2021-07-17 16:30:42	<--	gggp__ (~gggp@60.10.194.48) has quit (Ping timeout: 252 seconds)
+2021-07-17 16:35:53	-->	zeedo (~zeedo@cpc157903-grth13-2-0-cust152.16-4.cable.virginm.net) has joined #crypto
+2021-07-17 16:40:13	<--	akaWolf (~akaWolf@akawolf.org) has quit (Ping timeout: 246 seconds)
+2021-07-17 16:55:30	<--	peterhil (~peterhil@dsl-hkibng32-54f849-252.dhcp.inet.fi) has quit (Ping timeout: 255 seconds)
+2021-07-17 16:56:00	-->	akaWolf (~akaWolf@akawolf.org) has joined #crypto
+2021-07-17 16:56:22	-->	peterhil (~peterhil@dsl-hkibng32-54f849-252.dhcp.inet.fi) has joined #crypto
+2021-07-17 16:58:02	-->	hegstal (~hegstal@2a02:c7f:7604:8a00:3e00:8986:ae6e:2aac) has joined #crypto
+2021-07-17 17:17:38	<--	gggp (~gggp@60.10.194.48) has quit (Ping timeout: 252 seconds)
+2021-07-17 17:19:14	-->	gggpkm (~gggpkm@123.113.179.166) has joined #crypto
+2021-07-17 17:19:22	--	ze26zefo is now known as tolarz
+2021-07-17 17:36:00	<--	alip (~alip@exherbo/developer/alip) has quit (Ping timeout: 255 seconds)
+2021-07-17 17:39:08	<--	akaWolf (~akaWolf@akawolf.org) has quit (Ping timeout: 268 seconds)
+2021-07-17 17:43:08	--	PJBoy is now known as Guest5421
+2021-07-17 17:43:26	-->	PJBoy (~PJBoy@user/pjboy) has joined #crypto
+2021-07-17 17:46:48	<--	Guest5421 (~PJBoy@user/pjboy) has quit (Ping timeout: 255 seconds)
+2021-07-17 17:51:58	-->	Guest77 (~Guest77@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has joined #crypto
+2021-07-17 17:52:50	-->	peterhil_ (~peterhil@dsl-hkibng32-54f849-252.dhcp.inet.fi) has joined #crypto
+2021-07-17 17:55:47	<--	peterhil (~peterhil@dsl-hkibng32-54f849-252.dhcp.inet.fi) has quit (Ping timeout: 268 seconds)
+2021-07-17 18:00:23	-->	akaWolf (~akaWolf@akawolf.org) has joined #crypto
+2021-07-17 18:01:43	-->	vernaz (~vernaz@2001:8a0:70c1:d800:d81f:99dc:b787:6972) has joined #crypto
+2021-07-17 18:09:56	-->	ioxzev1z (~ioxzev1z@user/ioxzev1z) has joined #crypto
+2021-07-17 18:12:35	<--	vernaz (~vernaz@2001:8a0:70c1:d800:d81f:99dc:b787:6972) has quit (Remote host closed the connection)
+2021-07-17 18:13:11	-->	vernaz (~vernaz@2001:8a0:70c1:d800:d81f:99dc:b787:6972) has joined #crypto
+2021-07-17 18:13:58	<--	somlis (~somlis@user/somlis) has quit (Quit: WeeChat 3.2)
+2021-07-17 18:17:27	<--	vernaz (~vernaz@2001:8a0:70c1:d800:d81f:99dc:b787:6972) has quit (Ping timeout: 250 seconds)
+2021-07-17 18:41:25	-->	gggp (~gggp@60.10.194.48) has joined #crypto
+2021-07-17 18:41:29	-->	chomwitt (~Pitsikoko@athedsl-32487.home.otenet.gr) has joined #crypto
+2021-07-17 18:41:59	<--	gggpkm (~gggpkm@123.113.179.166) has quit (Ping timeout: 258 seconds)
+2021-07-17 18:46:58	<--	hegstal (~hegstal@2a02:c7f:7604:8a00:3e00:8986:ae6e:2aac) has quit (Remote host closed the connection)
+2021-07-17 18:49:33	-->	somlis (~somlis@user/somlis) has joined #crypto
+2021-07-17 18:52:09	-->	gggp_ (~gggp@60.10.194.48) has joined #crypto
+2021-07-17 18:55:12	<--	gggp (~gggp@60.10.194.48) has quit (Ping timeout: 255 seconds)
+2021-07-17 19:09:24	<--	MrFantastik (~Thunderbi@cpe-69-204-101-67.buffalo.res.rr.com) has quit (Read error: Connection reset by peer)
+2021-07-17 19:09:41	-->	MrFantastik (~Thunderbi@cpe-69-204-101-67.buffalo.res.rr.com) has joined #crypto
+2021-07-17 19:14:10	-->	Guest15 (~Guest15@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has joined #crypto
+2021-07-17 19:15:18	<--	Guest15 (~Guest15@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has quit (Client Quit)
+2021-07-17 19:16:10	-->	andreasbuhr (~quassel@p548dd3e6.dip0.t-ipconnect.de) has joined #crypto
+2021-07-17 19:19:02	<--	Fluxx (~Fluxx@user/fluxx) has quit (Ping timeout: 268 seconds)
+2021-07-17 19:21:09	-->	gggp__ (~gggp@60.10.194.48) has joined #crypto
+2021-07-17 19:23:59	-->	gggp (~gggp@123.116.84.81) has joined #crypto
+2021-07-17 19:24:08	<--	gggp_ (~gggp@60.10.194.48) has quit (Ping timeout: 252 seconds)
+2021-07-17 19:26:20	<--	gggp__ (~gggp@60.10.194.48) has quit (Ping timeout: 252 seconds)
+2021-07-17 19:43:41	--	irc: disconnected from server
+2021-07-17 19:43:52	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-17 19:43:52	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-17 19:43:52	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-17 19:43:52	--	Channel #crypto: 231 nicks (0 ops, 0 voices, 231 normals)
+2021-07-17 19:44:03	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-17 19:46:46	-->	dez (uid92154@user/dez) has joined #crypto
+2021-07-17 19:48:56	<--	akaWolf (~akaWolf@akawolf.org) has quit (Ping timeout: 255 seconds)
+2021-07-17 19:50:03	-->	gggp_ (~gggp@123.113.185.45) has joined #crypto
+2021-07-17 19:52:44	-->	akaWolf (~akaWolf@akawolf.org) has joined #crypto
+2021-07-17 19:53:34	<--	gggp (~gggp@123.116.84.81) has quit (Ping timeout: 268 seconds)
+2021-07-17 19:54:51	-->	byteskeptical (~amnesia@user/byteskeptical) has joined #crypto
+2021-07-17 20:01:11	-->	gggp__ (~gggp@60.10.194.48) has joined #crypto
+2021-07-17 20:04:42	<--	gggp_ (~gggp@123.113.185.45) has quit (Ping timeout: 265 seconds)
+2021-07-17 20:06:55	-->	Guyver2 (Guyver@guyver2.xs4all.nl) has joined #crypto
+2021-07-17 20:09:21	--	gggp__ is now known as gggp
+2021-07-17 20:14:37	<--	Guest77 (~Guest77@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has quit (Quit: Ping timeout (120 seconds))
+2021-07-17 20:16:31	-->	Guest77 (~Guest77@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has joined #crypto
+2021-07-17 20:23:53	<--	gggp (~gggp@60.10.194.48) has quit (Read error: Connection reset by peer)
+2021-07-17 20:26:14	<--	Guest77 (~Guest77@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has quit (Quit: Client closed)
+2021-07-17 20:27:13	-->	Guest77 (~Guest77@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has joined #crypto
+2021-07-17 20:31:05	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Quit: WeeChat 3.2)
+2021-07-17 20:32:49	<--	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2021-07-17 20:34:59	-->	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has joined #crypto
+2021-07-17 20:43:31	<--	andreas303 (andreas303@ip227.orange.bnc4free.com) has quit (Ping timeout: 268 seconds)
+2021-07-17 20:45:01	-->	andreas303 (andreas303@ip227.orange.bnc4free.com) has joined #crypto
+2021-07-17 20:45:22	<--	Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) has quit (Ping timeout: 268 seconds)
+2021-07-17 20:45:23	<--	_- (~orgg@user/orgg) has quit (Ping timeout: 268 seconds)
+2021-07-17 20:46:00	<--	MrFantastik (~Thunderbi@cpe-69-204-101-67.buffalo.res.rr.com) has quit (Ping timeout: 268 seconds)
+2021-07-17 20:46:00	<--	aweinstock (~aweinstoc@cpe-67-248-65-250.nycap.res.rr.com) has quit (Ping timeout: 268 seconds)
+2021-07-17 20:46:00	<--	em (~em@li247-180.members.linode.com) has quit (Ping timeout: 268 seconds)
+2021-07-17 20:46:09	-->	reedrichards (~Thunderbi@cpe-69-204-101-67.buffalo.res.rr.com) has joined #crypto
+2021-07-17 20:46:42	-->	em (~em@li247-180.members.linode.com) has joined #crypto
+2021-07-17 20:47:02	<--	cmc (~methos@gateway/tor-sasl/cmc) has quit (Ping timeout: 244 seconds)
+2021-07-17 20:47:10	<--	webstrand (~webstrand@user/webstrand) has quit (Read error: Connection reset by peer)
+2021-07-17 20:47:19	-->	_- (~orgg@20.55.233.57) has joined #crypto
+2021-07-17 20:47:23	-->	aweinstock (~aweinstoc@cpe-67-248-65-250.nycap.res.rr.com) has joined #crypto
+2021-07-17 20:47:56	-->	cmc (~methos@gateway/tor-sasl/cmc) has joined #crypto
+2021-07-17 20:48:27	--	reedrichards is now known as MrFantastik
+2021-07-17 20:48:58	-->	Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) has joined #crypto
+2021-07-17 20:49:30	-->	webstrand (~webstrand@user/webstrand) has joined #crypto
+2021-07-17 20:53:32	-->	gggpkm (~gggpkm@60.10.194.48) has joined #crypto
+2021-07-17 20:56:21	<--	kikijiki (~Thunderbi@user/kikijiki) has quit (Quit: kikijiki)
+2021-07-17 20:56:46	<--	somlis (~somlis@user/somlis) has quit (Read error: Connection reset by peer)
+2021-07-17 20:59:32	-->	elf_fortrez (~elf_fortr@adsl-72-50-6-20.prtc.net) has joined #crypto
+2021-07-17 21:01:23	-->	somlis (~somlis@user/somlis) has joined #crypto
+2021-07-17 21:05:30	<--	elf_fortrez (~elf_fortr@adsl-72-50-6-20.prtc.net) has quit (Quit: Client closed)
+2021-07-17 21:17:16	<--	Guest77 (~Guest77@2402:e280:2117:297:e041:4ae1:dd3c:1f08) has quit (Quit: Client closed)
+2021-07-17 21:19:23	-->	vernaz (~vernaz@2001:8a0:70c1:d800:b182:2300:6fd8:c681) has joined #crypto
+2021-07-17 21:32:26	-->	llorllale (~llorllale@2607:9880:3a18:69:1cfa:7851:73cf:5368) has joined #crypto
+2021-07-17 21:35:08	-->	gggpkm_ (~gggpkm@221.219.67.56) has joined #crypto
+2021-07-17 21:35:09	-->	Guyver2_ (Guyver@guyver2.xs4all.nl) has joined #crypto
+2021-07-17 21:36:00	<--	gggpkm (~gggpkm@60.10.194.48) has quit (Read error: Connection reset by peer)
+2021-07-17 21:37:13	<--	llorllale (~llorllale@2607:9880:3a18:69:1cfa:7851:73cf:5368) has quit (Ping timeout: 250 seconds)
+2021-07-17 21:37:36	-->	gggpkm (~gggpkm@123.113.188.14) has joined #crypto
+2021-07-17 21:37:56	<--	Guyver2 (Guyver@guyver2.xs4all.nl) has quit (Ping timeout: 258 seconds)
+2021-07-17 21:38:00	--	Guyver2_ is now known as Guyver2
+2021-07-17 21:39:15	<--	gabriel1 (~gabriel1@5.170.128.26) has quit (Remote host closed the connection)
+2021-07-17 21:39:30	<--	chomwitt (~Pitsikoko@athedsl-32487.home.otenet.gr) has quit (Ping timeout: 240 seconds)
+2021-07-17 21:39:43	-->	gabriel1 (~gabriel1@5.170.128.26) has joined #crypto
+2021-07-17 21:39:56	<--	gggpkm_ (~gggpkm@221.219.67.56) has quit (Ping timeout: 256 seconds)
+2021-07-17 21:40:44	<--	gabriel1 (~gabriel1@5.170.128.26) has quit (Remote host closed the connection)
+2021-07-17 21:46:08	--	onelegend is now known as softraid
+2021-07-17 21:46:55	--	softraid is now known as alpine
+2021-07-17 21:49:39	<--	gggpkm (~gggpkm@123.113.188.14) has quit (Quit: Leaving)
+2021-07-17 21:49:53	-->	gggpkm (~gggpkm@221.219.67.56) has joined #crypto
+2021-07-17 21:56:40	-->	gggpkm_ (~gggpkm@123.113.185.45) has joined #crypto
+2021-07-17 21:59:12	<--	gggpkm (~gggpkm@221.219.67.56) has quit (Ping timeout: 256 seconds)
+2021-07-17 22:06:18	<--	alpine (onelegend@wireguard/tunneler/onelegend) has quit (Quit: WeeChat 2.8)
+2021-07-17 22:21:58	<--	byteskeptical (~amnesia@user/byteskeptical) has quit (Ping timeout: 252 seconds)
+2021-07-17 22:23:17	-->	Maxattax97 (~max@2603:900a:1501:a7ca::100) has joined #crypto
+2021-07-17 22:43:35	<--	gggpkm_ (~gggpkm@123.113.185.45) has quit (Remote host closed the connection)
+2021-07-17 22:45:23	-->	gggp (~gggp@123.113.184.30) has joined #crypto
+2021-07-17 22:47:59	<--	vernaz (~vernaz@2001:8a0:70c1:d800:b182:2300:6fd8:c681) has quit (Remote host closed the connection)
+2021-07-17 22:48:35	-->	vernaz (~vernaz@2001:8a0:70c1:d800:b182:2300:6fd8:c681) has joined #crypto
+2021-07-17 22:51:03	-->	mmlj4 (~mmlj4@ip68-230-228-233.no.no.cox.net) has joined #crypto
+2021-07-17 22:53:03	<--	vernaz (~vernaz@2001:8a0:70c1:d800:b182:2300:6fd8:c681) has quit (Ping timeout: 250 seconds)
+2021-07-17 23:13:14	<--	mcfrdy (~mcfrdy@user/mcfrdy) has quit (Ping timeout: 255 seconds)
+2021-07-17 23:14:25	-->	mcfrdy (~mcfrdy@45.67.96.126) has joined #crypto
+2021-07-17 23:14:25	<--	mcfrdy (~mcfrdy@45.67.96.126) has quit (Changing host)
+2021-07-17 23:14:25	-->	mcfrdy (~mcfrdy@user/mcfrdy) has joined #crypto
+2021-07-17 23:16:21	<--	drathir_tor (~drathir@wireguard/tunneler/drathir) has quit (Ping timeout: 244 seconds)
+2021-07-17 23:16:24	-->	onelegend (onelegend@wireguard/tunneler/onelegend) has joined #crypto
+2021-07-17 23:23:21	<--	akaWolf (~akaWolf@akawolf.org) has quit (Ping timeout: 265 seconds)
+2021-07-17 23:23:36	-->	drathir_tor (~drathir@wireguard/tunneler/drathir) has joined #crypto
+2021-07-17 23:26:13	-->	dude12312414 (~test@gateway/tor-sasl/dude12312414) has joined #crypto
+2021-07-17 23:26:51	-->	aleck1 (~aleck@user/aleck) has joined #crypto
+2021-07-17 23:30:36	<--	aleck (~aleck@user/aleck) has quit (Ping timeout: 265 seconds)
+2021-07-17 23:33:44	-->	akaWolf (~akaWolf@akawolf.org) has joined #crypto
+2021-07-17 23:35:12	--	irc: disconnected from server
+2021-07-17 23:35:19	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-17 23:35:19	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-17 23:35:19	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-17 23:35:19	--	Channel #crypto: 231 nicks (0 ops, 0 voices, 231 normals)
+2021-07-17 23:35:29	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-17 23:37:14	--	irc: disconnected from server
+2021-07-17 23:37:28	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-17 23:37:28	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-17 23:37:28	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-17 23:37:28	--	Channel #crypto: 231 nicks (0 ops, 0 voices, 231 normals)
+2021-07-17 23:37:36	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-17 23:37:47	-->	jarthur (~jarthur@cpe-70-114-198-37.austin.res.rr.com) has joined #crypto
+2021-07-17 23:38:34	-->	r-ush (~quassel@2405:201:301b:900d:6c17:ef6b:3a9e:7536) has joined #crypto
+2021-07-17 23:42:22	-->	gggp_ (~gggp@123.116.73.11) has joined #crypto
+2021-07-17 23:45:09	--	irc: disconnected from server
+2021-07-17 23:53:31	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-17 23:53:31	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-17 23:53:31	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-17 23:53:31	--	Channel #crypto: 233 nicks (0 ops, 0 voices, 233 normals)
+2021-07-17 23:53:42	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-17 23:54:10	--	irc: disconnected from server
+2021-07-17 23:54:18	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-17 23:54:18	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-17 23:54:18	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-17 23:54:18	--	Channel #crypto: 233 nicks (0 ops, 0 voices, 233 normals)
+2021-07-17 23:54:26	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-17 23:55:39	--	irc: disconnected from server
+2021-07-17 23:58:55	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-17 23:58:55	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-17 23:58:55	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-17 23:58:55	--	Channel #crypto: 232 nicks (0 ops, 0 voices, 232 normals)
+2021-07-17 23:59:03	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-18 00:00:43	--	irc: disconnected from server
+2021-07-18 00:01:23	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-18 00:01:23	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-18 00:01:23	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-18 00:01:23	--	Channel #crypto: 232 nicks (0 ops, 0 voices, 232 normals)
+2021-07-18 00:01:34	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-18 00:02:53	-->	CrashTestDummy2 (~CrashTest@ool-ad02813b.dyn.optonline.net) has joined #crypto
+2021-07-18 00:06:17	<--	CrashTestDummy3 (~CrashTest@ool-ad02813b.dyn.optonline.net) has quit (Ping timeout: 258 seconds)
+2021-07-18 00:06:47	--	irc: disconnected from server
+2021-07-18 01:15:18	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-18 01:15:18	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-18 01:15:18	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-18 01:15:18	--	Channel #crypto: 234 nicks (0 ops, 0 voices, 234 normals)
+2021-07-18 01:15:28	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-18 01:18:34	<--	byteskeptical (~amnesia@user/byteskeptical) has quit (Ping timeout: 246 seconds)
+2021-07-18 01:25:11	--	irc: disconnected from server
+2021-07-18 04:51:01	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-18 04:51:01	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-18 04:51:01	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-18 04:51:01	--	Channel #crypto: 232 nicks (0 ops, 0 voices, 232 normals)
+2021-07-18 04:51:01	***	Buffer Playback...
+2021-07-18 04:51:01	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-18 04:51:01	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-18 04:51:01	onelegend	[23:19:45] ah that might be it!
+2021-07-18 04:51:01	***	Playback Complete.
+2021-07-18 04:51:09	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-18 04:53:09	<--	gggp_ (~gggp@123.113.178.180) has quit (Ping timeout: 268 seconds)
+2021-07-18 04:58:23	<--	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2021-07-18 05:00:33	-->	Fluxx (~Fluxx@user/fluxx) has joined #crypto
+2021-07-18 05:01:29	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Quit: THE RAM IS TOO DAMN HIGH)
+2021-07-18 05:01:39	-->	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has joined #crypto
+2021-07-18 05:01:51	<--	srikavin (~srikavin@user/srikavin) has quit (Ping timeout: 252 seconds)
+2021-07-18 05:02:24	<--	mcfrdy (~mcfrdy@user/mcfrdy) has quit (Ping timeout: 268 seconds)
+2021-07-18 05:07:05	-->	mcfrdy (~mcfrdy@45.67.96.175) has joined #crypto
+2021-07-18 05:07:05	<--	mcfrdy (~mcfrdy@45.67.96.175) has quit (Changing host)
+2021-07-18 05:07:06	-->	mcfrdy (~mcfrdy@user/mcfrdy) has joined #crypto
+2021-07-18 05:11:53	<--	Fluxx (~Fluxx@user/fluxx) has quit (Quit: Leaving)
+2021-07-18 05:11:56	<--	echelon (~echelon@gateway/tor-sasl/steerpike) has quit (Remote host closed the connection)
+2021-07-18 05:12:15	--	irc: disconnected from server
+2021-07-18 05:12:20	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-18 05:12:20	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-18 05:12:20	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-18 05:12:20	--	Channel #crypto: 228 nicks (0 ops, 0 voices, 228 normals)
+2021-07-18 05:12:20	***	Buffer Playback...
+2021-07-18 05:12:20	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-18 05:12:20	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-18 05:12:20	onelegend	[23:19:45] ah that might be it!
+2021-07-18 05:12:20	***	Playback Complete.
+2021-07-18 05:12:29	-->	echelon (~echelon@gateway/tor-sasl/steerpike) has joined #crypto
+2021-07-18 05:12:29	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-18 05:16:24	<--	kaoD (~kaoD@user/kaod) has quit (Read error: Connection reset by peer)
+2021-07-18 05:17:00	-->	szarka (~szarka@2001-48F8-9004-E05-F070-551A-90D1-D4D-dynamic.midco.net) has joined #crypto
+2021-07-18 05:17:17	-->	gggp_ (~gggp@60.10.23.165) has joined #crypto
+2021-07-18 05:17:54	<--	szarkanet (~szarka@2001-48F8-9004-E05-B893-F8F6-43DA-B616-dynamic.midco.net) has quit (Quit: Leaving)
+2021-07-18 05:20:37	<--	gggp (~gggp@125.33.87.164) has quit (Ping timeout: 258 seconds)
+2021-07-18 05:30:07	<--	vernaz (~vernaz@2001:8a0:70c1:d800:2ce6:27d6:7c3d:ea75) has quit (Remote host closed the connection)
+2021-07-18 05:30:42	-->	vernaz (~vernaz@2001:8a0:70c1:d800:2ce6:27d6:7c3d:ea75) has joined #crypto
+2021-07-18 05:33:04	--	irc: disconnected from server
+2021-07-18 16:36:24	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-18 16:36:24	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-18 16:36:24	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-18 16:36:24	--	Channel #crypto: 230 nicks (0 ops, 0 voices, 230 normals)
+2021-07-18 16:36:24	***	Buffer Playback...
+2021-07-18 16:36:24	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-18 16:36:24	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-18 16:36:24	onelegend	[23:19:45] ah that might be it!
+2021-07-18 16:36:24	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-18 16:36:24	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-18 16:36:24	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-18 16:36:24	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-18 16:36:24	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-18 16:36:24	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-18 16:36:24	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-18 16:36:24	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-18 16:36:24	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-18 16:36:24	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-18 16:36:24	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-18 16:36:24	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-18 16:36:24	 *	ericonr [00:29:18] presses X
+2021-07-18 16:36:24	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-18 16:36:24	ericonr	[00:29:46] they care about power manipulation
+2021-07-18 16:36:24	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-18 16:36:24	Peng	[00:30:12] D:
+2021-07-18 16:36:24	onelegend	[00:56:53] Penguin
+2021-07-18 16:36:24	onelegend	[00:57:03] :O
+2021-07-18 16:36:24	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-18 16:36:24	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-18 16:36:24	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-18 16:36:24	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-18 16:36:24	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-18 16:36:24	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-18 16:36:24	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-18 16:36:24	wasamasa	[08:17:13] lol
+2021-07-18 16:36:24	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-18 16:36:24	rqsd	[08:17:30] Fair
+2021-07-18 16:36:24	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-18 16:36:24	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-18 16:36:24	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-18 16:36:24	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-18 16:36:24	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-18 16:36:24	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-18 16:36:24	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-18 16:36:24	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-18 16:36:24	wasamasa	[08:20:01] lol
+2021-07-18 16:36:24	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-18 16:36:24	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-18 16:36:24	linear_cannon	[08:20:30] i think
+2021-07-18 16:36:24	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-18 16:36:24	linear_cannon	[08:20:34] okay
+2021-07-18 16:36:24	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-18 16:36:24	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-18 16:36:24	linear_cannon	[08:21:01] err, the chip
+2021-07-18 16:36:24	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-18 16:36:24	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-18 16:36:24	linear_cannon	[08:21:57] yep
+2021-07-18 16:36:24	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-18 16:36:24	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-18 16:36:24	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-18 16:36:24	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-18 16:36:24	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-18 16:36:24	linear_cannon	[08:24:08] or when starting up
+2021-07-18 16:36:24	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-18 16:36:24	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-18 16:36:24	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-18 16:36:24	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-18 16:36:24	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-18 16:36:24	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-18 16:36:24	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-18 16:36:24	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-18 16:36:24	rqsd	[08:28:43] build your own :^)
+2021-07-18 16:36:24	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-18 16:36:24	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-18 16:36:24	***	Playback Complete.
+2021-07-18 16:36:33	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-18 16:44:02	-->	CrashTestDummy3 (~CrashTest@ool-ad02813b.dyn.optonline.net) has joined #crypto
+2021-07-18 16:47:06	<--	CrashTestDummy2 (~CrashTest@ool-ad02813b.dyn.optonline.net) has quit (Ping timeout: 252 seconds)
+2021-07-18 16:52:29	<--	menace (~someone@user/menace) has quit (Ping timeout: 250 seconds)
+2021-07-18 16:55:03	-->	greyrat_ (~greyrat@ip202.ip-51-178-215.eu) has joined #crypto
+2021-07-18 16:56:34	<--	greyrat (~greyrat@ip202.ip-51-178-215.eu) has quit (Ping timeout: 240 seconds)
+2021-07-18 17:24:01	<--	kish` (~aqua@user/aqua) has quit (Quit: Leaving)
+2021-07-18 17:25:07	-->	kish` (~aqua@user/aqua) has joined #crypto
+2021-07-18 17:41:16	<--	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2021-07-18 17:44:31	-->	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has joined #crypto
+2021-07-18 17:51:26	-->	X-Scale` (~ARM@132.102.108.93.rev.vodafone.pt) has joined #crypto
+2021-07-18 17:53:52	<--	X-Scale (~ARM@132.102.108.93.rev.vodafone.pt) has quit (Ping timeout: 268 seconds)
+2021-07-18 17:53:52	--	X-Scale` is now known as X-Scale
+2021-07-18 18:12:08	-->	MrFantastik (~Thunderbi@cpe-69-204-101-67.buffalo.res.rr.com) has joined #crypto
+2021-07-18 18:15:21	-->	gggpkm_ (~gggpkm@123.113.189.203) has joined #crypto
+2021-07-18 18:18:01	<--	gggpkm (~gggpkm@221.219.66.135) has quit (Ping timeout: 258 seconds)
+2021-07-18 18:18:11	<--	Sofia (~sofia@gateway/tor-sasl/sofia) has quit (Ping timeout: 244 seconds)
+2021-07-18 18:32:53	-->	piku (~piku@47.202.125.123) has joined #crypto
+2021-07-18 18:40:22	-->	Sofia (~sofia@gateway/tor-sasl/sofia) has joined #crypto
+2021-07-18 18:50:54	-->	CrashTestDummy2 (~CrashTest@ool-ad02813b.dyn.optonline.net) has joined #crypto
+2021-07-18 18:54:18	<--	CrashTestDummy3 (~CrashTest@ool-ad02813b.dyn.optonline.net) has quit (Ping timeout: 255 seconds)
+2021-07-18 18:55:55	<--	gggpkm_ (~gggpkm@123.113.189.203) has quit (Ping timeout: 265 seconds)
+2021-07-18 18:56:31	-->	gggp (~gggp@123.116.73.11) has joined #crypto
+2021-07-18 19:00:42	-->	chomwitt (~Pitsikoko@athedsl-32487.home.otenet.gr) has joined #crypto
+2021-07-18 19:09:04	-->	gggp_ (~gggp@221.219.66.135) has joined #crypto
+2021-07-18 19:12:47	<--	gggp (~gggp@123.116.73.11) has quit (Ping timeout: 268 seconds)
+2021-07-18 19:25:12	--	gggp_ is now known as gggp
+2021-07-18 19:27:13	<--	kish` (~aqua@user/aqua) has quit (Quit: Leaving)
+2021-07-18 19:28:41	--	irc: disconnected from server
+2021-07-18 20:21:10	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-18 20:21:10	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-18 20:21:10	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-18 20:21:10	--	Channel #crypto: 231 nicks (0 ops, 0 voices, 231 normals)
+2021-07-18 20:21:10	***	Buffer Playback...
+2021-07-18 20:21:10	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-18 20:21:10	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-18 20:21:10	onelegend	[23:19:45] ah that might be it!
+2021-07-18 20:21:10	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-18 20:21:10	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-18 20:21:10	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-18 20:21:10	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-18 20:21:10	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-18 20:21:10	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-18 20:21:10	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-18 20:21:10	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-18 20:21:10	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-18 20:21:10	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-18 20:21:10	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-18 20:21:10	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-18 20:21:10	 *	ericonr [00:29:18] presses X
+2021-07-18 20:21:10	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-18 20:21:10	ericonr	[00:29:46] they care about power manipulation
+2021-07-18 20:21:10	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-18 20:21:10	Peng	[00:30:12] D:
+2021-07-18 20:21:10	onelegend	[00:56:53] Penguin
+2021-07-18 20:21:10	onelegend	[00:57:03] :O
+2021-07-18 20:21:10	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-18 20:21:10	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-18 20:21:10	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-18 20:21:10	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-18 20:21:10	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-18 20:21:10	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-18 20:21:10	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-18 20:21:10	wasamasa	[08:17:13] lol
+2021-07-18 20:21:10	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-18 20:21:10	rqsd	[08:17:30] Fair
+2021-07-18 20:21:10	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-18 20:21:10	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-18 20:21:10	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-18 20:21:10	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-18 20:21:10	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-18 20:21:10	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-18 20:21:10	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-18 20:21:10	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-18 20:21:10	wasamasa	[08:20:01] lol
+2021-07-18 20:21:10	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-18 20:21:10	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-18 20:21:10	linear_cannon	[08:20:30] i think
+2021-07-18 20:21:10	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-18 20:21:10	linear_cannon	[08:20:34] okay
+2021-07-18 20:21:10	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-18 20:21:10	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-18 20:21:10	linear_cannon	[08:21:01] err, the chip
+2021-07-18 20:21:10	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-18 20:21:10	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-18 20:21:10	linear_cannon	[08:21:57] yep
+2021-07-18 20:21:10	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-18 20:21:10	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-18 20:21:10	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-18 20:21:10	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-18 20:21:10	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-18 20:21:10	linear_cannon	[08:24:08] or when starting up
+2021-07-18 20:21:10	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-18 20:21:10	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-18 20:21:10	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-18 20:21:10	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-18 20:21:10	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-18 20:21:10	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-18 20:21:10	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-18 20:21:10	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-18 20:21:10	rqsd	[08:28:43] build your own :^)
+2021-07-18 20:21:10	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-18 20:21:10	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-18 20:21:10	***	Playback Complete.
+2021-07-18 20:21:19	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-18 20:25:32	-->	moose` (~moose@user/moose) has joined #crypto
+2021-07-18 20:26:53	--	gggp__ is now known as gggp
+2021-07-18 20:27:54	<--	moose (~moose@user/moose) has quit (Ping timeout: 255 seconds)
+2021-07-18 20:31:21	 *	onelegend starts encrypting his ebook collection
+2021-07-18 20:32:21	int-e	. o O ( War_and_Peace.epub.gpg )
+2021-07-18 20:40:45	-->	lord| (~lordpipe@user/lordpipe) has joined #crypto
+2021-07-18 20:43:52	<--	chasmo77 (~chas77@71.63.241.168) has quit (Quit: It's just that easy)
+2021-07-18 21:02:58	-->	peterhil (~peterhil@dsl-hkibng32-54f849-252.dhcp.inet.fi) has joined #crypto
+2021-07-18 21:04:08	<--	kulak1 (~kulak@user/kulak) has quit (Read error: Connection reset by peer)
+2021-07-18 21:04:36	-->	kulak1 (~kulak@user/kulak) has joined #crypto
+2021-07-18 21:12:10	<--	kulak1 (~kulak@user/kulak) has quit (Read error: Connection reset by peer)
+2021-07-18 21:12:53	-->	kulak1 (~kulak@user/kulak) has joined #crypto
+2021-07-18 21:20:17	--	irc: disconnected from server
+2021-07-19 11:15:19	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-19 11:15:19	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-19 11:15:19	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-19 11:15:19	--	Channel #crypto: 228 nicks (0 ops, 0 voices, 228 normals)
+2021-07-19 11:15:19	***	Buffer Playback...
+2021-07-19 11:15:19	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-19 11:15:19	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-19 11:15:19	onelegend	[23:19:45] ah that might be it!
+2021-07-19 11:15:19	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-19 11:15:19	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-19 11:15:19	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-19 11:15:19	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-19 11:15:19	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-19 11:15:19	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-19 11:15:19	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-19 11:15:19	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-19 11:15:19	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-19 11:15:19	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-19 11:15:19	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-19 11:15:19	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-19 11:15:19	 *	ericonr [00:29:18] presses X
+2021-07-19 11:15:19	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-19 11:15:19	ericonr	[00:29:46] they care about power manipulation
+2021-07-19 11:15:19	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-19 11:15:19	Peng	[00:30:12] D:
+2021-07-19 11:15:19	onelegend	[00:56:53] Penguin
+2021-07-19 11:15:19	onelegend	[00:57:03] :O
+2021-07-19 11:15:19	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-19 11:15:19	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-19 11:15:19	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-19 11:15:19	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-19 11:15:19	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-19 11:15:19	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-19 11:15:19	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-19 11:15:19	wasamasa	[08:17:13] lol
+2021-07-19 11:15:19	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-19 11:15:19	rqsd	[08:17:30] Fair
+2021-07-19 11:15:19	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-19 11:15:19	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-19 11:15:19	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-19 11:15:19	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-19 11:15:19	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-19 11:15:19	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-19 11:15:19	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-19 11:15:19	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-19 11:15:19	wasamasa	[08:20:01] lol
+2021-07-19 11:15:19	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-19 11:15:19	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-19 11:15:19	linear_cannon	[08:20:30] i think
+2021-07-19 11:15:19	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-19 11:15:19	linear_cannon	[08:20:34] okay
+2021-07-19 11:15:19	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-19 11:15:19	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-19 11:15:19	linear_cannon	[08:21:01] err, the chip
+2021-07-19 11:15:19	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-19 11:15:19	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-19 11:15:19	linear_cannon	[08:21:57] yep
+2021-07-19 11:15:19	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-19 11:15:19	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-19 11:15:19	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-19 11:15:19	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-19 11:15:19	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-19 11:15:19	linear_cannon	[08:24:08] or when starting up
+2021-07-19 11:15:19	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-19 11:15:19	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-19 11:15:19	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-19 11:15:19	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-19 11:15:19	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-19 11:15:19	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-19 11:15:19	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-19 11:15:19	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-19 11:15:19	rqsd	[08:28:43] build your own :^)
+2021-07-19 11:15:19	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-19 11:15:19	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-19 11:15:19	 *	onelegend [15:01:21] starts encrypting his ebook collection
+2021-07-19 11:15:19	int-e	[15:02:21] . o O ( War_and_Peace.epub.gpg )
+2021-07-19 11:15:19	***	Playback Complete.
+2021-07-19 11:15:28	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-19 11:45:19	--	irc: disconnected from server
+2021-07-19 11:45:31	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-19 11:45:31	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-19 11:45:31	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-19 11:45:31	--	Channel #crypto: 228 nicks (0 ops, 0 voices, 228 normals)
+2021-07-19 11:45:31	***	Buffer Playback...
+2021-07-19 11:45:31	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-19 11:45:31	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-19 11:45:31	onelegend	[23:19:45] ah that might be it!
+2021-07-19 11:45:31	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-19 11:45:31	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-19 11:45:31	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-19 11:45:31	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-19 11:45:31	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-19 11:45:31	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-19 11:45:31	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-19 11:45:31	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-19 11:45:31	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-19 11:45:31	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-19 11:45:31	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-19 11:45:31	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-19 11:45:31	 *	ericonr [00:29:18] presses X
+2021-07-19 11:45:31	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-19 11:45:31	ericonr	[00:29:46] they care about power manipulation
+2021-07-19 11:45:31	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-19 11:45:31	Peng	[00:30:12] D:
+2021-07-19 11:45:31	onelegend	[00:56:53] Penguin
+2021-07-19 11:45:31	onelegend	[00:57:03] :O
+2021-07-19 11:45:31	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-19 11:45:31	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-19 11:45:31	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-19 11:45:31	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-19 11:45:31	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-19 11:45:31	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-19 11:45:31	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-19 11:45:31	wasamasa	[08:17:13] lol
+2021-07-19 11:45:31	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-19 11:45:31	rqsd	[08:17:30] Fair
+2021-07-19 11:45:31	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-19 11:45:31	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-19 11:45:31	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-19 11:45:31	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-19 11:45:31	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-19 11:45:31	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-19 11:45:31	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-19 11:45:31	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-19 11:45:31	wasamasa	[08:20:01] lol
+2021-07-19 11:45:31	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-19 11:45:31	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-19 11:45:31	linear_cannon	[08:20:30] i think
+2021-07-19 11:45:31	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-19 11:45:31	linear_cannon	[08:20:34] okay
+2021-07-19 11:45:31	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-19 11:45:31	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-19 11:45:31	linear_cannon	[08:21:01] err, the chip
+2021-07-19 11:45:31	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-19 11:45:31	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-19 11:45:31	linear_cannon	[08:21:57] yep
+2021-07-19 11:45:31	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-19 11:45:31	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-19 11:45:31	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-19 11:45:31	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-19 11:45:31	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-19 11:45:31	linear_cannon	[08:24:08] or when starting up
+2021-07-19 11:45:31	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-19 11:45:31	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-19 11:45:31	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-19 11:45:31	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-19 11:45:31	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-19 11:45:31	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-19 11:45:31	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-19 11:45:31	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-19 11:45:31	rqsd	[08:28:43] build your own :^)
+2021-07-19 11:45:31	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-19 11:45:31	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-19 11:45:31	 *	onelegend [15:01:21] starts encrypting his ebook collection
+2021-07-19 11:45:31	int-e	[15:02:21] . o O ( War_and_Peace.epub.gpg )
+2021-07-19 11:45:31	***	Playback Complete.
+2021-07-19 11:45:42	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-19 11:51:29	<--	byteskep1ical (~amnesia@user/byteskeptical) has quit (Ping timeout: 255 seconds)
+2021-07-19 12:03:16	-->	byteskeptical (~amnesia@user/byteskeptical) has joined #crypto
+2021-07-19 12:07:58	<--	byteskeptical (~amnesia@user/byteskeptical) has quit (Ping timeout: 252 seconds)
+2021-07-19 12:11:07	-->	gggpkm_ (~gggpkm@60.10.194.43) has joined #crypto
+2021-07-19 12:11:17	<--	gggpkm (~gggpkm@111.63.14.119) has quit (Ping timeout: 255 seconds)
+2021-07-19 12:21:57	-->	Haohmaru (~Haohmaru@195.24.53.110) has joined #crypto
+2021-07-19 12:38:24	<--	akaWolf (~akaWolf@akawolf.org) has quit (Ping timeout: 252 seconds)
+2021-07-19 12:40:17	-->	akaWolf (~akaWolf@akawolf.org) has joined #crypto
+2021-07-19 12:50:19	-->	katp32 (~katp32@leagueh.xyz) has joined #crypto
+2021-07-19 12:51:52	-->	vernaz (~vernaz@2001:818:d8da:9b00:4ce0:c97f:95ba:a23) has joined #crypto
+2021-07-19 12:52:23	katp32	heyo, I don't know if this is a good place to ask, but I've got some trouble with libsodium I was wondering if I could get some help with; I'm probably just missing something obvious but I've hit a bit of a mental block
+2021-07-19 12:52:45	riv	yes 
+2021-07-19 12:54:54	katp32	awesome; I'm trying to decrypt a sealed box using crypto_box_seal_open, but it always gives a nonzero return value, and I can't for the life of me figure out why; as far as I can tell everything is correct. here's (some of) the source if it's any help: https://leagueh.xyz/l/katherine.peeters/junk/crypto.c
+2021-07-19 12:55:17	katp32	is there like some sort of error codes that can give me information about *why* it's failing?
+2021-07-19 12:56:33	<--	vernaz (~vernaz@2001:818:d8da:9b00:4ce0:c97f:95ba:a23) has quit (Ping timeout: 255 seconds)
+2021-07-19 12:56:50	riv	apparently not!
+2021-07-19 12:56:53	riv	'Most functions do not return specific error codes when they fail.
+2021-07-19 12:56:53	riv	History has shown that using different error codes for cryptographic operations can help attackers conduct devastating attacks.'
+2021-07-19 12:57:07	katp32	ah, that's unfortunate :(
+2021-07-19 12:57:54	riv		crypto_box_seal(sealed, clear, BOTTLE_SIZE, pk);
+2021-07-19 12:58:04	-->	Guyver2 (Guyver@guyver2.xs4all.nl) has joined #crypto
+2021-07-19 12:58:10	riv	int status = crypto_box_seal_open(clear,sealed,SEALED_BOTTLE_SIZE,
+2021-07-19 12:58:15	riv	aren these supposed to be different sizes?
+2021-07-19 12:58:50	riv	ah it gets bigger when you seal it, doesn't it
+2021-07-19 12:59:21	katp32	yeah, `#define SEALED_BOTTLE_SIZE BOTTLE_SIZE + crypto_box_SEALBYTES`
+2021-07-19 13:00:00	riv	btw this is unrelated to your question but it seems like you are kind of doing a MAC then encrypt type thing
+2021-07-19 13:00:15	katp32	MAC?
+2021-07-19 13:00:29	riv	so actualy in your case sign then encrypt
+2021-07-19 13:00:44	riv	but mac-then-encrypt vs encrypt-then-mac is the keyword to search about this
+2021-07-19 13:02:04	riv	https://libsodium.gitbook.io/doc/quickstart#do-i-need-to-add-a-signature-to-encrypted-messages-to-detect-if-they-have-been-tampered-with suggests that you may not need to do this
+2021-07-19 13:03:30	riv	I think the error must not be in that piece of code
+2021-07-19 13:06:12	katp32	yeah, I'm admittedly a bit confused; I did read that FAQ, so I'm not so much worried about integrity, it's just that I want a way for the recipient to verify who sent it, without allowing the sender's public key to be read without decrypting the box. sealed boxes use ephemeral keys so they don't do that on their own, maybe that means sealed boxes aren't the best way to go here?
+2021-07-19 13:09:49	katp32	my understanding is that the regular boxes require the recipient to have the sender's public key ahead of time in order to compute the shared key, or to pass the sender's public key in the clear, neither of which I really want to to if it can be avoided 
+2021-07-19 13:10:07	riv	if alice and bob are communicating via public/private keys, and alice recieves a valid encrypted message, she knows it was encrypted by either alice or bobs key
+2021-07-19 13:11:56	riv	so it is valid to add signing, to ensure it really was bob - and alice is not being (re)sent an old message alice encrypted
+2021-07-19 13:13:18	katp32	yeah, that makes sense, but alice requires bob's public key in order to compute the shared key used to encrypt/decrypt messages, no?
+2021-07-19 13:13:36	riv	yes
+2021-07-19 13:14:50	katp32	yeah, that's the problem, I'm working under the assumption that the recipient does not have the sender's public key (but I still want to sign the message just in case they do have the sender's public key and want to verify it)
+2021-07-19 13:15:49	riv	that doesn't make sense
+2021-07-19 13:16:10	<--	kaizushi1 (~kaizushi@gateway/tor-sasl/kaizushi) has left #crypto (WeeChat 3.2)
+2021-07-19 13:16:26	-->	gareppa (~gareppa@user/gareppa) has joined #crypto
+2021-07-19 13:17:01	riv	oh wait it does
+2021-07-19 13:17:15	<--	gareppa (~gareppa@user/gareppa) has quit (Remote host closed the connection)
+2021-07-19 13:17:16	katp32	and I don't want to pass the sender's public key in cleartext either; the "sealed boxes", I believe, get around this by just using an ephemeral key for the box, but then I still need a signature; ie, generating a random single use keypair and using that instead, and passing the ephemeral public key in the clear because it's single use so it doesn't matter
+2021-07-19 13:17:30	riv	crypto_box_seal_open is different to the nacl one that i'm used to, sorry
+2021-07-19 13:17:37	katp32	ah, no worries
+2021-07-19 13:17:37	<--	jarthur (~jarthur@2603-8080-1540-002d-7828-89c1-5bc4-4b6a.res6.spectrum.com) has quit (Quit: jarthur)
+2021-07-19 13:19:19	riv	why don't you show more code?
+2021-07-19 13:19:22	katp32	oh, I see what you mean by encrypt-then-mac
+2021-07-19 13:19:44	riv	yeah I thought I should mention it although we have determined that it's not an issue in your ode now
+2021-07-19 13:19:44	katp32	ah, I can, I just have it split up into a bunch of files, and I figured uploading a tarball would be inconvenient
+2021-07-19 13:20:47	katp32	here's the full code: https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-19 13:21:00	katp32	...and apparently some objects files as well that I didn't think to clean out first
+2021-07-19 13:25:27	riv	do you have a key i can use to test it?
+2021-07-19 13:25:35	katp32	ah, sure
+2021-07-19 13:25:54	katp32	the key for the `hello.bottle` file I accidentally included in the tarball is: 2a0d5b2fe8b52812f4edfabba784d8fdf985b11cdf993f5d1045d63ef349f90c416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86
+2021-07-19 13:28:04	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Remote host closed the connection)
+2021-07-19 13:30:25	riv	is that the priv key? whats the pub key?
+2021-07-19 13:30:37	riv	i gotta go!
+2021-07-19 13:30:55	katp32	erm, not sure what the public key is, I'll have to scroll up in my terminal a bit..
+2021-07-19 13:31:23	<--	riv (~river@tilde.team/user/river) has quit (Quit: Leaving)
+2021-07-19 13:33:03	-->	vernaz (~vernaz@148.63.127.167) has joined #crypto
+2021-07-19 13:33:06	<--	vernaz (~vernaz@148.63.127.167) has quit (Remote host closed the connection)
+2021-07-19 13:33:42	-->	vernaz (~vernaz@2001:818:d8da:9b00:dc97:d372:c2b6:9896) has joined #crypto
+2021-07-19 13:34:31	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #crypto
+2021-07-19 13:35:34	-->	vernaz_ (~vernaz@148.63.127.167) has joined #crypto
+2021-07-19 13:36:29	-->	jarthur (~jarthur@cpe-70-114-198-37.austin.res.rr.com) has joined #crypto
+2021-07-19 13:39:11	<--	vernaz (~vernaz@2001:818:d8da:9b00:dc97:d372:c2b6:9896) has quit (Ping timeout: 250 seconds)
+2021-07-19 13:39:19	-->	andreasbuhr (~quassel@p548ddb09.dip0.t-ipconnect.de) has joined #crypto
+2021-07-19 13:49:04	<--	gggpkm_ (~gggpkm@60.10.194.43) has quit (Remote host closed the connection)
+2021-07-19 13:50:20	-->	gggp (~gggp@123.113.186.67) has joined #crypto
+2021-07-19 13:58:39	-->	Lord_of_Life_ (~Lord@user/lord-of-life/x-2819915) has joined #crypto
+2021-07-19 13:59:17	<--	cvmn (~caveman@gateway/tor-sasl/caveman) has quit (Ping timeout: 244 seconds)
+2021-07-19 14:01:05	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Ping timeout: 255 seconds)
+2021-07-19 14:01:18	--	Lord_of_Life_ is now known as Lord_of_Life
+2021-07-19 14:06:26	-->	cvmn (~caveman@gateway/tor-sasl/caveman) has joined #crypto
+2021-07-19 14:20:24	-->	PJBoy (~PJBoy@user/pjboy) has joined #crypto
+2021-07-19 14:22:14	int-e	katp32: so one problem is that you should use   crypto_sign_ed25519_sk_to_pk  to extract the public key from the secret key.
+2021-07-19 14:23:01	int-e	(it's actually the second half of the secret key: 416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86 in your case)
+2021-07-19 14:25:01	<--	jarthur (~jarthur@cpe-70-114-198-37.austin.res.rr.com) has quit (Quit: jarthur)
+2021-07-19 14:33:13	-->	gggp_ (~gggp@114.243.54.45) has joined #crypto
+2021-07-19 14:34:17	int-e	katp32: Actually, scratch that. box keys are different from signing keys.
+2021-07-19 14:34:40	<--	voiceofreason_ (~voiceofre@207.148.10.181) has quit (Read error: Connection reset by peer)
+2021-07-19 14:35:38	-->	voiceofreason (~voiceofre@207.148.10.181) has joined #crypto
+2021-07-19 14:35:44	<--	gggp (~gggp@123.113.186.67) has quit (Ping timeout: 252 seconds)
+2021-07-19 14:35:53	-->	vernaz (~vernaz@148.63.127.167) has joined #crypto
+2021-07-19 14:36:50	<--	vernaz_ (~vernaz@148.63.127.167) has quit (Ping timeout: 252 seconds)
+2021-07-19 14:37:11	int-e	katp32: so your real mistake is using a signature key for a (sealed) crypto box.
+2021-07-19 14:38:18	<--	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2021-07-19 14:38:25	gggp_	why the consensus algorithm need a leader election ?
+2021-07-19 14:38:46	--	gggp_ is now known as gggp
+2021-07-19 14:39:16	katp32	int-e: hrm, I could've sworn that the libsodium docs said they were interchangeable, I guess I didn't read carefully enough
+2021-07-19 14:40:15	-->	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has joined #crypto
+2021-07-19 14:40:42	katp32	indeed, should have read more carefully >.<
+2021-07-19 14:40:51	katp32	thanks for catching that int-e !
+2021-07-19 14:44:45	<--	cvmn (~caveman@gateway/tor-sasl/caveman) has quit (Ping timeout: 244 seconds)
+2021-07-19 14:51:05	--	irc: disconnected from server
+2021-07-19 18:40:02	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-19 18:40:02	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-19 18:40:02	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-19 18:40:02	--	Channel #crypto: 236 nicks (0 ops, 0 voices, 236 normals)
+2021-07-19 18:40:02	***	Buffer Playback...
+2021-07-19 18:40:02	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-19 18:40:02	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-19 18:40:02	onelegend	[23:19:45] ah that might be it!
+2021-07-19 18:40:02	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-19 18:40:02	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-19 18:40:02	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-19 18:40:03	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-19 18:40:03	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-19 18:40:03	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-19 18:40:03	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-19 18:40:03	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-19 18:40:03	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-19 18:40:03	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-19 18:40:03	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-19 18:40:03	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-19 18:40:03	 *	ericonr [00:29:18] presses X
+2021-07-19 18:40:03	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-19 18:40:03	ericonr	[00:29:46] they care about power manipulation
+2021-07-19 18:40:03	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-19 18:40:03	Peng	[00:30:12] D:
+2021-07-19 18:40:03	onelegend	[00:56:53] Penguin
+2021-07-19 18:40:03	onelegend	[00:57:03] :O
+2021-07-19 18:40:03	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-19 18:40:03	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-19 18:40:03	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-19 18:40:03	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-19 18:40:03	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-19 18:40:03	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-19 18:40:03	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-19 18:40:03	wasamasa	[08:17:13] lol
+2021-07-19 18:40:03	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-19 18:40:03	rqsd	[08:17:30] Fair
+2021-07-19 18:40:03	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-19 18:40:03	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-19 18:40:03	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-19 18:40:03	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-19 18:40:03	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-19 18:40:03	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-19 18:40:03	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-19 18:40:03	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-19 18:40:03	wasamasa	[08:20:01] lol
+2021-07-19 18:40:03	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-19 18:40:03	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-19 18:40:03	linear_cannon	[08:20:30] i think
+2021-07-19 18:40:03	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-19 18:40:03	linear_cannon	[08:20:34] okay
+2021-07-19 18:40:03	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-19 18:40:03	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-19 18:40:03	linear_cannon	[08:21:01] err, the chip
+2021-07-19 18:40:03	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-19 18:40:03	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-19 18:40:03	linear_cannon	[08:21:57] yep
+2021-07-19 18:40:03	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-19 18:40:03	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-19 18:40:03	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-19 18:40:03	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-19 18:40:03	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-19 18:40:03	linear_cannon	[08:24:08] or when starting up
+2021-07-19 18:40:03	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-19 18:40:03	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-19 18:40:03	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-19 18:40:03	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-19 18:40:03	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-19 18:40:03	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-19 18:40:03	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-19 18:40:03	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-19 18:40:03	rqsd	[08:28:43] build your own :^)
+2021-07-19 18:40:03	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-19 18:40:03	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-19 18:40:03	 *	onelegend [15:01:21] starts encrypting his ebook collection
+2021-07-19 18:40:03	int-e	[15:02:21] . o O ( War_and_Peace.epub.gpg )
+2021-07-19 18:40:03	katp32	[07:22:23] heyo, I don't know if this is a good place to ask, but I've got some trouble with libsodium I was wondering if I could get some help with; I'm probably just missing something obvious but I've hit a bit of a mental block
+2021-07-19 18:40:03	riv	[07:22:45] yes 
+2021-07-19 18:40:03	katp32	[07:24:54] awesome; I'm trying to decrypt a sealed box using crypto_box_seal_open, but it always gives a nonzero return value, and I can't for the life of me figure out why; as far as I can tell everything is correct. here's (some of) the source if it's any help: https://leagueh.xyz/l/katherine.peeters/junk/crypto.c
+2021-07-19 18:40:03	katp32	[07:25:17] is there like some sort of error codes that can give me information about *why* it's failing?
+2021-07-19 18:40:03	riv	[07:26:50] apparently not!
+2021-07-19 18:40:03	riv	[07:26:53] 'Most functions do not return specific error codes when they fail.
+2021-07-19 18:40:03	riv	[07:26:53] History has shown that using different error codes for cryptographic operations can help attackers conduct devastating attacks.'
+2021-07-19 18:40:03	katp32	[07:27:07] ah, that's unfortunate :(
+2021-07-19 18:40:03	riv	[07:27:54] 	crypto_box_seal(sealed, clear, BOTTLE_SIZE, pk);
+2021-07-19 18:40:03	riv	[07:28:10] int status = crypto_box_seal_open(clear,sealed,SEALED_BOTTLE_SIZE,
+2021-07-19 18:40:03	riv	[07:28:15] aren these supposed to be different sizes?
+2021-07-19 18:40:03	riv	[07:28:50] ah it gets bigger when you seal it, doesn't it
+2021-07-19 18:40:03	katp32	[07:29:21] yeah, `#define SEALED_BOTTLE_SIZE BOTTLE_SIZE + crypto_box_SEALBYTES`
+2021-07-19 18:40:03	riv	[07:30:00] btw this is unrelated to your question but it seems like you are kind of doing a MAC then encrypt type thing
+2021-07-19 18:40:03	katp32	[07:30:15] MAC?
+2021-07-19 18:40:03	riv	[07:30:29] so actualy in your case sign then encrypt
+2021-07-19 18:40:03	riv	[07:30:44] but mac-then-encrypt vs encrypt-then-mac is the keyword to search about this
+2021-07-19 18:40:03	riv	[07:32:04] https://libsodium.gitbook.io/doc/quickstart#do-i-need-to-add-a-signature-to-encrypted-messages-to-detect-if-they-have-been-tampered-with suggests that you may not need to do this
+2021-07-19 18:40:03	riv	[07:33:30] I think the error must not be in that piece of code
+2021-07-19 18:40:03	katp32	[07:36:12] yeah, I'm admittedly a bit confused; I did read that FAQ, so I'm not so much worried about integrity, it's just that I want a way for the recipient to verify who sent it, without allowing the sender's public key to be read without decrypting the box. sealed boxes use ephemeral keys so they don't do that on their own, maybe that means sealed boxes aren't the best way to go here?
+2021-07-19 18:40:03	katp32	[07:39:49] my understanding is that the regular boxes require the recipient to have the sender's public key ahead of time in order to compute the shared key, or to pass the sender's public key in the clear, neither of which I really want to to if it can be avoided 
+2021-07-19 18:40:03	riv	[07:40:07] if alice and bob are communicating via public/private keys, and alice recieves a valid encrypted message, she knows it was encrypted by either alice or bobs key
+2021-07-19 18:40:03	riv	[07:41:56] so it is valid to add signing, to ensure it really was bob - and alice is not being (re)sent an old message alice encrypted
+2021-07-19 18:40:03	katp32	[07:43:18] yeah, that makes sense, but alice requires bob's public key in order to compute the shared key used to encrypt/decrypt messages, no?
+2021-07-19 18:40:03	riv	[07:43:36] yes
+2021-07-19 18:40:03	katp32	[07:44:50] yeah, that's the problem, I'm working under the assumption that the recipient does not have the sender's public key (but I still want to sign the message just in case they do have the sender's public key and want to verify it)
+2021-07-19 18:40:03	riv	[07:45:49] that doesn't make sense
+2021-07-19 18:40:03	riv	[07:47:01] oh wait it does
+2021-07-19 18:40:03	katp32	[07:47:15] and I don't want to pass the sender's public key in cleartext either; the "sealed boxes", I believe, get around this by just using an ephemeral key for the box, but then I still need a signature; ie, generating a random single use keypair and using that instead, and passing the ephemeral public key in the clear because it's single use so it doesn't matter
+2021-07-19 18:40:03	riv	[07:47:30] crypto_box_seal_open is different to the nacl one that i'm used to, sorry
+2021-07-19 18:40:03	katp32	[07:47:37] ah, no worries
+2021-07-19 18:40:03	riv	[07:49:19] why don't you show more code?
+2021-07-19 18:40:03	katp32	[07:49:22] oh, I see what you mean by encrypt-then-mac
+2021-07-19 18:40:03	riv	[07:49:44] yeah I thought I should mention it although we have determined that it's not an issue in your ode now
+2021-07-19 18:40:03	katp32	[07:49:44] ah, I can, I just have it split up into a bunch of files, and I figured uploading a tarball would be inconvenient
+2021-07-19 18:40:03	katp32	[07:50:47] here's the full code: https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-19 18:40:03	katp32	[07:50:59] ...and apparently some objects files as well that I didn't think to clean out first
+2021-07-19 18:40:03	riv	[07:55:27] do you have a key i can use to test it?
+2021-07-19 18:40:03	katp32	[07:55:35] ah, sure
+2021-07-19 18:40:03	katp32	[07:55:54] the key for the `hello.bottle` file I accidentally included in the tarball is: 2a0d5b2fe8b52812f4edfabba784d8fdf985b11cdf993f5d1045d63ef349f90c416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86
+2021-07-19 18:40:03	riv	[08:00:25] is that the priv key? whats the pub key?
+2021-07-19 18:40:03	riv	[08:00:37] i gotta go!
+2021-07-19 18:40:03	katp32	[08:00:55] erm, not sure what the public key is, I'll have to scroll up in my terminal a bit..
+2021-07-19 18:40:03	int-e	[08:52:14] katp32: so one problem is that you should use   crypto_sign_ed25519_sk_to_pk  to extract the public key from the secret key.
+2021-07-19 18:40:03	int-e	[08:53:01] (it's actually the second half of the secret key: 416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86 in your case)
+2021-07-19 18:40:03	int-e	[09:04:17] katp32: Actually, scratch that. box keys are different from signing keys.
+2021-07-19 18:40:03	int-e	[09:07:11] katp32: so your real mistake is using a signature key for a (sealed) crypto box.
+2021-07-19 18:40:03	gggp_	[09:08:25] why the consensus algorithm need a leader election ?
+2021-07-19 18:40:03	katp32	[09:09:16] int-e: hrm, I could've sworn that the libsodium docs said they were interchangeable, I guess I didn't read carefully enough
+2021-07-19 18:40:03	katp32	[09:10:42] indeed, should have read more carefully >.<
+2021-07-19 18:40:03	katp32	[09:10:51] thanks for catching that int-e !
+2021-07-19 18:40:03	katp32	[10:07:24] argh, I'm still having no luck even after fixing that issue :(
+2021-07-19 18:40:03	katp32	[10:08:45] updated tarball if anyone's willing to take a look... https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-19 18:40:03	katp32	[10:12:31] ah wait no I'm an idiot, it's a buffer issue
+2021-07-19 18:40:03	katp32	[10:14:21] ...or not? apparently that was not the issue...
+2021-07-19 18:40:03	int-e	[11:13:19] katp32: you're also passing the wrong public keys to the boxing/unboxing functions
+2021-07-19 18:40:03	katp32	[11:13:33] oh?
+2021-07-19 18:40:03	int-e	[11:16:50] katp32: and do yourself a favor and put parentheses around those #define-s
+2021-07-19 18:40:03	katp32	[11:17:11] hah, yeah, I just did that, although that's not what was causing problems
+2021-07-19 18:40:03	int-e	[11:17:49] you have *several* things causing problems, and this is in fact one of them
+2021-07-19 18:40:03	int-e	[11:18:01] SEALED_BOTTLE_SIZE - MAC_SIZE wasn't doing what you wanted
+2021-07-19 18:40:03	katp32	[11:18:29] ah, indeed
+2021-07-19 18:40:03	katp32	[11:19:29] I think I ended up changing that to `BOTTLE_SIZE + crypto_box_MACBYTES` to be more clear anyways, but yeah that would've been causing problems...
+2021-07-19 18:40:03	katp32	[11:20:15] (and I renamed MAC_SIZE to HEAD_SIZE because that was a nonsense name, but not relevant)
+2021-07-19 18:40:03	katp32	[11:22:09] still not sure what you meant about using the wrong public keys (although it wouldn't be the root of my problems anyways since for testing purposes I'm using the same key for sender and recipient)
+2021-07-19 18:40:03	ldm	[12:38:51] Hi! I'm looking for resources to compare the Security Level of Salsa20/chacha against AES; essentially to say how many rounds are equivalent to a certain AES key size. Does anyone have any pointers?
+2021-07-19 18:40:03	piou	[12:39:55] ldm: https://soatok.blog/2020/07/12/comparison-of-symmetric-encryption-methods/ maybe?
+2021-07-19 18:40:03	ldm	[12:41:20] ah that's helpful -I hadn't seen that chacha is targeted at 256-bit (so on par with aes256)
+2021-07-19 18:40:03	***	Playback Complete.
+2021-07-19 18:40:13	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-19 18:47:07	-->	gggp (~gggp@123.113.186.67) has joined #crypto
+2021-07-19 18:56:57	-->	vernaz (~vernaz@148.63.127.167) has joined #crypto
+2021-07-19 19:00:45	<--	peterhil (~peterhil@mobile-access-b04801-219.dhcp.inet.fi) has quit (Ping timeout: 258 seconds)
+2021-07-19 19:07:15	-->	TimMc (~timmc@user/timmc) has joined #crypto
+2021-07-19 19:07:48	<--	cuz (~user@2601:182:cc02:8b0:5d77:6ee9:7f95:9dca) has quit (Ping timeout: 255 seconds)
+2021-07-19 19:08:10	-->	gggp_ (~gggp@60.10.194.43) has joined #crypto
+2021-07-19 19:11:28	<--	gggp (~gggp@123.113.186.67) has quit (Ping timeout: 252 seconds)
+2021-07-19 19:12:45	--	gggp_ is now known as gggp
+2021-07-19 19:22:58	-->	Guyver2_ (Guyver@guyver2.xs4all.nl) has joined #crypto
+2021-07-19 19:25:44	<--	Guyver2 (Guyver@guyver2.xs4all.nl) has quit (Ping timeout: 265 seconds)
+2021-07-19 19:25:49	--	Guyver2_ is now known as Guyver2
+2021-07-19 19:30:28	-->	r-ush (~quassel@2405:201:301b:900d:5d31:dda0:1cce:69ec) has joined #crypto
+2021-07-19 19:39:30	<--	chomwitt (~chomwitt@2a02:587:dc04:b400:12c3:7bff:fe6d:d374) has quit (Ping timeout: 268 seconds)
+2021-07-19 19:39:38	-->	cuz (~user@38.140.58.234) has joined #crypto
+2021-07-19 19:43:42	--	irc: disconnected from server
+2021-07-20 10:40:20	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-20 10:40:20	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-20 10:40:20	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-20 10:40:20	--	Channel #crypto: 231 nicks (0 ops, 0 voices, 231 normals)
+2021-07-20 10:40:20	***	Buffer Playback...
+2021-07-20 10:40:20	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-20 10:40:20	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-20 10:40:20	onelegend	[23:19:45] ah that might be it!
+2021-07-20 10:40:20	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-20 10:40:20	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-20 10:40:20	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-20 10:40:20	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-20 10:40:20	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-20 10:40:20	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-20 10:40:20	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-20 10:40:20	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-20 10:40:20	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-20 10:40:20	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-20 10:40:20	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-20 10:40:20	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-20 10:40:20	 *	ericonr [00:29:18] presses X
+2021-07-20 10:40:20	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-20 10:40:20	ericonr	[00:29:46] they care about power manipulation
+2021-07-20 10:40:20	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-20 10:40:20	Peng	[00:30:12] D:
+2021-07-20 10:40:20	onelegend	[00:56:53] Penguin
+2021-07-20 10:40:20	onelegend	[00:57:03] :O
+2021-07-20 10:40:20	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-20 10:40:20	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-20 10:40:20	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-20 10:40:20	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-20 10:40:20	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-20 10:40:20	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-20 10:40:20	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-20 10:40:20	wasamasa	[08:17:13] lol
+2021-07-20 10:40:20	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-20 10:40:20	rqsd	[08:17:30] Fair
+2021-07-20 10:40:20	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-20 10:40:20	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-20 10:40:20	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-20 10:40:20	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-20 10:40:20	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-20 10:40:20	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-20 10:40:20	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-20 10:40:20	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-20 10:40:20	wasamasa	[08:20:01] lol
+2021-07-20 10:40:20	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-20 10:40:20	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-20 10:40:20	linear_cannon	[08:20:30] i think
+2021-07-20 10:40:20	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-20 10:40:20	linear_cannon	[08:20:34] okay
+2021-07-20 10:40:20	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-20 10:40:20	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-20 10:40:20	linear_cannon	[08:21:01] err, the chip
+2021-07-20 10:40:20	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-20 10:40:20	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-20 10:40:20	linear_cannon	[08:21:57] yep
+2021-07-20 10:40:20	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-20 10:40:20	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-20 10:40:20	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-20 10:40:20	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-20 10:40:20	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-20 10:40:20	linear_cannon	[08:24:08] or when starting up
+2021-07-20 10:40:20	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-20 10:40:20	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-20 10:40:20	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-20 10:40:20	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-20 10:40:20	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-20 10:40:20	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-20 10:40:20	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-20 10:40:20	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-20 10:40:20	rqsd	[08:28:43] build your own :^)
+2021-07-20 10:40:20	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-20 10:40:20	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-20 10:40:20	 *	onelegend [15:01:21] starts encrypting his ebook collection
+2021-07-20 10:40:20	int-e	[15:02:21] . o O ( War_and_Peace.epub.gpg )
+2021-07-20 10:40:20	katp32	[07:22:23] heyo, I don't know if this is a good place to ask, but I've got some trouble with libsodium I was wondering if I could get some help with; I'm probably just missing something obvious but I've hit a bit of a mental block
+2021-07-20 10:40:20	riv	[07:22:45] yes 
+2021-07-20 10:40:20	katp32	[07:24:54] awesome; I'm trying to decrypt a sealed box using crypto_box_seal_open, but it always gives a nonzero return value, and I can't for the life of me figure out why; as far as I can tell everything is correct. here's (some of) the source if it's any help: https://leagueh.xyz/l/katherine.peeters/junk/crypto.c
+2021-07-20 10:40:20	katp32	[07:25:17] is there like some sort of error codes that can give me information about *why* it's failing?
+2021-07-20 10:40:20	riv	[07:26:50] apparently not!
+2021-07-20 10:40:20	riv	[07:26:53] 'Most functions do not return specific error codes when they fail.
+2021-07-20 10:40:20	riv	[07:26:53] History has shown that using different error codes for cryptographic operations can help attackers conduct devastating attacks.'
+2021-07-20 10:40:20	katp32	[07:27:07] ah, that's unfortunate :(
+2021-07-20 10:40:20	riv	[07:27:54] 	crypto_box_seal(sealed, clear, BOTTLE_SIZE, pk);
+2021-07-20 10:40:20	riv	[07:28:10] int status = crypto_box_seal_open(clear,sealed,SEALED_BOTTLE_SIZE,
+2021-07-20 10:40:20	riv	[07:28:15] aren these supposed to be different sizes?
+2021-07-20 10:40:20	riv	[07:28:50] ah it gets bigger when you seal it, doesn't it
+2021-07-20 10:40:20	katp32	[07:29:21] yeah, `#define SEALED_BOTTLE_SIZE BOTTLE_SIZE + crypto_box_SEALBYTES`
+2021-07-20 10:40:20	riv	[07:30:00] btw this is unrelated to your question but it seems like you are kind of doing a MAC then encrypt type thing
+2021-07-20 10:40:20	katp32	[07:30:15] MAC?
+2021-07-20 10:40:20	riv	[07:30:29] so actualy in your case sign then encrypt
+2021-07-20 10:40:20	riv	[07:30:44] but mac-then-encrypt vs encrypt-then-mac is the keyword to search about this
+2021-07-20 10:40:20	riv	[07:32:04] https://libsodium.gitbook.io/doc/quickstart#do-i-need-to-add-a-signature-to-encrypted-messages-to-detect-if-they-have-been-tampered-with suggests that you may not need to do this
+2021-07-20 10:40:20	riv	[07:33:30] I think the error must not be in that piece of code
+2021-07-20 10:40:20	katp32	[07:36:12] yeah, I'm admittedly a bit confused; I did read that FAQ, so I'm not so much worried about integrity, it's just that I want a way for the recipient to verify who sent it, without allowing the sender's public key to be read without decrypting the box. sealed boxes use ephemeral keys so they don't do that on their own, maybe that means sealed boxes aren't the best way to go here?
+2021-07-20 10:40:20	katp32	[07:39:49] my understanding is that the regular boxes require the recipient to have the sender's public key ahead of time in order to compute the shared key, or to pass the sender's public key in the clear, neither of which I really want to to if it can be avoided 
+2021-07-20 10:40:20	riv	[07:40:07] if alice and bob are communicating via public/private keys, and alice recieves a valid encrypted message, she knows it was encrypted by either alice or bobs key
+2021-07-20 10:40:20	riv	[07:41:56] so it is valid to add signing, to ensure it really was bob - and alice is not being (re)sent an old message alice encrypted
+2021-07-20 10:40:20	katp32	[07:43:18] yeah, that makes sense, but alice requires bob's public key in order to compute the shared key used to encrypt/decrypt messages, no?
+2021-07-20 10:40:20	riv	[07:43:36] yes
+2021-07-20 10:40:20	katp32	[07:44:50] yeah, that's the problem, I'm working under the assumption that the recipient does not have the sender's public key (but I still want to sign the message just in case they do have the sender's public key and want to verify it)
+2021-07-20 10:40:20	riv	[07:45:49] that doesn't make sense
+2021-07-20 10:40:20	riv	[07:47:01] oh wait it does
+2021-07-20 10:40:20	katp32	[07:47:15] and I don't want to pass the sender's public key in cleartext either; the "sealed boxes", I believe, get around this by just using an ephemeral key for the box, but then I still need a signature; ie, generating a random single use keypair and using that instead, and passing the ephemeral public key in the clear because it's single use so it doesn't matter
+2021-07-20 10:40:20	riv	[07:47:30] crypto_box_seal_open is different to the nacl one that i'm used to, sorry
+2021-07-20 10:40:20	katp32	[07:47:37] ah, no worries
+2021-07-20 10:40:20	riv	[07:49:19] why don't you show more code?
+2021-07-20 10:40:20	katp32	[07:49:22] oh, I see what you mean by encrypt-then-mac
+2021-07-20 10:40:20	riv	[07:49:44] yeah I thought I should mention it although we have determined that it's not an issue in your ode now
+2021-07-20 10:40:20	katp32	[07:49:44] ah, I can, I just have it split up into a bunch of files, and I figured uploading a tarball would be inconvenient
+2021-07-20 10:40:20	katp32	[07:50:47] here's the full code: https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 10:40:20	katp32	[07:50:59] ...and apparently some objects files as well that I didn't think to clean out first
+2021-07-20 10:40:20	riv	[07:55:27] do you have a key i can use to test it?
+2021-07-20 10:40:20	katp32	[07:55:35] ah, sure
+2021-07-20 10:40:20	katp32	[07:55:54] the key for the `hello.bottle` file I accidentally included in the tarball is: 2a0d5b2fe8b52812f4edfabba784d8fdf985b11cdf993f5d1045d63ef349f90c416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86
+2021-07-20 10:40:20	riv	[08:00:25] is that the priv key? whats the pub key?
+2021-07-20 10:40:20	riv	[08:00:37] i gotta go!
+2021-07-20 10:40:20	katp32	[08:00:55] erm, not sure what the public key is, I'll have to scroll up in my terminal a bit..
+2021-07-20 10:40:20	int-e	[08:52:14] katp32: so one problem is that you should use   crypto_sign_ed25519_sk_to_pk  to extract the public key from the secret key.
+2021-07-20 10:40:20	int-e	[08:53:01] (it's actually the second half of the secret key: 416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86 in your case)
+2021-07-20 10:40:20	int-e	[09:04:17] katp32: Actually, scratch that. box keys are different from signing keys.
+2021-07-20 10:40:20	int-e	[09:07:11] katp32: so your real mistake is using a signature key for a (sealed) crypto box.
+2021-07-20 10:40:20	gggp_	[09:08:25] why the consensus algorithm need a leader election ?
+2021-07-20 10:40:20	katp32	[09:09:16] int-e: hrm, I could've sworn that the libsodium docs said they were interchangeable, I guess I didn't read carefully enough
+2021-07-20 10:40:20	katp32	[09:10:42] indeed, should have read more carefully >.<
+2021-07-20 10:40:20	katp32	[09:10:51] thanks for catching that int-e !
+2021-07-20 10:40:20	katp32	[10:07:24] argh, I'm still having no luck even after fixing that issue :(
+2021-07-20 10:40:20	katp32	[10:08:45] updated tarball if anyone's willing to take a look... https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 10:40:20	katp32	[10:12:31] ah wait no I'm an idiot, it's a buffer issue
+2021-07-20 10:40:20	katp32	[10:14:21] ...or not? apparently that was not the issue...
+2021-07-20 10:40:20	int-e	[11:13:19] katp32: you're also passing the wrong public keys to the boxing/unboxing functions
+2021-07-20 10:40:20	katp32	[11:13:33] oh?
+2021-07-20 10:40:20	int-e	[11:16:50] katp32: and do yourself a favor and put parentheses around those #define-s
+2021-07-20 10:40:20	katp32	[11:17:11] hah, yeah, I just did that, although that's not what was causing problems
+2021-07-20 10:40:20	int-e	[11:17:49] you have *several* things causing problems, and this is in fact one of them
+2021-07-20 10:40:20	int-e	[11:18:01] SEALED_BOTTLE_SIZE - MAC_SIZE wasn't doing what you wanted
+2021-07-20 10:40:20	katp32	[11:18:29] ah, indeed
+2021-07-20 10:40:20	katp32	[11:19:29] I think I ended up changing that to `BOTTLE_SIZE + crypto_box_MACBYTES` to be more clear anyways, but yeah that would've been causing problems...
+2021-07-20 10:40:20	katp32	[11:20:15] (and I renamed MAC_SIZE to HEAD_SIZE because that was a nonsense name, but not relevant)
+2021-07-20 10:40:20	katp32	[11:22:09] still not sure what you meant about using the wrong public keys (although it wouldn't be the root of my problems anyways since for testing purposes I'm using the same key for sender and recipient)
+2021-07-20 10:40:20	ldm	[12:38:51] Hi! I'm looking for resources to compare the Security Level of Salsa20/chacha against AES; essentially to say how many rounds are equivalent to a certain AES key size. Does anyone have any pointers?
+2021-07-20 10:40:20	piou	[12:39:55] ldm: https://soatok.blog/2020/07/12/comparison-of-symmetric-encryption-methods/ maybe?
+2021-07-20 10:40:20	ldm	[12:41:20] ah that's helpful -I hadn't seen that chacha is targeted at 256-bit (so on par with aes256)
+2021-07-20 10:40:20	wasamasa	[15:01:11] lolwut: https://en.wikipedia.org/wiki/SHA-1#SHA-0
+2021-07-20 10:40:20	wasamasa	[15:01:16] why is SHA-0 even a thing
+2021-07-20 10:40:20	wasamasa	[15:01:30] openssl naturally supports it
+2021-07-20 10:40:20	wasamasa	[15:01:34] libressl doesn't
+2021-07-20 10:40:20	ericonr	[17:12:29] maybe they are afraid of being mobbed by corporate customers?
+2021-07-20 10:40:20	ericonr	[17:12:53] so removing is not an option
+2021-07-20 10:40:20	TimMc	[17:22:56] « This version is now often named SHA-0. It was withdrawn by the NSA shortly after publication and was superseded by the revised version, published in 1995 in FIPS PUB 180-1 and commonly designated SHA-1. »
+2021-07-20 10:40:20	TimMc	[17:23:59] So it's just the original version of SHA-1. Good question of why anyone would ever include it in their library.
+2021-07-20 10:40:20	rqsd	[17:24:50] It just takes one bad historical mistake and a bankrupt software vendor to tie you to a bad hash function forever
+2021-07-20 10:40:20	TimMc	[17:25:01] OpenSSL was apparently a 1998 fork of SSLeay, which itself was developed from 1995 to 1998.
+2021-07-20 10:40:20	TimMc	[17:29:23] Hrm, OK -- SHA-0 was published in 1993 and withdrawn in 1995. I guess that's enough time for someone to start using it, and for it to end up in a library.
+2021-07-20 10:40:20	TimMc	[17:29:53] Back then it wasn't called SHA-0, just SHA.
+2021-07-20 10:40:20	moose	[03:04:42] rqsd: Yes, that. Very nice to include a bunch of legacy algorithms in stuff for that purpose but perhaps generate warnings if you use them.
+2021-07-20 10:40:20	moose	[03:05:05] But a new lib? Meh, don't include bad stuff unless you're doing it to support ancient things for compat. purposes. Or you know, for examples/exercises.
+2021-07-20 10:40:20	***	Playback Complete.
+2021-07-20 10:40:29	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-20 10:40:36	--	irc: disconnected from server
+2021-07-20 10:40:41	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-20 10:40:41	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-20 10:40:41	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-20 10:40:41	--	Channel #crypto: 231 nicks (0 ops, 0 voices, 231 normals)
+2021-07-20 10:40:41	***	Buffer Playback...
+2021-07-20 10:40:41	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-20 10:40:41	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-20 10:40:41	onelegend	[23:19:45] ah that might be it!
+2021-07-20 10:40:41	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-20 10:40:41	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-20 10:40:41	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-20 10:40:41	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-20 10:40:41	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-20 10:40:41	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-20 10:40:41	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-20 10:40:41	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-20 10:40:41	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-20 10:40:41	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-20 10:40:41	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-20 10:40:41	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-20 10:40:41	 *	ericonr [00:29:18] presses X
+2021-07-20 10:40:41	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-20 10:40:41	ericonr	[00:29:46] they care about power manipulation
+2021-07-20 10:40:41	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-20 10:40:41	Peng	[00:30:12] D:
+2021-07-20 10:40:41	onelegend	[00:56:53] Penguin
+2021-07-20 10:40:41	onelegend	[00:57:03] :O
+2021-07-20 10:40:41	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-20 10:40:41	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-20 10:40:41	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-20 10:40:41	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-20 10:40:41	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-20 10:40:41	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-20 10:40:41	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-20 10:40:41	wasamasa	[08:17:13] lol
+2021-07-20 10:40:41	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-20 10:40:41	rqsd	[08:17:30] Fair
+2021-07-20 10:40:41	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-20 10:40:41	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-20 10:40:41	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-20 10:40:41	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-20 10:40:41	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-20 10:40:41	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-20 10:40:41	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-20 10:40:41	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-20 10:40:41	wasamasa	[08:20:01] lol
+2021-07-20 10:40:41	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-20 10:40:41	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-20 10:40:41	linear_cannon	[08:20:30] i think
+2021-07-20 10:40:41	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-20 10:40:41	linear_cannon	[08:20:34] okay
+2021-07-20 10:40:41	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-20 10:40:41	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-20 10:40:41	linear_cannon	[08:21:01] err, the chip
+2021-07-20 10:40:41	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-20 10:40:41	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-20 10:40:41	linear_cannon	[08:21:57] yep
+2021-07-20 10:40:41	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-20 10:40:41	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-20 10:40:41	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-20 10:40:41	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-20 10:40:41	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-20 10:40:41	linear_cannon	[08:24:08] or when starting up
+2021-07-20 10:40:41	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-20 10:40:41	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-20 10:40:41	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-20 10:40:41	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-20 10:40:41	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-20 10:40:41	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-20 10:40:41	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-20 10:40:41	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-20 10:40:41	rqsd	[08:28:43] build your own :^)
+2021-07-20 10:40:41	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-20 10:40:41	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-20 10:40:41	 *	onelegend [15:01:21] starts encrypting his ebook collection
+2021-07-20 10:40:41	int-e	[15:02:21] . o O ( War_and_Peace.epub.gpg )
+2021-07-20 10:40:41	katp32	[07:22:23] heyo, I don't know if this is a good place to ask, but I've got some trouble with libsodium I was wondering if I could get some help with; I'm probably just missing something obvious but I've hit a bit of a mental block
+2021-07-20 10:40:41	riv	[07:22:45] yes 
+2021-07-20 10:40:41	katp32	[07:24:54] awesome; I'm trying to decrypt a sealed box using crypto_box_seal_open, but it always gives a nonzero return value, and I can't for the life of me figure out why; as far as I can tell everything is correct. here's (some of) the source if it's any help: https://leagueh.xyz/l/katherine.peeters/junk/crypto.c
+2021-07-20 10:40:41	katp32	[07:25:17] is there like some sort of error codes that can give me information about *why* it's failing?
+2021-07-20 10:40:41	riv	[07:26:50] apparently not!
+2021-07-20 10:40:41	riv	[07:26:53] 'Most functions do not return specific error codes when they fail.
+2021-07-20 10:40:41	riv	[07:26:53] History has shown that using different error codes for cryptographic operations can help attackers conduct devastating attacks.'
+2021-07-20 10:40:41	katp32	[07:27:07] ah, that's unfortunate :(
+2021-07-20 10:40:41	riv	[07:27:54] 	crypto_box_seal(sealed, clear, BOTTLE_SIZE, pk);
+2021-07-20 10:40:41	riv	[07:28:10] int status = crypto_box_seal_open(clear,sealed,SEALED_BOTTLE_SIZE,
+2021-07-20 10:40:41	riv	[07:28:15] aren these supposed to be different sizes?
+2021-07-20 10:40:41	riv	[07:28:50] ah it gets bigger when you seal it, doesn't it
+2021-07-20 10:40:41	katp32	[07:29:21] yeah, `#define SEALED_BOTTLE_SIZE BOTTLE_SIZE + crypto_box_SEALBYTES`
+2021-07-20 10:40:41	riv	[07:30:00] btw this is unrelated to your question but it seems like you are kind of doing a MAC then encrypt type thing
+2021-07-20 10:40:41	katp32	[07:30:15] MAC?
+2021-07-20 10:40:41	riv	[07:30:29] so actualy in your case sign then encrypt
+2021-07-20 10:40:41	riv	[07:30:44] but mac-then-encrypt vs encrypt-then-mac is the keyword to search about this
+2021-07-20 10:40:41	riv	[07:32:04] https://libsodium.gitbook.io/doc/quickstart#do-i-need-to-add-a-signature-to-encrypted-messages-to-detect-if-they-have-been-tampered-with suggests that you may not need to do this
+2021-07-20 10:40:41	riv	[07:33:30] I think the error must not be in that piece of code
+2021-07-20 10:40:41	katp32	[07:36:12] yeah, I'm admittedly a bit confused; I did read that FAQ, so I'm not so much worried about integrity, it's just that I want a way for the recipient to verify who sent it, without allowing the sender's public key to be read without decrypting the box. sealed boxes use ephemeral keys so they don't do that on their own, maybe that means sealed boxes aren't the best way to go here?
+2021-07-20 10:40:41	katp32	[07:39:49] my understanding is that the regular boxes require the recipient to have the sender's public key ahead of time in order to compute the shared key, or to pass the sender's public key in the clear, neither of which I really want to to if it can be avoided 
+2021-07-20 10:40:41	riv	[07:40:07] if alice and bob are communicating via public/private keys, and alice recieves a valid encrypted message, she knows it was encrypted by either alice or bobs key
+2021-07-20 10:40:41	riv	[07:41:56] so it is valid to add signing, to ensure it really was bob - and alice is not being (re)sent an old message alice encrypted
+2021-07-20 10:40:41	katp32	[07:43:18] yeah, that makes sense, but alice requires bob's public key in order to compute the shared key used to encrypt/decrypt messages, no?
+2021-07-20 10:40:41	riv	[07:43:36] yes
+2021-07-20 10:40:41	katp32	[07:44:50] yeah, that's the problem, I'm working under the assumption that the recipient does not have the sender's public key (but I still want to sign the message just in case they do have the sender's public key and want to verify it)
+2021-07-20 10:40:41	riv	[07:45:49] that doesn't make sense
+2021-07-20 10:40:41	riv	[07:47:01] oh wait it does
+2021-07-20 10:40:41	katp32	[07:47:15] and I don't want to pass the sender's public key in cleartext either; the "sealed boxes", I believe, get around this by just using an ephemeral key for the box, but then I still need a signature; ie, generating a random single use keypair and using that instead, and passing the ephemeral public key in the clear because it's single use so it doesn't matter
+2021-07-20 10:40:41	riv	[07:47:30] crypto_box_seal_open is different to the nacl one that i'm used to, sorry
+2021-07-20 10:40:41	katp32	[07:47:37] ah, no worries
+2021-07-20 10:40:41	riv	[07:49:19] why don't you show more code?
+2021-07-20 10:40:41	katp32	[07:49:22] oh, I see what you mean by encrypt-then-mac
+2021-07-20 10:40:41	riv	[07:49:44] yeah I thought I should mention it although we have determined that it's not an issue in your ode now
+2021-07-20 10:40:41	katp32	[07:49:44] ah, I can, I just have it split up into a bunch of files, and I figured uploading a tarball would be inconvenient
+2021-07-20 10:40:41	katp32	[07:50:47] here's the full code: https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 10:40:42	katp32	[07:50:59] ...and apparently some objects files as well that I didn't think to clean out first
+2021-07-20 10:40:42	riv	[07:55:27] do you have a key i can use to test it?
+2021-07-20 10:40:42	katp32	[07:55:35] ah, sure
+2021-07-20 10:40:42	katp32	[07:55:54] the key for the `hello.bottle` file I accidentally included in the tarball is: 2a0d5b2fe8b52812f4edfabba784d8fdf985b11cdf993f5d1045d63ef349f90c416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86
+2021-07-20 10:40:42	riv	[08:00:25] is that the priv key? whats the pub key?
+2021-07-20 10:40:42	riv	[08:00:37] i gotta go!
+2021-07-20 10:40:42	katp32	[08:00:55] erm, not sure what the public key is, I'll have to scroll up in my terminal a bit..
+2021-07-20 10:40:42	int-e	[08:52:14] katp32: so one problem is that you should use   crypto_sign_ed25519_sk_to_pk  to extract the public key from the secret key.
+2021-07-20 10:40:42	int-e	[08:53:01] (it's actually the second half of the secret key: 416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86 in your case)
+2021-07-20 10:40:42	int-e	[09:04:17] katp32: Actually, scratch that. box keys are different from signing keys.
+2021-07-20 10:40:42	int-e	[09:07:11] katp32: so your real mistake is using a signature key for a (sealed) crypto box.
+2021-07-20 10:40:42	gggp_	[09:08:25] why the consensus algorithm need a leader election ?
+2021-07-20 10:40:42	katp32	[09:09:16] int-e: hrm, I could've sworn that the libsodium docs said they were interchangeable, I guess I didn't read carefully enough
+2021-07-20 10:40:42	katp32	[09:10:42] indeed, should have read more carefully >.<
+2021-07-20 10:40:42	katp32	[09:10:51] thanks for catching that int-e !
+2021-07-20 10:40:42	katp32	[10:07:24] argh, I'm still having no luck even after fixing that issue :(
+2021-07-20 10:40:42	katp32	[10:08:45] updated tarball if anyone's willing to take a look... https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 10:40:42	katp32	[10:12:31] ah wait no I'm an idiot, it's a buffer issue
+2021-07-20 10:40:42	katp32	[10:14:21] ...or not? apparently that was not the issue...
+2021-07-20 10:40:42	int-e	[11:13:19] katp32: you're also passing the wrong public keys to the boxing/unboxing functions
+2021-07-20 10:40:42	katp32	[11:13:33] oh?
+2021-07-20 10:40:42	int-e	[11:16:50] katp32: and do yourself a favor and put parentheses around those #define-s
+2021-07-20 10:40:42	katp32	[11:17:11] hah, yeah, I just did that, although that's not what was causing problems
+2021-07-20 10:40:42	int-e	[11:17:49] you have *several* things causing problems, and this is in fact one of them
+2021-07-20 10:40:42	int-e	[11:18:01] SEALED_BOTTLE_SIZE - MAC_SIZE wasn't doing what you wanted
+2021-07-20 10:40:42	katp32	[11:18:29] ah, indeed
+2021-07-20 10:40:42	katp32	[11:19:29] I think I ended up changing that to `BOTTLE_SIZE + crypto_box_MACBYTES` to be more clear anyways, but yeah that would've been causing problems...
+2021-07-20 10:40:42	katp32	[11:20:15] (and I renamed MAC_SIZE to HEAD_SIZE because that was a nonsense name, but not relevant)
+2021-07-20 10:40:42	katp32	[11:22:09] still not sure what you meant about using the wrong public keys (although it wouldn't be the root of my problems anyways since for testing purposes I'm using the same key for sender and recipient)
+2021-07-20 10:40:42	ldm	[12:38:51] Hi! I'm looking for resources to compare the Security Level of Salsa20/chacha against AES; essentially to say how many rounds are equivalent to a certain AES key size. Does anyone have any pointers?
+2021-07-20 10:40:42	piou	[12:39:55] ldm: https://soatok.blog/2020/07/12/comparison-of-symmetric-encryption-methods/ maybe?
+2021-07-20 10:40:42	ldm	[12:41:20] ah that's helpful -I hadn't seen that chacha is targeted at 256-bit (so on par with aes256)
+2021-07-20 10:40:42	wasamasa	[15:01:11] lolwut: https://en.wikipedia.org/wiki/SHA-1#SHA-0
+2021-07-20 10:40:42	wasamasa	[15:01:16] why is SHA-0 even a thing
+2021-07-20 10:40:42	wasamasa	[15:01:30] openssl naturally supports it
+2021-07-20 10:40:42	wasamasa	[15:01:34] libressl doesn't
+2021-07-20 10:40:42	ericonr	[17:12:29] maybe they are afraid of being mobbed by corporate customers?
+2021-07-20 10:40:42	ericonr	[17:12:53] so removing is not an option
+2021-07-20 10:40:42	TimMc	[17:22:56] « This version is now often named SHA-0. It was withdrawn by the NSA shortly after publication and was superseded by the revised version, published in 1995 in FIPS PUB 180-1 and commonly designated SHA-1. »
+2021-07-20 10:40:42	TimMc	[17:23:59] So it's just the original version of SHA-1. Good question of why anyone would ever include it in their library.
+2021-07-20 10:40:42	rqsd	[17:24:50] It just takes one bad historical mistake and a bankrupt software vendor to tie you to a bad hash function forever
+2021-07-20 10:40:42	TimMc	[17:25:01] OpenSSL was apparently a 1998 fork of SSLeay, which itself was developed from 1995 to 1998.
+2021-07-20 10:40:42	TimMc	[17:29:23] Hrm, OK -- SHA-0 was published in 1993 and withdrawn in 1995. I guess that's enough time for someone to start using it, and for it to end up in a library.
+2021-07-20 10:40:42	TimMc	[17:29:53] Back then it wasn't called SHA-0, just SHA.
+2021-07-20 10:40:42	moose	[03:04:42] rqsd: Yes, that. Very nice to include a bunch of legacy algorithms in stuff for that purpose but perhaps generate warnings if you use them.
+2021-07-20 10:40:42	moose	[03:05:05] But a new lib? Meh, don't include bad stuff unless you're doing it to support ancient things for compat. purposes. Or you know, for examples/exercises.
+2021-07-20 10:40:42	***	Playback Complete.
+2021-07-20 10:40:47	--	irc: disconnected from server
+2021-07-20 11:28:46	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-20 11:28:46	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-20 11:28:46	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-20 11:28:46	--	Channel #crypto: 231 nicks (0 ops, 0 voices, 231 normals)
+2021-07-20 11:28:46	***	Buffer Playback...
+2021-07-20 11:28:46	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-20 11:28:46	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-20 11:28:46	onelegend	[23:19:45] ah that might be it!
+2021-07-20 11:28:46	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-20 11:28:46	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-20 11:28:46	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-20 11:28:46	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-20 11:28:46	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-20 11:28:46	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-20 11:28:46	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-20 11:28:46	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-20 11:28:46	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-20 11:28:46	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-20 11:28:46	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-20 11:28:46	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-20 11:28:46	 *	ericonr [00:29:18] presses X
+2021-07-20 11:28:46	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-20 11:28:46	ericonr	[00:29:46] they care about power manipulation
+2021-07-20 11:28:46	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-20 11:28:46	Peng	[00:30:12] D:
+2021-07-20 11:28:46	onelegend	[00:56:53] Penguin
+2021-07-20 11:28:46	onelegend	[00:57:03] :O
+2021-07-20 11:28:46	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-20 11:28:46	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-20 11:28:46	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-20 11:28:46	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-20 11:28:46	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-20 11:28:46	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-20 11:28:46	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-20 11:28:46	wasamasa	[08:17:13] lol
+2021-07-20 11:28:46	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-20 11:28:46	rqsd	[08:17:30] Fair
+2021-07-20 11:28:46	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-20 11:28:46	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-20 11:28:46	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-20 11:28:46	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-20 11:28:46	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-20 11:28:46	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-20 11:28:46	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-20 11:28:46	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-20 11:28:46	wasamasa	[08:20:01] lol
+2021-07-20 11:28:46	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-20 11:28:46	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-20 11:28:46	linear_cannon	[08:20:30] i think
+2021-07-20 11:28:46	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-20 11:28:46	linear_cannon	[08:20:34] okay
+2021-07-20 11:28:46	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-20 11:28:46	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-20 11:28:46	linear_cannon	[08:21:01] err, the chip
+2021-07-20 11:28:46	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-20 11:28:46	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-20 11:28:46	linear_cannon	[08:21:57] yep
+2021-07-20 11:28:46	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-20 11:28:46	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-20 11:28:46	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-20 11:28:46	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-20 11:28:46	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-20 11:28:46	linear_cannon	[08:24:08] or when starting up
+2021-07-20 11:28:46	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-20 11:28:46	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-20 11:28:46	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-20 11:28:46	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-20 11:28:46	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-20 11:28:46	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-20 11:28:46	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-20 11:28:46	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-20 11:28:46	rqsd	[08:28:43] build your own :^)
+2021-07-20 11:28:46	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-20 11:28:46	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-20 11:28:46	 *	onelegend [15:01:21] starts encrypting his ebook collection
+2021-07-20 11:28:46	int-e	[15:02:21] . o O ( War_and_Peace.epub.gpg )
+2021-07-20 11:28:46	katp32	[07:22:23] heyo, I don't know if this is a good place to ask, but I've got some trouble with libsodium I was wondering if I could get some help with; I'm probably just missing something obvious but I've hit a bit of a mental block
+2021-07-20 11:28:46	riv	[07:22:45] yes 
+2021-07-20 11:28:46	katp32	[07:24:54] awesome; I'm trying to decrypt a sealed box using crypto_box_seal_open, but it always gives a nonzero return value, and I can't for the life of me figure out why; as far as I can tell everything is correct. here's (some of) the source if it's any help: https://leagueh.xyz/l/katherine.peeters/junk/crypto.c
+2021-07-20 11:28:46	katp32	[07:25:17] is there like some sort of error codes that can give me information about *why* it's failing?
+2021-07-20 11:28:46	riv	[07:26:50] apparently not!
+2021-07-20 11:28:46	riv	[07:26:53] 'Most functions do not return specific error codes when they fail.
+2021-07-20 11:28:46	riv	[07:26:53] History has shown that using different error codes for cryptographic operations can help attackers conduct devastating attacks.'
+2021-07-20 11:28:46	katp32	[07:27:07] ah, that's unfortunate :(
+2021-07-20 11:28:46	riv	[07:27:54] 	crypto_box_seal(sealed, clear, BOTTLE_SIZE, pk);
+2021-07-20 11:28:46	riv	[07:28:10] int status = crypto_box_seal_open(clear,sealed,SEALED_BOTTLE_SIZE,
+2021-07-20 11:28:46	riv	[07:28:15] aren these supposed to be different sizes?
+2021-07-20 11:28:46	riv	[07:28:50] ah it gets bigger when you seal it, doesn't it
+2021-07-20 11:28:46	katp32	[07:29:21] yeah, `#define SEALED_BOTTLE_SIZE BOTTLE_SIZE + crypto_box_SEALBYTES`
+2021-07-20 11:28:46	riv	[07:30:00] btw this is unrelated to your question but it seems like you are kind of doing a MAC then encrypt type thing
+2021-07-20 11:28:46	katp32	[07:30:15] MAC?
+2021-07-20 11:28:46	riv	[07:30:29] so actualy in your case sign then encrypt
+2021-07-20 11:28:46	riv	[07:30:44] but mac-then-encrypt vs encrypt-then-mac is the keyword to search about this
+2021-07-20 11:28:46	riv	[07:32:04] https://libsodium.gitbook.io/doc/quickstart#do-i-need-to-add-a-signature-to-encrypted-messages-to-detect-if-they-have-been-tampered-with suggests that you may not need to do this
+2021-07-20 11:28:46	riv	[07:33:30] I think the error must not be in that piece of code
+2021-07-20 11:28:46	katp32	[07:36:12] yeah, I'm admittedly a bit confused; I did read that FAQ, so I'm not so much worried about integrity, it's just that I want a way for the recipient to verify who sent it, without allowing the sender's public key to be read without decrypting the box. sealed boxes use ephemeral keys so they don't do that on their own, maybe that means sealed boxes aren't the best way to go here?
+2021-07-20 11:28:46	katp32	[07:39:49] my understanding is that the regular boxes require the recipient to have the sender's public key ahead of time in order to compute the shared key, or to pass the sender's public key in the clear, neither of which I really want to to if it can be avoided 
+2021-07-20 11:28:46	riv	[07:40:07] if alice and bob are communicating via public/private keys, and alice recieves a valid encrypted message, she knows it was encrypted by either alice or bobs key
+2021-07-20 11:28:46	riv	[07:41:56] so it is valid to add signing, to ensure it really was bob - and alice is not being (re)sent an old message alice encrypted
+2021-07-20 11:28:46	katp32	[07:43:18] yeah, that makes sense, but alice requires bob's public key in order to compute the shared key used to encrypt/decrypt messages, no?
+2021-07-20 11:28:46	riv	[07:43:36] yes
+2021-07-20 11:28:46	katp32	[07:44:50] yeah, that's the problem, I'm working under the assumption that the recipient does not have the sender's public key (but I still want to sign the message just in case they do have the sender's public key and want to verify it)
+2021-07-20 11:28:46	riv	[07:45:49] that doesn't make sense
+2021-07-20 11:28:46	riv	[07:47:01] oh wait it does
+2021-07-20 11:28:46	katp32	[07:47:15] and I don't want to pass the sender's public key in cleartext either; the "sealed boxes", I believe, get around this by just using an ephemeral key for the box, but then I still need a signature; ie, generating a random single use keypair and using that instead, and passing the ephemeral public key in the clear because it's single use so it doesn't matter
+2021-07-20 11:28:46	riv	[07:47:30] crypto_box_seal_open is different to the nacl one that i'm used to, sorry
+2021-07-20 11:28:46	katp32	[07:47:37] ah, no worries
+2021-07-20 11:28:46	riv	[07:49:19] why don't you show more code?
+2021-07-20 11:28:46	katp32	[07:49:22] oh, I see what you mean by encrypt-then-mac
+2021-07-20 11:28:46	riv	[07:49:44] yeah I thought I should mention it although we have determined that it's not an issue in your ode now
+2021-07-20 11:28:46	katp32	[07:49:44] ah, I can, I just have it split up into a bunch of files, and I figured uploading a tarball would be inconvenient
+2021-07-20 11:28:46	katp32	[07:50:47] here's the full code: https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 11:28:46	katp32	[07:50:59] ...and apparently some objects files as well that I didn't think to clean out first
+2021-07-20 11:28:46	riv	[07:55:27] do you have a key i can use to test it?
+2021-07-20 11:28:46	katp32	[07:55:35] ah, sure
+2021-07-20 11:28:46	katp32	[07:55:54] the key for the `hello.bottle` file I accidentally included in the tarball is: 2a0d5b2fe8b52812f4edfabba784d8fdf985b11cdf993f5d1045d63ef349f90c416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86
+2021-07-20 11:28:46	riv	[08:00:25] is that the priv key? whats the pub key?
+2021-07-20 11:28:46	riv	[08:00:37] i gotta go!
+2021-07-20 11:28:46	katp32	[08:00:55] erm, not sure what the public key is, I'll have to scroll up in my terminal a bit..
+2021-07-20 11:28:46	int-e	[08:52:14] katp32: so one problem is that you should use   crypto_sign_ed25519_sk_to_pk  to extract the public key from the secret key.
+2021-07-20 11:28:46	int-e	[08:53:01] (it's actually the second half of the secret key: 416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86 in your case)
+2021-07-20 11:28:46	int-e	[09:04:17] katp32: Actually, scratch that. box keys are different from signing keys.
+2021-07-20 11:28:46	int-e	[09:07:11] katp32: so your real mistake is using a signature key for a (sealed) crypto box.
+2021-07-20 11:28:46	gggp_	[09:08:25] why the consensus algorithm need a leader election ?
+2021-07-20 11:28:46	katp32	[09:09:16] int-e: hrm, I could've sworn that the libsodium docs said they were interchangeable, I guess I didn't read carefully enough
+2021-07-20 11:28:46	katp32	[09:10:42] indeed, should have read more carefully >.<
+2021-07-20 11:28:46	katp32	[09:10:51] thanks for catching that int-e !
+2021-07-20 11:28:46	katp32	[10:07:24] argh, I'm still having no luck even after fixing that issue :(
+2021-07-20 11:28:46	katp32	[10:08:45] updated tarball if anyone's willing to take a look... https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 11:28:46	katp32	[10:12:31] ah wait no I'm an idiot, it's a buffer issue
+2021-07-20 11:28:46	katp32	[10:14:21] ...or not? apparently that was not the issue...
+2021-07-20 11:28:46	int-e	[11:13:19] katp32: you're also passing the wrong public keys to the boxing/unboxing functions
+2021-07-20 11:28:46	katp32	[11:13:33] oh?
+2021-07-20 11:28:46	int-e	[11:16:50] katp32: and do yourself a favor and put parentheses around those #define-s
+2021-07-20 11:28:46	katp32	[11:17:11] hah, yeah, I just did that, although that's not what was causing problems
+2021-07-20 11:28:46	int-e	[11:17:49] you have *several* things causing problems, and this is in fact one of them
+2021-07-20 11:28:46	int-e	[11:18:01] SEALED_BOTTLE_SIZE - MAC_SIZE wasn't doing what you wanted
+2021-07-20 11:28:46	katp32	[11:18:29] ah, indeed
+2021-07-20 11:28:46	katp32	[11:19:29] I think I ended up changing that to `BOTTLE_SIZE + crypto_box_MACBYTES` to be more clear anyways, but yeah that would've been causing problems...
+2021-07-20 11:28:46	katp32	[11:20:15] (and I renamed MAC_SIZE to HEAD_SIZE because that was a nonsense name, but not relevant)
+2021-07-20 11:28:46	katp32	[11:22:09] still not sure what you meant about using the wrong public keys (although it wouldn't be the root of my problems anyways since for testing purposes I'm using the same key for sender and recipient)
+2021-07-20 11:28:46	ldm	[12:38:51] Hi! I'm looking for resources to compare the Security Level of Salsa20/chacha against AES; essentially to say how many rounds are equivalent to a certain AES key size. Does anyone have any pointers?
+2021-07-20 11:28:46	piou	[12:39:55] ldm: https://soatok.blog/2020/07/12/comparison-of-symmetric-encryption-methods/ maybe?
+2021-07-20 11:28:46	ldm	[12:41:20] ah that's helpful -I hadn't seen that chacha is targeted at 256-bit (so on par with aes256)
+2021-07-20 11:28:46	wasamasa	[15:01:11] lolwut: https://en.wikipedia.org/wiki/SHA-1#SHA-0
+2021-07-20 11:28:46	wasamasa	[15:01:16] why is SHA-0 even a thing
+2021-07-20 11:28:46	wasamasa	[15:01:30] openssl naturally supports it
+2021-07-20 11:28:46	wasamasa	[15:01:34] libressl doesn't
+2021-07-20 11:28:46	ericonr	[17:12:29] maybe they are afraid of being mobbed by corporate customers?
+2021-07-20 11:28:46	ericonr	[17:12:53] so removing is not an option
+2021-07-20 11:28:46	TimMc	[17:22:56] « This version is now often named SHA-0. It was withdrawn by the NSA shortly after publication and was superseded by the revised version, published in 1995 in FIPS PUB 180-1 and commonly designated SHA-1. »
+2021-07-20 11:28:46	TimMc	[17:23:59] So it's just the original version of SHA-1. Good question of why anyone would ever include it in their library.
+2021-07-20 11:28:46	rqsd	[17:24:50] It just takes one bad historical mistake and a bankrupt software vendor to tie you to a bad hash function forever
+2021-07-20 11:28:46	TimMc	[17:25:01] OpenSSL was apparently a 1998 fork of SSLeay, which itself was developed from 1995 to 1998.
+2021-07-20 11:28:46	TimMc	[17:29:23] Hrm, OK -- SHA-0 was published in 1993 and withdrawn in 1995. I guess that's enough time for someone to start using it, and for it to end up in a library.
+2021-07-20 11:28:46	TimMc	[17:29:53] Back then it wasn't called SHA-0, just SHA.
+2021-07-20 11:28:46	moose	[03:04:42] rqsd: Yes, that. Very nice to include a bunch of legacy algorithms in stuff for that purpose but perhaps generate warnings if you use them.
+2021-07-20 11:28:46	moose	[03:05:05] But a new lib? Meh, don't include bad stuff unless you're doing it to support ancient things for compat. purposes. Or you know, for examples/exercises.
+2021-07-20 11:28:46	***	Playback Complete.
+2021-07-20 11:28:46	<--	gggp_ (~gggp@123.118.15.132) has quit (Remote host closed the connection)
+2021-07-20 11:28:56	--	irc: disconnected from server
+2021-07-20 11:29:00	-->	amanr (~therojjha@20.204.87.0) has joined #crypto
+2021-07-20 11:29:00	--	Topic for #crypto is "Cryptography theory and practice, not cryptocurrency (try ##altcoins) | Resources: https://gist.github.com/atoponce/ef0c369546abb4b2936f8725b95909f6"
+2021-07-20 11:29:00	--	Topic set by MacGyver on Mon, 05 Jul 2021 01:43:37
+2021-07-20 11:29:00	--	Channel #crypto: 230 nicks (0 ops, 0 voices, 230 normals)
+2021-07-20 11:29:00	***	Buffer Playback...
+2021-07-20 11:29:00	onelegend	[20:44:07] AES-NI mitigates the power analysis side channel attack because it uses less power right?
+2021-07-20 11:29:00	ericonr	[20:53:19] does it mitigate power analysis? I have only seen the claim it mitigates timing 
+2021-07-20 11:29:00	onelegend	[23:19:45] ah that might be it!
+2021-07-20 11:29:00	menace	[00:03:22] i thought it should just increase the performance of aes-based encryption
+2021-07-20 11:29:00	ioxzev1z	[00:05:10] Isn't AES-NI such that timing side channel attacks don't work because it always takes a constant time?
+2021-07-20 11:29:00	danieldg	[00:07:16] yes, that's something that is easy to do in hardware and hard to do in software
+2021-07-20 11:29:00	ericonr	[00:07:39] for a certain definition of easy :)
+2021-07-20 11:29:00	danieldg	[00:08:12] ... as easy as it is to do any complicated logic in hardware, really
+2021-07-20 11:29:00	ericonr	[00:08:32] yeah, I suppose the property of being resistant to timing side channel attacks comes naturally
+2021-07-20 11:29:00	ericonr	[00:08:46] so that part specifically is easy, the rest is implementing AES itself
+2021-07-20 11:29:00	Peng	[00:16:06] Do AES-NI implementations try to mitigate power analysis?
+2021-07-20 11:29:00	danieldg	[00:20:13] you'd have to ask the people who made them.  It might be part of whatever FIPS evaluation they did, for example.
+2021-07-20 11:29:00	Peng	[00:22:04] I imagine Intel has a thousand-page PDF mentioning it, but I was hoping someone else knew :D
+2021-07-20 11:29:00	ioxzev1z	[00:28:02] Assuming that Intel knows what they're doing, AES-NI probably has many side channel mitigations
+2021-07-20 11:29:00	ioxzev1z	[00:29:14] I doubt they just implement AES as-is and say "hurr here you go"
+2021-07-20 11:29:00	 *	ericonr [00:29:18] presses X
+2021-07-20 11:29:00	Peng	[00:29:25] I dunno if Intel cares about power analysis, though
+2021-07-20 11:29:00	ericonr	[00:29:46] they care about power manipulation
+2021-07-20 11:29:00	ericonr	[00:30:05] that something Volt vuln a while back lead them to disabling undervolting for my BIOS :/
+2021-07-20 11:29:00	Peng	[00:30:12] D:
+2021-07-20 11:29:00	onelegend	[00:56:53] Penguin
+2021-07-20 11:29:00	onelegend	[00:57:03] :O
+2021-07-20 11:29:00	linear_cannon	[08:08:23] hi. so, i am not a cryptography expert, but i have a little knowledge and am also currently fixing a broken driver for a cryptographic algorithm accelerator, and was wondering something 
+2021-07-20 11:29:00	linear_cannon	[08:09:40] my understanding is that in AES, the GCM and CCM modes are both built around CTR mode and perform further operations on them. so if i have a primitive in this accelerator that does CTR-mode, can that be used to implement CCM/GCM?
+2021-07-20 11:29:00	wasamasa	[08:13:45] it's more like they reuse the idea of having a counter
+2021-07-20 11:29:00	wasamasa	[08:14:35] you can see that in pycryptodome with their counter class
+2021-07-20 11:29:00	linear_cannon	[08:15:30] hmm, okay. i'm going to guess that means it's unlikely to be a "yes" then
+2021-07-20 11:29:00	linear_cannon	[08:16:31] though i'm definitely going to look into it more and specifically into what this card does
+2021-07-20 11:29:00	rqsd	[08:16:57] That card had better be real fast if it wants to outperform native AES-NI
+2021-07-20 11:29:00	wasamasa	[08:17:13] lol
+2021-07-20 11:29:00	linear_cannon	[08:17:23] oh it doesn't. but it outperforms a 486 doing it in software, and guess what machine it's in
+2021-07-20 11:29:00	rqsd	[08:17:30] Fair
+2021-07-20 11:29:00	rqsd	[08:17:44] I'm not going to ask what brings a 486 into this equation because that way lies madness
+2021-07-20 11:29:00	yawkat	[08:17:48] ctr should be usable for accelarating gcm
+2021-07-20 11:29:00	linear_cannon	[08:18:11] i use a lot of old computers. very specifically in this case, i'm running a matrix server on the 486
+2021-07-20 11:29:00	linear_cannon	[08:18:27] conduit, to be more specific. not synapse, that would be laughable
+2021-07-20 11:29:00	linear_cannon	[08:18:55] it's almost usable, but tls bogs it down. as well as my other old computers.
+2021-07-20 11:29:00	rqsd	[08:18:56] Also as far as I know, standard CTR is a building block of both GCM and CCM
+2021-07-20 11:29:00	rqsd	[08:19:03] So you can definitely use it for both
+2021-07-20 11:29:00	linear_cannon	[08:19:38] okay. hopefully that's true. the driver for this currently only implements CBC, which limits it to accelerating tls1.2, and i really want tls1.3 support
+2021-07-20 11:29:00	wasamasa	[08:20:01] lol
+2021-07-20 11:29:00	rqsd	[08:20:05] The block mode of operation is in the driver?
+2021-07-20 11:29:00	linear_cannon	[08:20:23] not only that, it's in the card itself
+2021-07-20 11:29:00	linear_cannon	[08:20:30] i think
+2021-07-20 11:29:00	rqsd	[08:20:30] Oh, that's what I figured
+2021-07-20 11:29:00	linear_cannon	[08:20:34] okay
+2021-07-20 11:29:00	rqsd	[08:20:46] Sounds like you have a reverse engineering problem before you have a forward engineering problem though
+2021-07-20 11:29:00	linear_cannon	[08:20:56] i have datasheets for the driver, they're public
+2021-07-20 11:29:00	linear_cannon	[08:21:01] err, the chip
+2021-07-20 11:29:00	linear_cannon	[08:21:18] https://www.maxlinear.com/Files/Documents/Extranet%20Documentation/795x/UG-0034-03_795x_Hardware_UG.pdf
+2021-07-20 11:29:00	rqsd	[08:21:51] p. 39 suggests there's an AES-CTR mode
+2021-07-20 11:29:00	linear_cannon	[08:21:57] yep
+2021-07-20 11:29:00	rqsd	[08:22:09] I'm now worried about the key exchange though
+2021-07-20 11:29:00	rqsd	[08:22:38] Being able to encrypt at reasonable speeds is nice, but the ECDH/FFDH will probably be brutal on the hardware
+2021-07-20 11:29:00	rqsd	[08:23:03] I don't know how often a TLS handshake happens
+2021-07-20 11:29:00	rqsd	[08:23:08] in the matrix protocol, that is
+2021-07-20 11:29:00	linear_cannon	[08:23:59] afaik, it mostly only happens when joining a new room and connecting to servers you weren't already talking to
+2021-07-20 11:29:00	linear_cannon	[08:24:08] or when starting up
+2021-07-20 11:29:00	rqsd	[08:24:18] I guess that's tolerable once in a blue moon
+2021-07-20 11:29:00	linear_cannon	[08:26:27] i also hope to just use this for client-side stuff on some of my other machines. the 7955 isn't quite faster than software on my pentium 2 box, but i'm also sourcing some 7956 chips which absolutely will be, and even without that being able to offload from the cpu and have it remain the same speed is still worth it
+2021-07-20 11:29:00	linear_cannon	[08:26:48] probably not going to be worth it in my powermac g5
+2021-07-20 11:29:00	rqsd	[08:27:00] I really hope this operation is at least cheaper in terms of electricity
+2021-07-20 11:29:00	linear_cannon	[08:27:17] i mean, my 486 only draws like... 12 watts
+2021-07-20 11:29:00	rqsd	[08:27:47] Things nobody ever said about a PDP-11/45
+2021-07-20 11:29:00	linear_cannon	[08:28:15] i have a vax too but that doesn't do much, and mostly remains off
+2021-07-20 11:29:00	linear_cannon	[08:28:30] no crypto accelerators for that one unfortunately. which sucks since it's the one that needs it most
+2021-07-20 11:29:00	rqsd	[08:28:43] build your own :^)
+2021-07-20 11:29:00	linear_cannon	[08:28:57] tbh, thinking about it
+2021-07-20 11:29:00	linear_cannon	[08:29:10] i've got some fpga dev hardware
+2021-07-20 11:29:00	 *	onelegend [15:01:21] starts encrypting his ebook collection
+2021-07-20 11:29:00	int-e	[15:02:21] . o O ( War_and_Peace.epub.gpg )
+2021-07-20 11:29:00	katp32	[07:22:23] heyo, I don't know if this is a good place to ask, but I've got some trouble with libsodium I was wondering if I could get some help with; I'm probably just missing something obvious but I've hit a bit of a mental block
+2021-07-20 11:29:00	riv	[07:22:45] yes 
+2021-07-20 11:29:00	katp32	[07:24:54] awesome; I'm trying to decrypt a sealed box using crypto_box_seal_open, but it always gives a nonzero return value, and I can't for the life of me figure out why; as far as I can tell everything is correct. here's (some of) the source if it's any help: https://leagueh.xyz/l/katherine.peeters/junk/crypto.c
+2021-07-20 11:29:00	katp32	[07:25:17] is there like some sort of error codes that can give me information about *why* it's failing?
+2021-07-20 11:29:00	riv	[07:26:50] apparently not!
+2021-07-20 11:29:00	riv	[07:26:53] 'Most functions do not return specific error codes when they fail.
+2021-07-20 11:29:00	riv	[07:26:53] History has shown that using different error codes for cryptographic operations can help attackers conduct devastating attacks.'
+2021-07-20 11:29:00	katp32	[07:27:07] ah, that's unfortunate :(
+2021-07-20 11:29:00	riv	[07:27:54] 	crypto_box_seal(sealed, clear, BOTTLE_SIZE, pk);
+2021-07-20 11:29:00	riv	[07:28:10] int status = crypto_box_seal_open(clear,sealed,SEALED_BOTTLE_SIZE,
+2021-07-20 11:29:00	riv	[07:28:15] aren these supposed to be different sizes?
+2021-07-20 11:29:00	riv	[07:28:50] ah it gets bigger when you seal it, doesn't it
+2021-07-20 11:29:00	katp32	[07:29:21] yeah, `#define SEALED_BOTTLE_SIZE BOTTLE_SIZE + crypto_box_SEALBYTES`
+2021-07-20 11:29:00	riv	[07:30:00] btw this is unrelated to your question but it seems like you are kind of doing a MAC then encrypt type thing
+2021-07-20 11:29:00	katp32	[07:30:15] MAC?
+2021-07-20 11:29:00	riv	[07:30:29] so actualy in your case sign then encrypt
+2021-07-20 11:29:00	riv	[07:30:44] but mac-then-encrypt vs encrypt-then-mac is the keyword to search about this
+2021-07-20 11:29:00	riv	[07:32:04] https://libsodium.gitbook.io/doc/quickstart#do-i-need-to-add-a-signature-to-encrypted-messages-to-detect-if-they-have-been-tampered-with suggests that you may not need to do this
+2021-07-20 11:29:00	riv	[07:33:30] I think the error must not be in that piece of code
+2021-07-20 11:29:00	katp32	[07:36:12] yeah, I'm admittedly a bit confused; I did read that FAQ, so I'm not so much worried about integrity, it's just that I want a way for the recipient to verify who sent it, without allowing the sender's public key to be read without decrypting the box. sealed boxes use ephemeral keys so they don't do that on their own, maybe that means sealed boxes aren't the best way to go here?
+2021-07-20 11:29:00	katp32	[07:39:49] my understanding is that the regular boxes require the recipient to have the sender's public key ahead of time in order to compute the shared key, or to pass the sender's public key in the clear, neither of which I really want to to if it can be avoided 
+2021-07-20 11:29:00	riv	[07:40:07] if alice and bob are communicating via public/private keys, and alice recieves a valid encrypted message, she knows it was encrypted by either alice or bobs key
+2021-07-20 11:29:00	riv	[07:41:56] so it is valid to add signing, to ensure it really was bob - and alice is not being (re)sent an old message alice encrypted
+2021-07-20 11:29:00	katp32	[07:43:18] yeah, that makes sense, but alice requires bob's public key in order to compute the shared key used to encrypt/decrypt messages, no?
+2021-07-20 11:29:00	riv	[07:43:36] yes
+2021-07-20 11:29:00	katp32	[07:44:50] yeah, that's the problem, I'm working under the assumption that the recipient does not have the sender's public key (but I still want to sign the message just in case they do have the sender's public key and want to verify it)
+2021-07-20 11:29:00	riv	[07:45:49] that doesn't make sense
+2021-07-20 11:29:00	riv	[07:47:01] oh wait it does
+2021-07-20 11:29:00	katp32	[07:47:15] and I don't want to pass the sender's public key in cleartext either; the "sealed boxes", I believe, get around this by just using an ephemeral key for the box, but then I still need a signature; ie, generating a random single use keypair and using that instead, and passing the ephemeral public key in the clear because it's single use so it doesn't matter
+2021-07-20 11:29:00	riv	[07:47:30] crypto_box_seal_open is different to the nacl one that i'm used to, sorry
+2021-07-20 11:29:00	katp32	[07:47:37] ah, no worries
+2021-07-20 11:29:00	riv	[07:49:19] why don't you show more code?
+2021-07-20 11:29:00	katp32	[07:49:22] oh, I see what you mean by encrypt-then-mac
+2021-07-20 11:29:00	riv	[07:49:44] yeah I thought I should mention it although we have determined that it's not an issue in your ode now
+2021-07-20 11:29:00	katp32	[07:49:44] ah, I can, I just have it split up into a bunch of files, and I figured uploading a tarball would be inconvenient
+2021-07-20 11:29:00	katp32	[07:50:47] here's the full code: https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 11:29:00	katp32	[07:50:59] ...and apparently some objects files as well that I didn't think to clean out first
+2021-07-20 11:29:00	riv	[07:55:27] do you have a key i can use to test it?
+2021-07-20 11:29:00	katp32	[07:55:35] ah, sure
+2021-07-20 11:29:00	katp32	[07:55:54] the key for the `hello.bottle` file I accidentally included in the tarball is: 2a0d5b2fe8b52812f4edfabba784d8fdf985b11cdf993f5d1045d63ef349f90c416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86
+2021-07-20 11:29:00	riv	[08:00:25] is that the priv key? whats the pub key?
+2021-07-20 11:29:00	riv	[08:00:37] i gotta go!
+2021-07-20 11:29:00	katp32	[08:00:55] erm, not sure what the public key is, I'll have to scroll up in my terminal a bit..
+2021-07-20 11:29:00	int-e	[08:52:14] katp32: so one problem is that you should use   crypto_sign_ed25519_sk_to_pk  to extract the public key from the secret key.
+2021-07-20 11:29:00	int-e	[08:53:01] (it's actually the second half of the secret key: 416fbf9779943762eba8bfe79d0d98ed07aa42d0f6959a9874b7ecc6983b8e86 in your case)
+2021-07-20 11:29:00	int-e	[09:04:17] katp32: Actually, scratch that. box keys are different from signing keys.
+2021-07-20 11:29:00	int-e	[09:07:11] katp32: so your real mistake is using a signature key for a (sealed) crypto box.
+2021-07-20 11:29:00	gggp_	[09:08:25] why the consensus algorithm need a leader election ?
+2021-07-20 11:29:00	katp32	[09:09:16] int-e: hrm, I could've sworn that the libsodium docs said they were interchangeable, I guess I didn't read carefully enough
+2021-07-20 11:29:00	katp32	[09:10:42] indeed, should have read more carefully >.<
+2021-07-20 11:29:00	katp32	[09:10:51] thanks for catching that int-e !
+2021-07-20 11:29:00	katp32	[10:07:24] argh, I'm still having no luck even after fixing that issue :(
+2021-07-20 11:29:00	katp32	[10:08:45] updated tarball if anyone's willing to take a look... https://leagueh.xyz/l/katherine.peeters/junk/crybotl.tar.gz
+2021-07-20 11:29:00	katp32	[10:12:31] ah wait no I'm an idiot, it's a buffer issue
+2021-07-20 11:29:00	katp32	[10:14:21] ...or not? apparently that was not the issue...
+2021-07-20 11:29:00	int-e	[11:13:19] katp32: you're also passing the wrong public keys to the boxing/unboxing functions
+2021-07-20 11:29:00	katp32	[11:13:33] oh?
+2021-07-20 11:29:00	int-e	[11:16:50] katp32: and do yourself a favor and put parentheses around those #define-s
+2021-07-20 11:29:00	katp32	[11:17:11] hah, yeah, I just did that, although that's not what was causing problems
+2021-07-20 11:29:00	int-e	[11:17:49] you have *several* things causing problems, and this is in fact one of them
+2021-07-20 11:29:00	int-e	[11:18:01] SEALED_BOTTLE_SIZE - MAC_SIZE wasn't doing what you wanted
+2021-07-20 11:29:00	katp32	[11:18:29] ah, indeed
+2021-07-20 11:29:00	katp32	[11:19:29] I think I ended up changing that to `BOTTLE_SIZE + crypto_box_MACBYTES` to be more clear anyways, but yeah that would've been causing problems...
+2021-07-20 11:29:00	katp32	[11:20:15] (and I renamed MAC_SIZE to HEAD_SIZE because that was a nonsense name, but not relevant)
+2021-07-20 11:29:00	katp32	[11:22:09] still not sure what you meant about using the wrong public keys (although it wouldn't be the root of my problems anyways since for testing purposes I'm using the same key for sender and recipient)
+2021-07-20 11:29:00	ldm	[12:38:51] Hi! I'm looking for resources to compare the Security Level of Salsa20/chacha against AES; essentially to say how many rounds are equivalent to a certain AES key size. Does anyone have any pointers?
+2021-07-20 11:29:00	piou	[12:39:55] ldm: https://soatok.blog/2020/07/12/comparison-of-symmetric-encryption-methods/ maybe?
+2021-07-20 11:29:00	ldm	[12:41:20] ah that's helpful -I hadn't seen that chacha is targeted at 256-bit (so on par with aes256)
+2021-07-20 11:29:00	wasamasa	[15:01:11] lolwut: https://en.wikipedia.org/wiki/SHA-1#SHA-0
+2021-07-20 11:29:00	wasamasa	[15:01:16] why is SHA-0 even a thing
+2021-07-20 11:29:00	wasamasa	[15:01:30] openssl naturally supports it
+2021-07-20 11:29:00	wasamasa	[15:01:34] libressl doesn't
+2021-07-20 11:29:00	ericonr	[17:12:29] maybe they are afraid of being mobbed by corporate customers?
+2021-07-20 11:29:00	ericonr	[17:12:53] so removing is not an option
+2021-07-20 11:29:00	TimMc	[17:22:56] « This version is now often named SHA-0. It was withdrawn by the NSA shortly after publication and was superseded by the revised version, published in 1995 in FIPS PUB 180-1 and commonly designated SHA-1. »
+2021-07-20 11:29:00	TimMc	[17:23:59] So it's just the original version of SHA-1. Good question of why anyone would ever include it in their library.
+2021-07-20 11:29:00	rqsd	[17:24:50] It just takes one bad historical mistake and a bankrupt software vendor to tie you to a bad hash function forever
+2021-07-20 11:29:00	TimMc	[17:25:01] OpenSSL was apparently a 1998 fork of SSLeay, which itself was developed from 1995 to 1998.
+2021-07-20 11:29:00	TimMc	[17:29:23] Hrm, OK -- SHA-0 was published in 1993 and withdrawn in 1995. I guess that's enough time for someone to start using it, and for it to end up in a library.
+2021-07-20 11:29:00	TimMc	[17:29:53] Back then it wasn't called SHA-0, just SHA.
+2021-07-20 11:29:00	moose	[03:04:42] rqsd: Yes, that. Very nice to include a bunch of legacy algorithms in stuff for that purpose but perhaps generate warnings if you use them.
+2021-07-20 11:29:00	moose	[03:05:05] But a new lib? Meh, don't include bad stuff unless you're doing it to support ancient things for compat. purposes. Or you know, for examples/exercises.
+2021-07-20 11:29:00	***	Playback Complete.
+2021-07-20 11:29:08	-->	gggp_ (~gggp@123.113.189.203) has joined #crypto
+2021-07-20 11:29:10	--	Channel created on Wed, 19 May 2021 18:03:04
+2021-07-20 11:30:39	-->	wxallowed (~d4@151.51.141.57) has joined #crypto
+2021-07-20 11:32:36	<--	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2021-07-20 11:34:31	-->	CryptoClub (~fafs@static-173-3-7-89.ipcom.comunitel.net) has joined #crypto
+2021-07-20 11:36:01	-->	RickSanchez (~RickSanch@2607:fb90:33:6bdc:81a:431e:9c41:8336) has joined #crypto
+2021-07-20 11:38:34	--	irc: disconnected from server

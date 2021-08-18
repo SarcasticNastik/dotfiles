@@ -34,10 +34,17 @@ Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug '~/.fzf'
 Plug 'tommcdo/vim-ninja-feet'
+" Plug 'dbeniamine/cheat.sh-vim'
 " Don't know how to use :(
 " Plug 'jpalardy/vim-slime', {'branch': 'main'}
 Plug 'dart-lang/dart-vim-plugin'
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 Plug 'ryanoasis/vim-devicons'   
-Plug 'whonore/Coqtail' 
+Plug 'kristijanhusak/orgmode.nvim'
+
+" Debugging in vim
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()

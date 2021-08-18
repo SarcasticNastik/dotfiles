@@ -1,0 +1,1355 @@
+2021-07-13 01:10:22	-->	aman (~sarcastic@122.161.69.57) has joined ##math
+2021-07-13 01:10:22	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-13 01:10:22	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-13 01:10:22	--	Channel ##math: 456 nicks (0 ops, 0 voices, 456 normals)
+2021-07-13 01:10:25	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-13 01:10:59	-->	revolve (~u0_a227@82-132-245-139.dab.02.net) has joined ##math
+2021-07-13 01:12:56	<--	bildramer (~bildramer@2a02:587:5475:23a7:dd70:8166:3ea6:f0f2) has quit (Ping timeout: 256 seconds)
+2021-07-13 01:13:23	<--	pavlushka (~pavlushka@user/pavlushka) has quit (Ping timeout: 255 seconds)
+2021-07-13 01:14:45	-->	argento (~argent0@168-227-97-29.ptr.westnet.com.ar) has joined ##math
+2021-07-13 01:15:43	-->	rex (~rex@2a02:8071:2280:a220:3285:a9ff:fe3a:67fa) has joined ##math
+2021-07-13 01:18:00	<--	revolve (~u0_a227@82-132-245-139.dab.02.net) has quit (Read error: Connection reset by peer)
+2021-07-13 01:20:21	-->	revolve (~u0_a227@82-132-245-139.dab.02.net) has joined ##math
+2021-07-13 01:23:14	-->	scaleww (~scaleww@77-41-20-31.ftth.glasoperator.nl) has joined ##math
+2021-07-13 01:24:22	-->	audiocat (~audio@2603-8081-1800-00ad-22ac-dc5d-4600-e5df.res6.spectrum.com) has joined ##math
+2021-07-13 01:24:44	-->	trace987 (~trace@dynamic-002-247-248-040.2.247.pool.telefonica.de) has joined ##math
+2021-07-13 01:26:27	-->	pycurious (~Adium@user/pycurious) has joined ##math
+2021-07-13 01:26:32	<--	haykam1 (~haykam@static.100.2.21.65.clients.your-server.de) has quit (Remote host closed the connection)
+2021-07-13 01:26:41	-->	Hanii (~textual@2a00:23c5:c587:6d00:4481:3282:6da6:9a8e) has joined ##math
+2021-07-13 01:26:45	-->	haykam1 (~haykam@static.100.2.21.65.clients.your-server.de) has joined ##math
+2021-07-13 01:27:09	pycurious	Given two parallel lines l_1, l_2, and a traversal t - what is the proof that the corresponding angles are equal?
+2021-07-13 01:27:24	<--	Z-module (~user@aero-astro-estates.mit.edu) has quit (Quit: ERC (IRC client for Emacs 25.2.2))
+2021-07-13 01:29:25	<--	vicfred (~vicfred@user/vicfred) has quit (Quit: Leaving)
+2021-07-13 01:29:45	int-e	pycurious: you can translate the whoe figure such that the intersection of l_1, t ends up where l_2 and t intersect
+2021-07-13 01:32:22	-->	krz3si (~krz3si@2a02:a31c:853b:b780:21ba:404b:486:4762) has joined ##math
+2021-07-13 01:33:40	-->	pegaso (~reis-r@131.72.121.184) has joined ##math
+2021-07-13 01:34:23	<--	krz3si (~krz3si@2a02:a31c:853b:b780:21ba:404b:486:4762) has quit (Client Quit)
+2021-07-13 01:34:46	-->	krz3si (~krz3si@2a02:a31c:853b:b780:21ba:404b:486:4762) has joined ##math
+2021-07-13 01:35:25	<--	krz3si (~krz3si@2a02:a31c:853b:b780:21ba:404b:486:4762) has quit (Client Quit)
+2021-07-13 01:36:04	-->	krz3si (~krz3si@2a02:a31c:853b:b780:21ba:404b:486:4762) has joined ##math
+2021-07-13 01:36:07	<--	krz3si (~krz3si@2a02:a31c:853b:b780:21ba:404b:486:4762) has quit (Client Quit)
+2021-07-13 01:36:22	-->	Guest46 (~Guest46@cpc158775-hari22-2-0-cust265.20-2.cable.virginm.net) has joined ##math
+2021-07-13 01:36:35	<--	quarterback (~quarterba@user/quarterback) has quit (Quit: Leaving)
+2021-07-13 01:37:21	<--	Guest46 (~Guest46@cpc158775-hari22-2-0-cust265.20-2.cable.virginm.net) has left ##math
+2021-07-13 01:40:07	<--	Bayes (~Bayes@ics177-97.icsincorporated.com) has quit (Quit: Connection closed)
+2021-07-13 01:42:07	buster	or Euclid's way: first consider the interior angles on the same side. they can't sum to less than 180 degrees, because then by the parallel postulate the 'parallel' lines would meet on that side. they can't sum to more than 180 degrees because then the interior angles on the other side would sum to less than 180 degrees. so they are supplementary. and then use (again!) the fact that angles that form a straight line ad
+2021-07-13 01:43:04	buster	(a corollary of proposition 29 of book 1, https://mathcs.clarku.edu/~djoyce/java/elements/bookI/propI29.html )
+2021-07-13 01:51:05	--	irc: disconnected from server
+2021-07-13 02:14:10	-->	aman (~sarcastic@122.161.69.57) has joined ##math
+2021-07-13 02:14:10	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-13 02:14:10	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-13 02:14:10	--	Channel ##math: 457 nicks (0 ops, 0 voices, 457 normals)
+2021-07-13 02:14:13	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-13 02:16:39	--	irc: disconnected from server
+2021-07-13 02:17:29	-->	amanr (~sarcastic@122.161.69.57) has joined ##math
+2021-07-13 02:17:29	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-13 02:17:29	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-13 02:17:29	--	Channel ##math: 457 nicks (0 ops, 0 voices, 457 normals)
+2021-07-13 02:17:31	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-13 02:18:01	-->	tempate80 (~tempate@user/tempate) has joined ##math
+2021-07-13 02:26:06	-->	zeenk (~zeenk@2a02:2f04:a106:9600:82fb:aed9:ca9:38d3) has joined ##math
+2021-07-13 02:26:30	--	irc: disconnected from server
+2021-07-13 16:05:29	-->	amanr (~sarcastic@122.161.68.15) has joined ##math
+2021-07-13 16:05:29	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-13 16:05:29	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-13 16:05:29	--	Channel ##math: 451 nicks (0 ops, 0 voices, 451 normals)
+2021-07-13 16:05:32	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-13 16:06:00	<--	audiocat (~audio@2603-8081-1800-00ad-9f93-c162-db16-790c.res6.spectrum.com) has quit (Ping timeout: 255 seconds)
+2021-07-13 16:08:16	buster	off the top of my head I'd say that the agreement would be the definition of the two topologies being _compatible_ or some such word
+2021-07-13 16:09:46	buster	ah yeah, the book has a whole big spiel about that
+2021-07-13 16:11:09	<--	node1 (~node1@user/node1) has quit (Quit: Leaving)
+2021-07-13 16:11:52	Fangs	buster: is the rest of the book good?
+2021-07-13 16:11:59	Fangs	I hate that I can't find it on libgen
+2021-07-13 16:12:51	-->	abel (~abel@151.25.147.48) has joined ##math
+2021-07-13 16:13:03	abel	Hello
+2021-07-13 16:14:43	<--	kmh_ (~kmh@p200300df5f0f42000ddb5b92e0a0f090.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2021-07-13 16:14:45	buster	i really like it, it had good reviews when it was published, but it seems to be largely forgotten
+2021-07-13 16:15:32	buster	a little frustrating that there aren't errata for it online
+2021-07-13 16:16:12	Fangs	buster: share some more exercises lol
+2021-07-13 16:16:12	Fangs	and text
+2021-07-13 16:16:21	<--	abel (~abel@151.25.147.48) has quit (Client Quit)
+2021-07-13 16:16:21	Fangs	and maybe the rest of the book
+2021-07-13 16:16:34	buster	ha it's so battered
+2021-07-13 16:16:53	<--	trace987 (~trace@91.66.151.181) has quit (Remote host closed the connection)
+2021-07-13 16:19:50	-->	cadmio (~gidna@151.25.147.48) has joined ##math
+2021-07-13 16:21:55	cadmio	I don't understand why x and h are related modulo N http://mathb.in/60185
+2021-07-13 16:22:32	rubiksdream	Fangs if f is open onto its image, then G/Ker(f) and im(f) will be homeomorphic (because the quotient map pi: G -> G/Ker(f) is open)
+2021-07-13 16:22:51	rubiksdream	but if f isn't open onto its image , there are counterexamples
+2021-07-13 16:23:05	rubiksdream	(this is all assuming f is continuous)
+2021-07-13 16:23:11	Fangs	rubiksdream: if f is open it is continuous?
+2021-07-13 16:23:13	Fangs	oh
+2021-07-13 16:23:40	Fangs	so you need open-ness and continuity
+2021-07-13 16:23:44	rubiksdream	right
+2021-07-13 16:23:55	Fangs	that's a very uncomfortable fact, I think
+2021-07-13 16:24:05	rubiksdream	(openness onto im(f) btw, not H)
+2021-07-13 16:24:13	rubiksdream	i.e. f : G -> im(f) needs to be open + continous
+2021-07-13 16:24:31	rubiksdream	yeah, i agree
+2021-07-13 16:24:33	Fangs	rubiksdream: isn't that just saying im(f) ~= G/ker(f)?
+2021-07-13 16:24:33	rubiksdream	it is weird
+2021-07-13 16:24:44	Fangs	(topologically)
+2021-07-13 16:24:55	Fangs	the quotient map *is* open and cts iirc
+2021-07-13 16:25:23	rubiksdream	the quotient map is cts by definition of quotient topology
+2021-07-13 16:25:29	rubiksdream	for topological groups, it also happens to be open
+2021-07-13 16:25:32	buster	Fangs, yeas, you need open and continuous for the topologies to match. Think of the discrete topology on G!
+2021-07-13 16:25:36	rubiksdream	but in general quotient maps need not be open/closed
+2021-07-13 16:25:54	Fangs	I...
+2021-07-13 16:25:57	Fangs	need to prove that
+2021-07-13 16:26:15	Fangs	if N c G is normal then G -> G/N is open
+2021-07-13 16:28:09	Fangs	buster: yeah I did thought of that, or rather indiscrete topology on G/N, then the map G -> (G/N)_{indiscrete} is cts, and ofc you can have it factor through G -> (G/N)_{quotient top} -> (G/N)_{indiscrete} and have it be cts
+2021-07-13 16:28:47	Fangs	its just a bit uncomfortable when you think of "natural" examples in the wild, like R/Z and S^1, a priori this needs not have the topology you think of etc
+2021-07-13 16:29:10	<--	EmmyNoether (~EmmyNoeth@oasys.ch0wn.org) has quit (Ping timeout: 272 seconds)
+2021-07-13 16:29:29	buster	hmm, don't we have that (G -> G/H open), for any subgroup? (1(i)) Or do you mean for some other pair of topologies ... oh, ok
+2021-07-13 16:30:21	Fangs	buster: if H c G is a subgroup then G -> cos(G,H) is open
+2021-07-13 16:30:25	<--	Thin_icE (~pgp@88.157.222.244) has quit (Quit: Leaving)
+2021-07-13 16:30:27	buster	i feel like in those kind of examples we're going to have homeomorphisms-onto-their-images (injective, continuous, open maps) and everything will fit together
+2021-07-13 16:30:29	Fangs	I didn't realize this was true for general subgroups
+2021-07-13 16:32:09	rubiksdream	yeah it holds regardless of normality
+2021-07-13 16:32:13	rubiksdream	the proof doesn't depend on normality, that is
+2021-07-13 16:32:33	-->	oxide (~lambda@user/oxide) has joined ##math
+2021-07-13 16:33:00	<--	tusko (~yeurt@copyfree/advocate/tusko) has quit (Remote host closed the connection)
+2021-07-13 16:33:19	-->	EmmyNoether (~EmmyNoeth@oasys.ch0wn.org) has joined ##math
+2021-07-13 16:33:27	-->	tusko (~yeurt@copyfree/advocate/tusko) has joined ##math
+2021-07-13 16:35:28	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 256 seconds)
+2021-07-13 16:35:40	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-13 16:35:47	-->	kmh (~kmh@p200300df5f0f4200b4935248eced1d46.dip0.t-ipconnect.de) has joined ##math
+2021-07-13 16:37:11	<--	Matt|home (~matt@adsl-74-233-58-202.mia.bellsouth.net) has quit (Ping timeout: 268 seconds)
+2021-07-13 16:37:12	-->	NEYi (~NEYi@109.251.216.38) has joined ##math
+2021-07-13 16:39:22	rubiksdream	its just if U \subset G is open, then q^{-1}(q(U)) = \bigcup_{h \in H} Uh , which is a union of open sets since the map G->G given by x -> xh is a homeomorphism
+2021-07-13 16:39:30	rubiksdream	so q(U) is open
+2021-07-13 16:40:40	rubiksdream	its no different to showing that the quotient map of X -> X/G where G is a group of automorphisms of X acting on X is open
+2021-07-13 16:40:45	rubiksdream	(and X is any set)
+2021-07-13 16:42:45	rubiksdream	(this is why normality actually has nothing to do with it)
+2021-07-13 16:44:23	cadmio	there was a missing part: http://mathb.in/60188
+2021-07-13 16:45:49	Fangs	rubiksdream: ok that's clear, and much more general too
+2021-07-13 16:45:54	Fangs	bit of a spoiler though hah
+2021-07-13 16:46:23	buster	Fangs, that's exercise 2, you did that in about a second a few days ago!
+2021-07-13 16:46:57	<--	alip (~alip@exherbo/developer/alip) has quit (Ping timeout: 255 seconds)
+2021-07-13 16:47:28	-->	Julian (~tos9@python/site-packages/Julian) has joined ##math
+2021-07-13 16:47:46	buster	<Fangs> let S be open in G, then SH is the preimage (this is true in any group) and use 1.(1)
+2021-07-13 16:47:55	buster	:)
+2021-07-13 16:47:58	Fangs	I've been shamed
+2021-07-13 16:48:14	--	AvengingAnge is now known as Panther
+2021-07-13 16:48:14	Fangs	the X/G thing is new though
+2021-07-13 16:48:23	-->	Matt|home (~matt@adsl-74-233-58-233.mia.bellsouth.net) has joined ##math
+2021-07-13 16:49:37	-->	davros (~davros@host86-185-61-40.range86-185.btcentralplus.com) has joined ##math
+2021-07-13 16:50:16	<--	bitdex (~bitdex@gateway/tor-sasl/bitdex) has quit (Quit: = "")
+2021-07-13 16:50:36	<--	hanif (~hanif@gateway/tor-sasl/hanif) has quit (Ping timeout: 244 seconds)
+2021-07-13 16:50:39	buster	bit of reverse mathematics
+2021-07-13 16:53:06	Fangs	cadmio: for 2 you had an extra -1 somewhere
+2021-07-13 16:53:27	Fangs	π(π−1(K)) = K <-- I think this is what you want
+2021-07-13 16:53:59	Fangs	cadmio: I'm not convinced that this follows from pi being surjective
+2021-07-13 16:55:29	cadmio	that's what the text says, but I don't understand i) yet. what has modulo congruence having to do with that?
+2021-07-13 16:55:46	-->	fweht (uid404746@id-404746.tooting.irccloud.com) has joined ##math
+2021-07-13 16:56:23	Fangs	cadmio: pi(x) = pi(h), what's pi? what's the LHS and what's the RHS?
+2021-07-13 16:56:35	Fangs	(what's pi(x), explicitly)
+2021-07-13 16:57:19	cadmio	pi is the canonical projection pi: G -> G/N
+2021-07-13 16:59:00	cadmio	so pi(x) is an element of the quotient group
+2021-07-13 16:59:10	-->	hanif (~hanif@gateway/tor-sasl/hanif) has joined ##math
+2021-07-13 16:59:12	Fangs	ok, which element?
+2021-07-13 16:59:16	--	irc: disconnected from server
+2021-07-13 19:20:39	-->	amanr (~sarcastic@122.161.68.15) has joined ##math
+2021-07-13 19:20:39	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-13 19:20:39	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-13 19:20:39	--	Channel ##math: 461 nicks (0 ops, 0 voices, 461 normals)
+2021-07-13 19:20:41	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-13 19:26:05	-->	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has joined ##math
+2021-07-13 19:26:26	<--	Pollion (bombar@zamok.crans.org) has quit (Ping timeout: 255 seconds)
+2021-07-13 19:27:39	<--	zcombinator (~zcombinat@host-80-104-237-159.retail.telecomitalia.it) has quit (Quit: WeeChat 3.2)
+2021-07-13 19:29:44	<--	hanif (~hanif@gateway/tor-sasl/hanif) has quit (Ping timeout: 244 seconds)
+2021-07-13 19:38:57	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##math
+2021-07-13 19:40:26	-->	Pollion (bombar@zamok.crans.org) has joined ##math
+2021-07-13 19:41:07	-->	hanif (~hanif@gateway/tor-sasl/hanif) has joined ##math
+2021-07-13 19:46:16	-->	oxum (~oxum@136.185.133.224) has joined ##math
+2021-07-13 19:46:38	<--	hendursa1 (~weechat@user/hendursaga) has quit (Quit: hendursa1)
+2021-07-13 19:47:17	-->	hendursaga (~weechat@user/hendursaga) has joined ##math
+2021-07-13 19:51:00	<--	oxum (~oxum@136.185.133.224) has quit (Ping timeout: 276 seconds)
+2021-07-13 19:51:39	<--	bpmedley (~bpmedley@69-174-155-1.bltnilaa.metronetinc.net) has quit (Ping timeout: 276 seconds)
+2021-07-13 19:52:25	-->	magla (~gelignite@55d4dbb8.access.ecotel.net) has joined ##math
+2021-07-13 19:52:40	-->	[itchyjunk] (~itchyjunk@user/itchyjunk/x-7353470) has joined ##math
+2021-07-13 19:54:17	-->	bpmedley (~bpmedley@69-174-155-1.bltnilaa.metronetinc.net) has joined ##math
+2021-07-13 19:57:58	<--	contagious_meow (~salitos@41-203-221-245.safaricombusiness.co.ke) has quit (Read error: Connection reset by peer)
+2021-07-13 19:58:00	-->	Bayes (~Bayes@ics177-97.icsincorporated.com) has joined ##math
+2021-07-13 19:58:08	<--	fructose (~fructose@user/fructose) has quit (*.net *.split)
+2021-07-13 19:58:08	<--	yamchah2 (~yamchah2@user/yamchah2) has quit (*.net *.split)
+2021-07-13 19:58:08	<--	susam (~susam@user/susam) has quit (*.net *.split)
+2021-07-13 19:58:08	<--	^[ (~user@user//x-8473491) has quit (*.net *.split)
+2021-07-13 19:58:08	<--	sqrt2 (~ben@tunnel330957-pt.tunnel.tserv6.fra1.ipv6.he.net) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	peeps[win] (~peepsalot@openscad/peepsalot) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	dld (~davidlowr@2601:197:600:1210:f14b:4a8a:4522:f5d2) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	caramel (~caramel@user/caramel) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	nsuperbus (~nsuperbus@05BBE268.dsl.pool.telekom.hu) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	synthmeat (~synthmeat@user/synthmeat) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	dextaa (~DV@aftr-37-201-214-197.unity-media.net) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	Fleck (~fleck@user/fleck) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	calcmandan (~quassel@user/calcmandan) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	dostoyevsky2 (~sck@user/dostoyevsky2) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	PlanckWalk (~Planck@user/planckwalk) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	signalblue (~quassel@user/signalblue) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	jj5 (~jj5@111-220-243-3.dyn.dodo.net.au) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	kazoo (brandon@succubus.dkr.prd.ca.robotham.dev) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	micronn (~micronn@user/micronn) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	qergle (mancha@user/mancha) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	wz1000 (~zubin@static.11.113.47.78.clients.your-server.de) has quit (*.net *.split)
+2021-07-13 19:58:09	<--	forgx (~agucova@vps-43c36ef5.vps.ovh.ca) has quit (*.net *.split)
+2021-07-13 19:58:10	<--	rawgreaze (~rawgreaze@user/rawgreaze) has quit (*.net *.split)
+2021-07-13 19:58:14	-->	calcmandan_ (~quassel@user/calcmandan) has joined ##math
+2021-07-13 19:58:14	<--	Bayes (~Bayes@ics177-97.icsincorporated.com) has quit (Changing host)
+2021-07-13 19:58:14	-->	Bayes (~Bayes@user/bayes) has joined ##math
+2021-07-13 19:58:17	-->	dostoyevsky2 (~sck@user/dostoyevsky2) has joined ##math
+2021-07-13 19:58:17	-->	sqrt2_ (~ben@80-108-18-7.cable.dynamic.surfer.at) has joined ##math
+2021-07-13 19:58:18	-->	kazoo (brandon@succubus.dkr.prd.ca.robotham.dev) has joined ##math
+2021-07-13 19:58:18	-->	susam (~susam@user/susam) has joined ##math
+2021-07-13 19:58:20	-->	contagious_meow (~salitos@41-203-221-245.safaricombusiness.co.ke) has joined ##math
+2021-07-13 19:58:21	-->	signalblue (~quassel@108.5.220.158) has joined ##math
+2021-07-13 19:58:21	-->	PlanckWalk (~Planck@ppp105-115.static.internode.on.net) has joined ##math
+2021-07-13 19:58:21	<--	PlanckWalk (~Planck@ppp105-115.static.internode.on.net) has quit (Changing host)
+2021-07-13 19:58:21	-->	PlanckWalk (~Planck@user/planckwalk) has joined ##math
+2021-07-13 19:58:22	-->	rawgreaze (~rawgreaze@c-73-89-208-53.hsd1.ma.comcast.net) has joined ##math
+2021-07-13 19:58:28	-->	jj5 (~jj5@111-220-243-3.dyn.dodo.net.au) has joined ##math
+2021-07-13 19:58:28	-->	yamchah2 (~yamchah2@user/yamchah2) has joined ##math
+2021-07-13 19:58:39	-->	fructose (~fructose@2604:180:1:c00::de96) has joined ##math
+2021-07-13 19:58:40	-->	dextaa (~DV@aftr-37-201-214-197.unity-media.net) has joined ##math
+2021-07-13 19:58:41	-->	micronn (~micronn@user/micronn) has joined ##math
+2021-07-13 19:58:43	-->	dld (~davidlowr@2601:197:600:1210:1d20:4e95:b297:5e23) has joined ##math
+2021-07-13 19:58:44	-->	wz1000 (~zubin@static.11.113.47.78.clients.your-server.de) has joined ##math
+2021-07-13 19:58:45	<--	fructose (~fructose@2604:180:1:c00::de96) has quit (Signing in (fructose))
+2021-07-13 19:58:45	-->	fructose (~fructose@user/fructose) has joined ##math
+2021-07-13 19:58:45	-->	forgx (~agucova@vps-43c36ef5.vps.ovh.ca) has joined ##math
+2021-07-13 19:58:59	-->	peeps[win] (~peepsalot@openscad/peepsalot) has joined ##math
+2021-07-13 19:59:03	-->	caramel (~caramel@user/caramel) has joined ##math
+2021-07-13 19:59:12	<--	rawgreaze (~rawgreaze@c-73-89-208-53.hsd1.ma.comcast.net) has quit (Changing host)
+2021-07-13 19:59:12	-->	rawgreaze (~rawgreaze@user/rawgreaze) has joined ##math
+2021-07-13 19:59:14	-->	synthmeat (~synthmeat@user/synthmeat) has joined ##math
+2021-07-13 19:59:22	<--	caramel (~caramel@user/caramel) has quit (Remote host closed the connection)
+2021-07-13 19:59:46	-->	caramel (~caramel@user/caramel) has joined ##math
+2021-07-13 20:00:12	-->	Fleck (~fleck@user/fleck) has joined ##math
+2021-07-13 20:01:49	-->	nsuperbus (~nsuperbus@05BBE268.dsl.pool.telekom.hu) has joined ##math
+2021-07-13 20:03:20	<--	Pollion (bombar@zamok.crans.org) has quit (Changing host)
+2021-07-13 20:03:21	-->	Pollion (bombar@crans/pollion) has joined ##math
+2021-07-13 20:07:10	-->	tacegory (~tacegory@user/tacegory) has joined ##math
+2021-07-13 20:21:00	<--	llorllale (~llorllale@2607:9880:3a18:69:c519:d7e1:27a5:dced) has quit (Ping timeout: 256 seconds)
+2021-07-13 20:26:50	<--	kmh (~kmh@p200300df5f0f420090b8c32c2ae74bf4.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-07-13 20:27:03	-->	kmh (~kmh@p200300df5f0f420090b8c32c2ae74bf4.dip0.t-ipconnect.de) has joined ##math
+2021-07-13 20:29:54	-->	specing_ (~specing@user/specing) has joined ##math
+2021-07-13 20:30:49	-->	ElectronApps (~ElectronA@user/electronapps) has joined ##math
+2021-07-13 20:31:13	<--	quarterback (~quarterba@user/quarterback) has quit (Quit: Leaving)
+2021-07-13 20:32:51	<--	specing (~specing@user/specing) has quit (Ping timeout: 255 seconds)
+2021-07-13 20:32:51	--	specing_ is now known as specing
+2021-07-13 20:35:32	-->	quarterback (~quarterba@user/quarterback) has joined ##math
+2021-07-13 20:37:55	-->	soapsudsxx (~soapsudsx@209.221.40.138) has joined ##math
+2021-07-13 20:42:06	-->	derelict (~derelict@user/derelict) has joined ##math
+2021-07-13 20:44:44	rubiksdream	probably a silly question, but if p_1,p_2 are two metrics on some open connected set in C, and p_1 < p_2 at all points of the open connected set, is the associated distance d_{p_1} strictly less than the associated distance d_{p_2}?
+2021-07-13 20:47:02	-->	hugh_marera (~hugh@189-149-117-154.bitcointernet.co.za) has joined ##math
+2021-07-13 20:47:48	somiaj	rubiksdream: I don't quite follow, if p_1 and p_2 are metrics, then they are a 'distance' and require two points (not single point)
+2021-07-13 20:47:53	somiaj	do you mean p_1 and p_2 are norms?
+2021-07-13 20:47:59	-->	bildramer (~bildramer@2a02:587:5475:23a7:4018:2921:2600:9125) has joined ##math
+2021-07-13 20:49:02	-->	chomwitt (~Pitsikoko@2a02:587:dc04:e00:12c3:7bff:fe6d:d374) has joined ##math
+2021-07-13 20:49:13	-->	Franciman (~francesco@openglass.it) has joined ##math
+2021-07-13 20:49:24	Franciman	blowups for algebraic curves
+2021-07-13 20:49:27	Franciman	what a nasty thang :D
+2021-07-13 20:50:32	-->	Mathlo (~Mathlo_M@cpe-98-122-103-50.sc.res.rr.com) has joined ##math
+2021-07-13 20:50:44	<--	bildramer1 (~bildramer@2a02:587:5475:23a7:c8e6:3404:37fe:79ac) has quit (Ping timeout: 272 seconds)
+2021-07-13 20:52:06	<--	i0e (~is0ke3@user/is0ke3) has quit (Quit: Zzzzzz.....)
+2021-07-13 20:52:29	-->	LiftLeft (~LiftLeft@216-26-118-34.dynamic.nelson.airstreamcomm.net) has joined ##math
+2021-07-13 20:53:00	rubiksdream	somiaj not metric as in an actual distance function as in metric space, but a nonnegative C^2-map , p : U -> R , then the length of a path gamma in U with respect to p is int_{0}^1 |gamma'(t)| p(\gamma(t))dt, and the distance between two points in U with respect to p is the infimum of the length of C^1 paths joining z to w
+2021-07-13 20:53:20	rubiksdream	for example when p(x,y) = |(x,y)| then you get the usual euclidean distance
+2021-07-13 20:53:30	rubiksdream	where |(x,y)| = sqrt(x^2+y^2)
+2021-07-13 20:53:40	<--	hyper (uid493485@id-493485.charlton.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-13 20:56:11	somiaj	It almost sounds like you are talking about a norm
+2021-07-13 20:56:34	somiaj	though I guess a norm has additonal properities, and distance is just defined as d(a,b) = || a - b ||
+2021-07-13 20:56:40	somiaj	well p(a-b)
+2021-07-13 20:56:49	rubiksdream	maybe, but it can be pretty far away from a norm
+2021-07-13 20:56:57	rubiksdream	its any smooth enough scalar field
+2021-07-13 20:57:01	somiaj	yea, if it is just a non-negative map, it doesn't have to be a norm.
+2021-07-13 20:58:22	somiaj	well if a < b then int_0^1 a dt < int_0^1 b dt, so your claim would hold since |gamma'(t)| p_1(gamma(t)) < |gamma'(t)| p_2(gamma(t))
+2021-07-13 20:58:46	-->	^[ (~user@user//x-8473491) has joined ##math
+2021-07-13 20:59:07	rubiksdream	but that is only individual lengths
+2021-07-13 20:59:13	rubiksdream	what im worried about is in the infimum, maybe they will become equal
+2021-07-13 20:59:48	somiaj	Ahh I see
+2021-07-13 20:59:54	<--	DoYouNo (~michael@75-28-180-206.lightspeed.bnsvil.sbcglobal.net) has quit (Ping timeout: 276 seconds)
+2021-07-13 21:02:14	<--	bosspotato (~bosspotat@user/bosspotato) has quit (Quit: Leaving)
+2021-07-13 21:02:43	somiaj	well for that to even be integrable, p hast to be mostly continous, that may put enough restrictions to help out
+2021-07-13 21:04:10	somiaj	or you could see if adding a continunity restriction to p_1 and p_2 help. I wonder if continuity is enough to show that there is a path that takes on the infinum value, thus it is actually a minimum value. And if so then it would follow.
+2021-07-13 21:04:52	-->	Null_A (~null_a@2601:645:8700:2290:3cf6:f0b1:5311:40ef) has joined ##math
+2021-07-13 21:05:08	<--	Ginalo (uid502518@id-502518.tinside.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-13 21:06:03	somiaj	by mostly continous, I think you need a fininte number of discontunities (here I'm assuming riemann integrable, if using the lebesgue integral this changes things)
+2021-07-13 21:06:41	somiaj	hmm, guess you could have a countable number of discontunities
+2021-07-13 21:08:28	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Remote host closed the connection)
+2021-07-13 21:08:36	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 256 seconds)
+2021-07-13 21:08:40	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-13 21:09:35	rubiksdream	p could be something really simple like the euclidean metric (x,y) -> 1, and there might not be a shortest path
+2021-07-13 21:10:01	rubiksdream	for instance take a punctured disk, and take two points radially opposite each other across the puncture
+2021-07-13 21:10:11	rubiksdream	the shortest path is certainly the straight line path, but its not in the domain
+2021-07-13 21:10:18	rubiksdream	so any other C^1 path is not going to be as short
+2021-07-13 21:11:44	rubiksdream	for sure there is a sequence of paths tending to that
+2021-07-13 21:11:48	rubiksdream	maybe that can be used somehow
+2021-07-13 21:12:13	somiaj	ahh yea, I guess you could try to create a counter example to show that you don't have enough conditions to ensure the distance is strictly smaller
+2021-07-13 21:12:22	somiaj	any reason you need < instead of just <= in the final distance comparision?
+2021-07-13 21:15:16	rubiksdream	yeah its linked to this other problem to do with hyperbolic metrics
+2021-07-13 21:15:32	rubiksdream	but im starting to think im just crazy, my brain isnt working correctly today
+2021-07-13 21:15:50	--	irc: disconnected from server
+2021-07-14 18:49:34	-->	amanr (~sarcastic@122.161.66.39) has joined ##math
+2021-07-14 18:49:34	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-14 18:49:34	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-14 18:49:34	--	Channel ##math: 458 nicks (0 ops, 0 voices, 458 normals)
+2021-07-14 18:49:36	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-14 18:50:32	<--	koolazer (~koo@user/koolazer) has quit (Ping timeout: 245 seconds)
+2021-07-14 18:51:58	Z-module	This is just what  w = f'(z)   means as a complex derivative.
+2021-07-14 18:52:30	-->	Sadale (~Sadale@user/sadale) has joined ##math
+2021-07-14 18:52:50	<--	Sadale (~Sadale@user/sadale) has left ##math (Leaving)
+2021-07-14 18:54:03	-->	Julian (~tos9@python/site-packages/Julian) has joined ##math
+2021-07-14 18:54:09	<--	hendursa1 (~weechat@user/hendursaga) has quit (Quit: hendursa1)
+2021-07-14 18:54:13	<--	bildramer1 (~bildramer@2a02:587:5475:23a7:1447:b999:251d:6b1d) has quit (Quit: alway rember happy day)
+2021-07-14 18:54:19	Fangs	I'm about to passout in a few
+2021-07-14 18:54:29	-->	hendursaga (~weechat@user/hendursaga) has joined ##math
+2021-07-14 18:56:27	<--	hendursaga (~weechat@user/hendursaga) has quit (Client Quit)
+2021-07-14 18:56:52	-->	hendursaga (~weechat@user/hendursaga) has joined ##math
+2021-07-14 18:58:59	<--	johnjay (~pi@38.120.10.99) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:00:00	-->	silverwhitefish (~hidden@47.202.102.10) has joined ##math
+2021-07-14 19:00:26	<--	haykam1 (~haykam@static.100.2.21.65.clients.your-server.de) has quit (Remote host closed the connection)
+2021-07-14 19:00:38	-->	haykam1 (~haykam@static.100.2.21.65.clients.your-server.de) has joined ##math
+2021-07-14 19:02:42	-->	tacegory (~tacegory@user/tacegory) has joined ##math
+2021-07-14 19:03:21	-->	TechTest (uid283215@id-283215.tooting.irccloud.com) has joined ##math
+2021-07-14 19:04:44	-->	mbuf (~Shakthi@122.164.66.141) has joined ##math
+2021-07-14 19:05:59	<--	shikhin (~shikhin@offtopia/offtopian) has quit (Quit: Quittin'.)
+2021-07-14 19:06:00	<--	zgrep (~zgrep@user/zgrep) has quit (Quit: It's a quitter's world.)
+2021-07-14 19:07:31	-->	shikhin (~shikhin@ahti.space) has joined ##math
+2021-07-14 19:07:33	-->	zgrep (~zgrep@user/zgrep) has joined ##math
+2021-07-14 19:08:23	<--	shikhin (~shikhin@ahti.space) has quit (Changing host)
+2021-07-14 19:08:23	-->	shikhin (~shikhin@offtopia/offtopian) has joined ##math
+2021-07-14 19:10:20	-->	johnjay (~pi@38.120.10.99) has joined ##math
+2021-07-14 19:13:12	-->	red_owl (~red_owl@p5b23f10f.dip0.t-ipconnect.de) has joined ##math
+2021-07-14 19:16:22	-->	Vornicus (~Vornicus@2603-8000-5d07-7ef0-b842-d119-7737-43fd.res6.spectrum.com) has joined ##math
+2021-07-14 19:16:42	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Ping timeout: 240 seconds)
+2021-07-14 19:18:51	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##math
+2021-07-14 19:21:42	--	irc: disconnected from server
+2021-07-14 19:22:02	-->	amanr (~sarcastic@122.161.66.39) has joined ##math
+2021-07-14 19:22:02	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-14 19:22:02	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-14 19:22:02	--	Channel ##math: 463 nicks (0 ops, 0 voices, 463 normals)
+2021-07-14 19:22:05	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-14 19:22:37	<--	pycurious (~Adium@user/pycurious) has quit (Quit: Leaving.)
+2021-07-14 19:26:15	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:27:59	buster	there are only two normed fields, right?
+2021-07-14 19:28:55	buster	the same simple expression for the derivative doesn't apply in the quaternions.
+2021-07-14 19:29:08	-->	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has joined ##math
+2021-07-14 19:29:27	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 19:30:41	buster	https://en.wikipedia.org/wiki/Quaternionic_analysis#The_derivative_for_quaternions
+2021-07-14 19:30:54	rubiksdream	isnt Q a normed field?
+2021-07-14 19:31:08	rubiksdream	just with the usual euclidean norm
+2021-07-14 19:31:21	Fangs	buster: Q isn't a normed field. its a division algebra
+2021-07-14 19:31:30	Fangs	(fields are commutative, usually)
+2021-07-14 19:32:41	rubiksdream	oh, 'normed field' is a specific thing, I thought a normed field meant any field with a norm that can be defined on it , norm here as in vector space norm
+2021-07-14 19:33:46	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Ping timeout: 246 seconds)
+2021-07-14 19:34:03	-->	CGILightning (~CGILightn@ip-89-103-172-156.net.upcbroadband.cz) has joined ##math
+2021-07-14 19:34:16	-->	pycurious (~Adium@user/pycurious) has joined ##math
+2021-07-14 19:34:45	<--	i0e (~is0ke3@user/is0ke3) has quit (Quit: Zzzzzz.....)
+2021-07-14 19:35:22	<--	sebatron (~sebatron@dhcp-089-098-022-131.chello.nl) has quit (Quit: Leaving)
+2021-07-14 19:37:03	buster	yep, 'only 2' being R and Q
+2021-07-14 19:37:23	buster	* R and C, not Q (the rationals) or H (the quaternions)
+2021-07-14 19:38:31	-->	t3nj1n (~t3nj1n@pool-96-246-146-100.nycmny.fios.verizon.net) has joined ##math
+2021-07-14 19:39:20	-->	Neologik (~Neologik@cpc85670-dund15-2-0-cust7.16-4.cable.virginm.net) has joined ##math
+2021-07-14 19:39:34	buster	exactly why the rationals don't count, i'm not sure. some technicality.
+2021-07-14 19:40:31	<--	Neologik (~Neologik@cpc85670-dund15-2-0-cust7.16-4.cable.virginm.net) has quit (Client Quit)
+2021-07-14 19:40:44	Z-module	because a "normed" vector space is by definition a space over R or C
+2021-07-14 19:41:35	mh_le	hey Z-module
+2021-07-14 19:41:38	Z-module	hi
+2021-07-14 19:41:48	mh_le	how are you?
+2021-07-14 19:42:18	Z-module	mostly okay
+2021-07-14 19:42:50	mh_le	mostly?
+2021-07-14 19:43:48	-->	theseb (~cs@47-220-214-54.cnrocmta03.res.dyn.suddenlink.net) has joined ##math
+2021-07-14 19:43:51	<--	slidercrank (~slidercra@user/slidercrank) has quit (Quit: Why not ask me about Sevastopol's safety protocols?)
+2021-07-14 19:44:55	<--	revolve (~u0_a227@82-132-233-143.dab.02.net) has quit (Read error: Connection reset by peer)
+2021-07-14 19:48:48	<--	CGILightning (~CGILightn@ip-89-103-172-156.net.upcbroadband.cz) has quit (Quit: Client closed)
+2021-07-14 19:50:26	<--	edm (sid147314@id-147314.stonehaven.irccloud.com) has left ##math
+2021-07-14 19:52:24	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 19:55:38	-->	Hanii (~textual@2a00:23c5:c587:6d00:5ca4:fa04:b487:ba6e) has joined ##math
+2021-07-14 19:57:13	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Client Quit)
+2021-07-14 19:57:29	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 19:57:36	Franciman	hi all
+2021-07-14 19:57:40	Franciman	riemann surfaces
+2021-07-14 19:57:42	Franciman	what a mess!
+2021-07-14 19:58:13	Franciman	so they are basically algebraic curves
+2021-07-14 19:59:13	Franciman	desingularizations of algebraic curves, actually
+2021-07-14 20:00:54	<--	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has quit (Quit: Leaving)
+2021-07-14 20:02:11	-->	chasmo77 (~chas77@71.63.241.168) has joined ##math
+2021-07-14 20:02:19	-->	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has joined ##math
+2021-07-14 20:03:41	<--	Peiko (~peiko@user/peiko) has quit (Quit: Konversation terminated!)
+2021-07-14 20:06:19	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Ping timeout: 246 seconds)
+2021-07-14 20:07:08	-->	walton (~walton@2a02:a03f:6afc:f400:525e:10d4:8484:a9a9) has joined ##math
+2021-07-14 20:09:01	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 20:09:06	-->	derelict (~derelict@user/derelict) has joined ##math
+2021-07-14 20:09:40	buster	https://en.wikipedia.org/wiki/Algebraic_curve#Compact_Riemann_surfaces
+2021-07-14 20:09:44	-->	revolve (~u0_a227@82-132-233-143.dab.02.net) has joined ##math
+2021-07-14 20:10:35	<--	walton (~walton@2a02:a03f:6afc:f400:525e:10d4:8484:a9a9) has quit (Remote host closed the connection)
+2021-07-14 20:11:02	buster	or https://en.wikipedia.org/wiki/Riemann_surface#Analytic_vs._algebraic
+2021-07-14 20:11:17	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##math
+2021-07-14 20:11:18	Franciman	eheh
+2021-07-14 20:11:23	Franciman	it is quite strange
+2021-07-14 20:11:36	Franciman	because yo ucould use quite exponential functions etc
+2021-07-14 20:11:53	Franciman	but at the end of the day, you can basically "just" study complex algebraic equations
+2021-07-14 20:11:58	Vornicus	<Seinfeld> What's the DEAL with RIEmann SURfaces
+2021-07-14 20:13:01	<--	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-07-14 20:13:22	buster	I'm only really heard about Riemann surfaces in passing, in complex analysis courses, as the domain of f(z)=z^2, f(z)=exp(z) and so on. I gather you're not talking about that type (they're non-compact).
+2021-07-14 20:13:46	Franciman	yup
+2021-07-14 20:13:55	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##math
+2021-07-14 20:18:30	<--	revolve (~u0_a227@82-132-233-143.dab.02.net) has quit (Read error: Connection reset by peer)
+2021-07-14 20:20:37	-->	revolve (~u0_a227@82-132-244-116.dab.02.net) has joined ##math
+2021-07-14 20:20:52	Franciman	buster: for example P^1(C) the projective complex line is a compact riemann surface
+2021-07-14 20:20:55	Franciman	what is its polynomial?
+2021-07-14 20:21:09	Franciman	oh I know
+2021-07-14 20:21:14	Franciman	it is a conic
+2021-07-14 20:21:22	Franciman	every conic is isomorphic to P^1(C)
+2021-07-14 20:23:48	buster	so, any quadratic form, ax^2+bxy+cy^2=0 ? i don't know how 'p is the polynomial of X' is defined, sadly.
+2021-07-14 20:26:24	-->	koolazer (~koo@user/koolazer) has joined ##math
+2021-07-14 20:27:14	rubiksdream	Franciman it would have to be a non-degenerate conic
+2021-07-14 20:27:41	rubiksdream	for example, {x=0} U {y=0} is a conic, but its not isomorphic to P^1(C)
+2021-07-14 20:28:13	rubiksdream	(the iso P^1(C) <-> V(non-degenerate conic) can be obtained via stereographic projection)
+2021-07-14 20:28:32	rubiksdream	but somewhat more simply, you can just take any degree one polynomial..
+2021-07-14 20:28:44	rubiksdream	this is isomorphic (as a riemann surface) to P^1(C)
+2021-07-14 20:29:10	-->	specing_ (~specing@user/specing) has joined ##math
+2021-07-14 20:31:57	Franciman	cool
+2021-07-14 20:31:59	Franciman	thanks rubiksdream
+2021-07-14 20:32:16	<--	specing (~specing@user/specing) has quit (Ping timeout: 252 seconds)
+2021-07-14 20:32:16	--	specing_ is now known as specing
+2021-07-14 20:32:38	<--	oxum (~oxum@136.185.133.224) has quit (Ping timeout: 252 seconds)
+2021-07-14 20:32:39	-->	lsrtl__ (~lsrtl@user/lsrtl) has joined ##math
+2021-07-14 20:32:48	rubiksdream	non-degenerate smooth cubics are isomorphic to a torus
+2021-07-14 20:33:01	rubiksdream	those are elliptic curves
+2021-07-14 20:33:33	lsrtl__	a bit unusual, but still math related :D what would be an interesting present to a senior math teacher ?
+2021-07-14 20:33:56	rubiksdream	probably the coolest result relating to this stuff is that the degree of a homogeneous irreducible polynomial determines the genus of the corresponding algebraic curve
+2021-07-14 20:34:25	rubiksdream	the higher the degree, the more holes the surface has
+2021-07-14 20:35:34	Franciman	yup
+2021-07-14 20:35:35	rubiksdream	the formula is also pretty clean, g = (d-1 choose 2)
+2021-07-14 20:35:37	Franciman	cool
+2021-07-14 20:35:58	rubiksdream	so that shows for instance, when d = 0,1, g = 0, P^1(C) is a sphere
+2021-07-14 20:36:18	Franciman	rubiksdream: I am a bit unsure about how to interpret charts of P^1(C)
+2021-07-14 20:36:21	Franciman	U_0, U_1
+2021-07-14 20:36:34	Franciman	I mean, I can interpret U_0 as the complex plane
+2021-07-14 20:36:40	rubiksdream	right
+2021-07-14 20:36:41	johnkeats7	rubiksdream, hows the proof of that again
+2021-07-14 20:36:41	Franciman	and H_0 as the infinite plane
+2021-07-14 20:36:44	Franciman	but what about U_1?
+2021-07-14 20:36:53	Franciman	so P^1(C) has two complex planes intersecting?
+2021-07-14 20:37:00	rubiksdream	johnkeats7 the version I know uses bezouts theorem and the riemann-hurwitz formula
+2021-07-14 20:37:01	johnkeats7	was it the riemann hurwitz thing
+2021-07-14 20:37:03	rubiksdream	yeah
+2021-07-14 20:37:49	rubiksdream	Franciman really U_0 and U_1 are the sphere minus the north/south pole (resp.)
+2021-07-14 20:38:14	rubiksdream	thats how I would visualize it
+2021-07-14 20:38:17	-->	cheater1__ (~Username@user/cheater) has joined ##math
+2021-07-14 20:38:40	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 272 seconds)
+2021-07-14 20:38:42	Franciman	rubiksdream: uh
+2021-07-14 20:38:44	Franciman	cool
+2021-07-14 20:38:45	--	cheater1__ is now known as cheater
+2021-07-14 20:39:26	rubiksdream	so 1/z just inverts everything, it swaps those charts
+2021-07-14 20:40:05	rubiksdream	or if you like, its a 180 degree rotation of the sphere
+2021-07-14 20:41:04	-->	CGILightning (~CGILightn@ip-89-103-172-156.net.upcbroadband.cz) has joined ##math
+2021-07-14 20:41:12	rubiksdream	but in terms of algebraic curves, its better to think of U_0 as the complex plane
+2021-07-14 20:41:21	rubiksdream	embedded in P^1(C)
+2021-07-14 20:41:23	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Quit: Client closed)
+2021-07-14 20:41:37	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 20:41:49	rubiksdream	and the same for P^n(C) , U_0 is C^n embedded in a certain compactification
+2021-07-14 20:42:10	-->	Karel (~Karel@232.56.198.178.dynamic.wline.res.cust.swisscom.ch) has joined ##math
+2021-07-14 20:42:19	<--	Karel (~Karel@232.56.198.178.dynamic.wline.res.cust.swisscom.ch) has left ##math (Leaving)
+2021-07-14 20:42:20	Franciman	rubiksdream: ok I understand
+2021-07-14 20:42:29	Franciman	rubiksdream: but I can't quite understand globally
+2021-07-14 20:42:32	Franciman	what U_0 and U_1
+2021-07-14 20:42:35	Franciman	in general
+2021-07-14 20:42:40	Franciman	U_0, ..., U_n
+2021-07-14 20:42:51	Franciman	can represent following this line of thinking
+2021-07-14 20:42:57	<--	Arcorann (~A@159-196-65-46.9fc441.mel.nbn.aussiebb.net) has quit (Ping timeout: 258 seconds)
+2021-07-14 20:43:17	rubiksdream	not sure what you mean by represent
+2021-07-14 20:43:49	Franciman	visualize
+2021-07-14 20:43:51	Franciman	:D
+2021-07-14 20:44:03	rubiksdream	you are gluing together n copies of C^n to form P^n(C)
+2021-07-14 20:44:12	rubiksdream	those copies are the U_i
+2021-07-14 20:44:31	Franciman	ok
+2021-07-14 20:44:31	rubiksdream	you can literally see how you are gluing them together in the case of P^1(C)
+2021-07-14 20:44:36	Franciman	now can I ask you one more thing?
+2021-07-14 20:44:46	rubiksdream	sure
+2021-07-14 20:45:01	rubiksdream	(n+1)-copies *
+2021-07-14 20:45:05	Franciman	when I do the blowup of a the complex space C^2 in 0
+2021-07-14 20:45:36	rubiksdream	i haven't learnt about blowups yet :/ sorry
+2021-07-14 20:45:39	rubiksdream	or desingularization
+2021-07-14 20:45:41	Franciman	I obtain this space B = { ((z, w); [a, b]) \in C^2 \times P^1(C) : aw + bz = 0 }
+2021-07-14 20:45:42	Franciman	oh ok
+2021-07-14 20:45:46	Franciman	nvm ;)
+2021-07-14 20:45:48	Franciman	thanks a lot
+2021-07-14 20:45:52	rubiksdream	np
+2021-07-14 20:46:06	Franciman	basically those [a,b] are the tangent lines in 0
+2021-07-14 20:46:10	Franciman	so they are all the possible directions
+2021-07-14 20:46:32	rubiksdream	right, that makes sense
+2021-07-14 20:46:38	Franciman	now I am a bit unsure about
+2021-07-14 20:46:40	Franciman	what I get
+2021-07-14 20:46:48	Franciman	when I read things in these two charts
+2021-07-14 20:47:11	Franciman	B_0 = { ((z, w); [1, b]) \in C^2 \times U_0 : aw + bz = 0 }
+2021-07-14 20:47:25	Franciman	so I again watch the projective complex line in the two charts
+2021-07-14 20:47:38	Franciman	it is as if I split the possible tangent lines
+2021-07-14 20:47:40	Franciman	in two spaces
+2021-07-14 20:48:19	Franciman	so I think it is like, in B_0 you take all tangents except the one with coordinate x = 0
+2021-07-14 20:48:26	Franciman	so the x axis
+2021-07-14 20:48:35	Franciman	and in B_1 you take all tangets except the one with coordinate y = 0
+2021-07-14 20:50:10	rubiksdream	okay, so in B_0 you take all the tangents except {y=0} and in B_1 you take all the tangents except {x=0}, so in other words (using dual P^1(C) to parameterize tangents), you are really looking at U_0 and U_1
+2021-07-14 20:50:13	<--	chomwitt (~Pitsikoko@2a02:587:dc04:e00:12c3:7bff:fe6d:d374) has quit (Ping timeout: 268 seconds)
+2021-07-14 20:50:46	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Ping timeout: 246 seconds)
+2021-07-14 20:52:05	Franciman	something like this, yep
+2021-07-14 20:52:09	Franciman	you do this, because
+2021-07-14 20:52:21	Franciman	if you are given a singular surface S
+2021-07-14 20:52:28	Franciman	and it is singular in (0, 0)
+2021-07-14 20:52:31	Franciman	you say, ok
+2021-07-14 20:52:37	Franciman	there must be some tangent missing
+2021-07-14 20:52:54	Franciman	or there are too many tangents
+2021-07-14 20:53:05	rubiksdream	well there would be several higher tangents
+2021-07-14 20:53:10	rubiksdream	at a singular point
+2021-07-14 20:53:18	Franciman	yup
+2021-07-14 20:53:20	Franciman	so you do
+2021-07-14 20:53:25	Franciman	well first you define
+2021-07-14 20:53:41	Franciman	pi : B -> C^2 , as pi((z, w); [a, b])) = (z, w)
+2021-07-14 20:53:45	Franciman	and then you do
+2021-07-14 20:54:06	Franciman	S' = topological closure of pi^{-1}(S - {0})
+2021-07-14 20:54:21	Franciman	so what you do is like, get all the S, except for 0
+2021-07-14 20:54:34	Franciman	but now, 0 is replaced by many copies of 0
+2021-07-14 20:54:40	Franciman	one for each direction of the tangents
+2021-07-14 20:54:44	Franciman	in case of a node
+2021-07-14 20:54:46	Franciman	you would get
+2021-07-14 20:55:03	Franciman	((0, 0); [1, 0]) and ((0, 0); [0, 1])
+2021-07-14 20:55:13	Franciman	(after a bit of affine transformations)
+2021-07-14 20:55:21	rubiksdream	so one for each tangent?
+2021-07-14 20:55:24	Franciman	exactly!
+2021-07-14 20:55:30	Franciman	if you squint enough
+2021-07-14 20:55:41	Franciman	what you do when you do the topological closure of pi^{-1}(S - {0})
+2021-07-14 20:55:45	Franciman	is get the secant
+2021-07-14 20:55:51	Franciman	from 0 to a point (z, w)
+2021-07-14 20:55:57	Franciman	and make (z,w) converge to 0
+2021-07-14 20:56:00	Franciman	so you get the tangent
+2021-07-14 20:56:29	Franciman	so you get the different tangents at 0
+2021-07-14 20:56:39	rubiksdream	ah I see
+2021-07-14 20:57:16	<--	Fohsap (~Muimi@60.20.218.178) has quit (Read error: Connection reset by peer)
+2021-07-14 20:57:23	rubiksdream	you've sort of created several surfaces intersecting at the singular point, for each one of the higher tangents at that poitn
+2021-07-14 20:57:38	Franciman	yes
+2021-07-14 20:57:45	-->	KevinX (~KevinX@2.56.190.208) has joined ##math
+2021-07-14 20:57:47	Franciman	basically you add one datum to each point of the surface
+2021-07-14 20:57:53	Franciman	it is the direction of the secant
+2021-07-14 20:57:55	rubiksdream	i see
+2021-07-14 20:57:57	Franciman	from 0 to that point
+2021-07-14 20:58:05	Franciman	and you then say
+2021-07-14 20:58:17	Franciman	if I remove 0 [which has infinite secants ahha, one for each direction]
+2021-07-14 20:58:23	Franciman	going to 0
+2021-07-14 20:58:29	Franciman	how do these directions converge?
+2021-07-14 20:59:17	Franciman	it's the same as you are thaught about one variable derivatives
+2021-07-14 20:59:24	Franciman	but it is multidimensional
+2021-07-14 20:59:52	<--	johnkeats7 (~johnkeats@2804:14c:32:a0cc:f4ac:9f1e:1212:860e) has quit (Ping timeout: 246 seconds)
+2021-07-14 20:59:52	Franciman	and gets you all the tangents [actually here I am not sure, because sometimes you have to iterate the blowup multiple times to remove a singularity
+2021-07-14 20:59:59	Franciman	it depends on how severe is the singularity]
+2021-07-14 20:59:59	-->	Brainium (~brainium@user/brainium) has joined ##math
+2021-07-14 21:01:59	Franciman	now the thing is that sometimes computing that closure is hard ahah
+2021-07-14 21:02:10	Franciman	and a trick to follow is using the charts of P^1(C)
+2021-07-14 21:02:20	Franciman	to simplify things, because you then end up in a subset of C^2
+2021-07-14 21:02:43	Franciman	so there you can compute the closure by calculating the limit points
+2021-07-14 21:02:51	Franciman	and the limit points are calculated by doing the usual limits you know
+2021-07-14 21:04:25	<--	koolazer (~koo@user/koolazer) has quit (Ping timeout: 258 seconds)
+2021-07-14 21:05:33	<--	scaleww (~scaleww@77-41-20-31.ftth.glasoperator.nl) has quit (Quit: Leaving)
+2021-07-14 21:06:20	<--	rubiksdream (~a@cm61-15-252-242.hkcable.com.hk) has quit (Ping timeout: 258 seconds)
+2021-07-14 21:06:52	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Read error: Connection reset by peer)
+2021-07-14 21:07:00	-->	quarterback (~quarterba@user/quarterback) has joined ##math
+2021-07-14 21:07:50	<--	quarterback (~quarterba@user/quarterback) has quit (Client Quit)
+2021-07-14 21:07:51	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##math
+2021-07-14 21:11:53	<--	Oli (~Unknown@user/oli) has quit (Quit: Lost terminal)
+2021-07-14 21:20:03	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 21:23:10	-->	extor (~xtor@192.99.217.240) has joined ##math
+2021-07-14 21:24:43	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Ping timeout: 246 seconds)
+2021-07-14 21:25:39	<--	t3nj1n (~t3nj1n@pool-96-246-146-100.nycmny.fios.verizon.net) has quit (Quit: WeeChat 2.8)
+2021-07-14 21:26:56	<--	madez (~madez@ip-176-198-251-181.hsi05.unitymediagroup.de) has quit (Quit: .)
+2021-07-14 21:26:59	<--	lind{at}yahoo (uid486956@id-486956.tinside.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-14 21:27:31	-->	riv (~river@tilde.team/user/river) has joined ##math
+2021-07-14 21:27:54	<--	qbt (~edun@user/edun) has quit (Quit: WeeChat 3.2)
+2021-07-14 21:28:09	-->	qbt (~edun@user/edun) has joined ##math
+2021-07-14 21:28:37	-->	madez (~madez@ip-176-198-251-181.hsi05.unitymediagroup.de) has joined ##math
+2021-07-14 21:31:14	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Ping timeout: 272 seconds)
+2021-07-14 21:32:00	pycurious	given all 4 angles of a convex quadrilateral, how do i find the angles between the diagonals?
+2021-07-14 21:32:28	tusko	dot product
+2021-07-14 21:32:45	riv	dot product of what
+2021-07-14 21:32:46	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 21:35:04	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Read error: Connection reset by peer)
+2021-07-14 21:35:31	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##math
+2021-07-14 21:37:32	CuriousErnestBro	why is E[X|X]=X but not E[X]?
+2021-07-14 21:37:48	pycurious	any ideas?
+2021-07-14 21:37:56	-->	cheater1__ (~Username@user/cheater) has joined ##math
+2021-07-14 21:38:12	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 272 seconds)
+2021-07-14 21:38:12	--	cheater1__ is now known as cheater
+2021-07-14 21:40:22	somiaj	CuriousErnestBro: what does E[X|X] mean? The expected value of X given you know what X is?
+2021-07-14 21:40:51	CuriousErnestBro	somiaj yes
+2021-07-14 21:41:13	CuriousErnestBro	E[X|X=x] = x  makes sense
+2021-07-14 21:41:15	-->	tadaaa (~red_owl@p5b23f10f.dip0.t-ipconnect.de) has joined ##math
+2021-07-14 21:41:19	-->	hposca (~hposca@node-1w7jr9phoke2sektanidvb94u.ipv6.telus.net) has joined ##math
+2021-07-14 21:42:43	CuriousErnestBro	so plug in X for x and you get E[X|X=X]=X
+2021-07-14 21:43:39	qergle	define E[X|X]
+2021-07-14 21:44:14	<--	red_owl (~red_owl@p5b23f10f.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2021-07-14 21:44:36	CuriousErnestBro	expected value of X conditioned on/given X
+2021-07-14 21:45:16	qergle	not in words, give me a mathematical definition.
+2021-07-14 21:45:24	-->	elf_fortrez (~elf_fortr@adsl-72-50-4-118.prtc.net) has joined ##math
+2021-07-14 21:45:38	qergle	if X is a continuous RV your definition should have integrals.
+2021-07-14 21:46:16	CuriousErnestBro	E[X|X] = int on X for X*f_X|X(x)dx
+2021-07-14 21:46:19	CuriousErnestBro	right?
+2021-07-14 21:46:36	CuriousErnestBro	but f_X|X = f_X
+2021-07-14 21:46:45	CuriousErnestBro	so E[X|X]=X
+2021-07-14 21:47:35	<--	sco1 (~sco1@charon.whatbox.ca) has left ##math
+2021-07-14 21:48:27	-->	cheater1__ (~Username@user/cheater) has joined ##math
+2021-07-14 21:48:31	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 268 seconds)
+2021-07-14 21:48:34	--	cheater1__ is now known as cheater
+2021-07-14 21:51:39	<--	[itchyjunk] (~itchyjunk@user/itchyjunk/x-7353470) has quit (Remote host closed the connection)
+2021-07-14 21:53:47	-->	quartz (~quartz@2603-8001-7700-61a4-0000-0000-0000-0acb.res6.spectrum.com) has joined ##math
+2021-07-14 21:55:39	CuriousErnestBro	http://0x0.st/-OIp.png
+2021-07-14 21:56:35	nejimban	wat
+2021-07-14 21:56:36	<--	mbuf (~Shakthi@122.164.66.141) has quit (Quit: Leaving)
+2021-07-14 21:58:28	<--	Hanii (~textual@2a00:23c5:c587:6d00:5ca4:fa04:b487:ba6e) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-07-14 21:59:31	<--	theseb (~cs@47-220-214-54.cnrocmta03.res.dyn.suddenlink.net) has quit (Quit: Leaving)
+2021-07-14 22:00:54	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Quit: Client closed)
+2021-07-14 22:01:10	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 22:03:46	<--	sebastianos (~sebastian@user/sebastianos) has quit (Read error: Connection reset by peer)
+2021-07-14 22:05:42	<--	Panther (Lord@2601:18a:c000:5290:a8a9:812c:425a:f845) has quit (Remote host closed the connection)
+2021-07-14 22:05:58	-->	hayaliali (~alip@exherbo/developer/alip) has joined ##math
+2021-07-14 22:06:23	-->	coeus (~coeus@73.sub-174-205-175.myvzw.com) has joined ##math
+2021-07-14 22:08:49	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Ping timeout: 246 seconds)
+2021-07-14 22:11:09	-->	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has joined ##math
+2021-07-14 22:13:09	-->	sazawal (~sazawal@182.68.81.25) has joined ##math
+2021-07-14 22:13:17	-->	cheater1__ (~Username@user/cheater) has joined ##math
+2021-07-14 22:13:39	<--	derelict (~derelict@user/derelict) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:13:40	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 272 seconds)
+2021-07-14 22:13:45	--	cheater1__ is now known as cheater
+2021-07-14 22:16:42	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Read error: Connection reset by peer)
+2021-07-14 22:17:45	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##math
+2021-07-14 22:17:46	--	hayaliali is now known as alip
+2021-07-14 22:18:00	-->	Samian (~Sami@174.27.107.153) has joined ##math
+2021-07-14 22:18:25	<--	qbt (~edun@user/edun) has quit (Quit: WeeChat 3.2)
+2021-07-14 22:22:21	-->	qbt (~edun@user/edun) has joined ##math
+2021-07-14 22:22:45	<--	ZedHedTed (~ZedHedTed@user/zedhedted) has quit (Remote host closed the connection)
+2021-07-14 22:24:49	-->	Panther (Lord@2601:18a:c000:5290:b063:90b7:1913:5170) has joined ##math
+2021-07-14 22:25:32	<--	emerent (~quassel@p200300cd5721e68cba27ebfffed28a59.dip0.t-ipconnect.de) has quit (Ping timeout: 245 seconds)
+2021-07-14 22:26:16	-->	emerent (~quassel@p200300cd5721e6a7ba27ebfffed28a59.dip0.t-ipconnect.de) has joined ##math
+2021-07-14 22:28:06	-->	chomwitt (~Pitsikoko@ppp-94-67-202-202.home.otenet.gr) has joined ##math
+2021-07-14 22:31:52	<--	Maturion (~Maturion@p200300ede71dc200796c249191b5b744.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-07-14 22:35:42	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-14 22:37:51	-->	sebastianos (~sebastian@user/sebastianos) has joined ##math
+2021-07-14 22:39:20	CuriousErnestBro	apparently, conditional expectations aren't trivial
+2021-07-14 22:39:46	CuriousErnestBro	so I'll just accept: E[X|X=x] = x, plug in x = X, E[X|X=X] = X, and move on with my life.
+2021-07-14 22:40:11	qergle	what does X=X mean?
+2021-07-14 22:40:41	CuriousErnestBro	X takes on the value of X
+2021-07-14 22:40:55	qergle	isn't X a function?
+2021-07-14 22:41:12	CuriousErnestBro	no, it is a random variable
+2021-07-14 22:41:19	qergle	:(
+2021-07-14 22:41:25	CuriousErnestBro	it has a probability density function, denoted by f_X
+2021-07-14 22:42:21	CuriousErnestBro	in the statistics chat they're talking about  σ-field's etc.
+2021-07-14 22:42:25	CuriousErnestBro	way too complicated
+2021-07-14 22:44:00	Dotz0cat	Here's a curiosity question. What would happen if you tried to take the sine or cosine of a imaginary number?
+2021-07-14 22:44:46	qergle	ok, i am not sure what level of rigor you're being taught, but an RV is a function, typically taken to be real-valued, i.e. X:Ω → ℝ
+2021-07-14 22:44:52	riv	Dotz0cat, you get another complex number!
+2021-07-14 22:45:02	riv	you know exp(x)?
+2021-07-14 22:45:31	DrBanana[m]	<Dotz0cat "Here's a curiosity question. Wha"> Are you trying to visualise/get intuition for the result?
+2021-07-14 22:45:38	qergle	which then prompts the question what is meant by "X=X"
+2021-07-14 22:46:27	CuriousErnestBro	qergle I've learned that at one point I think, we did gloss over the sigma algebra stuff though. Isn't X from the set of events. to R as opposed to the sigma algebra set?
+2021-07-14 22:47:26	CuriousErnestBro	qergle the only answer I can give you there is if you have E[X|X=x] where X takes on a "realized" value x, then X=X means that X takes on its own value, so it's the same as E[X|X]
+2021-07-14 22:48:55	qergle	an RV is a function from the sample space (often denoted Ω) to ℝ (real numbers)
+2021-07-14 22:49:27	qergle	let's forget about X. call it f(x) instead.
+2021-07-14 22:49:51	-->	koolazer (~koo@user/koolazer) has joined ##math
+2021-07-14 22:50:02	qergle	f(x)=3 makes sense. f(x)=f(x) not so much. other than tautologically.
+2021-07-14 22:50:58	CuriousErnestBro	well I invented it to make E[X|X]=X make sense
+2021-07-14 22:51:27	qergle	I see. bbl.
+2021-07-14 22:52:21	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:52:25	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-14 22:52:59	nejimban	E[X|X] is just f(X) where f(x) = E[X|X=x]
+2021-07-14 22:53:14	CuriousErnestBro	wat
+2021-07-14 22:53:23	CuriousErnestBro	expectations are not densities
+2021-07-14 22:53:51	nejimban	?
+2021-07-14 22:54:24	CuriousErnestBro	E[X|X]=f(X) isn't true
+2021-07-14 22:54:37	nejimban	I *define* f(x) as f(x) = E[X|X=x]
+2021-07-14 22:54:49	CuriousErnestBro	can we call it g(x)?
+2021-07-14 22:54:59	nejimban	sure
+2021-07-14 22:55:27	CuriousErnestBro	yes, then g(X) = E[X|X]
+2021-07-14 22:56:01	nejimban	no big deal
+2021-07-14 22:57:12	CuriousErnestBro	where do you want to go with this definition, or was this for qergle?
+2021-07-14 22:57:20	<--	bluesmonk (uid318026@id-318026.brockwell.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-14 22:57:45	nejimban	I don't know you seem to had trouble with E[X|X], E[X|X=x]
+2021-07-14 22:58:01	nejimban	anyway E[X|X] can only equal X
+2021-07-14 22:58:29	CuriousErnestBro	yes, in terms of g(X) = X, it makes sense (because g(x)=x). Intuitively not relaly
+2021-07-14 22:58:32	CuriousErnestBro	but I'm ready to move on
+2021-07-14 22:58:52	nejimban	why not really?
+2021-07-14 22:59:38	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 265 seconds)
+2021-07-14 22:59:52	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-14 23:00:00	nejimban	you want to best approximate X by all the information you can get from X itself
+2021-07-14 23:00:06	CuriousErnestBro	E[X|X] is the expectation of X when no realization of X is given. So it adds no new information, so it should be equal to E[X]
+2021-07-14 23:00:28	CuriousErnestBro	As in, E[X| the sky is blue] = E[X]
+2021-07-14 23:00:30	-->	Orxata_ (~nil@139.47.114.75) has joined ##math
+2021-07-14 23:00:43	nejimban	E[X|X] is what you should expect X to be when you already know X
+2021-07-14 23:01:06	nejimban	you have all the information
+2021-07-14 23:01:15	-->	qu4nt1n (~qu4nt1n@78.198.214.34) has joined ##math
+2021-07-14 23:01:15	nejimban	so it's X
+2021-07-14 23:02:04	nejimban	think of this as assuming X constant (i.e. known)
+2021-07-14 23:03:24	-->	Hanii (~textual@2a00:23c5:c587:6d00:5ca4:fa04:b487:ba6e) has joined ##math
+2021-07-14 23:03:31	-->	rubiksdream (~a@cm61-15-252-242.hkcable.com.hk) has joined ##math
+2021-07-14 23:03:44	<--	Julian (~tos9@python/site-packages/Julian) has quit (Quit: leaving)
+2021-07-14 23:06:12	CuriousErnestBro	yeah, that's the g(x) to g(X) explanation
+2021-07-14 23:06:58	tusko	How do I need to manipulate dy/dt = (t+y)/(t-y) to use the substitution u = y/x
+2021-07-14 23:07:01	nejimban	that's the definition of E[·|X], rather
+2021-07-14 23:07:06	tusko	my algebra weak
+2021-07-14 23:08:01	CuriousErnestBro	try to replace y with u*x maybe?
+2021-07-14 23:09:48	<--	qu4nt1n (~qu4nt1n@78.198.214.34) has quit (Quit: KVIrc 5.0.0 Aria http://www.kvirc.net/)
+2021-07-14 23:09:58	tusko	I'm an idiot
+2021-07-14 23:10:22	tusko	I needed to multiply by (1/t)/(1/t)
+2021-07-14 23:15:19	<--	elf_fortrez (~elf_fortr@adsl-72-50-4-118.prtc.net) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:19:14	pikapika	tusko, what were you trying to model
+2021-07-14 23:19:20	rubiksdream	i finally proved the result i was stumped on for two days
+2021-07-14 23:19:21	<--	Orxata_ (~nil@139.47.114.75) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:19:25	rubiksdream	such a good feeling..
+2021-07-14 23:20:33	Z-module	yeah, doing math is a sort of continual experience of confusion and frustration, puncutated by rare but *amazing* moments of intellectual triumph
+2021-07-14 23:20:36	-->	magla (~gelignite@55d46309.access.ecotel.net) has joined ##math
+2021-07-14 23:20:37	tusko	pikapika, its just a book problem. I knew the substitution was u = y/t but for whatever reason I was thinking in terms of x instead of t
+2021-07-14 23:21:09	rubiksdream	exactly, well said Z-module
+2021-07-14 23:22:12	tusko	That's an unfortunate truth. I think of it everytime someone tells me how they aren't good at math.
+2021-07-14 23:22:19	rubiksdream	btw do you have a link to the paper of that result classifying the group of permutations of Z into products of three cycles?
+2021-07-14 23:22:43	tusko	I think there are like 6 people who are 'good at math'
+2021-07-14 23:22:52	Z-module	sometimes the triumph is instead, "oh fuck, that is *so* obvious now, how did I miss that for 3 weeks?"
+2021-07-14 23:23:20	rubiksdream	yeah I had one of those
+2021-07-14 23:23:30	tusko	Or maybe being good at math is just being persistent and stubbornly refusing to give up
+2021-07-14 23:23:33	rubiksdream	well, fwiw, the idea that made the proof work was not complicated, but I think it wasnt that obvious
+2021-07-14 23:23:50	rubiksdream	simple but not obvious idea
+2021-07-14 23:23:56	rubiksdream	almost seems a bit of a paradox
+2021-07-14 23:24:04	<--	koolazer (~koo@user/koolazer) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:24:22	rubiksdream	tusko i think its being obsessed enough to be persistent
+2021-07-14 23:24:30	rubiksdream	well at least thats sort of a necessary trait
+2021-07-14 23:24:55	buster	and coffee
+2021-07-14 23:25:06	tusko	caffeine is a hell of a drug
+2021-07-14 23:25:18	Z-module	1,3,7-trimethylxanthine, yeah
+2021-07-14 23:25:19	pikapika	tusko, it feels quite pleasant the way homogenous form get simplified
+2021-07-14 23:25:41	Z-module	and the only parallelizable spheres are of dimensions 1, 3, and 7.  Coincidence?!
+2021-07-14 23:26:01	pikapika	I like diff eqs, they are just so directly useful in such a broad range of fields
+2021-07-14 23:26:03	CuriousErnestBro	Z-module I saw a tweet about that, mathematicians are bliss junkies
+2021-07-14 23:26:12	rubiksdream	Z-module  do you have a link to the paper of that result classifying the group of permutations of Z into products of three cycles?
+2021-07-14 23:26:19	CuriousErnestBro	https://twitter.com/tamasgorbe/status/1391335010142236672?lang=en
+2021-07-14 23:28:03	Z-module	yes rubiksdream, and it has some of my favorite diagrams ever published:   https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-39/issue-2/Permutations-as-products-of-conjugate-infinite-cycles/pjm/1102969562.pdf
+2021-07-14 23:28:56	rubiksdream	awesome
+2021-07-14 23:32:20	<--	patchie (~sdf@136.228.236.52) has quit (Remote host closed the connection)
+2021-07-14 23:32:36	-->	patchie (~sdf@136.228.211.47) has joined ##math
+2021-07-14 23:33:47	-->	NEYi (~NEYi@109.251.216.38) has joined ##math
+2021-07-14 23:33:56	rubiksdream	im almost certain the brain solves math problems while the human associated to it is asleep
+2021-07-14 23:34:14	rubiksdream	the solution only came to me as I was drifting to bed and I just had to type it up to see if it worked
+2021-07-14 23:35:34	<--	haykam1 (~haykam@static.100.2.21.65.clients.your-server.de) has quit (Remote host closed the connection)
+2021-07-14 23:35:47	pikapika	rubiksdream, sometimes I see solutions in dreams
+2021-07-14 23:35:47	rubiksdream	back to bed now
+2021-07-14 23:35:48	-->	haykam2 (~haykam@static.100.2.21.65.clients.your-server.de) has joined ##math
+2021-07-14 23:36:24	rubiksdream	pikapika wow, ive never had that, my dreams are utterly bizarre with basically no connection to anything I think about in the day
+2021-07-14 23:36:46	rubiksdream	but it could be the brain/minds way of piecing things together, even though they appear bizarre
+2021-07-14 23:37:14	loopspace	I find that solutions arrive not during sleep but when the mind is free of the concerns of the day (usually right upon waking there's a small window before the usual thoughts proliferate)
+2021-07-14 23:37:27	pikapika	rubiksdream, I rarely dream and most dreams are like that too
+2021-07-14 23:37:49	pikapika	But I have sometimes found solutions to hard problems that I have been trying to solve for a long time in dreams
+2021-07-14 23:37:59	Z-module	rubiksdream: once (only), that happened to me. I had commtutive algebra homework from Atiyah & Macdonald, worked at it for quite a few hours late into the night, but couldn't get anywhere one some of it. Somehow my math-addled brain just wouldn't let go, and I managed to have an insight during my sleep that night, and finished it off easily in the morning. Oh man. Math is way better than pharmaceuticals.   (Well, sometimes.)
+2021-07-14 23:38:14	Z-module	on
+2021-07-14 23:38:23	Z-module	on* some
+2021-07-14 23:39:05	Z-module	Some people dream of adventures, some have sex dreams, a select few dream about chains of prime ideals!
+2021-07-14 23:39:26	CGILightning	lol
+2021-07-14 23:41:24	<--	rubiksdream (~a@cm61-15-252-242.hkcable.com.hk) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:41:35	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:42:02	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-14 23:45:35	greenbagels	> (Well, sometimes.)
+2021-07-14 23:45:38	greenbagels	lol
+2021-07-14 23:47:05	<--	savask (~savask@Powder/Developer/savask) has left ##math
+2021-07-14 23:48:13	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:50:25	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##math
+2021-07-14 23:50:51	tolarz	today i saw the topology prof in the gym
+2021-07-14 23:52:09	tolarz	i once dreamt i identified as a woman (i identify as a man in my life)
+2021-07-14 23:53:25	Franciman	I usually dream about failures and fears
+2021-07-14 23:53:43	<--	epolanski (uid312403@id-312403.brockwell.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-14 23:53:57	Franciman	my mother was about to die, she had an heartstroke. I had death-related dreams for months
+2021-07-14 23:54:35	Franciman	until one day my brain found a way to deal with it, I remember that I dreamt I were to die and said in the dream: well, it's going to happen, I lived my life, I am ready
+2021-07-14 23:54:46	Franciman	from that point I didn't dream about death as much
+2021-07-14 23:54:53	Franciman	so yeah the brain solves problems :D
+2021-07-14 23:54:58	Franciman	both mathematical and emotional
+2021-07-14 23:56:39	-->	cheater1__ (~Username@user/cheater) has joined ##math
+2021-07-14 23:56:54	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 272 seconds)
+2021-07-14 23:56:57	--	cheater1__ is now known as cheater
+2021-07-14 23:59:46	--	irc: disconnected from server
+2021-07-15 17:52:15	-->	amanr (~sarcastic@122.161.64.40) has joined ##math
+2021-07-15 17:52:15	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 17:52:15	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 17:52:15	--	Channel ##math: 448 nicks (0 ops, 0 voices, 448 normals)
+2021-07-15 17:52:18	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 17:53:12	rubiksdream	no worries haha, yeah its classic to get contractible and simply connected confused, which I think is what happens when people say R^n - pt is never simply connected (its certainly never contractible, since its homotopy equivalent to S^{n-1}, which is never contractible)
+2021-07-15 17:54:29	-->	dogbert2 (~Bill@ip68-105-189-91.lv.lv.cox.net) has joined ##math
+2021-07-15 17:55:01	--	irc: disconnected from server
+2021-07-15 17:55:19	-->	amanr (~sarcastic@122.161.64.40) has joined ##math
+2021-07-15 17:55:19	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 17:55:19	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 17:55:19	--	Channel ##math: 449 nicks (0 ops, 0 voices, 449 normals)
+2021-07-15 17:55:21	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 17:55:50	Fangs	oof.. I realized that R^n - pt was not contractible, and remembered that universal covers only needed to be simply connected
+2021-07-15 17:56:08	Fangs	I didn't realized until you said what you said that R^n - pt for n > 2 is actually simply connected
+2021-07-15 17:56:10	-->	pycurious (~Adium@user/pycurious) has joined ##math
+2021-07-15 17:56:31	rubiksdream	yeah
+2021-07-15 17:56:39	--	irc: disconnected from server
+2021-07-15 17:56:58	-->	amanr (~sarcastic@122.161.64.40) has joined ##math
+2021-07-15 17:56:58	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 17:56:58	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 17:56:58	--	Channel ##math: 450 nicks (0 ops, 0 voices, 450 normals)
+2021-07-15 17:57:00	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 17:57:36	buster	some dude here jumped on me for saying that exp: so3 to SO3 is surjective (which boils down to Euler's rotation theorem), and said it can't be because SO3 isn't simply connected
+2021-07-15 17:58:02	buster	no idea what theorem he was misremembering
+2021-07-15 17:58:02	rubiksdream	lol
+2021-07-15 17:58:15	Fangs	buster: that might have been me
+2021-07-15 17:58:23	buster	oops haha
+2021-07-15 17:58:33	rubiksdream	xD
+2021-07-15 17:59:27	--	irc: disconnected from server
+2021-07-15 17:59:46	-->	amanr (~sarcastic@122.161.64.40) has joined ##math
+2021-07-15 17:59:46	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 17:59:46	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 17:59:46	--	Channel ##math: 449 nicks (0 ops, 0 voices, 449 normals)
+2021-07-15 17:59:49	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 17:59:57	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-15 18:00:13	Fangs	buster: I'm still certain that SO(3) is not simply connected
+2021-07-15 18:00:25	Fangs	SO(n) in general has a universal cover by Spin(n)
+2021-07-15 18:00:26	buster	it's not
+2021-07-15 18:00:47	Fangs	(with fundemental group Z/2Z)
+2021-07-15 18:01:00	Fangs	any subsequent discussion on exponential map I'm no longer sure
+2021-07-15 18:01:10	--	irc: disconnected from server
+2021-07-15 18:12:42	-->	amanr (~sarcastic@122.161.64.40) has joined ##math
+2021-07-15 18:12:42	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 18:12:42	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 18:12:42	--	Channel ##math: 451 nicks (0 ops, 0 voices, 451 normals)
+2021-07-15 18:12:46	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 18:12:53	Fangs	g ~= TeG, I would have thought g is contractible
+2021-07-15 18:12:58	--	irc: disconnected from server
+2021-07-15 18:13:22	-->	amanr (~sarcastic@122.161.64.40) has joined ##math
+2021-07-15 18:13:22	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 18:13:22	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 18:13:22	--	Channel ##math: 451 nicks (0 ops, 0 voices, 451 normals)
+2021-07-15 18:13:24	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 18:13:29	buster	*connected component of the identity
+2021-07-15 18:13:30	Fangs	buster: O(3) is effectively Z/2Z x SO(3)
+2021-07-15 18:14:00	Fangs	so to get to the other half you need your Z/2Z to act on the image to get to the 'other' part of O(3)
+2021-07-15 18:14:11	rubiksdream	in general there are as many covers (up to isomorphism) as subgroups of a spaces fundamental group
+2021-07-15 18:14:30	rubiksdream	so as long as a space is not simply connected, there are non simply connected covers
+2021-07-15 18:14:33	Fangs	rubiksdream: aren't lie algebras always contractible as manifolds?
+2021-07-15 18:14:51	Fangs	(tangent space at identity)
+2021-07-15 18:15:20	rubiksdream	i dont think so
+2021-07-15 18:15:33	rubiksdream	you need some more conditions
+2021-07-15 18:16:11	Fangs	rubiksdream: tangent space at a point is contractible no?
+2021-07-15 18:17:24	<--	Thoams (~Thoams@88.97.45.247) has quit (Ping timeout: 255 seconds)
+2021-07-15 18:18:28	rubiksdream	yes
+2021-07-15 18:18:36	rubiksdream	but why does that mean the lie group is contractible
+2021-07-15 18:18:40	rubiksdream	what about the circle group?
+2021-07-15 18:18:49	Fangs	rubiksdream: no, the lie *algebra* is contractible
+2021-07-15 18:19:07	<--	lerzer (~lerzer@192.145.118.251) has quit (Ping timeout: 246 seconds)
+2021-07-15 18:19:09	rubiksdream	oh, hm
+2021-07-15 18:19:19	Fangs	22:41 <Fangs> my thought was this: if exp: so3 -> SO(3) is surjective, then so3 ~= R^3 is a covering map. morever its a universal cover, but the universal cover of SO(3) is SU(2) (homeo to S^3)
+2021-07-15 18:19:48	Fangs	my claim here was that so3, if exp were a covering map, would be a universal cover
+2021-07-15 18:20:10	rubiksdream	oh i didnt see so3 ~= R^3, sorry
+2021-07-15 18:20:27	Fangs	its fine, its annoying to read lie algebra/lie group notation
+2021-07-15 18:20:28	rubiksdream	yes you are right, *if* exp were a covering map
+2021-07-15 18:20:39	Fangs	and in physics they dont even make the distinction, often
+2021-07-15 18:20:44	rubiksdream	then indeed, R^3 would be *the* universal cover of SO(3)
+2021-07-15 18:20:57	rubiksdream	yes this line of logic works
+2021-07-15 18:21:08	rubiksdream	so exp : so3 -> SO(3) cannot be a covering map
+2021-07-15 18:21:12	rubiksdream	(although it is surjective)
+2021-07-15 18:21:13	Fangs	idk what bullshit I spouted about SO(3) not being simply connected though, that's entirely false
+2021-07-15 18:21:31	Fangs	rubiksdream: yeah thats the correction I learnt after the discussion with buster
+2021-07-15 18:21:59	Fangs	(for S^1.. and abelian lie groups.. which is just S^1 x S^1 x ... x S^1) the exp map happens to be a covering map too
+2021-07-15 18:22:32	Fangs	I kinda want to know in which cases exp is a covering map
+2021-07-15 18:25:12	Fangs	https://math.stackexchange.com/questions/3190787/when-is-exponential-map-from-lie-algebra-to-lie-group-a-covering-map
+2021-07-15 18:25:24	Fangs	exp is a covering map if and only if g is solvable and does not contain two particular Lie subalgebras e, e~.
+2021-07-15 18:25:31	Fangs	I don't really udnerstand anything past 'solvable'
+2021-07-15 18:26:15	-->	hanif (~hanif@gateway/tor-sasl/hanif) has joined ##math
+2021-07-15 18:26:36	rubiksdream	this is a bit beyond me :/ haven't really studied lie groups/algebras
+2021-07-15 18:26:44	rubiksdream	(although i want to)
+2021-07-15 18:29:24	-->	Thoams (~Thoams@88.97.45.247) has joined ##math
+2021-07-15 18:30:07	--	irc: disconnected from server
+2021-07-15 18:47:30	-->	amanr (~sarcastic@122.161.68.169) has joined ##math
+2021-07-15 18:47:30	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 18:47:30	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 18:47:30	--	Channel ##math: 448 nicks (0 ops, 0 voices, 448 normals)
+2021-07-15 18:47:33	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 18:49:05	<--	hendursa1 (~weechat@user/hendursaga) has quit (Quit: hendursa1)
+2021-07-15 18:49:49	-->	hendursaga (~weechat@user/hendursaga) has joined ##math
+2021-07-15 18:53:57	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 265 seconds)
+2021-07-15 18:54:02	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-15 18:57:35	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-15 18:57:52	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-15 18:58:04	-->	cheater1__ (~Username@user/cheater) has joined ##math
+2021-07-15 18:59:53	<--	TOB_CyxoB (~TOB_CyxoB@gateway/tor-sasl/tobcyxob/x-83841022) has quit (Quit: Leaving)
+2021-07-15 19:00:24	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 258 seconds)
+2021-07-15 19:00:33	--	cheater1__ is now known as cheater
+2021-07-15 19:04:25	-->	Mattiaslndstrm (~Mattiasln@c188-148-207-108.bredband.tele2.se) has joined ##math
+2021-07-15 19:04:37	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Ping timeout: 246 seconds)
+2021-07-15 19:04:56	-->	magla (~gelignite@55d493a6.access.ecotel.net) has joined ##math
+2021-07-15 19:09:12	-->	bosspotato_ (~bosspotat@user/bosspotato) has joined ##math
+2021-07-15 19:09:24	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-15 19:10:28	<--	pycurious (~Adium@user/pycurious) has quit (Quit: Leaving.)
+2021-07-15 19:10:43	-->	pycurious (~Adium@user/pycurious) has joined ##math
+2021-07-15 19:15:10	-->	pavlushka (~pavlushka@user/pavlushka) has joined ##math
+2021-07-15 19:15:30	<--	pycurious (~Adium@user/pycurious) has quit (Ping timeout: 268 seconds)
+2021-07-15 19:23:27	-->	pycurious (~Adium@user/pycurious) has joined ##math
+2021-07-15 19:27:47	<--	pycurious (~Adium@user/pycurious) has quit (Ping timeout: 265 seconds)
+2021-07-15 19:27:56	-->	chomwitt (~Pitsikoko@2a02:587:dc04:e00:12c3:7bff:fe6d:d374) has joined ##math
+2021-07-15 19:28:44	-->	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has joined ##math
+2021-07-15 19:30:49	-->	cheater1__ (~Username@user/cheater) has joined ##math
+2021-07-15 19:33:06	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 265 seconds)
+2021-07-15 19:33:15	--	cheater1__ is now known as cheater
+2021-07-15 19:40:37	--	irc: disconnected from server
+2021-07-15 19:41:01	-->	amanr (~sarcastic@122.161.68.169) has joined ##math
+2021-07-15 19:41:01	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 19:41:01	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 19:41:01	--	Channel ##math: 454 nicks (0 ops, 0 voices, 454 normals)
+2021-07-15 19:41:03	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 19:41:19	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 265 seconds)
+2021-07-15 19:41:41	-->	jinsun_ (~quassel@user/jinsun) has joined ##math
+2021-07-15 19:42:00	<--	jinsun_ (~quassel@user/jinsun) has quit (Client Quit)
+2021-07-15 19:42:23	-->	cheater (~Username@user/cheater) has joined ##math
+2021-07-15 19:45:55	--	bosspotato_ is now known as bosspotato
+2021-07-15 19:46:09	<--	cheater1__ (~Username@user/cheater) has quit (Ping timeout: 265 seconds)
+2021-07-15 19:49:29	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##math
+2021-07-15 19:50:18	<--	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-07-15 19:52:15	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##math
+2021-07-15 19:52:32	<--	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has quit (Max SendQ exceeded)
+2021-07-15 19:54:17	<--	derelict (~derelict@user/derelict) has quit (Ping timeout: 245 seconds)
+2021-07-15 19:57:39	-->	Brainium (~brainium@user/brainium) has joined ##math
+2021-07-15 20:01:11	-->	[itchyjunk] (~itchyjunk@user/itchyjunk/x-7353470) has joined ##math
+2021-07-15 20:01:20	-->	pycurious (~Adium@user/pycurious) has joined ##math
+2021-07-15 20:02:29	-->	bildramer (~bildramer@80.106.28.16) has joined ##math
+2021-07-15 20:11:36	-->	cheater1__ (~Username@84-115-12-132.cable.dynamic.surfer.at) has joined ##math
+2021-07-15 20:11:54	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-15 20:12:09	<--	cheater (~Username@user/cheater) has quit (Ping timeout: 255 seconds)
+2021-07-15 20:12:11	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-15 20:13:33	--	cheater1__ is now known as cheater
+2021-07-15 20:13:39	--	cheater is now known as cheater1
+2021-07-15 20:14:02	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##math
+2021-07-15 20:14:45	-->	arseniiv (~arseniiv@94.41.6.151.dynamic.ufanet.ru) has joined ##math
+2021-07-15 20:20:57	--	irc: disconnected from server
+2021-07-15 20:21:22	-->	amanr (~sarcastic@122.161.68.169) has joined ##math
+2021-07-15 20:21:22	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 20:21:22	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 20:21:22	--	Channel ##math: 457 nicks (0 ops, 0 voices, 457 normals)
+2021-07-15 20:21:24	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 20:22:15	<--	Osares10 (~Osares10@user/osares10) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-07-15 20:23:59	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-15 20:27:24	-->	Osares10 (~Osares10@user/osares10) has joined ##math
+2021-07-15 20:28:03	-->	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has joined ##math
+2021-07-15 20:29:42	<--	chomwitt (~Pitsikoko@2a02:587:dc04:e00:12c3:7bff:fe6d:d374) has quit (Ping timeout: 245 seconds)
+2021-07-15 20:30:18	-->	specing_ (~specing@user/specing) has joined ##math
+2021-07-15 20:30:19	<--	specing (~specing@user/specing) has quit (Killed (NickServ (GHOST command used by specing_)))
+2021-07-15 20:36:17	--	irc: disconnected from server
+2021-07-15 20:36:43	-->	amanr (~sarcastic@122.161.68.169) has joined ##math
+2021-07-15 20:36:43	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-15 20:36:43	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-15 20:36:43	--	Channel ##math: 459 nicks (0 ops, 0 voices, 459 normals)
+2021-07-15 20:36:44	[-_-]	I still don't intuitively get it
+2021-07-15 20:36:46	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-15 20:38:14	Z-module	so if you needed to do an integral like  \int e^(v^2) v dv   you could skip the notation for making a new variable name (u = v^2) and just rewrite that as  (1/2) \int e^(v^2) d(v^2)  so the answer is  (1/2) e^(v^2) + C
+2021-07-15 20:38:56	Z-module	there's actually an extenstive formalism you could get into, "differential forms", but it's not going to help you here specifically
+2021-07-15 20:42:42	-->	xcombelle (~xavie@176-139-252-198.abo.bbox.fr) has joined ##math
+2021-07-15 20:45:43	[-_-]	okay
+2021-07-15 20:45:50	[-_-]	Thank you
+2021-07-15 20:46:15	biberao	puff
+2021-07-15 20:46:33	buster	a biberao appears
+2021-07-15 20:46:42	[-_-]	could I integrate this : \int k (dx)^2
+2021-07-15 20:47:49	qergle	what does that notation mean?
+2021-07-15 20:48:29	[-_-]	I think this is how potential energy of spirng should be derived
+2021-07-15 20:48:41	[-_-]	F=k*dx
+2021-07-15 20:48:45	[-_-]	dF=k*dx
+2021-07-15 20:48:58	-->	egoist (~egoist@186.235.80.249) has joined ##math
+2021-07-15 20:49:00	[-_-]	dw=dF*dx=k(dx)^2
+2021-07-15 20:49:14	[-_-]	w=\int k (dx)^2
+2021-07-15 20:49:23	qergle	is w=F*dx or F*x?
+2021-07-15 20:49:40	qergle	presumably it's "work" right?
+2021-07-15 20:49:46	hanif	also i think the first formula should be F=k*x not dx
+2021-07-15 20:49:48	[-_-]	in book F=k*x
+2021-07-15 20:50:01	[-_-]	hanif: yes but it makes no sense to me
+2021-07-15 20:50:25	[-_-]	small change in x
+2021-07-15 20:50:29	hanif	you don't understand why F=k*x instead of k*dx?
+2021-07-15 20:50:34	[-_-]	yes
+2021-07-15 20:50:42	hanif	then i ask you, what does F mean?
+2021-07-15 20:50:47	[-_-]	force
+2021-07-15 20:50:53	[-_-]	force for that small dx
+2021-07-15 20:50:57	hanif	what force specifically?
+2021-07-15 20:51:04	[-_-]	restoring force
+2021-07-15 20:51:15	hanif	yes restoring force
+2021-07-15 20:52:03	qergle	using differentials (which aren't real numbers) to represent distances in kinematics seems quite unorthodox. can you draw a line dx meters long on paper?
+2021-07-15 20:52:50	hanif	say you keep a spring extended at 10 cms from its equilibrium position, the force you feel that contracts the spring will be the restoring force
+2021-07-15 20:53:32	hanif	[-_-]: actually i think you may have intended dx to mean the difference between the extension of the spring from its equilibrium position?
+2021-07-15 20:53:41	[-_-]	yes
+2021-07-15 20:53:44	[-_-]	http://0x0.st/-ODE.jpg
+2021-07-15 20:53:44	<--	Arcorann (~A@159-196-65-46.9fc441.mel.nbn.aussiebb.net) has quit (Ping timeout: 255 seconds)
+2021-07-15 20:53:59	qergle	i would use notation like Δx for that
+2021-07-15 20:54:52	hanif	right, dx has a different meaning. i personally would go with (x-x_0) or ^ were i to specify this difference
+2021-07-15 20:54:56	qergle	and if you're considering infinitesimal changes, then differentials across the board, not selectively.
+2021-07-15 20:56:05	-->	elf_fortrez (~elf_fortr@adsl-72-50-4-51.prtc.net) has joined ##math
+2021-07-15 20:56:05	[-_-]	My problem is if dx' is the distance then F should be equal to k*dx'
+2021-07-15 20:56:17	[-_-]	not k*x'
+2021-07-15 20:56:45	[-_-]	Do you have no problem with how it is presented in the book, or you intuitively understand it?
+2021-07-15 20:57:06	qergle	they're playing loose with notation
+2021-07-15 20:57:34	qergle	"extending from x' to x'+dx'" is handwavy.
+2021-07-15 20:57:58	-->	Sheilong (uid293653@id-293653.charlton.irccloud.com) has joined ##math
+2021-07-15 20:58:13	[-_-]	x' should be a constant
+2021-07-15 20:58:29	qergle	what you really want is to integrate infinitesimally small work elements to get total work
+2021-07-15 20:58:35	[-_-]	yes
+2021-07-15 20:58:36	[-_-]	yes
+2021-07-15 20:59:44	-->	LiftLeft (~LiftLeft@216-26-118-34.dynamic.nelson.airstreamcomm.net) has joined ##math
+2021-07-15 21:01:44	qergle	so say in your spring's case, F=-kx
+2021-07-15 21:01:59	qergle	mind you, the last time i looked at kinematics, newton was still alive
+2021-07-15 21:02:43	[-_-]	hmmm
+2021-07-15 21:03:04	biberao	hi
+2021-07-15 21:03:07	qergle	then we'd have W = ∫ kx dx (with limits being the two displacements)
+2021-07-15 21:03:50	[-_-]	right....but tell me what you mean by F here? total restoring force?
+2021-07-15 21:03:58	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-15 21:04:15	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-15 21:05:03	qergle	i am not sure on the terminology (restoring, etc) but if a spring has constant "k", and if you stretch it "x" from rest, the force exerted is -kx.
+2021-07-15 21:05:30	qergle	that's my F. is that restoring force? seems like it fits since it's the force needed to go back to rest.
+2021-07-15 21:05:38	hanif	'My problem is if dx' is the distance then F should be equal to k*dx'' => dx' is not the extension of the spring, rather here it means an infinitesimal change in the extension. F is a function of the entire extension (from equilibrium)
+2021-07-15 21:06:20	hanif	qergle: yeah that's the restoring force
+2021-07-15 21:06:29	qergle	thanks
+2021-07-15 21:08:00	<--	fweht (uid404746@id-404746.tooting.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-15 21:08:14	[-_-]	ouuuuu...
+2021-07-15 21:08:18	[-_-]	o.o
+2021-07-15 21:09:33	hanif	you understand it now?
+2021-07-15 21:09:55	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Ping timeout: 246 seconds)
+2021-07-15 21:11:50	[-_-]	W = ∫∫ kdx dx
+2021-07-15 21:11:59	[-_-]	This is what I understand now
+2021-07-15 21:12:24	qergle	nope
+2021-07-15 21:12:34	[-_-]	why?
+2021-07-15 21:13:00	hanif	incidentally that does give the answer. but show your steps
+2021-07-15 21:13:01	qergle	hrmm, ok, fine.
+2021-07-15 21:13:10	hanif	so we can follow your thought process
+2021-07-15 21:13:41	qergle	often we will denote the inner integral as kx (bc the limits are 0 and x)
+2021-07-15 21:13:52	[-_-]	small change in extension means small change in force....
+2021-07-15 21:13:54	qergle	but yes, technically, it can be ∫∫ kdxdx
+2021-07-15 21:14:13	[-_-]	df = ∫ kdx
+2021-07-15 21:14:17	[-_-]	F = kx
+2021-07-15 21:14:30	[-_-]	dw = df * dx
+2021-07-15 21:14:37	[-_-]	oops....
+2021-07-15 21:14:44	qergle	dF = kdx
+2021-07-15 21:14:50	qergle	F = ∫ kdx
+2021-07-15 21:15:25	[-_-]	how do I go from "dw = df * dx" to "W = ∫∫ kdx dx"
+2021-07-15 21:15:28	qergle	which may or may not be kx, depending on limits
+2021-07-15 21:15:51	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-15 21:15:51	[-_-]	I mean what is the logic of getting the double integral
+2021-07-15 21:16:07	qergle	why do you think dw=df dx
+2021-07-15 21:16:16	-->	Null_A (~null_a@2601:645:8700:2290:e9c6:7ad4:aa07:6319) has joined ##math
+2021-07-15 21:16:40	[-_-]	small changes of force all added together to get Full Work for 'x'
+2021-07-15 21:16:51	[-_-]	small changes of work all added together to get Full Work for 'x'
+2021-07-15 21:16:59	qergle	W=∫ Fdx ⇒ dW = Fdx
+2021-07-15 21:17:16	[-_-]	ha....
+2021-07-15 21:17:17	qergle	not dFdx
+2021-07-15 21:17:32	-->	red_owl (~red_owl@p5b23f10f.dip0.t-ipconnect.de) has joined ##math
+2021-07-15 21:17:38	-->	derelict (~derelict@user/derelict) has joined ##math
+2021-07-15 21:17:48	qergle	you could write F as F(x)
+2021-07-15 21:17:54	qergle	W=∫ F(x)dx
+2021-07-15 21:18:32	qergle	see ya. bbl.
+2021-07-15 21:19:18	[-_-]	okay....this is awkward but it seems F = k*x
+2021-07-15 21:19:40	hanif	yes
+2021-07-15 21:20:57	<--	rubiksdream (~a@cm61-15-252-242.hkcable.com.hk) has quit (Ping timeout: 245 seconds)
+2021-07-15 21:21:32	hanif	continuing, from W=∫ F(x)dx = ∫ (k*x) dx = answer
+2021-07-15 21:22:28	qergle	ok, before i go, let me add a graphical dimension. say you plotted F(x) on graph paper. so x on the x-axis and F(x) is the vertical distance at each x. if you want work from x=a to x=b you want the area under the curve. in other words, you want to add up the little forces from a to a+Δ then a+Δ to a+2*Δ, etc. like you did back when you did the trapezoid approx. the limit of this as your partition shrinks is the riemann integral, denoted: ∫ F(x)dx
+2021-07-15 21:22:34	qergle	now bbl
+2021-07-15 21:23:08	[-_-]	:)
+2021-07-15 21:23:16	[-_-]	what is bbl btw?
+2021-07-15 21:23:26	hanif	be back later
+2021-07-15 21:23:42	<--	ul (~ul@92.49.32.10) has quit (Ping timeout: 255 seconds)
+2021-07-15 21:24:03	[-_-]	oh
+2021-07-15 21:25:33	[-_-]	hanif & qergle  thank you guys
+2021-07-15 21:26:09	[-_-]	will be back for more math....(I don't want to but have no choice)
+2021-07-15 21:26:18	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Remote host closed the connection)
+2021-07-15 21:29:27	-->	johnkeats6 (~johnkeats@2804:14c:32:a0cc:1c78:b621:73a7:e58d) has joined ##math
+2021-07-15 21:30:59	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-15 21:31:22	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-15 21:33:05	-->	riv (~river@tilde.team/user/river) has joined ##math
+2021-07-15 21:34:52	<--	pavlushka (~pavlushka@user/pavlushka) has quit (Ping timeout: 252 seconds)
+2021-07-15 21:35:59	-->	pavlushka (~pavlushka@user/pavlushka) has joined ##math
+2021-07-15 21:36:18	-->	rubiksdream (~a@203.145.94.250) has joined ##math
+2021-07-15 21:36:22	<--	pgp (~pgp@213.205.68.220) has quit (Quit: Leaving)
+2021-07-15 21:38:13	-->	chomwitt (~Pitsikoko@ppp-94-67-202-202.home.otenet.gr) has joined ##math
+2021-07-15 21:39:36	-->	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has joined ##math
+2021-07-15 21:40:22	<--	emerent (~quassel@p200300cd5721e6a7ba27ebfffed28a59.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2021-07-15 21:40:29	-->	coeus (~coeus@40.sub-174-205-140.myvzw.com) has joined ##math
+2021-07-15 21:40:58	-->	emerent (~quassel@p200300cd5721e6ccba27ebfffed28a59.dip0.t-ipconnect.de) has joined ##math
+2021-07-15 21:43:30	<--	Julian (~tos9@python/site-packages/Julian) has quit (Ping timeout: 255 seconds)
+2021-07-15 21:44:48	--	irc: disconnected from server
+2021-07-16 19:15:15	-->	amanr (~sarcastic@122.161.66.163) has joined ##math
+2021-07-16 19:15:15	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-16 19:15:15	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-16 19:15:15	--	Channel ##math: 455 nicks (0 ops, 0 voices, 455 normals)
+2021-07-16 19:15:17	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-16 19:19:22	<--	bosspotato (~bosspotat@user/bosspotato) has quit (Ping timeout: 258 seconds)
+2021-07-16 19:20:37	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-16 19:20:53	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-16 19:20:55	-->	phillbush (~phillbush@user/phillbush) has joined ##math
+2021-07-16 19:26:01	rubiksdream	i think i can prove it as long as the following is true: Suppose for every line through the origin L, L intersects the convex hull of finitely many points {p_1,...,p_k}, then 0 is contained in the convex hull of {p_1,...,p_k}
+2021-07-16 19:26:03	-->	scaleww (~scaleww@77-41-20-31.ftth.glasoperator.nl) has joined ##math
+2021-07-16 19:26:34	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Ping timeout: 246 seconds)
+2021-07-16 19:27:42	cherim	Purely geometrically, without any complex numbers
+2021-07-16 19:27:57	cherim	You have a polygon C in the plane and a point z outside
+2021-07-16 19:27:59	johnkeats6	rubiksdream, if a point is not in a convex set, there's a line separating them, and then it's clear there's a line through the point that doesn't go through the set
+2021-07-16 19:28:17	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has joined ##math
+2021-07-16 19:28:22	cherim	x1-z, ... x_k-z are vectors from z to the vertices
+2021-07-16 19:28:58	cherim	If you separated C from z by a line, all these vectors have nonnegative projections onto the line perpendicular to the separating one
+2021-07-16 19:29:02	rubiksdream	johnkeats6 yes, but im not sure how to show there is a line separating them
+2021-07-16 19:29:05	rubiksdream	that is what im trying to prove
+2021-07-16 19:29:12	johnkeats6	that's the separation theorem
+2021-07-16 19:29:15	rubiksdream	yes
+2021-07-16 19:29:38	rubiksdream	i can prove the separation theorem if this is true: Suppose for every line through the origin L, L intersects the convex hull of finitely many points {p_1,...,p_k}, then 0 is contained in the convex hull of {p_1,...,p_k}
+2021-07-16 19:29:44	rubiksdream	and then conclude as you and cherim are implying
+2021-07-16 19:29:56	cherim	Separation theorem has easy proof in general
+2021-07-16 19:30:02	johnkeats6	why don't you just look up the proof?
+2021-07-16 19:30:06	cherim	But in the case when one set is a point, it's trivial
+2021-07-16 19:30:13	rubiksdream	idk, i wanted to try it myself :/
+2021-07-16 19:30:26	johnkeats6	asking us how to do it is not trying it yourself :>
+2021-07-16 19:30:37	cherim	Take the point x of C closest to z and a perpendicular bisector to zx
+2021-07-16 19:31:12	cherim	Or something like this
+2021-07-16 19:31:20	johnkeats6	yeah.
+2021-07-16 19:31:33	johnkeats6	that works whenever there's a pair of points minimizing the distance between the two sets
+2021-07-16 19:31:42	johnkeats6	the general case is more annoying and involves trickery
+2021-07-16 19:32:23	cherim	General case has a very cute proof based on transfinite induction
+2021-07-16 19:32:44	cherim	You enlarge the sets keeping them convex and non-intersecting
+2021-07-16 19:32:54	Z-module	yeah, I was overlooking the case of {all the x_i} having just two points before, but that's easily dismissed first.
+2021-07-16 19:33:34	cherim	By taking an arbitrary unused point in the plane and joining it either to all points of set A or to all points of set B with segments
+2021-07-16 19:33:44	cherim	Final configuration fills all the plane
+2021-07-16 19:34:32	cherim	It is therefore necessarily two full halfplanes, except possibly the dividing line is partially in both sets
+2021-07-16 19:34:42	johnkeats6	why are they still disjoint?
+2021-07-16 19:34:48	johnkeats6	after you cone
+2021-07-16 19:35:08	cherim	One of the two variants (to A or to B) keeps everything
+2021-07-16 19:35:23	cherim	Convexity and disjointness
+2021-07-16 19:35:42	cherim	(When we consider an unused point)
+2021-07-16 19:35:53	johnkeats6	do you have a reference
+2021-07-16 19:36:28	cherim	Fifth lecture on calculus 101 in Moscow...
+2021-07-16 19:37:12	johnkeats6	:>
+2021-07-16 19:44:34	-->	bildramer (~bildramer@80.106.28.16) has joined ##math
+2021-07-16 19:47:24	-->	Guest34 (~Guest34@115.97.251.135) has joined ##math
+2021-07-16 19:47:40	-->	babebraham (~textual@172.98.247.226) has joined ##math
+2021-07-16 19:48:09	<--	Guest34 (~Guest34@115.97.251.135) has left ##math
+2021-07-16 19:48:36	-->	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has joined ##math
+2021-07-16 19:49:33	-->	Vornicus (~Vornicus@2603-8000-5d07-7ef0-0dd5-40fe-995e-105e.res6.spectrum.com) has joined ##math
+2021-07-16 19:52:49	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 246 seconds)
+2021-07-16 19:53:57	<--	anandprabhu (~anandprab@94.202.243.198) has quit (Quit: Leaving)
+2021-07-16 19:54:06	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:ec89:5807:1ec4:d041) has quit (Quit: Client closed)
+2021-07-16 19:54:23	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 19:55:45	<--	jellydonut (~quassel@185.213.154.166) has quit (Quit: jellydonut)
+2021-07-16 19:56:44	<--	node1 (~node1@user/node1) has quit (Quit: Leaving)
+2021-07-16 19:57:37	-->	phillbush_ (~phillbush@user/phillbush) has joined ##math
+2021-07-16 19:58:19	-->	jellydonut (~quassel@185.213.154.166) has joined ##math
+2021-07-16 19:58:54	-->	eXistenZ (~biskit@bzq-109-65-243-126.red.bezeqint.net) has joined ##math
+2021-07-16 19:59:28	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Ping timeout: 246 seconds)
+2021-07-16 20:03:08	<--	Pollion (bombar@crans/pollion) has quit (Ping timeout: 256 seconds)
+2021-07-16 20:04:09	<--	phillbush (~phillbush@user/phillbush) has quit (Ping timeout: 272 seconds)
+2021-07-16 20:04:28	<--	rubiksdream (~a@cm61-15-252-242.hkcable.com.hk) has quit (Quit: Leaving)
+2021-07-16 20:04:36	<--	silverwhitefish (~hidden@47.202.102.10) has quit (Ping timeout: 258 seconds)
+2021-07-16 20:04:52	-->	Pollion (~bombar@ssh2.adh.crans.org) has joined ##math
+2021-07-16 20:06:00	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 20:09:54	<--	Julian (~tos9@python/site-packages/Julian) has quit (Quit: leaving)
+2021-07-16 20:10:22	-->	cvmn (~caveman@gateway/tor-sasl/caveman) has joined ##math
+2021-07-16 20:11:32	<--	ua_ (~ua@public-gprs229313.centertel.pl) has quit (Ping timeout: 268 seconds)
+2021-07-16 20:16:44	-->	CodePoint (~BitShift@2607:fb90:c69:cd2:4a54:fcd3:821f:a711) has joined ##math
+2021-07-16 20:19:14	<--	t3nj1n_ (~t3nj1n@108.5.82.237) has quit (Ping timeout: 252 seconds)
+2021-07-16 20:19:32	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Remote host closed the connection)
+2021-07-16 20:21:42	-->	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has joined ##math
+2021-07-16 20:22:26	-->	t3nj1n_ (~t3nj1n@108.5.82.237) has joined ##math
+2021-07-16 20:22:34	-->	Imk0tter (~Imk0tter@172.58.228.97) has joined ##math
+2021-07-16 20:24:34	-->	ua_ (~ua@public-gprs227821.centertel.pl) has joined ##math
+2021-07-16 20:26:04	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 246 seconds)
+2021-07-16 20:29:18	<--	specing (~specing@user/specing) has quit (Killed (NickServ (GHOST command used by specing_)))
+2021-07-16 20:29:18	-->	specing_ (~specing@user/specing) has joined ##math
+2021-07-16 20:30:02	<--	t3nj1n_ (~t3nj1n@108.5.82.237) has quit (Ping timeout: 268 seconds)
+2021-07-16 20:30:55	--	specing_ is now known as specing
+2021-07-16 20:35:22	-->	guy_frm_yogaland (~gourab@2409:4062:4e92:4108:fc37:d8a1:78ff:5f90) has joined ##math
+2021-07-16 20:40:36	--	Bowserinator_ is now known as Bowserinator
+2021-07-16 20:43:59	<--	cvmn (~caveman@gateway/tor-sasl/caveman) has quit (Ping timeout: 244 seconds)
+2021-07-16 20:45:53	<--	andreasbuhr (~quassel@p549dbb60.dip0.t-ipconnect.de) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-07-16 20:52:17	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##math
+2021-07-16 20:54:09	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-16 20:54:27	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 20:55:00	-->	Null_A (~null_a@2601:645:8700:2290:f84f:8a6f:2960:e8a4) has joined ##math
+2021-07-16 20:56:44	loopspace	Trying again: Mildly curious about a question that came up last night: should I be able to find or recognize  (Z_2)^3 x| S_3 her? https://people.maths.bris.ac.uk/~matyd/GroupNames/NA.html
+2021-07-16 20:59:40	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Ping timeout: 246 seconds)
+2021-07-16 21:01:37	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 21:01:45	riv	interesting..
+2021-07-16 21:01:47	-->	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has joined ##math
+2021-07-16 21:02:08	riv	it doesn't seem to be there
+2021-07-16 21:02:43	<--	babebraham (~textual@172.98.247.226) has quit (Ping timeout: 268 seconds)
+2021-07-16 21:02:44	riv	is it possible that it's just the direct product?
+2021-07-16 21:03:26	loopspace	Fangs suggested it might be iso one of the others. If it was direct product wouldn't both factors have to be abelian?
+2021-07-16 21:03:40	riv	what is the nontrivial homomorphism (Z_2)^3 -> Aut(S_3) ?
+2021-07-16 21:03:54	loopspace	Other way around
+2021-07-16 21:03:59	riv	oh thanks
+2021-07-16 21:04:34	riv	so for S_3 -> Aut((Z_2)^3)
+2021-07-16 21:04:43	riv	can we just permute the 3 parts?
+2021-07-16 21:05:09	loopspace	That was my idea
+2021-07-16 21:06:20	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:06:50	-->	callen92 (~callen92@172.92.76.232) has joined ##math
+2021-07-16 21:08:12	-->	Guest56 (~textual@172.98.247.226) has joined ##math
+2021-07-16 21:08:18	loopspace	riv This was the context I'd interested https://usercontent.irccloud-cdn.com/file/JKNY3yvU/Screenshot_20210715-224134%7E2.png
+2021-07-16 21:08:36	loopspace	*if
+2021-07-16 21:09:11	<--	jmorris (uid433911@id-433911.stonehaven.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-16 21:11:58	--	Guest56 is now known as babebraham
+2021-07-16 21:15:40	-->	Guest71 (~Guest71@2001:67c:2660:425:21b:21ff:fed3:61dc) has joined ##math
+2021-07-16 21:15:42	<--	Guest71 (~Guest71@2001:67c:2660:425:21b:21ff:fed3:61dc) has left ##math
+2021-07-16 21:17:46	<--	riv (~river@tilde.team/user/river) has quit (Quit: Leaving)
+2021-07-16 21:18:45	-->	oxum (~oxum@122.181.55.225) has joined ##math
+2021-07-16 21:18:56	--	Trashlord__ is now known as Trashlord
+2021-07-16 21:23:15	<--	oxum (~oxum@122.181.55.225) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:25:14	Z-module	sure, each permutation of {(1,0,0), (0,1,0), (0,0,1)} extends uniquely to an automorphism of (Z_2)^3
+2021-07-16 21:26:09	<--	__jmcantrell__ (~weechat@user/jmcantrell) has quit (Ping timeout: 268 seconds)
+2021-07-16 21:27:41	Z-module	and that full group Aut((Z_2)^3) is just GL_3(Z_2)
+2021-07-16 21:28:39	<--	Arcorann (~A@159-196-65-46.9fc441.mel.nbn.aussiebb.net) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:29:18	taeaad	Sup.
+2021-07-16 21:29:28	taeaad	Do you get Gödel like issues in constructive mathematics?
+2021-07-16 21:29:38	taeaad	So, specifically, do you need to use classical mathematics to introduce natural number arithmetic?
+2021-07-16 21:30:59	buster	The Godel sentence is already got constructively
+2021-07-16 21:32:15	taeaad	So you don't need the law of excluded middle?
+2021-07-16 21:32:35	taeaad	To get Gödel's theorems?
+2021-07-16 21:33:22	-->	oxum (~oxum@122.181.55.225) has joined ##math
+2021-07-16 21:33:39	buster	Didn't quite say that. The argument is finitistic up until constructing the sentence, then there's a couple of non-finitistic steps. You can look at the details, I don't remember. It's not too hard.
+2021-07-16 21:34:55	taeaad	Hmm. OK so you can construct the Gödel sentence, but you can't get to the final conclusion?
+2021-07-16 21:35:57	buster	IIRC
+2021-07-16 21:38:06	<--	oxum (~oxum@122.181.55.225) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:40:52	buster	Of course it's talking *about* a classical system, originally. I suspect that doesn't make any difference, but I couldn't say for sure.
+2021-07-16 21:41:09	-->	Samian (~Sami@2620:10d:c091:480::1:6681) has joined ##math
+2021-07-16 21:41:31	<--	ua_ (~ua@public-gprs227821.centertel.pl) has quit (Ping timeout: 265 seconds)
+2021-07-16 21:41:38	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##math
+2021-07-16 21:42:53	loopspace	Z-module of course, thanks. Looks like it's also describable as Q_8 x| S_3
+2021-07-16 21:43:26	-->	CodePoint_ (~BitShift@172.58.171.181) has joined ##math
+2021-07-16 21:43:46	<--	CodePoint (~BitShift@2607:fb90:c69:cd2:4a54:fcd3:821f:a711) has quit (Ping timeout: 246 seconds)
+2021-07-16 21:43:48	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-16 21:44:03	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 21:44:18	<--	simpl_e (~user@user/simpl-e/x-8589812) has quit (Read error: Connection reset by peer)
+2021-07-16 21:44:50	-->	simpl_e (~user@user/simpl-e/x-8589812) has joined ##math
+2021-07-16 21:45:37	<--	CodePoint_ (~BitShift@172.58.171.181) has quit (Read error: Connection reset by peer)
+2021-07-16 21:46:39	-->	ua_ (~ua@public-gprs227821.centertel.pl) has joined ##math
+2021-07-16 21:49:01	johnkeats6	taeaad, https://math.stackexchange.com/a/448573/9921
+2021-07-16 21:49:22	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Ping timeout: 246 seconds)
+2021-07-16 21:49:46	-->	mefistofeles (~mefistofe@user/mefistofeles) has joined ##math
+2021-07-16 21:50:53	<--	__jmcantrell__ (~weechat@user/jmcantrell) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:53:18	<--	mbuf (~Shakthi@122.164.66.141) has quit (Quit: Leaving)
+2021-07-16 21:53:26	biberao	hi
+2021-07-16 21:54:07	-->	gb73d (gb73d@host-92-10-215-96.as13285.net) has joined ##math
+2021-07-16 21:57:55	<--	lsrtl_ (~lsrtl@user/lsrtl) has quit (Read error: Connection reset by peer)
+2021-07-16 22:04:21	--	cache is now known as Kingpin13
+2021-07-16 22:04:26	--	Kingpin13 is now known as cacheyourdreams
+2021-07-16 22:06:15	<--	peepsalot2 (~peepsalot@openscad/peepsalot) has quit (Quit: Leaving)
+2021-07-16 22:07:23	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 22:08:20	<--	TOB_CyxoB (~TOB_CyxoB@gateway/tor-sasl/tobcyxob/x-83841022) has quit (Remote host closed the connection)
+2021-07-16 22:08:22	-->	audiofreeze (~audio@2603-8081-1800-00ad-e51c-545e-5883-8de9.res6.spectrum.com) has joined ##math
+2021-07-16 22:08:54	arseniiv	does one say “quadratic nilpotent” to call an x such that x² = 0?
+2021-07-16 22:09:09	-->	hposca (~hposca@node-1w7jr9phoke2sad1ixki5h523.ipv6.telus.net) has joined ##math
+2021-07-16 22:09:45	arseniiv	seems natural but I don’t remember if I saw anything like that
+2021-07-16 22:10:28	Galois	google says no
+2021-07-16 22:11:16	Galois	your options are: "degree 2 nilpotent" "nilpotent of degree 2" "nilpotent of index 2"
+2021-07-16 22:12:21	<--	callen92 (~callen92@172.92.76.232) has quit (Quit: Leaving)
+2021-07-16 22:14:57	-->	derelict (~derelict@user/derelict) has joined ##math
+2021-07-16 22:17:36	joel135	maybe "infinitesimal"
+2021-07-16 22:17:39	-->	TOB_CyxoB (~TOB_CyxoB@gateway/tor-sasl/tobcyxob/x-83841022) has joined ##math
+2021-07-16 22:22:03	<--	Yamakaja_ (~yamakaja@vps.pub.yamakaja.me) has quit (Quit: Bye)
+2021-07-16 22:23:34	-->	Yamakaja (~yamakaja@vps.pub.yamakaja.me) has joined ##math
+2021-07-16 22:23:34	<--	Yamakaja (~yamakaja@vps.pub.yamakaja.me) has quit (Changing host)
+2021-07-16 22:23:34	-->	Yamakaja (~yamakaja@user/yamakaja) has joined ##math
+2021-07-16 22:24:42	-->	NEYi_ (~NEYi@109.251.216.38) has joined ##math
+2021-07-16 22:25:48	-->	kmh (~kmh@p200300df5f0e070036f57036993366d1.dip0.t-ipconnect.de) has joined ##math
+2021-07-16 22:25:50	<--	scaleww (~scaleww@77-41-20-31.ftth.glasoperator.nl) has quit (Quit: Leaving)
+2021-07-16 22:27:13	<--	Fohsap (~Muimi@221.201.3.100) has quit (Read error: Connection reset by peer)
+2021-07-16 22:27:58	<--	NEYi__ (~NEYi@109.251.216.38) has quit (Ping timeout: 258 seconds)
+2021-07-16 22:28:53	-->	riv (~river@tilde.team/user/river) has joined ##math
+2021-07-16 22:36:01	<--	phillbush_ (~phillbush@user/phillbush) has quit (Quit: Leaving)
+2021-07-16 22:36:19	-->	phillbush (~phillbush@user/phillbush) has joined ##math
+2021-07-16 22:38:33	-->	Brainium (~brainium@user/brainium) has joined ##math
+2021-07-16 22:39:51	<--	Thoams1 (~Thoams@88.97.45.247) has quit (Ping timeout: 258 seconds)
+2021-07-16 22:41:42	-->	econo (uid147250@user/econo) has joined ##math
+2021-07-16 22:41:50	-->	theseb (~cs@47-220-214-54.cnrocmta03.res.dyn.suddenlink.net) has joined ##math
+2021-07-16 22:42:46	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-16 22:43:02	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 22:45:09	taeaad	arseniiv: Or you can call it, "reasons why undergraduate calculus seems like too much unnecessary work these days".
+2021-07-16 22:45:45	-->	strudl (~strudl@user/strudl) has joined ##math
+2021-07-16 22:45:46	<--	strudl (~strudl@user/strudl) has quit (Excess Flood)
+2021-07-16 22:45:48	taeaad	But if you watch too many videos about it, you may also start doing a lot of work, perhaps by accident.
+2021-07-16 22:46:06	-->	magla (~gelignite@55d4f0de.access.ecotel.net) has joined ##math
+2021-07-16 22:46:11	-->	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has joined ##math
+2021-07-16 22:46:16	-->	strudl (~strudl@user/strudl) has joined ##math
+2021-07-16 22:46:16	<--	strudl (~strudl@user/strudl) has quit (Excess Flood)
+2021-07-16 22:46:30	-->	elf_fortrez (~elf_fortr@adsl-72-50-4-50.prtc.net) has joined ##math
+2021-07-16 22:46:46	-->	strudl (~strudl@user/strudl) has joined ##math
+2021-07-16 22:46:47	<--	strudl (~strudl@user/strudl) has quit (Excess Flood)
+2021-07-16 22:47:02	<--	elf_fortrez (~elf_fortr@adsl-72-50-4-50.prtc.net) has quit (Client Quit)
+2021-07-16 22:47:12	<--	qbt (~edun@user/edun) has quit (Ping timeout: 245 seconds)
+2021-07-16 22:47:16	-->	strudl (~strudl@user/strudl) has joined ##math
+2021-07-16 22:47:16	<--	strudl (~strudl@user/strudl) has quit (Excess Flood)
+2021-07-16 22:47:48	-->	strudl (~strudl@user/strudl) has joined ##math
+2021-07-16 22:47:48	<--	strudl (~strudl@user/strudl) has quit (Excess Flood)
+2021-07-16 22:48:36	<--	theseb (~cs@47-220-214-54.cnrocmta03.res.dyn.suddenlink.net) has quit (Remote host closed the connection)
+2021-07-16 22:49:47	<--	Imk0tter (~Imk0tter@172.58.228.97) has quit (Remote host closed the connection)
+2021-07-16 22:50:38	-->	Imk0tter (~Imk0tter@172.58.228.97) has joined ##math
+2021-07-16 22:52:11	loopspace	(I_p is his weird notation for Z_p) https://usercontent.irccloud-cdn.com/file/mMMEAJQj/image.png
+2021-07-16 22:54:04	arseniiv	Galois: ah, degree/index 2 seems fine!
+2021-07-16 22:54:38	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Quit: Client closed)
+2021-07-16 22:54:55	-->	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has joined ##math
+2021-07-16 22:56:03	<--	hanif (~hanif@gateway/tor-sasl/hanif) has quit (Quit: quit)
+2021-07-16 22:56:43	<--	twoisprime (~twoisprim@user/twoisprime) has quit (Ping timeout: 258 seconds)
+2021-07-16 22:58:52	-->	NEYi__ (~NEYi@109.251.216.38) has joined ##math
+2021-07-16 23:00:09	Z-module	loopspace: so the structure theorem certainly gives you that, but maybe it's not needed.
+2021-07-16 23:00:25	<--	foobaz212 (~foobaz212@2001:8f8:1361:27ac:5116:121c:1aec:4564) has quit (Ping timeout: 246 seconds)
+2021-07-16 23:00:40	loopspace	Seemed like cheating
+2021-07-16 23:01:14	loopspace	But maybe it's fine in this context
+2021-07-16 23:01:42	<--	NEYi_ (~NEYi@109.251.216.38) has quit (Ping timeout: 258 seconds)
+2021-07-16 23:05:33	-->	crankslider (~slidercra@user/slidercrank) has joined ##math
+2021-07-16 23:07:38	<--	simpl_e (~user@user/simpl-e/x-8589812) has quit (Read error: Connection reset by peer)
+2021-07-16 23:08:12	-->	simpl_e (~user@user/simpl-e/x-8589812) has joined ##math
+2021-07-16 23:11:03	<--	simpl_e (~user@user/simpl-e/x-8589812) has quit (Read error: Connection reset by peer)
+2021-07-16 23:11:25	Z-module	loopspace, maybe you haven't seen me say it before, but Hungerford's GTM has a somewhat silly exercise: "Find maps so that  0 -> Z_2 -> Z_4 -> Z_2 -> 0  is a non-split SES."  The silly part is that the maps making that an SES are unique, trivial to guess, and it doesn't split... the exercise is totally self-solving.
+2021-07-16 23:11:35	-->	simpl_e (~user@user/simpl-e/x-8589812) has joined ##math
+2021-07-16 23:13:54	riv	lol
+2021-07-16 23:14:17	--	irc: disconnected from server
+2021-07-16 23:14:36	-->	amanr (~sarcastic@122.161.66.163) has joined ##math
+2021-07-16 23:14:36	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-16 23:14:36	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-16 23:14:36	--	Channel ##math: 454 nicks (0 ops, 0 voices, 454 normals)
+2021-07-16 23:14:38	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-16 23:15:09	-->	simpl_e (~user@user/simpl-e/x-8589812) has joined ##math
+2021-07-16 23:15:15	-->	Guest9 (~Guest9@103.249.234.210) has joined ##math
+2021-07-16 23:15:16	<--	simpl_e (~user@user/simpl-e/x-8589812) has quit (Read error: Connection reset by peer)
+2021-07-16 23:16:52	<--	Brainium (~brainium@user/brainium) has quit (Read error: Connection reset by peer)
+2021-07-16 23:18:14	loopspace	Z-module reminds me of an earlier exercise in this book https://usercontent.irccloud-cdn.com/file/bWxQaSnS/image.png
+2021-07-16 23:18:21	<--	s_ (~s@50.34.81.185) has quit (Quit: Leaving)
+2021-07-16 23:18:37	loopspace	s/exercise/example/
+2021-07-16 23:18:37	-->	simpl_e (~user@user/simpl-e/x-8589812) has joined ##math
+2021-07-16 23:20:26	<--	Maturion (~Maturion@p200300ede71dc200796c249191b5b744.dip0.t-ipconnect.de) has quit (Ping timeout: 255 seconds)
+2021-07-16 23:20:37	--	irc: disconnected from server
+2021-07-16 23:20:55	-->	amanr (~sarcastic@122.161.66.163) has joined ##math
+2021-07-16 23:20:55	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-16 23:20:55	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-16 23:20:55	--	Channel ##math: 453 nicks (0 ops, 0 voices, 453 normals)
+2021-07-16 23:20:58	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-16 23:22:16	-->	twoisprime (~twoisprim@87.110.85.141) has joined ##math
+2021-07-16 23:22:33	<--	derelict (~derelict@user/derelict) has quit (Ping timeout: 250 seconds)
+2021-07-16 23:29:11	Z-module	oh yeah, fun
+2021-07-16 23:30:39	-->	Pectic (~biskit@bzq-109-67-145-67.red.bezeqint.net) has joined ##math
+2021-07-16 23:31:54	--	irc: disconnected from server
+2021-07-16 23:32:14	-->	amanr (~sarcastic@122.161.66.163) has joined ##math
+2021-07-16 23:32:14	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-16 23:32:14	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-16 23:32:14	--	Channel ##math: 454 nicks (0 ops, 0 voices, 454 normals)
+2021-07-16 23:32:16	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-16 23:32:18	--	irc: disconnected from server
+2021-07-16 23:32:35	-->	amanr (~sarcastic@122.161.66.163) has joined ##math
+2021-07-16 23:32:35	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-16 23:32:35	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-16 23:32:35	--	Channel ##math: 454 nicks (0 ops, 0 voices, 454 normals)
+2021-07-16 23:32:37	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-16 23:33:30	<--	eXistenZ (~biskit@bzq-109-65-243-126.red.bezeqint.net) has quit (Ping timeout: 240 seconds)
+2021-07-16 23:33:31	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##math
+2021-07-16 23:38:27	--	irc: disconnected from server
+2021-07-16 23:55:22	-->	therojjha (~sarcastic@122.161.66.163) has joined ##math
+2021-07-16 23:55:22	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-16 23:55:22	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-16 23:55:22	--	Channel ##math: 453 nicks (0 ops, 0 voices, 453 normals)
+2021-07-16 23:55:24	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-16 23:57:12	-->	cheater (~Username@84-115-12-132.cable.dynamic.surfer.at) has joined ##math
+2021-07-16 23:57:27	--	irc: disconnected from server
+2021-07-17 04:32:18	-->	therojjha (~sarcastic@122.161.66.163) has joined ##math
+2021-07-17 04:32:18	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-17 04:32:18	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-17 04:32:18	--	Channel ##math: 447 nicks (0 ops, 0 voices, 447 normals)
+2021-07-17 04:32:20	anovick	Hey guys, I'm trying to estimate value of an integral (without finding the exact value). I need to prove the inequality 2 / (3 pi) <= integral( sinx / x dx) from 2pi to 3pi <= 1 / pi
+2021-07-17 04:32:20	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-17 04:33:03	--	irc: disconnected from server

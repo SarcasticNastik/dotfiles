@@ -1,0 +1,64 @@
+2021-07-18 05:11:45	-->	amanr_ (~amanr@20.204.87.0) has joined ##math
+2021-07-18 05:11:45	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-18 05:11:45	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-18 05:11:45	--	Channel ##math: 454 nicks (0 ops, 0 voices, 454 normals)
+2021-07-18 05:11:45	***	Buffer Playback...
+2021-07-18 05:11:45	loopspace	[20:58:44] Where https://usercontent.irccloud-cdn.com/file/NVu6VDpe/image.png
+2021-07-18 05:11:45	loopspace	[20:58:54] Well, Fangs that was my question
+2021-07-18 05:11:45	Fangs	[20:59:59] .. let me try this again.. det(A) = -(w^2) and det(B) = 1 if I haven't mixed up which diagonals are negative
+2021-07-18 05:11:45	Fangs	[21:00:25] det(BA inv(B)) = -(w^2)
+2021-07-18 05:11:45	Fangs	[21:00:33] but det(inv(A)) = -1/(w^2)
+2021-07-18 05:11:45	loopspace	[21:01:06] Let w=i. "Generalize"  <jk>
+2021-07-18 05:11:45	Fangs	[21:01:09] so w^2 = 1/w^2 needs to be true, but this is only true if w^4 = 1
+2021-07-18 05:11:45	Fangs	[21:01:31] so w is 2-th root of unity or 4th root of unity?
+2021-07-18 05:11:45	loopspace	[21:01:59] Yeah, this bugged me. On the other side of the balance was its separate appearance in two separate Rotman books
+2021-07-18 05:11:45	loopspace	[21:02:20] w is a 2^(n-1)-th root of unity
+2021-07-18 05:11:45	loopspace	[21:02:47] so for n > 3, it seemed problematic
+2021-07-18 05:11:45	Fangs	[21:02:48] loopspace: its only true for n < 3, not n >= 3.. I think?
+2021-07-18 05:11:45	anovick_	[21:02:50] Anybody knows how to use WolframAlpha to find the limit value of a definite integral defined on a paramter? I tried this but it says time exceeded: https://www.wolframalpha.com/input/?i=lim%28%28integrate+t%5E2+*arctan%28e%5Et%29+dt+from+0+to+sqrt%28x%29%29+%2F+x%5E%283%2F2%29%29+as+x-%3Einf
+2021-07-18 05:11:45	Fangs	[21:03:00] off by one, you're right
+2021-07-18 05:11:45	loopspace	[21:03:12] Fangs: it's hardly be generalized quaternions then
+2021-07-18 05:11:45	Fangs	[21:03:39] loopspace: I recall someone finding a mistake on rotman's homological algebra book too
+2021-07-18 05:11:45	Fangs	[21:03:51] idk which book you're reading
+2021-07-18 05:11:45	loopspace	[21:04:12] Yeah, I've found some mistakes there, and there's an errata sheet,  but this isn't in it. The other books it's in is his group theory book (didn't check others)
+2021-07-18 05:11:45	loopspace	[21:04:24] I'm reading both
+2021-07-18 05:11:45	Fangs	[21:07:10] I don't remember any mistakes in his alg top book, but that's probably because I couldn't detect any
+2021-07-18 05:11:45	Fangs	[21:07:37] I couldn't detect any if there are any*
+2021-07-18 05:11:45	loopspace	[21:07:38] There were some. I didn't keep a list, just fixed them in my paper copy
+2021-07-18 05:11:45	Fangs	[21:08:19] were they all obvious?
+2021-07-18 05:11:45	Fangs	[21:08:52] if the GL(2,C) example you showed is indeed wrong, I wouldn't call it as 'obvious'
+2021-07-18 05:11:45	loopspace	[21:09:09] For the most part, IIRC. Occasional one which was very confusing for topics that I didn't visit in the past, but easily sorted once I questioned them and looked at another sorce
+2021-07-18 05:11:45	buster	[21:09:33] int-e, johnkeats6, loopspace, the original is short and sweet, https://www.jstor.org/stable/2310010
+2021-07-18 05:11:45	loopspace	[21:09:48] *source
+2021-07-18 05:11:45	Fangs	[21:11:32] fair
+2021-07-18 05:11:45	Fangs	[21:16:41] johnkeats6: I promise I'll do the analysis sometimes later today
+2021-07-18 05:11:45	Fangs	[21:16:45] maybe in 12 hours >_>
+2021-07-18 05:11:45	mnrmnaugh	[21:21:37] hoy
+2021-07-18 05:11:45	mnrmnaugh	[21:22:56] 5 beers in is best time for polticball, is it not?
+2021-07-18 05:11:45	mnrmnaugh	[21:37:02] gur... ye
+2021-07-18 05:11:45	mnrmnaugh	[21:37:25] ok why i talk in here
+2021-07-18 05:11:45	mnrmnaugh	[21:38:22] A DROPPER N'lSON
+2021-07-18 05:11:45	acresearch	[21:39:42] int-e: i am back
+2021-07-18 05:11:45	int-e	[21:41:13] acresearch: I'm still here for a bit
+2021-07-18 05:11:45	acresearch	[21:41:58] int-e:  i am going through your code checking it, because it works perfectly, but i need to make sure i can run it online
+2021-07-18 05:11:45	acresearch	[21:42:11] i mean the lists onlines
+2021-07-18 05:11:45	int-e	[21:46:50] acresearch: depending on what you're doing, pvariance() may work better than stdev() for the intermediate results (they're related: stdev^2 * (N-1) = pvariance * N, where N is the sample size)
+2021-07-18 05:11:45	acresearch	[21:49:52] int-e: well i am standerdising my data points so i need SD as per formula
+2021-07-18 05:11:45	acresearch	[21:51:03] int-e: to be honest i checked your code and it is perfect except for the last line i could not decode it to understand your method
+2021-07-18 05:11:45	acresearch	[22:20:05] int-e: just implemented your code,, thanks :-)
+2021-07-18 05:11:45	kenthurley	[22:41:18] int-e: thx! That's interesting
+2021-07-18 05:11:45	johnkeats6	[23:05:56] https://i.imgur.com/BC1A2HQ.png can anyone eli5 this, i don't really know spectral theory in hilbert space. where's the second formula coming from?
+2021-07-18 05:11:45	johnkeats6	[23:10:13] oh nvm i think i get it
+2021-07-18 05:11:45	buster	[23:20:09] sucks, and i had my answer all typed up
+2021-07-18 05:11:45	buster	[23:20:14] *shucks
+2021-07-18 05:11:45	johnkeats6	[23:20:37] it's just a fancy schmancy diagonalization
+2021-07-18 05:11:45	buster	[23:25:43] if you've sent something to negative imaginary infinity and then thought of it intuitively as infintesimal this morning, why not round it off with breakfast at Milliways
+2021-07-18 05:11:45	***	Playback Complete.
+2021-07-18 05:11:45	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-18 05:12:15	--	irc: disconnected from server
+2021-07-18 05:12:19	-->	amanr_ (~amanr@20.204.87.0) has joined ##math
+2021-07-18 05:12:19	--	Topic for ##math is "Just ask your question! | LaTeX pastebin: http://mathb.in | LaTeX symbol lookup: http://detexify.kirelabs.org/classify.html | ##math-offtopic for off-topic discussion | Further information and resources: https://libera-math.github.io/ | Also visit ##statistics | Ping ops in ##math-ops if someone is misbehaving"
+2021-07-18 05:12:19	--	Topic set by int-e (~noone@int-e.eu) on Sat, 05 Jun 2021 21:26:10
+2021-07-18 05:12:19	--	Channel ##math: 454 nicks (0 ops, 0 voices, 454 normals)
+2021-07-18 05:12:19	--	Channel created on Wed, 19 May 2021 17:51:55
+2021-07-18 05:12:26	--	irc: disconnected from server

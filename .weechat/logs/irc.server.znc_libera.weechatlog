@@ -1,0 +1,1506 @@
+2021-07-16 23:34:36	--	irc: connecting to server 20.204.87.0/4000 (SSL)...
+2021-07-16 23:35:06	=!=	irc: TLS handshake failed
+2021-07-16 23:35:06	=!=	irc: error: The session or certificate has expired.
+2021-07-16 23:35:06	--	irc: reconnecting to server in 10 seconds
+2021-07-16 23:35:16	--	irc: reconnecting to server...
+2021-07-16 23:35:16	--	irc: connecting to server 20.204.87.0/4000 (SSL)...
+2021-07-16 23:35:46	=!=	irc: TLS handshake failed
+2021-07-16 23:35:46	=!=	irc: error: The session or certificate has expired.
+2021-07-16 23:35:46	--	irc: reconnecting to server in 20 seconds
+2021-07-16 23:36:06	--	irc: reconnecting to server...
+2021-07-16 23:36:06	--	irc: connecting to server 20.204.87.0/4000 (SSL)...
+2021-07-16 23:37:40	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-16 23:37:40	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-16 23:37:40	--	Welcome to ZNC
+2021-07-16 23:41:33	--	irc: disconnected from server
+2021-07-16 23:55:06	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-16 23:55:06	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-16 23:55:06	--	Welcome to ZNC
+2021-07-16 23:56:35	--	molybdenum.libera.chat: *** Checking Ident
+2021-07-16 23:56:35	--	molybdenum.libera.chat: *** Looking up your hostname...
+2021-07-16 23:56:35	--	molybdenum.libera.chat: *** Couldn't look up your hostname
+2021-07-16 23:56:40	--	molybdenum.libera.chat: *** No Ident response
+2021-07-16 23:56:44	--	You are now known as amanr-
+2021-07-16 23:56:44	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-16 23:56:44	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-16 23:56:44	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-16 23:56:44	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-16 23:56:44	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-16 23:56:44	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-16 23:56:44	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-16 23:56:44	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-16 23:56:44	--	35 :IRC Operators online
+2021-07-16 23:56:44	--	13 :unknown connection(s)
+2021-07-16 23:56:44	--	19733 :channels formed
+2021-07-16 23:56:44	--	I have 2595 clients and 1 servers
+2021-07-16 23:56:44	--	2595 2595 :Current local users 2595, max 2595
+2021-07-16 23:56:44	--	45217 46854 :Current global users 45217, max 46854
+2021-07-16 23:56:44	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-16 23:56:44	--	- molybdenum.libera.chat Message of the Day -
+2021-07-16 23:56:44	--	- Welcome to Libera Chat, the IRC network for
+2021-07-16 23:56:44	--	- free & open-source software and peer directed projects.
+2021-07-16 23:56:44	--	-
+2021-07-16 23:56:44	--	- Use of Libera Chat is governed by our network policies.
+2021-07-16 23:56:44	--	-
+2021-07-16 23:56:44	--	- Please visit us in #libera for questions and support.
+2021-07-16 23:56:44	--	-
+2021-07-16 23:56:44	--	- Website and documentation:  https://libera.chat
+2021-07-16 23:56:44	--	- Webchat:                    https://web.libera.chat
+2021-07-16 23:56:44	--	- Network policies:           https://libera.chat/policies
+2021-07-16 23:56:44	--	- Email:                      support@libera.chat
+2021-07-16 23:56:44	--	End of /MOTD command.
+2021-07-16 23:56:44	--	User mode [+Zi] by amanr-
+2021-07-16 23:56:50	--	[*] amanr- (~therojjha@20.204.87.0) H 0 (ZNC - https://znc.in)
+2021-07-16 23:56:50	--	[amanr-] End of /WHO list.
+2021-07-16 23:57:27	--	irc: disconnected from server
+2021-07-16 23:57:30	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-16 23:57:30	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-16 23:57:30	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-16 23:57:30	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-16 23:57:30	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-16 23:57:30	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-16 23:57:30	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-16 23:57:30	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-16 23:57:30	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-16 23:57:30	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-16 23:57:30	--	35 :IRC Operators online
+2021-07-16 23:57:30	--	19733 :channels formed
+2021-07-16 23:57:30	--	I have 2595 clients and 1 servers
+2021-07-16 23:57:30	--	2595 2595 :Current local users 2595, max 2595
+2021-07-16 23:57:30	--	45217 46854 :Current global users 45217, max 46854
+2021-07-16 23:57:30	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-16 23:57:30	--	You are now known as amanr-
+2021-07-16 23:57:30	--	- molybdenum.libera.chat Message of the Day -
+2021-07-16 23:57:30	--	- Welcome to Libera Chat, the IRC network for
+2021-07-16 23:57:30	--	- free & open-source software and peer directed projects.
+2021-07-16 23:57:30	--	-
+2021-07-16 23:57:30	--	- Use of Libera Chat is governed by our network policies.
+2021-07-16 23:57:30	--	-
+2021-07-16 23:57:30	--	- Please visit us in #libera for questions and support.
+2021-07-16 23:57:30	--	-
+2021-07-16 23:57:30	--	- Website and documentation:  https://libera.chat
+2021-07-16 23:57:30	--	- Webchat:                    https://web.libera.chat
+2021-07-16 23:57:30	--	- Network policies:           https://libera.chat/policies
+2021-07-16 23:57:30	--	- Email:                      support@libera.chat
+2021-07-16 23:57:30	--	End of /MOTD command.
+2021-07-16 23:57:30	--	User mode [+Zi] by amanr-
+2021-07-16 23:59:58	--	irc: disconnected from server
+2021-07-17 00:00:02	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 00:00:02	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 00:00:02	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 00:00:02	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 00:00:02	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 00:00:02	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 00:00:02	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 00:00:02	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 00:00:02	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 00:00:02	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 00:00:02	--	35 :IRC Operators online
+2021-07-17 00:00:02	--	19733 :channels formed
+2021-07-17 00:00:02	--	I have 2595 clients and 1 servers
+2021-07-17 00:00:02	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 00:00:02	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 00:00:02	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 00:00:02	--	You are now known as amanr-
+2021-07-17 00:00:02	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 00:00:02	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 00:00:02	--	- free & open-source software and peer directed projects.
+2021-07-17 00:00:02	--	-
+2021-07-17 00:00:02	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 00:00:02	--	-
+2021-07-17 00:00:02	--	- Please visit us in #libera for questions and support.
+2021-07-17 00:00:03	--	-
+2021-07-17 00:00:03	--	- Website and documentation:  https://libera.chat
+2021-07-17 00:00:03	--	- Webchat:                    https://web.libera.chat
+2021-07-17 00:00:03	--	- Network policies:           https://libera.chat/policies
+2021-07-17 00:00:03	--	- Email:                      support@libera.chat
+2021-07-17 00:00:03	--	End of /MOTD command.
+2021-07-17 00:00:03	--	User mode [+Zi] by amanr-
+2021-07-17 00:03:38	--	irc: disconnected from server
+2021-07-17 00:03:41	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 00:03:42	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 00:03:42	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 00:03:42	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 00:03:42	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 00:03:42	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 00:03:42	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 00:03:42	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 00:03:42	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 00:03:42	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 00:03:42	--	35 :IRC Operators online
+2021-07-17 00:03:42	--	19733 :channels formed
+2021-07-17 00:03:42	--	I have 2595 clients and 1 servers
+2021-07-17 00:03:42	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 00:03:42	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 00:03:42	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 00:03:42	--	You are now known as amanr-
+2021-07-17 00:03:42	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 00:03:42	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 00:03:42	--	- free & open-source software and peer directed projects.
+2021-07-17 00:03:42	--	-
+2021-07-17 00:03:42	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 00:03:42	--	-
+2021-07-17 00:03:42	--	- Please visit us in #libera for questions and support.
+2021-07-17 00:03:42	--	-
+2021-07-17 00:03:42	--	- Website and documentation:  https://libera.chat
+2021-07-17 00:03:42	--	- Webchat:                    https://web.libera.chat
+2021-07-17 00:03:42	--	- Network policies:           https://libera.chat/policies
+2021-07-17 00:03:42	--	- Email:                      support@libera.chat
+2021-07-17 00:03:42	--	End of /MOTD command.
+2021-07-17 00:03:42	--	User mode [+Zi] by amanr-
+2021-07-17 00:03:51	--	irc: disconnected from server
+2021-07-17 00:03:53	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 00:03:53	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 00:03:53	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 00:03:53	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 00:03:53	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 00:03:53	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 00:03:53	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 00:03:53	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 00:03:53	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 00:03:53	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 00:03:53	--	35 :IRC Operators online
+2021-07-17 00:03:53	--	19733 :channels formed
+2021-07-17 00:03:53	--	I have 2595 clients and 1 servers
+2021-07-17 00:03:53	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 00:03:53	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 00:03:53	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 00:03:53	--	You are now known as amanr-
+2021-07-17 00:03:53	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 00:03:53	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 00:03:53	--	- free & open-source software and peer directed projects.
+2021-07-17 00:03:53	--	-
+2021-07-17 00:03:53	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 00:03:53	--	-
+2021-07-17 00:03:53	--	- Please visit us in #libera for questions and support.
+2021-07-17 00:03:53	--	-
+2021-07-17 00:03:53	--	- Website and documentation:  https://libera.chat
+2021-07-17 00:03:53	--	- Webchat:                    https://web.libera.chat
+2021-07-17 00:03:53	--	- Network policies:           https://libera.chat/policies
+2021-07-17 00:03:53	--	- Email:                      support@libera.chat
+2021-07-17 00:03:53	--	End of /MOTD command.
+2021-07-17 00:03:53	--	User mode [+Zi] by amanr-
+2021-07-17 00:04:05	--	irc: disconnected from server
+2021-07-17 04:19:38	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:19:38	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:19:38	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:19:38	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:19:38	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:19:38	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:19:38	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:19:38	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:19:38	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:19:38	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:19:38	--	35 :IRC Operators online
+2021-07-17 04:19:38	--	19733 :channels formed
+2021-07-17 04:19:38	--	I have 2595 clients and 1 servers
+2021-07-17 04:19:38	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:19:38	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:19:38	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:19:38	--	You are now known as amanr-
+2021-07-17 04:19:38	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:19:38	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:19:38	--	- free & open-source software and peer directed projects.
+2021-07-17 04:19:38	--	-
+2021-07-17 04:19:38	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:19:38	--	-
+2021-07-17 04:19:38	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:19:38	--	-
+2021-07-17 04:19:38	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:19:38	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:19:38	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:19:38	--	- Email:                      support@libera.chat
+2021-07-17 04:19:38	--	End of /MOTD command.
+2021-07-17 04:19:38	--	User mode [+Zi] by amanr-
+2021-07-17 04:19:38	--	You have been marked as being away
+2021-07-17 04:19:38	--	You are no longer marked as being away
+2021-07-17 04:24:15	--	MSG(*controlpanel): help
+2021-07-17 04:25:20	--	irc: disconnected from server
+2021-07-17 04:26:49	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:26:49	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:26:49	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:26:49	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:26:49	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:26:49	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:26:49	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:26:49	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:26:49	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:26:49	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:26:49	--	35 :IRC Operators online
+2021-07-17 04:26:49	--	19733 :channels formed
+2021-07-17 04:26:49	--	I have 2595 clients and 1 servers
+2021-07-17 04:26:49	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:26:49	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:26:49	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:26:49	--	You are now known as amanr-
+2021-07-17 04:26:49	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:26:49	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:26:49	--	- free & open-source software and peer directed projects.
+2021-07-17 04:26:49	--	-
+2021-07-17 04:26:49	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:26:49	--	-
+2021-07-17 04:26:49	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:26:49	--	-
+2021-07-17 04:26:49	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:26:49	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:26:49	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:26:49	--	- Email:                      support@libera.chat
+2021-07-17 04:26:49	--	End of /MOTD command.
+2021-07-17 04:26:49	--	User mode [+Zi] by amanr-
+2021-07-17 04:26:49	--	You have been marked as being away
+2021-07-17 04:26:49	--	You are no longer marked as being away
+2021-07-17 04:27:07	--	irc: disconnected from server
+2021-07-17 04:27:10	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:27:10	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:27:10	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:27:10	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:27:10	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:27:10	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:27:10	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:27:10	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:27:10	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:27:10	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:27:10	--	35 :IRC Operators online
+2021-07-17 04:27:10	--	19733 :channels formed
+2021-07-17 04:27:10	--	I have 2595 clients and 1 servers
+2021-07-17 04:27:10	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:27:10	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:27:10	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:27:10	--	You are now known as amanr-
+2021-07-17 04:27:10	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:27:10	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:27:10	--	- free & open-source software and peer directed projects.
+2021-07-17 04:27:10	--	-
+2021-07-17 04:27:10	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:27:10	--	-
+2021-07-17 04:27:10	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:27:10	--	-
+2021-07-17 04:27:10	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:27:10	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:27:10	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:27:10	--	- Email:                      support@libera.chat
+2021-07-17 04:27:10	--	End of /MOTD command.
+2021-07-17 04:27:10	--	User mode [+Zi] by amanr-
+2021-07-17 04:27:37	--	irc: disconnected from server
+2021-07-17 04:27:40	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:27:40	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:27:40	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:27:40	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:27:40	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:27:40	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:27:40	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:27:40	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:27:40	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:27:40	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:27:40	--	35 :IRC Operators online
+2021-07-17 04:27:40	--	19733 :channels formed
+2021-07-17 04:27:40	--	I have 2595 clients and 1 servers
+2021-07-17 04:27:40	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:27:40	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:27:40	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:27:40	--	You are now known as amanr-
+2021-07-17 04:27:40	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:27:40	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:27:40	--	- free & open-source software and peer directed projects.
+2021-07-17 04:27:40	--	-
+2021-07-17 04:27:40	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:27:40	--	-
+2021-07-17 04:27:40	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:27:40	--	-
+2021-07-17 04:27:40	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:27:40	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:27:40	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:27:40	--	- Email:                      support@libera.chat
+2021-07-17 04:27:40	--	End of /MOTD command.
+2021-07-17 04:27:40	--	User mode [+Zi] by amanr-
+2021-07-17 04:31:08	--	irc: disconnected from server
+2021-07-17 04:31:13	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:31:13	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:31:14	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:31:14	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:31:14	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:31:14	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:31:14	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:31:14	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:31:14	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:31:14	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:31:14	--	35 :IRC Operators online
+2021-07-17 04:31:14	--	19733 :channels formed
+2021-07-17 04:31:14	--	I have 2595 clients and 1 servers
+2021-07-17 04:31:14	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:31:14	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:31:14	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:31:14	--	You are now known as amanr-
+2021-07-17 04:31:14	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:31:14	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:31:14	--	- free & open-source software and peer directed projects.
+2021-07-17 04:31:14	--	-
+2021-07-17 04:31:14	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:31:14	--	-
+2021-07-17 04:31:14	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:31:14	--	-
+2021-07-17 04:31:14	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:31:14	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:31:14	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:31:14	--	- Email:                      support@libera.chat
+2021-07-17 04:31:14	--	End of /MOTD command.
+2021-07-17 04:31:14	--	User mode [+Zi] by amanr-
+2021-07-17 04:31:43	--	irc: disconnected from server
+2021-07-17 04:31:52	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:31:52	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:31:52	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:31:52	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:31:52	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:31:52	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:31:52	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:31:52	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:31:52	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:31:52	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:31:52	--	35 :IRC Operators online
+2021-07-17 04:31:52	--	19733 :channels formed
+2021-07-17 04:31:52	--	I have 2595 clients and 1 servers
+2021-07-17 04:31:52	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:31:52	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:31:52	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:31:52	--	You are now known as amanr-
+2021-07-17 04:31:52	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:31:52	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:31:52	--	- free & open-source software and peer directed projects.
+2021-07-17 04:31:52	--	-
+2021-07-17 04:31:52	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:31:52	--	-
+2021-07-17 04:31:52	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:31:52	--	-
+2021-07-17 04:31:52	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:31:52	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:31:52	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:31:52	--	- Email:                      support@libera.chat
+2021-07-17 04:31:52	--	End of /MOTD command.
+2021-07-17 04:31:52	--	User mode [+Zi] by amanr-
+2021-07-17 04:33:03	--	irc: disconnected from server
+2021-07-17 04:33:07	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:33:07	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:33:07	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:33:07	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:33:07	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:33:07	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:33:07	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:33:07	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:33:07	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:33:07	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:33:07	--	35 :IRC Operators online
+2021-07-17 04:33:07	--	19733 :channels formed
+2021-07-17 04:33:07	--	I have 2595 clients and 1 servers
+2021-07-17 04:33:07	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:33:07	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:33:07	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:33:07	--	You are now known as amanr-
+2021-07-17 04:33:07	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:33:07	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:33:07	--	- free & open-source software and peer directed projects.
+2021-07-17 04:33:07	--	-
+2021-07-17 04:33:07	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:33:07	--	-
+2021-07-17 04:33:07	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:33:07	--	-
+2021-07-17 04:33:07	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:33:07	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:33:07	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:33:07	--	- Email:                      support@libera.chat
+2021-07-17 04:33:07	--	End of /MOTD command.
+2021-07-17 04:33:07	--	User mode [+Zi] by amanr-
+2021-07-17 04:34:02	=!=	irc: this buffer is not a channel!
+2021-07-17 04:35:43	--	irc: disconnected from server
+2021-07-17 04:35:48	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:35:48	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:35:48	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:35:48	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:35:48	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:35:48	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:35:48	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:35:48	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:35:48	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:35:48	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:35:48	--	35 :IRC Operators online
+2021-07-17 04:35:48	--	19733 :channels formed
+2021-07-17 04:35:48	--	I have 2595 clients and 1 servers
+2021-07-17 04:35:48	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:35:48	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:35:48	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:35:48	--	You are now known as amanr-
+2021-07-17 04:35:48	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:35:48	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:35:48	--	- free & open-source software and peer directed projects.
+2021-07-17 04:35:48	--	-
+2021-07-17 04:35:48	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:35:48	--	-
+2021-07-17 04:35:48	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:35:48	--	-
+2021-07-17 04:35:48	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:35:48	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:35:48	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:35:48	--	- Email:                      support@libera.chat
+2021-07-17 04:35:48	--	End of /MOTD command.
+2021-07-17 04:35:48	--	User mode [+Zi] by amanr-
+2021-07-17 04:38:13	--	irc: disconnected from server
+2021-07-17 04:41:53	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 04:41:53	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 04:41:53	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 04:41:53	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 04:41:53	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 04:41:53	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 04:41:53	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 04:41:53	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 04:41:53	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 04:41:53	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 04:41:53	--	35 :IRC Operators online
+2021-07-17 04:41:53	--	19733 :channels formed
+2021-07-17 04:41:53	--	I have 2595 clients and 1 servers
+2021-07-17 04:41:53	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 04:41:53	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 04:41:53	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 04:41:53	--	You are now known as amanr-
+2021-07-17 04:41:53	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 04:41:53	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 04:41:53	--	- free & open-source software and peer directed projects.
+2021-07-17 04:41:53	--	-
+2021-07-17 04:41:53	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 04:41:53	--	-
+2021-07-17 04:41:53	--	- Please visit us in #libera for questions and support.
+2021-07-17 04:41:53	--	-
+2021-07-17 04:41:53	--	- Website and documentation:  https://libera.chat
+2021-07-17 04:41:53	--	- Webchat:                    https://web.libera.chat
+2021-07-17 04:41:53	--	- Network policies:           https://libera.chat/policies
+2021-07-17 04:41:53	--	- Email:                      support@libera.chat
+2021-07-17 04:41:53	--	End of /MOTD command.
+2021-07-17 04:41:53	--	User mode [+Zi] by amanr-
+2021-07-17 04:41:53	--	You have been marked as being away
+2021-07-17 04:41:54	--	You are no longer marked as being away
+2021-07-17 05:05:17	--	irc: disconnected from server
+2021-07-17 05:05:21	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 05:05:21	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 05:05:21	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 05:05:21	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 05:05:21	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 05:05:21	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 05:05:21	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 05:05:21	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 05:05:21	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 05:05:21	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 05:05:21	--	35 :IRC Operators online
+2021-07-17 05:05:21	--	19733 :channels formed
+2021-07-17 05:05:21	--	I have 2595 clients and 1 servers
+2021-07-17 05:05:21	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 05:05:21	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 05:05:21	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 05:05:21	--	You are now known as amanr-
+2021-07-17 05:05:21	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 05:05:21	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 05:05:21	--	- free & open-source software and peer directed projects.
+2021-07-17 05:05:21	--	-
+2021-07-17 05:05:21	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 05:05:21	--	-
+2021-07-17 05:05:21	--	- Please visit us in #libera for questions and support.
+2021-07-17 05:05:21	--	-
+2021-07-17 05:05:21	--	- Website and documentation:  https://libera.chat
+2021-07-17 05:05:21	--	- Webchat:                    https://web.libera.chat
+2021-07-17 05:05:21	--	- Network policies:           https://libera.chat/policies
+2021-07-17 05:05:21	--	- Email:                      support@libera.chat
+2021-07-17 05:05:21	--	End of /MOTD command.
+2021-07-17 05:05:21	--	User mode [+Zi] by amanr-
+2021-07-17 05:05:27	--	irc: disconnected from server
+2021-07-17 05:24:16	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 05:24:16	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 05:24:16	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 05:24:16	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 05:24:16	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 05:24:16	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 05:24:16	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 05:24:16	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 05:24:16	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 05:24:16	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 05:24:16	--	35 :IRC Operators online
+2021-07-17 05:24:16	--	19733 :channels formed
+2021-07-17 05:24:16	--	I have 2595 clients and 1 servers
+2021-07-17 05:24:16	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 05:24:16	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 05:24:16	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 05:24:16	--	You are now known as amanr-
+2021-07-17 05:24:16	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 05:24:16	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 05:24:16	--	- free & open-source software and peer directed projects.
+2021-07-17 05:24:16	--	-
+2021-07-17 05:24:16	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 05:24:16	--	-
+2021-07-17 05:24:16	--	- Please visit us in #libera for questions and support.
+2021-07-17 05:24:16	--	-
+2021-07-17 05:24:16	--	- Website and documentation:  https://libera.chat
+2021-07-17 05:24:16	--	- Webchat:                    https://web.libera.chat
+2021-07-17 05:24:16	--	- Network policies:           https://libera.chat/policies
+2021-07-17 05:24:16	--	- Email:                      support@libera.chat
+2021-07-17 05:24:16	--	End of /MOTD command.
+2021-07-17 05:24:16	--	User mode [+Zi] by amanr-
+2021-07-17 05:24:16	--	You have been marked as being away
+2021-07-17 05:24:16	--	You are no longer marked as being away
+2021-07-17 05:25:11	--	irc: disconnected from server
+2021-07-17 05:25:15	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 05:25:15	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 05:25:15	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 05:25:15	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 05:25:15	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 05:25:15	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 05:25:15	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 05:25:15	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 05:25:15	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 05:25:15	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 05:25:15	--	35 :IRC Operators online
+2021-07-17 05:25:15	--	19733 :channels formed
+2021-07-17 05:25:15	--	I have 2595 clients and 1 servers
+2021-07-17 05:25:15	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 05:25:15	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 05:25:15	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 05:25:15	--	You are now known as amanr-
+2021-07-17 05:25:15	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 05:25:15	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 05:25:15	--	- free & open-source software and peer directed projects.
+2021-07-17 05:25:15	--	-
+2021-07-17 05:25:15	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 05:25:15	--	-
+2021-07-17 05:25:15	--	- Please visit us in #libera for questions and support.
+2021-07-17 05:25:15	--	-
+2021-07-17 05:25:15	--	- Website and documentation:  https://libera.chat
+2021-07-17 05:25:15	--	- Webchat:                    https://web.libera.chat
+2021-07-17 05:25:15	--	- Network policies:           https://libera.chat/policies
+2021-07-17 05:25:15	--	- Email:                      support@libera.chat
+2021-07-17 05:25:15	--	End of /MOTD command.
+2021-07-17 05:25:15	--	User mode [+Zi] by amanr-
+2021-07-17 05:26:40	--	irc: disconnected from server
+2021-07-17 05:30:00	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 05:30:00	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 05:30:00	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 05:30:00	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 05:30:00	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 05:30:00	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 05:30:00	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 05:30:00	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 05:30:00	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 05:30:00	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 05:30:00	--	35 :IRC Operators online
+2021-07-17 05:30:00	--	19733 :channels formed
+2021-07-17 05:30:00	--	I have 2595 clients and 1 servers
+2021-07-17 05:30:00	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 05:30:00	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 05:30:00	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 05:30:00	--	You are now known as amanr-
+2021-07-17 05:30:00	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 05:30:00	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 05:30:00	--	- free & open-source software and peer directed projects.
+2021-07-17 05:30:00	--	-
+2021-07-17 05:30:00	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 05:30:00	--	-
+2021-07-17 05:30:00	--	- Please visit us in #libera for questions and support.
+2021-07-17 05:30:00	--	-
+2021-07-17 05:30:00	--	- Website and documentation:  https://libera.chat
+2021-07-17 05:30:00	--	- Webchat:                    https://web.libera.chat
+2021-07-17 05:30:00	--	- Network policies:           https://libera.chat/policies
+2021-07-17 05:30:00	--	- Email:                      support@libera.chat
+2021-07-17 05:30:00	--	End of /MOTD command.
+2021-07-17 05:30:00	--	User mode [+Zi] by amanr-
+2021-07-17 05:30:00	--	You have been marked as being away
+2021-07-17 05:30:00	--	You are no longer marked as being away
+2021-07-17 05:30:48	--	NickServ (NickServ@services.libera.chat): amanr- is not a registered nickname.
+2021-07-17 05:31:11	--	MSG(NickServ): help
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): ***** NickServ Help *****
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): NickServ allows users to 'register' a nickname, and stop
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): others from using that nick. NickServ allows the owner of a
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): nickname to disconnect a user from the network that is using
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): their nickname.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): The following commands are available:
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   ACCESS          Changes and shows your nickname access list.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   CERT            Changes and shows your nickname CertFP authentication list.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   GHOST           Reclaims use of a nickname.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   IDENTIFY        Identifies to services for a nickname.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   INFO            Displays information on registrations.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   LISTCHANS       Lists channels that you have access to.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   LOGOUT          Logs your services session out.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   REGAIN          Regain usage of a nickname.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   REGISTER        Registers a nickname.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   RELEASE         Releases a services enforcer.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   SENDPASS        Email registration passwords.
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): The following additional commands are available:
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):   ACC, HELP, SETPASS, STATUS, TAXONOMY, VERIFY
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): For more information on a NickServ command, type:
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): /msg NickServ HELP <command>
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): For a verbose listing of all NickServ commands, type:
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): /msg NickServ HELP COMMANDS
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:31:11	--	NickServ (NickServ@services.libera.chat): ***** End of Help *****
+2021-07-17 05:31:41	--	NickServ (NickServ@services.libera.chat): Insufficient parameters for REGISTER.
+2021-07-17 05:31:42	--	NickServ (NickServ@services.libera.chat): Syntax: REGISTER <password> <email>
+2021-07-17 05:31:59	--	NickServ (NickServ@services.libera.chat): An email containing nickname activation instructions has been sent to aman.rojjha@research.iiit.ac.in.
+2021-07-17 05:31:59	--	NickServ (NickServ@services.libera.chat): Please check the address if you don't receive it. If it is incorrect, DROP then REGISTER again.
+2021-07-17 05:31:59	--	NickServ (NickServ@services.libera.chat): If you do not complete registration within one day, your nickname will expire.
+2021-07-17 05:31:59	--	NickServ (NickServ@services.libera.chat): amanr- is now registered to aman.rojjha@research.iiit.ac.in.
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Information on amanr- (account amanr-):
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Registered : Jul 17 00:01:57 2021 +0000 (32s ago)
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Last addr  : ~therojjha@20.204.87.0
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Last seen  : now
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Logins from: amanr-
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Nicks      : amanr-
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Email      : aman.rojjha@research.iiit.ac.in (hidden)
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Flags      : HideMail, Private
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): Channels   : 0 founder, 0 other
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): amanr- has NOT COMPLETED registration verification.
+2021-07-17 05:32:31	--	NickServ (NickServ@services.libera.chat): *** End of Info ***
+2021-07-17 05:33:04	--	NickServ (NickServ@services.libera.chat): Invalid NickServ command.
+2021-07-17 05:33:04	--	NickServ (NickServ@services.libera.chat): Use /msg NickServ HELP for a NickServ command listing.
+2021-07-17 05:33:16	--	MSG(NickServ): HELP
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat): ***** NickServ Help *****
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat): NickServ allows users to 'register' a nickname, and stop
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat): others from using that nick. NickServ allows the owner of a
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat): nickname to disconnect a user from the network that is using
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat): their nickname.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat): The following commands are available:
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   ACCESS          Changes and shows your nickname access list.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   CERT            Changes and shows your nickname CertFP authentication list.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   DROP            Drops an account registration.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   GHOST           Reclaims use of a nickname.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   GROUP           Adds a nickname to your account.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   IDENTIFY        Identifies to services for a nickname.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   INFO            Displays information on registrations.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   LISTCHANS       Lists channels that you have access to.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   LISTLOGINS      Lists details of clients authenticated as you.
+2021-07-17 05:33:16	--	NickServ (NickServ@services.libera.chat):   LISTOWNMAIL     Lists accounts registered to your e-mail address.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   LOGOUT          Logs your services session out.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   REGAIN          Regain usage of a nickname.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   REGISTER        Registers a nickname.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   RELEASE         Releases a services enforcer.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   SENDPASS        Email registration passwords.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   SET             Sets various control flags.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   UNGROUP         Removes a nickname from your account.
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat): The following additional commands are available:
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   ACC, HELP, SETPASS, STATUS, TAXONOMY, VACATION,
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):   VERIFY
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat): For more information on a NickServ command, type:
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat): /msg NickServ HELP <command>
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat): For a verbose listing of all NickServ commands, type:
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat): /msg NickServ HELP COMMANDS
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:17	--	NickServ (NickServ@services.libera.chat): ***** End of Help *****
+2021-07-17 05:33:31	--	NickServ (NickServ@services.libera.chat): Nick help is not registered to your account.
+2021-07-17 05:33:46	--	MSG(NickServ): HELP UNGROUP
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): ***** NickServ Help *****
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): Help for UNGROUP:
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): UNGROUP unregisters the given nickname from your
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): account. The nickname will be available for others to
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): register. This will not affect your channel access
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): or memos.
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): If you do not specify a nickname, your current
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): nickname will be ungrouped. You cannot ungroup
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): your account name.
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): Syntax: UNGROUP [nickname]
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): Example:
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat):     /msg NickServ UNGROUP SomeNick
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat):  
+2021-07-17 05:33:46	--	NickServ (NickServ@services.libera.chat): ***** End of Help *****
+2021-07-17 05:33:58	--	MSG(NickServ): UNGROUP amanr-
+2021-07-17 05:33:59	--	NickServ (NickServ@services.libera.chat): Nick amanr- is your account name; you may not remove it.
+2021-07-17 05:34:48	--	amanr: Nickname is already in use.
+2021-07-17 05:35:21	--	NickServ (NickServ@services.libera.chat): Insufficient parameters for REGAIN.
+2021-07-17 05:35:21	--	NickServ (NickServ@services.libera.chat): Syntax: REGAIN <nickname> [password]
+2021-07-17 05:35:31	--	NickServ (NickServ@services.libera.chat): You have been logged out of amanr-.
+2021-07-17 05:35:32	--	NickServ (NickServ@services.libera.chat): Last login from: ~sarcastic@122.161.66.163 on Jul 16 23:03:03 2021 +0000.
+2021-07-17 05:35:32	--	NickServ (NickServ@services.libera.chat): amanr has been regained.
+2021-07-17 05:35:32	--	You are now known as amanr
+2021-07-17 05:35:49	--	irc: disconnected from server
+2021-07-17 05:35:54	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 05:35:54	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 05:35:54	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 05:35:54	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 05:35:54	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 05:35:54	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 05:35:54	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 05:35:54	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 05:35:54	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 05:35:54	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 05:35:54	--	35 :IRC Operators online
+2021-07-17 05:35:54	--	19733 :channels formed
+2021-07-17 05:35:54	--	I have 2595 clients and 1 servers
+2021-07-17 05:35:54	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 05:35:54	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 05:35:54	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 05:35:54	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 05:35:54	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 05:35:54	--	- free & open-source software and peer directed projects.
+2021-07-17 05:35:54	--	-
+2021-07-17 05:35:54	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 05:35:54	--	-
+2021-07-17 05:35:54	--	- Please visit us in #libera for questions and support.
+2021-07-17 05:35:54	--	-
+2021-07-17 05:35:54	--	- Website and documentation:  https://libera.chat
+2021-07-17 05:35:54	--	- Webchat:                    https://web.libera.chat
+2021-07-17 05:35:54	--	- Network policies:           https://libera.chat/policies
+2021-07-17 05:35:54	--	- Email:                      support@libera.chat
+2021-07-17 05:35:54	--	End of /MOTD command.
+2021-07-17 05:35:54	--	User mode [+Zi] by amanr
+2021-07-17 05:36:16	--	irc: disconnected from server
+2021-07-17 15:00:01	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 15:00:01	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 15:00:01	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 15:00:01	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 15:00:01	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 15:00:01	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 15:00:01	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 15:00:01	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 15:00:01	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 15:00:01	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 15:00:01	--	35 :IRC Operators online
+2021-07-17 15:00:01	--	19733 :channels formed
+2021-07-17 15:00:01	--	I have 2595 clients and 1 servers
+2021-07-17 15:00:01	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 15:00:01	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 15:00:01	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 15:00:01	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 15:00:01	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 15:00:01	--	- free & open-source software and peer directed projects.
+2021-07-17 15:00:01	--	-
+2021-07-17 15:00:01	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 15:00:01	--	-
+2021-07-17 15:00:01	--	- Please visit us in #libera for questions and support.
+2021-07-17 15:00:01	--	-
+2021-07-17 15:00:01	--	- Website and documentation:  https://libera.chat
+2021-07-17 15:00:01	--	- Webchat:                    https://web.libera.chat
+2021-07-17 15:00:01	--	- Network policies:           https://libera.chat/policies
+2021-07-17 15:00:01	--	- Email:                      support@libera.chat
+2021-07-17 15:00:01	--	End of /MOTD command.
+2021-07-17 15:00:01	--	User mode [+Zi] by amanr
+2021-07-17 15:00:01	--	You have been marked as being away
+2021-07-17 15:00:02	--	You are no longer marked as being away
+2021-07-17 15:00:37	--	irc: disconnected from server
+2021-07-17 15:00:41	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 15:00:41	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 15:00:41	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 15:00:41	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 15:00:41	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 15:00:41	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 15:00:41	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 15:00:41	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 15:00:41	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 15:00:41	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 15:00:41	--	35 :IRC Operators online
+2021-07-17 15:00:41	--	19733 :channels formed
+2021-07-17 15:00:41	--	I have 2595 clients and 1 servers
+2021-07-17 15:00:41	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 15:00:41	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 15:00:41	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 15:00:41	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 15:00:41	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 15:00:41	--	- free & open-source software and peer directed projects.
+2021-07-17 15:00:41	--	-
+2021-07-17 15:00:41	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 15:00:41	--	-
+2021-07-17 15:00:41	--	- Please visit us in #libera for questions and support.
+2021-07-17 15:00:41	--	-
+2021-07-17 15:00:41	--	- Website and documentation:  https://libera.chat
+2021-07-17 15:00:41	--	- Webchat:                    https://web.libera.chat
+2021-07-17 15:00:41	--	- Network policies:           https://libera.chat/policies
+2021-07-17 15:00:41	--	- Email:                      support@libera.chat
+2021-07-17 15:00:41	--	End of /MOTD command.
+2021-07-17 15:00:41	--	User mode [+Zi] by amanr
+2021-07-17 15:00:51	--	#darkmagic: No such channel
+2021-07-17 15:01:38	--	##crypto: #crypto :Forwarding to another channel
+2021-07-17 15:01:39	--	##crypto: Cannot join channel
+2021-07-17 19:43:41	--	irc: lag is high, reconnecting to server znc_libera
+2021-07-17 19:43:41	--	irc: disconnected from server
+2021-07-17 19:43:41	--	irc: reconnecting to server in 10 seconds
+2021-07-17 19:43:51	--	irc: reconnecting to server...
+2021-07-17 19:43:51	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 19:43:51	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 19:43:51	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 19:43:51	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 19:43:51	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 19:43:51	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 19:43:51	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 19:43:51	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 19:43:51	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 19:43:51	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 19:43:51	--	35 :IRC Operators online
+2021-07-17 19:43:51	--	19733 :channels formed
+2021-07-17 19:43:51	--	I have 2595 clients and 1 servers
+2021-07-17 19:43:51	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 19:43:51	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 19:43:51	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 19:43:51	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 19:43:51	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 19:43:51	--	- free & open-source software and peer directed projects.
+2021-07-17 19:43:51	--	-
+2021-07-17 19:43:51	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 19:43:51	--	-
+2021-07-17 19:43:51	--	- Please visit us in #libera for questions and support.
+2021-07-17 19:43:51	--	-
+2021-07-17 19:43:51	--	- Website and documentation:  https://libera.chat
+2021-07-17 19:43:51	--	- Webchat:                    https://web.libera.chat
+2021-07-17 19:43:51	--	- Network policies:           https://libera.chat/policies
+2021-07-17 19:43:51	--	- Email:                      support@libera.chat
+2021-07-17 19:43:51	--	End of /MOTD command.
+2021-07-17 19:43:51	--	User mode [+Zi] by amanr
+2021-07-17 19:43:51	--	You have been marked as being away
+2021-07-17 19:43:52	--	You are no longer marked as being away
+2021-07-17 23:35:12	--	irc: disconnected from server
+2021-07-17 23:35:18	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 23:35:18	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 23:35:18	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 23:35:18	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 23:35:18	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 23:35:18	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 23:35:18	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 23:35:18	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 23:35:18	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 23:35:18	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 23:35:18	--	35 :IRC Operators online
+2021-07-17 23:35:18	--	19733 :channels formed
+2021-07-17 23:35:18	--	I have 2595 clients and 1 servers
+2021-07-17 23:35:18	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 23:35:18	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 23:35:18	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 23:35:18	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 23:35:18	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 23:35:18	--	- free & open-source software and peer directed projects.
+2021-07-17 23:35:18	--	-
+2021-07-17 23:35:18	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 23:35:18	--	-
+2021-07-17 23:35:18	--	- Please visit us in #libera for questions and support.
+2021-07-17 23:35:18	--	-
+2021-07-17 23:35:18	--	- Website and documentation:  https://libera.chat
+2021-07-17 23:35:18	--	- Webchat:                    https://web.libera.chat
+2021-07-17 23:35:18	--	- Network policies:           https://libera.chat/policies
+2021-07-17 23:35:18	--	- Email:                      support@libera.chat
+2021-07-17 23:35:18	--	End of /MOTD command.
+2021-07-17 23:35:18	--	User mode [+Zi] by amanr
+2021-07-17 23:37:14	--	irc: disconnected from server
+2021-07-17 23:37:26	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 23:37:26	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 23:37:26	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 23:37:26	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 23:37:26	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 23:37:26	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 23:37:26	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 23:37:26	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 23:37:26	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 23:37:26	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 23:37:26	--	35 :IRC Operators online
+2021-07-17 23:37:26	--	19733 :channels formed
+2021-07-17 23:37:26	--	I have 2595 clients and 1 servers
+2021-07-17 23:37:26	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 23:37:26	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 23:37:26	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 23:37:26	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 23:37:26	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 23:37:26	--	- free & open-source software and peer directed projects.
+2021-07-17 23:37:26	--	-
+2021-07-17 23:37:26	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 23:37:26	--	-
+2021-07-17 23:37:26	--	- Please visit us in #libera for questions and support.
+2021-07-17 23:37:26	--	-
+2021-07-17 23:37:26	--	- Website and documentation:  https://libera.chat
+2021-07-17 23:37:26	--	- Webchat:                    https://web.libera.chat
+2021-07-17 23:37:26	--	- Network policies:           https://libera.chat/policies
+2021-07-17 23:37:26	--	- Email:                      support@libera.chat
+2021-07-17 23:37:26	--	End of /MOTD command.
+2021-07-17 23:37:26	--	User mode [+Zi] by amanr
+2021-07-17 23:41:56	--	MSG(r-ush): Hey
+2021-07-17 23:43:56	--	NickServ (NickServ@services.libera.chat): You are already logged in as amanr.
+2021-07-17 23:45:09	--	irc: disconnected from server
+2021-07-17 23:53:30	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 23:53:30	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 23:53:30	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 23:53:30	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 23:53:30	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 23:53:30	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 23:53:30	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 23:53:30	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 23:53:30	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 23:53:30	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 23:53:30	--	35 :IRC Operators online
+2021-07-17 23:53:30	--	19733 :channels formed
+2021-07-17 23:53:30	--	I have 2595 clients and 1 servers
+2021-07-17 23:53:30	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 23:53:30	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 23:53:30	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 23:53:30	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 23:53:30	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 23:53:30	--	- free & open-source software and peer directed projects.
+2021-07-17 23:53:30	--	-
+2021-07-17 23:53:30	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 23:53:30	--	-
+2021-07-17 23:53:30	--	- Please visit us in #libera for questions and support.
+2021-07-17 23:53:30	--	-
+2021-07-17 23:53:30	--	- Website and documentation:  https://libera.chat
+2021-07-17 23:53:30	--	- Webchat:                    https://web.libera.chat
+2021-07-17 23:53:30	--	- Network policies:           https://libera.chat/policies
+2021-07-17 23:53:30	--	- Email:                      support@libera.chat
+2021-07-17 23:53:30	--	End of /MOTD command.
+2021-07-17 23:53:30	--	User mode [+Zi] by amanr
+2021-07-17 23:53:30	--	You have been marked as being away
+2021-07-17 23:53:32	--	You are no longer marked as being away
+2021-07-17 23:54:10	--	irc: disconnected from server
+2021-07-17 23:54:16	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 23:54:16	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 23:54:16	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 23:54:16	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 23:54:16	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 23:54:16	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 23:54:16	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 23:54:16	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 23:54:16	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 23:54:16	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 23:54:16	--	35 :IRC Operators online
+2021-07-17 23:54:16	--	19733 :channels formed
+2021-07-17 23:54:16	--	I have 2595 clients and 1 servers
+2021-07-17 23:54:16	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 23:54:16	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 23:54:16	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 23:54:16	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 23:54:16	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 23:54:16	--	- free & open-source software and peer directed projects.
+2021-07-17 23:54:16	--	-
+2021-07-17 23:54:16	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 23:54:16	--	-
+2021-07-17 23:54:16	--	- Please visit us in #libera for questions and support.
+2021-07-17 23:54:16	--	-
+2021-07-17 23:54:16	--	- Website and documentation:  https://libera.chat
+2021-07-17 23:54:16	--	- Webchat:                    https://web.libera.chat
+2021-07-17 23:54:16	--	- Network policies:           https://libera.chat/policies
+2021-07-17 23:54:16	--	- Email:                      support@libera.chat
+2021-07-17 23:54:16	--	End of /MOTD command.
+2021-07-17 23:54:16	--	User mode [+Zi] by amanr
+2021-07-17 23:55:40	--	irc: disconnected from server
+2021-07-17 23:58:53	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-17 23:58:53	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-17 23:58:53	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-17 23:58:53	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-17 23:58:53	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-17 23:58:53	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-17 23:58:53	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-17 23:58:53	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-17 23:58:53	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-17 23:58:53	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-17 23:58:53	--	35 :IRC Operators online
+2021-07-17 23:58:53	--	19733 :channels formed
+2021-07-17 23:58:53	--	I have 2595 clients and 1 servers
+2021-07-17 23:58:53	--	2595 2595 :Current local users 2595, max 2595
+2021-07-17 23:58:53	--	45217 46854 :Current global users 45217, max 46854
+2021-07-17 23:58:53	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-17 23:58:53	--	- molybdenum.libera.chat Message of the Day -
+2021-07-17 23:58:53	--	- Welcome to Libera Chat, the IRC network for
+2021-07-17 23:58:53	--	- free & open-source software and peer directed projects.
+2021-07-17 23:58:53	--	-
+2021-07-17 23:58:53	--	- Use of Libera Chat is governed by our network policies.
+2021-07-17 23:58:53	--	-
+2021-07-17 23:58:53	--	- Please visit us in #libera for questions and support.
+2021-07-17 23:58:53	--	-
+2021-07-17 23:58:53	--	- Website and documentation:  https://libera.chat
+2021-07-17 23:58:53	--	- Webchat:                    https://web.libera.chat
+2021-07-17 23:58:53	--	- Network policies:           https://libera.chat/policies
+2021-07-17 23:58:53	--	- Email:                      support@libera.chat
+2021-07-17 23:58:53	--	End of /MOTD command.
+2021-07-17 23:58:53	--	User mode [+Zi] by amanr
+2021-07-17 23:58:53	--	You have been marked as being away
+2021-07-17 23:58:55	--	You are no longer marked as being away
+2021-07-18 00:00:43	--	irc: disconnected from server
+2021-07-18 00:01:21	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-18 00:01:21	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-18 00:01:21	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-18 00:01:21	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-18 00:01:22	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-18 00:01:22	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-18 00:01:22	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-18 00:01:22	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-18 00:01:22	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-18 00:01:22	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-18 00:01:22	--	35 :IRC Operators online
+2021-07-18 00:01:22	--	19733 :channels formed
+2021-07-18 00:01:22	--	I have 2595 clients and 1 servers
+2021-07-18 00:01:22	--	2595 2595 :Current local users 2595, max 2595
+2021-07-18 00:01:22	--	45217 46854 :Current global users 45217, max 46854
+2021-07-18 00:01:22	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-18 00:01:22	--	- molybdenum.libera.chat Message of the Day -
+2021-07-18 00:01:22	--	- Welcome to Libera Chat, the IRC network for
+2021-07-18 00:01:22	--	- free & open-source software and peer directed projects.
+2021-07-18 00:01:22	--	-
+2021-07-18 00:01:22	--	- Use of Libera Chat is governed by our network policies.
+2021-07-18 00:01:22	--	-
+2021-07-18 00:01:22	--	- Please visit us in #libera for questions and support.
+2021-07-18 00:01:22	--	-
+2021-07-18 00:01:22	--	- Website and documentation:  https://libera.chat
+2021-07-18 00:01:22	--	- Webchat:                    https://web.libera.chat
+2021-07-18 00:01:22	--	- Network policies:           https://libera.chat/policies
+2021-07-18 00:01:22	--	- Email:                      support@libera.chat
+2021-07-18 00:01:22	--	End of /MOTD command.
+2021-07-18 00:01:22	--	User mode [+Zi] by amanr
+2021-07-18 00:03:08	--	MSG(*backlog): r-ush 10
+2021-07-18 00:04:45	--	MSG(*backlog): *status 42
+2021-07-18 00:06:47	--	irc: disconnected from server
+2021-07-18 01:15:17	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-18 01:15:17	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-18 01:15:17	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-18 01:15:17	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-18 01:15:17	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-18 01:15:17	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-18 01:15:17	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-18 01:15:17	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-18 01:15:17	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-18 01:15:17	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-18 01:15:17	--	35 :IRC Operators online
+2021-07-18 01:15:17	--	19733 :channels formed
+2021-07-18 01:15:17	--	I have 2595 clients and 1 servers
+2021-07-18 01:15:17	--	2595 2595 :Current local users 2595, max 2595
+2021-07-18 01:15:17	--	45217 46854 :Current global users 45217, max 46854
+2021-07-18 01:15:17	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-18 01:15:17	--	- molybdenum.libera.chat Message of the Day -
+2021-07-18 01:15:17	--	- Welcome to Libera Chat, the IRC network for
+2021-07-18 01:15:17	--	- free & open-source software and peer directed projects.
+2021-07-18 01:15:17	--	-
+2021-07-18 01:15:17	--	- Use of Libera Chat is governed by our network policies.
+2021-07-18 01:15:17	--	-
+2021-07-18 01:15:17	--	- Please visit us in #libera for questions and support.
+2021-07-18 01:15:17	--	-
+2021-07-18 01:15:17	--	- Website and documentation:  https://libera.chat
+2021-07-18 01:15:17	--	- Webchat:                    https://web.libera.chat
+2021-07-18 01:15:17	--	- Network policies:           https://libera.chat/policies
+2021-07-18 01:15:17	--	- Email:                      support@libera.chat
+2021-07-18 01:15:17	--	End of /MOTD command.
+2021-07-18 01:15:17	--	User mode [+Zi] by amanr
+2021-07-18 01:15:17	--	You have been marked as being away
+2021-07-18 01:15:19	--	*notes (znc@znc.in): You have no entries.
+2021-07-18 01:15:19	--	You are no longer marked as being away
+2021-07-18 01:18:26	--	MSG(*status): LoadMod --type=global playback
+2021-07-18 01:21:53	--	clear: Unknown command
+2021-07-18 01:25:11	--	irc: disconnected from server
+2021-07-18 04:50:59	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-18 04:50:59	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-18 04:50:59	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-18 04:50:59	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-18 04:50:59	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-18 04:50:59	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-18 04:50:59	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-18 04:50:59	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-18 04:50:59	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-18 04:50:59	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-18 04:50:59	--	35 :IRC Operators online
+2021-07-18 04:50:59	--	19733 :channels formed
+2021-07-18 04:50:59	--	I have 2595 clients and 1 servers
+2021-07-18 04:50:59	--	2595 2595 :Current local users 2595, max 2595
+2021-07-18 04:50:59	--	45217 46854 :Current global users 45217, max 46854
+2021-07-18 04:50:59	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-18 04:50:59	--	- molybdenum.libera.chat Message of the Day -
+2021-07-18 04:50:59	--	- Welcome to Libera Chat, the IRC network for
+2021-07-18 04:50:59	--	- free & open-source software and peer directed projects.
+2021-07-18 04:50:59	--	-
+2021-07-18 04:50:59	--	- Use of Libera Chat is governed by our network policies.
+2021-07-18 04:50:59	--	-
+2021-07-18 04:50:59	--	- Please visit us in #libera for questions and support.
+2021-07-18 04:50:59	--	-
+2021-07-18 04:50:59	--	- Website and documentation:  https://libera.chat
+2021-07-18 04:50:59	--	- Webchat:                    https://web.libera.chat
+2021-07-18 04:50:59	--	- Network policies:           https://libera.chat/policies
+2021-07-18 04:50:59	--	- Email:                      support@libera.chat
+2021-07-18 04:50:59	--	End of /MOTD command.
+2021-07-18 04:50:59	--	User mode [+Zi] by amanr
+2021-07-18 04:50:59	--	You have been marked as being away
+2021-07-18 04:51:01	--	*notes (znc@znc.in): You have no entries.
+2021-07-18 04:51:01	--	You are no longer marked as being away
+2021-07-18 05:12:15	--	irc: disconnected from server
+2021-07-18 05:12:19	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-18 05:12:19	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-18 05:12:19	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-18 05:12:19	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-18 05:12:19	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-18 05:12:19	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-18 05:12:19	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-18 05:12:19	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-18 05:12:19	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-18 05:12:19	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-18 05:12:19	--	35 :IRC Operators online
+2021-07-18 05:12:19	--	19733 :channels formed
+2021-07-18 05:12:19	--	I have 2595 clients and 1 servers
+2021-07-18 05:12:19	--	2595 2595 :Current local users 2595, max 2595
+2021-07-18 05:12:19	--	45217 46854 :Current global users 45217, max 46854
+2021-07-18 05:12:19	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-18 05:12:19	--	- molybdenum.libera.chat Message of the Day -
+2021-07-18 05:12:19	--	- Welcome to Libera Chat, the IRC network for
+2021-07-18 05:12:19	--	- free & open-source software and peer directed projects.
+2021-07-18 05:12:19	--	-
+2021-07-18 05:12:19	--	- Use of Libera Chat is governed by our network policies.
+2021-07-18 05:12:19	--	-
+2021-07-18 05:12:19	--	- Please visit us in #libera for questions and support.
+2021-07-18 05:12:19	--	-
+2021-07-18 05:12:19	--	- Website and documentation:  https://libera.chat
+2021-07-18 05:12:19	--	- Webchat:                    https://web.libera.chat
+2021-07-18 05:12:19	--	- Network policies:           https://libera.chat/policies
+2021-07-18 05:12:19	--	- Email:                      support@libera.chat
+2021-07-18 05:12:19	--	End of /MOTD command.
+2021-07-18 05:12:19	--	User mode [+Zi] by amanr
+2021-07-18 05:12:20	--	*notes (znc@znc.in): You have no entries.
+2021-07-18 05:18:19	--	enable: Unknown command
+2021-07-18 05:23:06	--	NickServ (NickServ@services.libera.chat): Invalid NickServ SET subcommand.
+2021-07-18 05:23:06	--	NickServ (NickServ@services.libera.chat): Use /msg NickServ HELP SET for a NickServ SET subcommand listing.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): ***** NickServ Help *****
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):  
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): Help for SET:
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):  
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): SET allows you to set various control flags for
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): nicknames that change the way certain operations
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): are performed on them.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):  
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): The following subcommands are available:
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):  
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   ACCOUNTNAME     Changes your account name.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   EMAIL           Changes your e-mail address.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   EMAILMEMOS      Forwards incoming memos to your e-mail address.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   ENFORCE         Enables or disables automatic protection of a nickname.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   ENFORCETIME     Configure amount of time it takes before nickname protection occurs.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   HIDELASTLOGIN   Opts you out of Last Login notices upon identifying to your account.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   HIDEMAIL        Hides your e-mail address.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   NEVEROP         Prevents you from being added to access lists.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   NOMEMO          Disables the ability to receive memos.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   NOOP            Prevents services from setting modes upon you automatically.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   PASSWORD        Changes the password associated with your account.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   PRIVATE         Hides information about you from other users.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   PROPERTY        Manipulates metadata entries associated with an account.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   PUBKEY          Changes your ECDSA-NIST256P-CHALLENGE public key.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):   QUIETCHG        Allows you to opt-out of channel change messages.
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):  
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): For more information on a NickServ SET subcommand, type:
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): /msg NickServ HELP SET <subcommand>
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat):  
+2021-07-18 05:23:10	--	NickServ (NickServ@services.libera.chat): ***** End of Help *****
+2021-07-18 05:23:33	--	NickServ (NickServ@services.libera.chat): The PRIVATE flag is already set for amanr.
+2021-07-18 05:23:43	--	NickServ (NickServ@services.libera.chat): The HIDEMAIL flag is already set for account amanr.
+2021-07-18 05:33:04	--	irc: disconnected from server
+2021-07-18 16:36:23	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-18 16:36:23	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-18 16:36:23	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-18 16:36:23	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-18 16:36:23	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-18 16:36:23	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-18 16:36:23	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-18 16:36:23	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-18 16:36:23	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-18 16:36:23	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-18 16:36:23	--	35 :IRC Operators online
+2021-07-18 16:36:23	--	19733 :channels formed
+2021-07-18 16:36:23	--	I have 2595 clients and 1 servers
+2021-07-18 16:36:23	--	2595 2595 :Current local users 2595, max 2595
+2021-07-18 16:36:23	--	45217 46854 :Current global users 45217, max 46854
+2021-07-18 16:36:23	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-18 16:36:23	--	- molybdenum.libera.chat Message of the Day -
+2021-07-18 16:36:23	--	- Welcome to Libera Chat, the IRC network for
+2021-07-18 16:36:23	--	- free & open-source software and peer directed projects.
+2021-07-18 16:36:23	--	-
+2021-07-18 16:36:23	--	- Use of Libera Chat is governed by our network policies.
+2021-07-18 16:36:23	--	-
+2021-07-18 16:36:23	--	- Please visit us in #libera for questions and support.
+2021-07-18 16:36:23	--	-
+2021-07-18 16:36:23	--	- Website and documentation:  https://libera.chat
+2021-07-18 16:36:23	--	- Webchat:                    https://web.libera.chat
+2021-07-18 16:36:23	--	- Network policies:           https://libera.chat/policies
+2021-07-18 16:36:23	--	- Email:                      support@libera.chat
+2021-07-18 16:36:23	--	End of /MOTD command.
+2021-07-18 16:36:23	--	User mode [+Zi] by amanr
+2021-07-18 16:36:23	--	You have been marked as being away
+2021-07-18 16:36:25	--	*notes (znc@znc.in): You have no entries.
+2021-07-18 16:36:25	--	You are no longer marked as being away
+2021-07-18 16:50:09	--	enable: Unknown command
+2021-07-18 19:28:41	--	irc: disconnected from server
+2021-07-18 20:21:08	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-18 20:21:08	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-18 20:21:09	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-18 20:21:09	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-18 20:21:09	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-18 20:21:09	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-18 20:21:09	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-18 20:21:09	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-18 20:21:09	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-18 20:21:09	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-18 20:21:09	--	35 :IRC Operators online
+2021-07-18 20:21:09	--	19733 :channels formed
+2021-07-18 20:21:09	--	I have 2595 clients and 1 servers
+2021-07-18 20:21:09	--	2595 2595 :Current local users 2595, max 2595
+2021-07-18 20:21:09	--	45217 46854 :Current global users 45217, max 46854
+2021-07-18 20:21:09	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-18 20:21:09	--	- molybdenum.libera.chat Message of the Day -
+2021-07-18 20:21:09	--	- Welcome to Libera Chat, the IRC network for
+2021-07-18 20:21:09	--	- free & open-source software and peer directed projects.
+2021-07-18 20:21:09	--	-
+2021-07-18 20:21:09	--	- Use of Libera Chat is governed by our network policies.
+2021-07-18 20:21:09	--	-
+2021-07-18 20:21:09	--	- Please visit us in #libera for questions and support.
+2021-07-18 20:21:09	--	-
+2021-07-18 20:21:09	--	- Website and documentation:  https://libera.chat
+2021-07-18 20:21:09	--	- Webchat:                    https://web.libera.chat
+2021-07-18 20:21:09	--	- Network policies:           https://libera.chat/policies
+2021-07-18 20:21:09	--	- Email:                      support@libera.chat
+2021-07-18 20:21:09	--	End of /MOTD command.
+2021-07-18 20:21:09	--	User mode [+Zi] by amanr
+2021-07-18 20:21:09	--	You have been marked as being away
+2021-07-18 20:21:10	--	*notes (znc@znc.in): You have no entries.
+2021-07-18 20:21:10	--	You are no longer marked as being away
+2021-07-18 21:20:17	--	irc: disconnected from server
+2021-07-19 11:15:17	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-19 11:15:17	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-19 11:15:18	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-19 11:15:18	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-19 11:15:18	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-19 11:15:18	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-19 11:15:18	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-19 11:15:18	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-19 11:15:18	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-19 11:15:18	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-19 11:15:18	--	35 :IRC Operators online
+2021-07-19 11:15:18	--	19733 :channels formed
+2021-07-19 11:15:18	--	I have 2595 clients and 1 servers
+2021-07-19 11:15:18	--	2595 2595 :Current local users 2595, max 2595
+2021-07-19 11:15:18	--	45217 46854 :Current global users 45217, max 46854
+2021-07-19 11:15:18	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-19 11:15:18	--	- molybdenum.libera.chat Message of the Day -
+2021-07-19 11:15:18	--	- Welcome to Libera Chat, the IRC network for
+2021-07-19 11:15:18	--	- free & open-source software and peer directed projects.
+2021-07-19 11:15:18	--	-
+2021-07-19 11:15:18	--	- Use of Libera Chat is governed by our network policies.
+2021-07-19 11:15:18	--	-
+2021-07-19 11:15:18	--	- Please visit us in #libera for questions and support.
+2021-07-19 11:15:18	--	-
+2021-07-19 11:15:18	--	- Website and documentation:  https://libera.chat
+2021-07-19 11:15:18	--	- Webchat:                    https://web.libera.chat
+2021-07-19 11:15:18	--	- Network policies:           https://libera.chat/policies
+2021-07-19 11:15:18	--	- Email:                      support@libera.chat
+2021-07-19 11:15:18	--	End of /MOTD command.
+2021-07-19 11:15:18	--	User mode [+Zi] by amanr
+2021-07-19 11:15:18	--	You have been marked as being away
+2021-07-19 11:15:19	--	*notes (znc@znc.in): You have no entries.
+2021-07-19 11:15:19	--	You are no longer marked as being away
+2021-07-19 11:45:19	--	irc: lag is high, reconnecting to server znc_libera
+2021-07-19 11:45:20	--	irc: disconnected from server
+2021-07-19 11:45:20	--	irc: reconnecting to server in 10 seconds
+2021-07-19 11:45:30	--	irc: reconnecting to server...
+2021-07-19 11:45:30	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-19 11:45:30	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-19 11:45:30	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-19 11:45:30	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-19 11:45:30	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-19 11:45:30	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-19 11:45:30	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-19 11:45:30	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-19 11:45:30	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-19 11:45:30	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-19 11:45:30	--	35 :IRC Operators online
+2021-07-19 11:45:30	--	19733 :channels formed
+2021-07-19 11:45:30	--	I have 2595 clients and 1 servers
+2021-07-19 11:45:30	--	2595 2595 :Current local users 2595, max 2595
+2021-07-19 11:45:30	--	45217 46854 :Current global users 45217, max 46854
+2021-07-19 11:45:30	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-19 11:45:30	--	- molybdenum.libera.chat Message of the Day -
+2021-07-19 11:45:30	--	- Welcome to Libera Chat, the IRC network for
+2021-07-19 11:45:30	--	- free & open-source software and peer directed projects.
+2021-07-19 11:45:30	--	-
+2021-07-19 11:45:30	--	- Use of Libera Chat is governed by our network policies.
+2021-07-19 11:45:30	--	-
+2021-07-19 11:45:30	--	- Please visit us in #libera for questions and support.
+2021-07-19 11:45:30	--	-
+2021-07-19 11:45:30	--	- Website and documentation:  https://libera.chat
+2021-07-19 11:45:30	--	- Webchat:                    https://web.libera.chat
+2021-07-19 11:45:30	--	- Network policies:           https://libera.chat/policies
+2021-07-19 11:45:30	--	- Email:                      support@libera.chat
+2021-07-19 11:45:30	--	End of /MOTD command.
+2021-07-19 11:45:30	--	User mode [+Zi] by amanr
+2021-07-19 11:45:30	--	You have been marked as being away
+2021-07-19 11:45:32	--	*notes (znc@znc.in): You have no entries.
+2021-07-19 11:45:32	--	You are no longer marked as being away
+2021-07-19 14:51:05	--	irc: disconnected from server
+2021-07-19 18:40:01	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-19 18:40:01	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-19 18:40:01	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-19 18:40:01	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-19 18:40:01	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-19 18:40:01	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-19 18:40:01	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-19 18:40:01	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-19 18:40:01	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-19 18:40:01	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-19 18:40:01	--	35 :IRC Operators online
+2021-07-19 18:40:01	--	19733 :channels formed
+2021-07-19 18:40:01	--	I have 2595 clients and 1 servers
+2021-07-19 18:40:01	--	2595 2595 :Current local users 2595, max 2595
+2021-07-19 18:40:01	--	45217 46854 :Current global users 45217, max 46854
+2021-07-19 18:40:01	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-19 18:40:01	--	- molybdenum.libera.chat Message of the Day -
+2021-07-19 18:40:01	--	- Welcome to Libera Chat, the IRC network for
+2021-07-19 18:40:01	--	- free & open-source software and peer directed projects.
+2021-07-19 18:40:01	--	-
+2021-07-19 18:40:01	--	- Use of Libera Chat is governed by our network policies.
+2021-07-19 18:40:01	--	-
+2021-07-19 18:40:01	--	- Please visit us in #libera for questions and support.
+2021-07-19 18:40:01	--	-
+2021-07-19 18:40:01	--	- Website and documentation:  https://libera.chat
+2021-07-19 18:40:01	--	- Webchat:                    https://web.libera.chat
+2021-07-19 18:40:01	--	- Network policies:           https://libera.chat/policies
+2021-07-19 18:40:01	--	- Email:                      support@libera.chat
+2021-07-19 18:40:01	--	End of /MOTD command.
+2021-07-19 18:40:01	--	User mode [+Zi] by amanr
+2021-07-19 18:40:01	--	You have been marked as being away
+2021-07-19 18:40:03	--	*notes (znc@znc.in): You have no entries.
+2021-07-19 18:40:03	--	You are no longer marked as being away
+2021-07-19 19:43:42	--	irc: disconnected from server
+2021-07-20 10:40:19	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-20 10:40:19	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-20 10:40:19	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-20 10:40:19	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-20 10:40:19	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-20 10:40:19	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-20 10:40:19	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-20 10:40:19	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-20 10:40:19	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-20 10:40:19	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-20 10:40:19	--	35 :IRC Operators online
+2021-07-20 10:40:19	--	19733 :channels formed
+2021-07-20 10:40:19	--	I have 2595 clients and 1 servers
+2021-07-20 10:40:19	--	2595 2595 :Current local users 2595, max 2595
+2021-07-20 10:40:19	--	45217 46854 :Current global users 45217, max 46854
+2021-07-20 10:40:19	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-20 10:40:19	--	- molybdenum.libera.chat Message of the Day -
+2021-07-20 10:40:19	--	- Welcome to Libera Chat, the IRC network for
+2021-07-20 10:40:19	--	- free & open-source software and peer directed projects.
+2021-07-20 10:40:19	--	-
+2021-07-20 10:40:19	--	- Use of Libera Chat is governed by our network policies.
+2021-07-20 10:40:19	--	-
+2021-07-20 10:40:19	--	- Please visit us in #libera for questions and support.
+2021-07-20 10:40:19	--	-
+2021-07-20 10:40:19	--	- Website and documentation:  https://libera.chat
+2021-07-20 10:40:19	--	- Webchat:                    https://web.libera.chat
+2021-07-20 10:40:19	--	- Network policies:           https://libera.chat/policies
+2021-07-20 10:40:19	--	- Email:                      support@libera.chat
+2021-07-20 10:40:19	--	End of /MOTD command.
+2021-07-20 10:40:19	--	User mode [+Zi] by amanr
+2021-07-20 10:40:19	--	You have been marked as being away
+2021-07-20 10:40:20	--	*notes (znc@znc.in): You have no entries.
+2021-07-20 10:40:20	--	You are no longer marked as being away
+2021-07-20 10:40:36	--	irc: disconnected from server
+2021-07-20 10:40:40	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-20 10:40:40	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-20 10:40:40	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-20 10:40:40	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-20 10:40:40	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-20 10:40:40	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-20 10:40:40	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-20 10:40:40	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-20 10:40:40	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-20 10:40:40	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-20 10:40:40	--	35 :IRC Operators online
+2021-07-20 10:40:40	--	19733 :channels formed
+2021-07-20 10:40:40	--	I have 2595 clients and 1 servers
+2021-07-20 10:40:40	--	2595 2595 :Current local users 2595, max 2595
+2021-07-20 10:40:40	--	45217 46854 :Current global users 45217, max 46854
+2021-07-20 10:40:40	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-20 10:40:40	--	- molybdenum.libera.chat Message of the Day -
+2021-07-20 10:40:40	--	- Welcome to Libera Chat, the IRC network for
+2021-07-20 10:40:40	--	- free & open-source software and peer directed projects.
+2021-07-20 10:40:40	--	-
+2021-07-20 10:40:40	--	- Use of Libera Chat is governed by our network policies.
+2021-07-20 10:40:40	--	-
+2021-07-20 10:40:40	--	- Please visit us in #libera for questions and support.
+2021-07-20 10:40:40	--	-
+2021-07-20 10:40:40	--	- Website and documentation:  https://libera.chat
+2021-07-20 10:40:40	--	- Webchat:                    https://web.libera.chat
+2021-07-20 10:40:40	--	- Network policies:           https://libera.chat/policies
+2021-07-20 10:40:40	--	- Email:                      support@libera.chat
+2021-07-20 10:40:40	--	End of /MOTD command.
+2021-07-20 10:40:40	--	User mode [+Zi] by amanr
+2021-07-20 10:40:42	--	*notes (znc@znc.in): You have no entries.
+2021-07-20 10:40:47	--	irc: disconnected from server
+2021-07-20 11:28:45	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-20 11:28:45	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-20 11:28:45	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-20 11:28:45	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-20 11:28:45	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-20 11:28:45	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-20 11:28:45	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-20 11:28:45	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-20 11:28:45	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-20 11:28:45	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-20 11:28:45	--	35 :IRC Operators online
+2021-07-20 11:28:45	--	19733 :channels formed
+2021-07-20 11:28:45	--	I have 2595 clients and 1 servers
+2021-07-20 11:28:45	--	2595 2595 :Current local users 2595, max 2595
+2021-07-20 11:28:45	--	45217 46854 :Current global users 45217, max 46854
+2021-07-20 11:28:45	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-20 11:28:45	--	- molybdenum.libera.chat Message of the Day -
+2021-07-20 11:28:45	--	- Welcome to Libera Chat, the IRC network for
+2021-07-20 11:28:45	--	- free & open-source software and peer directed projects.
+2021-07-20 11:28:45	--	-
+2021-07-20 11:28:45	--	- Use of Libera Chat is governed by our network policies.
+2021-07-20 11:28:45	--	-
+2021-07-20 11:28:45	--	- Please visit us in #libera for questions and support.
+2021-07-20 11:28:45	--	-
+2021-07-20 11:28:45	--	- Website and documentation:  https://libera.chat
+2021-07-20 11:28:45	--	- Webchat:                    https://web.libera.chat
+2021-07-20 11:28:45	--	- Network policies:           https://libera.chat/policies
+2021-07-20 11:28:45	--	- Email:                      support@libera.chat
+2021-07-20 11:28:45	--	End of /MOTD command.
+2021-07-20 11:28:45	--	User mode [+Zi] by amanr
+2021-07-20 11:28:45	--	You have been marked as being away
+2021-07-20 11:28:46	--	*notes (znc@znc.in): You have no entries.
+2021-07-20 11:28:46	--	You are no longer marked as being away
+2021-07-20 11:28:56	--	irc: disconnected from server
+2021-07-20 11:28:59	--	irc: connecting to server 20.204.87.0/4000...
+2021-07-20 11:28:59	--	irc: connected to 20.204.87.0/4000 (20.204.87.0)
+2021-07-20 11:28:59	--	Welcome to the Libera.Chat Internet Relay Chat Network amanr-
+2021-07-20 11:28:59	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-07-20 11:28:59	--	This server was created Mon Jul 12 2021 at 03:54:24 UTC
+2021-07-20 11:28:59	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-07-20 11:28:59	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-07-20 11:28:59	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-07-20 11:28:59	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-07-20 11:28:59	--	There are 66 users and 45151 invisible on 27 servers
+2021-07-20 11:28:59	--	35 :IRC Operators online
+2021-07-20 11:28:59	--	19733 :channels formed
+2021-07-20 11:28:59	--	I have 2595 clients and 1 servers
+2021-07-20 11:28:59	--	2595 2595 :Current local users 2595, max 2595
+2021-07-20 11:28:59	--	45217 46854 :Current global users 45217, max 46854
+2021-07-20 11:28:59	--	Highest connection count: 2596 (2595 clients) (23339 connections received)
+2021-07-20 11:28:59	--	- molybdenum.libera.chat Message of the Day -
+2021-07-20 11:28:59	--	- Welcome to Libera Chat, the IRC network for
+2021-07-20 11:28:59	--	- free & open-source software and peer directed projects.
+2021-07-20 11:28:59	--	-
+2021-07-20 11:28:59	--	- Use of Libera Chat is governed by our network policies.
+2021-07-20 11:28:59	--	-
+2021-07-20 11:28:59	--	- Please visit us in #libera for questions and support.
+2021-07-20 11:28:59	--	-
+2021-07-20 11:28:59	--	- Website and documentation:  https://libera.chat
+2021-07-20 11:28:59	--	- Webchat:                    https://web.libera.chat
+2021-07-20 11:28:59	--	- Network policies:           https://libera.chat/policies
+2021-07-20 11:28:59	--	- Email:                      support@libera.chat
+2021-07-20 11:28:59	--	End of /MOTD command.
+2021-07-20 11:28:59	--	User mode [+Zi] by amanr
+2021-07-20 11:29:01	--	*notes (znc@znc.in): You have no entries.
+2021-07-20 11:29:49	--	##crypto: You're not on that channel
+2021-07-20 11:38:34	--	irc: disconnected from server

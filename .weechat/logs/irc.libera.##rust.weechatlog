@@ -1,0 +1,537 @@
+2021-07-14 19:22:33	-->	amanr (~sarcastic@122.161.66.39) has joined ##rust
+2021-07-14 19:22:33	--	Topic for ##rust is "Unofficial channel for the Rust programming language | Don't ask to ask, just ask! | Code of conduct: https://rust-lang.org/policies/code-of-conduct | evalr2: «code» to run Rust code | Other chat/help venues: https://rust-lang.org/community"
+2021-07-14 19:22:33	--	Topic set by mrmonday (~robert@what.i.hope.is.not.a.tabernaevagant.es) on Sun, 30 May 2021 18:35:42
+2021-07-14 19:22:33	--	Channel ##rust: 660 nicks (1 op, 0 voices, 659 normals)
+2021-07-14 19:22:36	--	Channel created on Wed, 19 May 2021 17:50:38
+2021-07-14 19:22:39	<--	alexxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:24:30	-->	sbalmos (~sbalmos@about/java/sbalmos) has joined ##rust
+2021-07-14 19:25:32	<--	narispo (~narispo@2a0d:e487:11f:f39f:7863:ba4:104d:bf51) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:26:13	<--	zeden (~zeden@user/zeden) has quit (Quit: WeeChat 3.0.1)
+2021-07-14 19:26:15	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:27:07	<--	genieliu (~genieliu@103.37.140.25) has quit (Ping timeout: 246 seconds)
+2021-07-14 19:28:27	-->	alexxxey (~Alexey@user/alexxey) has joined ##rust
+2021-07-14 19:30:42	<--	ljoonal (~ljoonal@user/ljoonal) has quit (Ping timeout: 252 seconds)
+2021-07-14 19:30:45	<--	alexxxxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:32:15	-->	WinterStar (~IceLight@user/icelight) has joined ##rust
+2021-07-14 19:32:21	<--	frost (~frost@59.71.241.179) has quit (Quit: Connection closed)
+2021-07-14 19:33:35	<--	gggp_ (~gggp@117.61.30.66) has quit (Read error: Connection reset by peer)
+2021-07-14 19:35:19	sweater2	Another silly beginner question. Say I want to implement pop for HashMap that pops any key. I try this: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=19a3ba81d2d9dd2bfcda3d950f331c58
+2021-07-14 19:35:40	sweater2	It fails and I understand why it fails.
+2021-07-14 19:36:12	<--	WinterStar (~IceLight@user/icelight) has quit (Client Quit)
+2021-07-14 19:36:15	sweater2	But I would like to tell rustc that I won't need that iter again and I can return borrowed reference for something else to use, say ``remove'' function.
+2021-07-14 19:36:18	sweater2	How do I do that?
+2021-07-14 19:36:46	fkaa	the order of a HashMap is not guaranteed, not sure if that's what you want
+2021-07-14 19:36:58	sweater2	It's exactly what I want, yes.
+2021-07-14 19:37:02	sweater2	I want to pop _any_ key.
+2021-07-14 19:37:14	-->	gggp (~gggp@117.61.30.66) has joined ##rust
+2021-07-14 19:37:54	-->	narispo (~narispo@2a0d:e487:11f:f39f:f6a2:8eb3:2450:1032) has joined ##rust
+2021-07-14 19:38:05	-->	t3nj1n (~t3nj1n@pool-96-246-146-100.nycmny.fios.verizon.net) has joined ##rust
+2021-07-14 19:38:07	-->	WinterStar (~IceLight@user/icelight) has joined ##rust
+2021-07-14 19:38:13	sweater2	I have disjoint graphs in a hash map and an algo that works on a joint graph, walking it from any node. I drain disjoint graph in a while loop and intend to kick-off that walk by giving it any node.
+2021-07-14 19:38:34	danieldg	sweater2: that is a use-after-free: k and v still point into the map, and remove takes the value out and (since you didn't use it) frees it
+2021-07-14 19:38:40	j`ey	the return type should be Option<(K, V)>
+2021-07-14 19:38:45	<--	gggp (~gggp@117.61.30.66) has quit (Remote host closed the connection)
+2021-07-14 19:38:55	canton7	sweater2, isn't the problem more... The HashMap owns the key and value. You want to return references to those elements, but you're also removing them from the HashMap, so you're returning a reference to something which no longer exists
+2021-07-14 19:39:56	jbg	exactly - if the return type is Option<(&K, &V)> then what do those references point to
+2021-07-14 19:40:15	-->	ljoonal (~ljoonal@user/ljoonal) has joined ##rust
+2021-07-14 19:41:41	j`ey	I actually dunno how to do this without cloning the Key
+2021-07-14 19:41:47	jbg	yeah i think you have to clone the key
+2021-07-14 19:42:00	danieldg	yeah, that or use raw_entry
+2021-07-14 19:42:05	jbg	drain() clears the map before returning the iterator right?
+2021-07-14 19:42:09	<--	SomeWeirdAnon (~shwn@2a02:8109:abf:ffb4:1053:d056:cecc:6382) has quit
+2021-07-14 19:42:13	danieldg	(but sadly raw_entry is not stable)
+2021-07-14 19:42:35	fkaa	jbg: yup, there's a nightly drain_filter() though
+2021-07-14 19:43:04	jbg	oh, there's remove_entry which takes a &K
+2021-07-14 19:43:18	jbg	and returns Option<(K, V)> which is what sweater2's method should return
+2021-07-14 19:43:20	j`ey	oh nice
+2021-07-14 19:44:01	j`ey	but.. how do you get a &K?
+2021-07-14 19:44:11	j`ey	without borrowing from the hasmap
+2021-07-14 19:44:19	-->	Karel (~Karel@232.56.198.178.dynamic.wline.res.cust.swisscom.ch) has joined ##rust
+2021-07-14 19:44:26	danieldg	with raw_entry you can inspect the element from the iterator, grab its hash, and then use that in .from_hash(h, |_| true) to get an element
+2021-07-14 19:44:34	danieldg	but otherwise you must clone a key
+2021-07-14 19:45:04	<--	biberu (~biberu@user/biberu) has quit (Read error: Connection reset by peer)
+2021-07-14 19:45:05	-->	unlink2 (~unlink@p200300ebcf256c00b0a46696bea8ac50.dip0.t-ipconnect.de) has joined ##rust
+2021-07-14 19:45:40	j`ey	hm https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=271581909371d4041ccd5262cfca0533
+2021-07-14 19:45:57	danieldg	it's basically the same problem as "how do I look up things in a HashMap<(String,u32), u32> if I have a (str, u32)"?
+2021-07-14 19:46:16	jbg	yeah it's fine here; you already have the &mut HashMap
+2021-07-14 19:47:19	jbg	but yeah still have to clone the key
+2021-07-14 19:47:28	jbg	is raw_entry likely to be stable any time soon?
+2021-07-14 19:47:35	<--	codebam (~codebam@user/codebam) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:48:00	danieldg	I would hope so, it fixes most of the problems with hashmap
+2021-07-14 19:49:19	-->	codebam (~codebam@user/codebam) has joined ##rust
+2021-07-14 19:49:20	-->	darkbit (~db@152.32.99.67) has joined ##rust
+2021-07-14 19:49:27	Alexendoo	I think there's still some disagreement about the api
+2021-07-14 19:52:07	-->	biberu (~biberu@user/biberu) has joined ##rust
+2021-07-14 19:54:31	-->	kinabalu (~kinabalu@about/java/kinabalu) has joined ##rust
+2021-07-14 19:59:38	<--	Th30n (~Th30n@cpe-188-252-156-252.zg5.cable.xnet.hr) has quit (Quit: WeeChat 3.2)
+2021-07-14 20:01:56	<--	ljoonal (~ljoonal@user/ljoonal) has quit (Ping timeout: 272 seconds)
+2021-07-14 20:03:12	<--	codebam (~codebam@user/codebam) has quit (Ping timeout: 272 seconds)
+2021-07-14 20:03:54	-->	ljoonal (~ljoonal@user/ljoonal) has joined ##rust
+2021-07-14 20:04:11	-->	codebam (~codebam@user/codebam) has joined ##rust
+2021-07-14 20:06:54	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##rust
+2021-07-14 20:06:56	--	__jmcantrell__ is now known as jmcantrell
+2021-07-14 20:09:19	-->	anandprabhu (~anandprab@94.202.243.198) has joined ##rust
+2021-07-14 20:10:26	-->	fabic (~fabic@lfbn-reu-1-357-213.w92-130.abo.wanadoo.fr) has joined ##rust
+2021-07-14 20:11:05	<--	heat (~heat@sortix/contributor/heat) has quit (Read error: Connection reset by peer)
+2021-07-14 20:11:17	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##rust
+2021-07-14 20:13:01	<--	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-07-14 20:13:35	Karel	I'm having some crossbeam::scope trouble, I can't figure out a way to get a field of self through: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bea71f045284293d162028463a80799f
+2021-07-14 20:13:51	Karel	The problem is that another field of self is not Sync, but I don't see why that's an issue.
+2021-07-14 20:13:55	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##rust
+2021-07-14 20:14:24	-->	Swahili (~Swahili@cpc153693-lewi20-2-0-cust508.2-4.cable.virginm.net) has joined ##rust
+2021-07-14 20:14:24	Karel	(the commented out scope call is an attempted workaround but that still doesn't work)
+2021-07-14 20:14:38	jbg	before scope: let generator = &self.generator;
+2021-07-14 20:14:44	jbg	then use generator instead of self.generator inside the closure
+2021-07-14 20:14:50	jbg	otherwise it captures self
+2021-07-14 20:16:00	Karel	Ah okay that works and makes sense
+2021-07-14 20:16:11	sweater2	BTW, unstable features are absolutely fine. Thanks for a lot of pointers, y'all (no pun intended)
+2021-07-14 20:19:46	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2021-07-14 20:21:31	-->	gggp (~gggp@117.61.30.66) has joined ##rust
+2021-07-14 20:22:04	<--	codebam (~codebam@user/codebam) has quit (Ping timeout: 265 seconds)
+2021-07-14 20:22:15	<--	HotblackDesiato (~HotblackD@gateway/tor-sasl/hotblackdesiato) has quit (Remote host closed the connection)
+2021-07-14 20:22:25	gggp	rust = play with reference
+2021-07-14 20:22:32	-->	HotblackDesiato (~HotblackD@gateway/tor-sasl/hotblackdesiato) has joined ##rust
+2021-07-14 20:23:21	-->	codebam (~codebam@user/codebam) has joined ##rust
+2021-07-14 20:24:01	-->	karx (~yashkaran@user/karx) has joined ##rust
+2021-07-14 20:26:24	-->	koolazer (~koo@user/koolazer) has joined ##rust
+2021-07-14 20:27:32	<--	mreznik (~mreznik@nat-pool-brq-u.redhat.com) has quit (Quit: Leaving)
+2021-07-14 20:28:34	<--	narann (~narann@2a01:e34:ee2e:4830:f592:d05e:5d43:1be6) has quit (Quit: Leaving)
+2021-07-14 20:32:43	-->	gggp_ (~gggp@117.61.26.233) has joined ##rust
+2021-07-14 20:34:01	-->	ec (~ec@gateway/tor-sasl/ec) has joined ##rust
+2021-07-14 20:34:51	-->	zeden (~zeden@user/zeden) has joined ##rust
+2021-07-14 20:35:01	<--	tims (~tims@193-82-234-90.tpgi.com.au) has quit (Ping timeout: 246 seconds)
+2021-07-14 20:35:06	<--	gggp (~gggp@117.61.30.66) has quit (Ping timeout: 255 seconds)
+2021-07-14 20:35:30	<--	codebam (~codebam@user/codebam) has quit (Ping timeout: 272 seconds)
+2021-07-14 20:36:53	-->	codebam (~codebam@user/codebam) has joined ##rust
+2021-07-14 20:39:59	-->	Tacklebox (~mborden@node-1w7jr9sqdtktscvq9h9jwf6lv.ipv6.telus.net) has joined ##rust
+2021-07-14 20:40:07	<--	zeden (~zeden@user/zeden) has quit (Ping timeout: 245 seconds)
+2021-07-14 20:46:20	-->	majo (~user@user/majo) has joined ##rust
+2021-07-14 20:47:15	<--	bkircher (~bkircher@2001:a61:2497:5101:e0ca:4337:fd67:267e) has quit (Ping timeout: 255 seconds)
+2021-07-14 20:48:07	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##rust
+2021-07-14 20:51:23	<--	jmcantrell (~weechat@user/jmcantrell) has quit (Ping timeout: 258 seconds)
+2021-07-14 20:51:45	-->	genieliu (~genieliu@111.192.99.234) has joined ##rust
+2021-07-14 20:52:39	<--	rcbaus (~rcbaus@47.201.5.207) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-07-14 20:57:07	<--	arinov (~arinov@213.194.126.155) has quit (Quit: Konversation terminated!)
+2021-07-14 20:57:27	-->	arinov (~arinov@213.194.126.155) has joined ##rust
+2021-07-14 21:03:13	<--	saschagrunert (~saschagru@46.128.124.113) has quit (Remote host closed the connection)
+2021-07-14 21:03:53	<--	alip (~alip@exherbo/developer/alip) has quit (Quit: WeeChat 2.8)
+2021-07-14 21:04:14	<--	ec (~ec@gateway/tor-sasl/ec) has quit (Ping timeout: 244 seconds)
+2021-07-14 21:04:25	<--	koolazer (~koo@user/koolazer) has quit (Ping timeout: 258 seconds)
+2021-07-14 21:06:52	-->	tmpm697 (~tmpm697@171.241.136.44) has joined ##rust
+2021-07-14 21:06:52	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Read error: Connection reset by peer)
+2021-07-14 21:07:51	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##rust
+2021-07-14 21:09:45	-->	ec (~ec@gateway/tor-sasl/ec) has joined ##rust
+2021-07-14 21:12:30	-->	hnOsmium0001 (uid453710@id-453710.stonehaven.irccloud.com) has joined ##rust
+2021-07-14 21:13:33	-->	wrycode (~wrycode@168.235.110.39) has joined ##rust
+2021-07-14 21:15:06	-->	FluffyMask (~masque@user/fluffymask) has joined ##rust
+2021-07-14 21:21:02	<--	genieliu (~genieliu@111.192.99.234) has quit (Ping timeout: 265 seconds)
+2021-07-14 21:22:05	-->	genieliu (~genieliu@111.192.99.234) has joined ##rust
+2021-07-14 21:23:18	sweater2	Ok, I'm trying to learn `raw_entry` and `RawEntryBuilder.from_key`, but I don't understand how would it help me, since I can't use it instead of `m.iter().next()`, nor can I use raw entries to delete things from a map.
+2021-07-14 21:23:26	<--	narispo (~narispo@2a0d:e487:11f:f39f:f6a2:8eb3:2450:1032) has quit (Ping timeout: 255 seconds)
+2021-07-14 21:25:19	-->	safinaskar (~user@109.252.90.89) has joined ##rust
+2021-07-14 21:25:19	<--	ec (~ec@gateway/tor-sasl/ec) has quit (Remote host closed the connection)
+2021-07-14 21:25:26	 *	dcz_ made a clock out of an RTC for the first time in my life :)
+2021-07-14 21:25:39	<--	t3nj1n (~t3nj1n@pool-96-246-146-100.nycmny.fios.verizon.net) has quit (Quit: WeeChat 2.8)
+2021-07-14 21:25:44	-->	ec (~ec@gateway/tor-sasl/ec) has joined ##rust
+2021-07-14 21:25:50	safinaskar	crates.io doesn't work in my outdated version of chromium
+2021-07-14 21:26:01	safinaskar	 73.0.3683.75
+2021-07-14 21:26:07	--	gggp_ is now known as gggp
+2021-07-14 21:27:18	<--	Tacklebox (~mborden@node-1w7jr9sqdtktscvq9h9jwf6lv.ipv6.telus.net) has quit (Ping timeout: 255 seconds)
+2021-07-14 21:27:48	<--	genieliu (~genieliu@111.192.99.234) has quit (Ping timeout: 265 seconds)
+2021-07-14 21:28:13	<--	tmpm697 (~tmpm697@171.241.136.44) has quit (Remote host closed the connection)
+2021-07-14 21:28:41	danieldg	safinaskar: afaik nobody here is in charge of that site.  But you could just use cargo, not like you need a web browser
+2021-07-14 21:29:42	j`ey	 or try lib.rs
+2021-07-14 21:30:04	j`ey	https://lib.rs
+2021-07-14 21:30:13	AstrallyForged	.hg https://lib.rs > https://crates.io
+2021-07-14 21:32:18	capitol	or update your browser so you don't run a bunch of security holes
+2021-07-14 21:33:57	safinaskar	AstrallyForged: what is ".hg"?
+2021-07-14 21:34:29	danieldg	mercurial
+2021-07-14 21:34:31	safinaskar	danieldg: j`ey: thanks
+2021-07-14 21:34:47	-->	xsperry (~as@user/xsperry) has joined ##rust
+2021-07-14 21:35:04	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Read error: Connection reset by peer)
+2021-07-14 21:35:31	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##rust
+2021-07-14 21:35:37	saati	i'm pretty sure that's an extra annoying matrix gateway in this context
+2021-07-14 21:36:25	CommunistWolf	mpd person specifier iirc
+2021-07-14 21:41:50	sweater2	How mature / existing is literate rust? I'm writing a lot of algorithms and they tend to be messy, especially if implemented quickly, so I'd like to either insert a LaTeX or any other graph and a table in the documentation or make a rendering LaTeX file that I can also compile with cargo.
+2021-07-14 21:42:28	Alexendoo	sweater2: https://play.rust-lang.org/?version=nightly&mode=debug&edition=2018&gist=7dff565a1969355ef003e73d1f7b1acc
+2021-07-14 21:42:30	sweater2	I don't care about the markup / learning a new language to achieve literacy too much, but since I'm planning to use this stack in my comp. prog. team, I'd like for integration to be frictionless.
+2021-07-14 21:42:45	-->	zeden (~zeden@user/zeden) has joined ##rust
+2021-07-14 21:42:46	-->	shgvbvri (~rvgzuuqp@gateway/tor-sasl/rvgzuuqp) has joined ##rust
+2021-07-14 21:42:50	sweater2	Alexendoo: wow!
+2021-07-14 21:43:14	<--	ubert (~Thunderbi@2a02:8109:9880:303c:ca5b:76ff:fe29:f233) has quit (Remote host closed the connection)
+2021-07-14 21:43:38	<--	unlink2 (~unlink@p200300ebcf256c00b0a46696bea8ac50.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-07-14 21:44:39	Alexendoo	.from_hash(hash, |_| true) could return the entry for something other than key, so this relies on the fact that it doesn't matter here
+2021-07-14 21:45:37	sweater2	Alexendoo: thanks, I'll do my best to write some texts that may be helpful for people who are documenting this. I'm not sure it's still needed, I briefly saw that docs are missing. Hopefully, I'll have the time and I'll succeed :)
+2021-07-14 21:47:00	danieldg	sweater2: note that raw_entry is an unstable feature that might change, so keep that in mind if you want to work on docs
+2021-07-14 21:48:17	sweater2	danieldg: yes, I understand, thank you. I just hope that by the time I'm done reading the RFC, the issue thread and all the underlying code the docs are still needed. AFAIU it's pretty cool to becoming stable.
+2021-07-14 21:50:13	<--	ec (~ec@gateway/tor-sasl/ec) has quit (Ping timeout: 244 seconds)
+2021-07-14 21:51:50	<--	anandprabhu (~anandprab@94.202.243.198) has quit (Quit: Leaving)
+2021-07-14 21:52:00	-->	alexxxxxey (~Alexey@user/alexxey) has joined ##rust
+2021-07-14 21:54:18	<--	alexxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:00:32	<--	codebam (~codebam@user/codebam) has quit (Ping timeout: 245 seconds)
+2021-07-14 22:01:11	-->	ec (~ec@gateway/tor-sasl/ec) has joined ##rust
+2021-07-14 22:02:20	<--	wib_jonas (~wib_jonas@business-37-191-60-209.business.broadband.hu) has quit (Quit: Client closed)
+2021-07-14 22:04:15	-->	hexfive (~eric@50.35.83.177) has joined ##rust
+2021-07-14 22:05:58	-->	hayaliali (~alip@exherbo/developer/alip) has joined ##rust
+2021-07-14 22:06:26	<--	kron (~weechat@user/qaph) has quit (Quit: kron)
+2021-07-14 22:09:38	-->	codebam (~codebam@user/codebam) has joined ##rust
+2021-07-14 22:11:28	georgemp	is there a way to build a static lib that does not include the symbols from it's dependencies? I ask because, it doesn't seem possible to build cdylib for iOS (on rust). And I have a library that depends on another (both of which are included in my ffi target), resulting in duplicate symbols
+2021-07-14 22:11:38	<--	gggp (~gggp@117.61.26.233) has quit (Ping timeout: 252 seconds)
+2021-07-14 22:11:51	georgemp	or would i have to manually remove all the duplicate symbols and repack the lib?
+2021-07-14 22:13:22	<--	luca0N (~luca0N@nautilus.luca0n.com) has quit (Ping timeout: 240 seconds)
+2021-07-14 22:13:38	-->	luca0N (~luca0N@nautilus.luca0n.com) has joined ##rust
+2021-07-14 22:14:01	--	luca0N is now known as Guest6737
+2021-07-14 22:15:11	<--	darkbit (~db@152.32.99.67) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:16:31	<--	safinaskar (~user@109.252.90.89) has left ##rust
+2021-07-14 22:16:42	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Read error: Connection reset by peer)
+2021-07-14 22:17:45	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##rust
+2021-07-14 22:17:46	--	hayaliali is now known as alip
+2021-07-14 22:19:14	<--	msavoritias (~msavoriti@91-158-103-66.elisa-laajakaista.fi) has quit (Remote host closed the connection)
+2021-07-14 22:22:25	<--	Guest6737 (~luca0N@nautilus.luca0n.com) has quit (Ping timeout: 265 seconds)
+2021-07-14 22:23:02	<--	Pjerky (~Pjerky@81-234-143-135-no58.tbcn.telia.com) has quit (Ping timeout: 245 seconds)
+2021-07-14 22:23:27	-->	luca0N (~luca0N@nautilus.luca0n.com) has joined ##rust
+2021-07-14 22:23:51	--	luca0N is now known as Guest2125
+2021-07-14 22:24:13	-->	SiegeLord (~sl@user/siegelord) has joined ##rust
+2021-07-14 22:25:32	<--	emerent (~quassel@p200300cd5721e68cba27ebfffed28a59.dip0.t-ipconnect.de) has quit (Ping timeout: 245 seconds)
+2021-07-14 22:26:16	-->	emerent (~quassel@p200300cd5721e6a7ba27ebfffed28a59.dip0.t-ipconnect.de) has joined ##rust
+2021-07-14 22:30:26	-->	alexxxey (~Alexey@user/alexxey) has joined ##rust
+2021-07-14 22:32:33	<--	alexxxxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:39:16	Karel	Is there an easy way to write a &[f32] into a file, in native byte order? There's the byteorder crate which can copy form &[f32] to &[u8], but I'd like to avoid that if possible.
+2021-07-14 22:39:31	Karel	(because it would require memory allocationà
+2021-07-14 22:39:45	<--	anon16_ (~anon16@user/anon16) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:39:55	danieldg	Karel: you can convert to a raw pointer and reconstruct the slice as a u8 slice
+2021-07-14 22:40:23	Karel	But that always request unsafe even though it's not actually unsafe, right?
+2021-07-14 22:40:34	Karel	*always requires unsafe
+2021-07-14 22:40:57	danieldg	yes.  There are crates that wrap this for you with checks, if you prefer.
+2021-07-14 22:41:39	-->	anon16_ (~anon16@user/anon16) has joined ##rust
+2021-07-14 22:41:55	-->	alexxxxxey (~Alexey@user/alexxey) has joined ##rust
+2021-07-14 22:41:58	Karel	Ah stuff like the the safe_transmute crate?
+2021-07-14 22:43:15	cehteh	Karel: if its local data that needs to be preserved you my just mmap it?
+2021-07-14 22:43:22	danieldg	yep, or bytemuck which has a neat name :D
+2021-07-14 22:44:11	Karel	mmap? That's a lot of overcomplication, I just have a Vec<f32> and I want to get it into a file.
+2021-07-14 22:44:11	danieldg	cehteh: mmap will just require converting the arrays the other direction, from &mut [u8] to &mut [f32]...
+2021-07-14 22:44:15	<--	alexxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:44:32	Karel	Nice, writer.write_all(transmute_to_bytes(&data)) seems to work :)
+2021-07-14 22:44:35	danieldg	and for single writes, mmap() is way slower than write()
+2021-07-14 22:45:36	cehteh	i dont know the access pattern, but mmap should take no time since its only pages mapped, the kernel flushes that out in the background and it would do page/block io anyway
+2021-07-14 22:46:16	-->	timemage (timemage@user/timemage) has joined ##rust
+2021-07-14 22:46:38	danieldg	cehteh: it takes time to set up the page tables, it has to fault them in as you write (which involves reading the file - which can be skipped by write())
+2021-07-14 22:47:04	danieldg	cehteh: also, munmap() is surprisingly expensive if you are multithreaded due to TLB invalidation
+2021-07-14 22:49:20	<--	karx (~yashkaran@user/karx) has quit (Quit: WeeChat 3.2)
+2021-07-14 22:49:39	-->	karx (~yashkaran@user/karx) has joined ##rust
+2021-07-14 22:49:50	-->	koolazer (~koo@user/koolazer) has joined ##rust
+2021-07-14 22:50:01	cehteh	but for read/write almost all the same counts too, plus an extra userland copy
+2021-07-14 22:50:48	danieldg	write() in particular can avoid the disk read for the overwritten pages
+2021-07-14 22:51:07	cehteh	mmap for writing single bytes only has no benefit but it shouldnt be more worse than normal io on single bytes
+2021-07-14 22:51:20	cehteh	yes but only when the whole page gets overwrittne
+2021-07-14 22:51:28	-->	P1RATEZ (piratez@user/p1ratez) has joined ##rust
+2021-07-14 22:52:12	-->	delial (~delial@47.185.98.253) has joined ##rust
+2021-07-14 22:52:25	saati	but an ssd page or a disk sector is smaller than an mmu page
+2021-07-14 22:52:47	danieldg	true.  But if you are only writing small amounts then the memory mapping cost is worse (as a fraction of the cost)
+2021-07-14 22:53:15	danieldg	saati: mostly not true these days, actually, especially for SSDs
+2021-07-14 22:53:55	cehteh	nowadays many disks/ssds have 4k pages, internally often bigger
+2021-07-14 22:54:34	danieldg	disks still pretend they have 512-byte sectors but will internally read/modify/write if you don't modify a 'full' sector
+2021-07-14 22:54:54	saati	hmm ok
+2021-07-14 22:55:28	danieldg	it lets them save a few bits more on ECC so that they can fit a few % more real data on the disk
+2021-07-14 22:55:54	danieldg	or for SSDs, that's just the erase block size of the flash
+2021-07-14 22:56:51	Karel	Huh there's only one ECC set per 4k page? How many bits?
+2021-07-14 22:57:04	danieldg	good luck finding out if you aren't the manufacturer
+2021-07-14 22:57:39	danieldg	"just enough to make the read error rate tolerable" is my guess
+2021-07-14 22:57:52	Karel	Yeah of course :)
+2021-07-14 23:02:26	<--	naur (naur@user/naur) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:02:35	-->	naur (naur@user/naur) has joined ##rust
+2021-07-14 23:03:30	<--	P1RATEZ (piratez@user/p1ratez) has quit (Ping timeout: 265 seconds)
+2021-07-14 23:05:51	<--	Mateon1 (~Thunderbi@user/mateon1) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:06:21	-->	Mateon1 (~Thunderbi@user/mateon1) has joined ##rust
+2021-07-14 23:07:39	<--	__jmcantrell__ (~weechat@user/jmcantrell) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:10:55	-->	alexxxey (~Alexey@user/alexxey) has joined ##rust
+2021-07-14 23:13:03	<--	alexxxxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:18:19	-->	ubert (~Thunderbi@p2e5a50e5.dip0.t-ipconnect.de) has joined ##rust
+2021-07-14 23:21:38	<--	sjanes (~sjanes@108-204-49-169.lightspeed.mssnks.sbcglobal.net) has quit (Ping timeout: 268 seconds)
+2021-07-14 23:21:58	-->	sjanes (~sjanes@108-204-49-169.lightspeed.mssnks.sbcglobal.net) has joined ##rust
+2021-07-14 23:24:04	<--	koolazer (~koo@user/koolazer) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:25:55	-->	alexxxxxey (~Alexey@user/alexxey) has joined ##rust
+2021-07-14 23:26:15	-->	msi (~msi@186.224.210.190) has joined ##rust
+2021-07-14 23:28:21	<--	alexxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:29:00	<--	sjanes (~sjanes@108-204-49-169.lightspeed.mssnks.sbcglobal.net) has quit (Ping timeout: 252 seconds)
+2021-07-14 23:29:19	<--	arinov (~arinov@213.194.126.155) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:33:13	<--	euandreh (~euandreh@2804:14c:33:9fe5:50a8:9802:856c:54ce) has quit (Quit: WeeChat 3.2)
+2021-07-14 23:35:57	-->	sjanes (~sjanes@108-204-49-169.lightspeed.mssnks.sbcglobal.net) has joined ##rust
+2021-07-14 23:36:19	-->	b_jonas (~x@catv-176-63-12-30.catv.broadband.hu) has joined ##rust
+2021-07-14 23:37:03	<--	fabic (~fabic@lfbn-reu-1-357-213.w92-130.abo.wanadoo.fr) has quit (Ping timeout: 268 seconds)
+2021-07-14 23:38:12	-->	Pjerky (~Pjerky@81-234-143-135-no58.tbcn.telia.com) has joined ##rust
+2021-07-14 23:39:50	talin	hello. i have a vec of u8 and i would like to insert a number of u8s into it. so now i have vec![IAC.code, DO.code, "Who.Query", IAC.code, SE.code]; in which you can maybe see what i want? i want to not have to manually insert that string one by one as u8s
+2021-07-14 23:40:34	talin	that Who.Query could probably be inserted using the u8 value for 'W', then the u8 value for 'h' etc
+2021-07-14 23:40:38	talin	i'm not sure how to do that
+2021-07-14 23:41:04	<--	sjanes (~sjanes@108-204-49-169.lightspeed.mssnks.sbcglobal.net) has quit (Ping timeout: 272 seconds)
+2021-07-14 23:42:14	talin	maybe as_bytes()
+2021-07-14 23:42:18	<--	alexxxxxey (~Alexey@user/alexxey) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:43:12	<--	carla (~carla@facebook/engineering/carla) has quit (Ping timeout: 256 seconds)
+2021-07-14 23:43:40	talin	that almost works, only this isn't the way to insert the elements of one vector into another vector, it seems
+2021-07-14 23:46:04	<--	trev (~trev@user/trev) has quit (Remote host closed the connection)
+2021-07-14 23:48:13	<--	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:48:14	Alexendoo	talin: You can use v.extend(s.as_bytes()) to push multiple things onto the vec
+2021-07-14 23:48:48	-->	veegee (~veegee@154.3.44.8) has joined ##rust
+2021-07-14 23:49:43	-->	hatz_ (~user@2a05:f480:1400:f44:5400:3ff:fe6d:f349) has joined ##rust
+2021-07-14 23:49:50	<--	hatz_ (~user@2a05:f480:1400:f44:5400:3ff:fe6d:f349) has left ##rust
+2021-07-14 23:50:25	-->	bowlofeggs (~bowlofegg@fedora/bowlofeggs) has joined ##rust
+2021-07-14 23:53:06	-->	sjanes (~sjanes@108-204-49-169.lightspeed.mssnks.sbcglobal.net) has joined ##rust
+2021-07-14 23:53:14	talin	ah, that works if i make 3 vecs and i extend them to the first one
+2021-07-14 23:54:00	-->	veegee_ (~veegee@154.21.22.103) has joined ##rust
+2021-07-14 23:56:37	-->	veegee__ (~veegee@37.19.210.163) has joined ##rust
+2021-07-14 23:57:18	<--	veegee (~veegee@154.3.44.8) has quit (Ping timeout: 258 seconds)
+2021-07-14 23:58:25	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##rust
+2021-07-14 23:59:35	<--	sjanes (~sjanes@108-204-49-169.lightspeed.mssnks.sbcglobal.net) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:59:36	<--	veegee_ (~veegee@154.21.22.103) has quit (Ping timeout: 258 seconds)
+2021-07-14 23:59:46	--	irc: disconnected from server
+2021-07-16 19:49:21	-->	amanr (~sarcastic@122.161.66.163) has joined ##rust
+2021-07-16 19:49:21	--	Topic for ##rust is "Unofficial channel for the Rust programming language | Don't ask to ask, just ask! | Code of conduct: https://rust-lang.org/policies/code-of-conduct | evalr2: «code» to run Rust code | Other chat/help venues: https://rust-lang.org/community"
+2021-07-16 19:49:21	--	Topic set by mrmonday (~robert@what.i.hope.is.not.a.tabernaevagant.es) on Sun, 30 May 2021 18:35:42
+2021-07-16 19:49:22	--	Channel ##rust: 664 nicks (1 op, 0 voices, 663 normals)
+2021-07-16 19:49:23	--	Channel created on Wed, 19 May 2021 17:50:38
+2021-07-16 19:49:28	gggp	Is deref coercion  implicit  rule of compiler?
+2021-07-16 19:49:36	j`ey	yes
+2021-07-16 19:49:47	gggp	oh ,good
+2021-07-16 19:52:49	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 246 seconds)
+2021-07-16 19:53:23	<--	jay-invariant (~jay@c-24-4-6-169.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2021-07-16 19:53:57	<--	anandprabhu (~anandprab@94.202.243.198) has quit (Quit: Leaving)
+2021-07-16 19:54:02	-->	jay-invariant (~jay@c-24-4-6-169.hsd1.ca.comcast.net) has joined ##rust
+2021-07-16 19:54:46	gggp	j`ey, c++ also have this feature ,which is called "implicit conversion"
+2021-07-16 19:55:07	j`ey	yeah similar
+2021-07-16 19:55:43	bertptrs	Deref coercion is a lot safer though
+2021-07-16 19:56:29	gggp	hmm
+2021-07-16 19:57:36	<--	vmeson (~rmacleod@198-48-226-187.cpe.pppoe.ca) has quit (Ping timeout: 265 seconds)
+2021-07-16 19:58:25	fakegermano	why is every msg AstrallyForged send starts with .hg or am I just an irc noob
+2021-07-16 19:58:59	bertptrs	That's a long story…
+2021-07-16 19:58:59	AstrallyForged	.* fakegermano: We're plural. The markers indicate which of us is speaking. If you have further questions, please read https://mst3k.interlinked.me/@moonbolt/105353669326396313 first and then talk to us in ##rust-offtopic, to keep this channel on-topic.
+2021-07-16 19:59:26	fakegermano	oh nice thanks!
+2021-07-16 20:00:42	AstrallyForged	.hg somecreature thanked us? for our faq??
+2021-07-16 20:00:43	 *	AstrallyForged .hg absolutely faints in amazement
+2021-07-16 20:03:16	-->	dshikoh (~dshikoh@user/dshikoh) has joined ##rust
+2021-07-16 20:03:29	 *	Th30n is confused, trying to understand what is happening.
+2021-07-16 20:05:59	Swahili	Q: Writing a CI Test runner for a Rust project (I don't write Rust). I'd like to cache the compilation process if the the source hasn't changed. When: cargo test, I can see it compiles first and then exec the test. Is there a way to compile and then separately execute test?
+2021-07-16 20:06:23	-->	vmeson (~rmacleod@198-48-226-187.cpe.pppoe.ca) has joined ##rust
+2021-07-16 20:06:52	jbg	you can cache `target` (or `$CARGO_TARGET_DIR`) and then if the source hasn't changed nothing will be recompiled
+2021-07-16 20:07:28	-->	darkbit (~db@152.32.99.67) has joined ##rust
+2021-07-16 20:07:50	jbg	there's also sccache which can be handy if you have lots of rust projects
+2021-07-16 20:07:54	j`ey	Swahili: --no-run
+2021-07-16 20:08:13	-->	death916 (~death916@c-67-182-183-147.hsd1.ca.comcast.net) has joined ##rust
+2021-07-16 20:08:16	-->	Zenton (~user@user/zenton) has joined ##rust
+2021-07-16 20:08:38	jbg	ah i should have guessed this is probably a container layer caching thing. so yeah, cargo test --no-run and then cargo test
+2021-07-16 20:08:50	Swahili	jbg: j`ey: thanks for looking! I'll have a look on both suggestions ;)
+2021-07-16 20:09:30	jbg	even better, cargo fetch, cargo test --no-run and then cargo test
+2021-07-16 20:09:31	bertptrs	Swahili: cargo build --all-targets builds the tests, benchmarks, binaries, and whatever else you can think of
+2021-07-16 20:09:32	Swahili	For the first one, I now see that instead of `compiling...`, I get `download...`. Good!
+2021-07-16 20:09:40	gggp	bertptrs, where is the "a lot safer" from
+2021-07-16 20:09:47	gggp	just curious
+2021-07-16 20:10:09	gggp	I think that is transmut
+2021-07-16 20:10:12	Swahili	jbg: ok, I'll read about those!
+2021-07-16 20:10:35	Swahili	If I want to reset, clear the cache, its ok to delete `target`? or is there an appropriate command?
+2021-07-16 20:10:44	j`ey	cargo clean
+2021-07-16 20:10:46	jbg	cargo clean, but deleting the target dir is fine
+2021-07-16 20:10:49	Swahili	oh I see cargo clean, thanks :)
+2021-07-16 20:11:12	bertptrs	gggp: In C++, things can implicitly convert to lots of other things. Which means that it's very possible to use the wrong variable for something because it happened to be convertible to the appropriate type. Deref can only be implemented once per type, so its scope is more modest
+2021-07-16 20:11:57	gggp	okay , of course
+2021-07-16 20:12:05	bertptrs	a bool can implicitly convert to an int in c++ and vice versa. which means that it's harder to notice if you accidentally swap them in a function call
+2021-07-16 20:12:21	gggp	hah
+2021-07-16 20:12:27	Swahili	Q: By the way, I got my team mate to write tests, but while I can see tests, the tests are not really doing much as it just checks for initial state. I wonder if there's a good read on how to mock imports in Rust, as I want him to mock certain implementations, etc?
+2021-07-16 20:12:31	gggp	programmer is tired
+2021-07-16 20:12:56	gggp	bertptrs, make sense
+2021-07-16 20:14:30	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2021-07-16 20:14:54	<--	msavoritias (~msavoriti@91-158-103-66.elisa-laajakaista.fi) has quit (Remote host closed the connection)
+2021-07-16 20:15:50	jbg	Swahili: you don't really typically "mock imports" as such. although in theory you could make a local copy of some crate and swap out all the impl for mocks, it's tidier and more common to make your code generic over different implementations and then swap out the implementation by changing type parameter
+2021-07-16 20:15:51	<--	jleightcap2 (~jleightca@user/jleightcap) has quit (Ping timeout: 268 seconds)
+2021-07-16 20:16:41	Swahili	jbg: that's a very good idea, I like it a lot! Thanks for the suggestion!
+2021-07-16 20:17:05	jbg	traits lend themselves pretty well to this; if you have a SomeApiClient that you use, you can make an ApiClient trait with the methods you use of it, make your code generic over that, and then your deployed builds can use the SomeApiClient while your tests can use the MockApiClient
+2021-07-16 20:17:28	Swahili	jbg: just in case you know, is there a project that does this, I could use as a reference?
+2021-07-16 20:17:34	bertptrs	mockall
+2021-07-16 20:17:43	-->	jleightcap2 (~jleightca@user/jleightcap) has joined ##rust
+2021-07-16 20:17:53	-->	CodeSpelunker (~CodeSpelu@user/codespelunker) has joined ##rust
+2021-07-16 20:18:28	Swahili	bertptrs: great ;)
+2021-07-16 20:19:14	<--	t3nj1n_ (~t3nj1n@108.5.82.237) has quit (Ping timeout: 252 seconds)
+2021-07-16 20:19:45	Th30n	jbg: Off topic, but jbg are initials or something else? I always get tripped up as "jbg" is shorthand for "F@%# it" in my language.
+2021-07-16 20:20:04	jbg	Th30n: you're from a slavic country i take it?
+2021-07-16 20:20:10	Th30n	Yep
+2021-07-16 20:20:13	jbg	croatia?
+2021-07-16 20:20:20	jbg	Swahili: https://asomers.github.io/mock_shootout/
+2021-07-16 20:20:26	Th30n	I think you can infer it from my connection :)
+2021-07-16 20:20:38	jbg	yes indeed :)
+2021-07-16 20:20:42	<--	SeedyROM (~TheCheat@97-115-40-13.ptld.qwest.net) has quit (Ping timeout: 255 seconds)
+2021-07-16 20:20:45	Swahili	jbg: thanks a lot for that!
+2021-07-16 20:20:48	<--	dshikoh (~dshikoh@user/dshikoh) has quit (Quit: Konversation terminated!)
+2021-07-16 20:20:55	jbg	they're initials, but i worked with a guy from zagreb and he told me about the meaning
+2021-07-16 20:21:04	jbg	so you know, take from it what you want :P
+2021-07-16 20:21:06	Th30n	Nice :D
+2021-07-16 20:21:42	-->	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has joined ##rust
+2021-07-16 20:21:51	<--	tmpm697 (~tmpm697@171.241.136.44) has quit (Quit: Lost terminal)
+2021-07-16 20:22:26	-->	t3nj1n_ (~t3nj1n@108.5.82.237) has joined ##rust
+2021-07-16 20:22:55	<--	jleightcap2 (~jleightca@user/jleightcap) has quit (Ping timeout: 246 seconds)
+2021-07-16 20:23:55	-->	fabic (~fabic@lfbn-reu-1-357-213.w92-130.abo.wanadoo.fr) has joined ##rust
+2021-07-16 20:24:28	-->	tmpm697 (~tmpm697@171.241.136.44) has joined ##rust
+2021-07-16 20:25:04	-->	jleightcap2 (~jleightca@user/jleightcap) has joined ##rust
+2021-07-16 20:26:04	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 246 seconds)
+2021-07-16 20:26:16	<--	mreznik__ (~mreznik@nat-pool-brq-u.redhat.com) has quit (Quit: Leaving)
+2021-07-16 20:26:31	gggp	j`ey, for the last qustion ,if b def coersion to &dyn AsRef<str> , b.as_ref().len() should compile
+2021-07-16 20:26:52	j`ey	gggp: no, as I explined, Box impls AsRef
+2021-07-16 20:27:03	j`ey	*explained
+2021-07-16 20:27:10	gggp	oh , yeah
+2021-07-16 20:27:10	-->	karx (~yashkaran@user/karx) has joined ##rust
+2021-07-16 20:27:50	gggp	hah
+2021-07-16 20:28:03	<--	euandreh (~euandreh@191.181.59.160) has quit (Quit: WeeChat 3.2)
+2021-07-16 20:30:02	<--	t3nj1n_ (~t3nj1n@108.5.82.237) has quit (Ping timeout: 268 seconds)
+2021-07-16 20:30:17	-->	michalsieron (~Thunderbi@host213250.telnetropczyce.pl) has joined ##rust
+2021-07-16 20:30:41	Swahili	Q: Any disadvantage in persisting the `target` directory between test runs? Did a few tests, where I modified the source and Rust didn't compile after the first run, does it diff and compile only what's needed automatically?
+2021-07-16 20:30:59	bertptrs	It uses hashes to determine recompiles
+2021-07-16 20:31:07	bertptrs	So if it matches, it matches
+2021-07-16 20:31:18	Swahili	bertptrs: Nice! I'll persist target then
+2021-07-16 20:32:40	<--	SignalWalker (~SignalWal@c-71-228-131-240.hsd1.ga.comcast.net) has quit (Read error: Connection reset by peer)
+2021-07-16 20:32:41	bertptrs	I'd clean it whenever you bump the compiler version or dependencies as it tends to grow
+2021-07-16 20:32:56	bertptrs	It's not quite node_modules level but it's close
+2021-07-16 20:33:11	Swahili	bertptrs: ok cool! that'll be diff cargo.lock ?
+2021-07-16 20:33:11	-->	SignalWalker (~SignalWal@c-71-228-131-240.hsd1.ga.comcast.net) has joined ##rust
+2021-07-16 20:33:36	bertptrs	that should catch dependency bumps yes, compiler bumps are bound to be less frequent
+2021-07-16 20:34:10	Swahili	Ok :)
+2021-07-16 20:37:42	-->	rjframe (~rjframe@c-68-38-42-188.hsd1.in.comcast.net) has joined ##rust
+2021-07-16 20:39:13	Swahili	bertptrs: by the way, how do you check the compiler bumps?
+2021-07-16 20:39:46	-->	zmt00 (~zmt00@user/zmt00) has joined ##rust
+2021-07-16 20:40:33	j`ey	youre setting it up in your CI
+2021-07-16 20:41:52	nox	I just empty it when I need free space
+2021-07-16 20:41:53	<--	ubert1 (~Thunderbi@2a02:8109:9880:303c:ca5b:76ff:fe29:f233) has quit (Remote host closed the connection)
+2021-07-16 20:42:07	nox	When I was working on Servo it routinely reached 100GB or so,e
+2021-07-16 20:42:18	<--	_Vi (~vi0oss@2a0d:7c40:3000:1326::3) has quit (Ping timeout: 255 seconds)
+2021-07-16 20:42:38	nox	but as I often had to switch branches before/after a rustup, I wouldn't clean it as soon as we did one.
+2021-07-16 20:46:26	-->	gggp_ (~gggp@60.10.23.164) has joined ##rust
+2021-07-16 20:48:25	-->	FluffyMask (~masque@user/fluffymask) has joined ##rust
+2021-07-16 20:49:27	<--	gggp (~gggp@221.219.77.161) has quit (Ping timeout: 258 seconds)
+2021-07-16 20:49:35	-->	airdash (~igloo@50.53.170.72) has joined ##rust
+2021-07-16 20:52:17	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##rust
+2021-07-16 20:53:32	-->	connorw (~connor@c-73-129-126-33.hsd1.de.comcast.net) has joined ##rust
+2021-07-16 20:53:55	<--	wib_jonas (~wib_jonas@business-37-191-60-209.business.broadband.hu) has quit (Quit: Client closed)
+2021-07-16 20:54:11	<--	airdash (~igloo@50.53.170.72) has quit (Ping timeout: 255 seconds)
+2021-07-16 20:55:03	bertptrs	Swahili: there's a new compiler version every 6 weeks, sometimes with a hotfix in between. whether you'll actually bump the version is up to your use case
+2021-07-16 20:55:15	Swahili	bertptrs: ok ;)
+2021-07-16 20:56:12	bertptrs	There's no such thing as an LTS so you'll probably want to follow it. Debian and Ubuntu try to pretend there is but that's a lie
+2021-07-16 20:57:41	<--	Th30n (~Th30n@cpe-94-253-167-200.zg.cable.xnet.hr) has quit (Quit: WeeChat 3.2)
+2021-07-16 21:00:17	-->	mekeor[m] (~mekeormat@2001:470:69fc:105::17e4) has joined ##rust
+2021-07-16 21:00:32	<--	LeDragonDev (~LeDragonD@lfbn-mon-1-1463-151.w92-167.abo.wanadoo.fr) has quit (Quit: Client closed)
+2021-07-16 21:01:47	-->	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has joined ##rust
+2021-07-16 21:02:02	-->	airdash (~igloo@50.53.170.72) has joined ##rust
+2021-07-16 21:03:17	<--	airdash (~igloo@50.53.170.72) has quit (Client Quit)
+2021-07-16 21:06:20	<--	llorllale (~llorllale@2607:9880:3a18:69:60c2:6b20:449d:8d91) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:08:39	<--	CodeSpelunker (~CodeSpelu@user/codespelunker) has quit (Ping timeout: 265 seconds)
+2021-07-16 21:16:06	-->	ioxzev1z (~ioxzev1z@user/ioxzev1z) has joined ##rust
+2021-07-16 21:17:08	-->	shiddy (uid501592@id-501592.brockwell.irccloud.com) has joined ##rust
+2021-07-16 21:17:37	<--	arinov__ (~arinov@213.194.126.155) has quit (Ping timeout: 245 seconds)
+2021-07-16 21:24:27	-->	CodeSpelunker (~CodeSpelu@user/codespelunker) has joined ##rust
+2021-07-16 21:24:35	<--	vila (~vila@2a01:e0a:176:40d0:3116:8b53:6d68:5e0a) has quit (Ping timeout: 268 seconds)
+2021-07-16 21:26:09	<--	__jmcantrell__ (~weechat@user/jmcantrell) has quit (Ping timeout: 268 seconds)
+2021-07-16 21:31:48	<--	bkircher (~bkircher@2001:a61:2497:5101:e0ca:4337:fd67:267e) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:36:56	-->	vila (~vila@2a01:e0a:176:40d0:9499:5459:911c:9033) has joined ##rust
+2021-07-16 21:41:38	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##rust
+2021-07-16 21:47:04	-->	mikehcox (~mikehcox@c-73-242-195-194.hsd1.nm.comcast.net) has joined ##rust
+2021-07-16 21:48:14	gggp_	 bertptrs does &i32 have deref ?
+2021-07-16 21:49:46	-->	mefistofeles (~mefistofe@user/mefistofeles) has joined ##rust
+2021-07-16 21:50:44	dcz_	yes, &T impls Deref
+2021-07-16 21:50:53	<--	__jmcantrell__ (~weechat@user/jmcantrell) has quit (Ping timeout: 255 seconds)
+2021-07-16 21:51:34	gggp_	dcz_, where the book tell this :), thanks give me a hint
+2021-07-16 21:52:14	j`ey	https://doc.rust-lang.org/std/ops/trait.Deref.html#impl-Deref-5
+2021-07-16 21:54:15	-->	JuggleTux (~tux@mob-194-230-146-199.cgn.sunrise.net) has joined ##rust
+2021-07-16 21:54:17	-->	penguino (~mrpenguin@user/mrpenguin) has joined ##rust
+2021-07-16 21:54:30	<--	alexxxey (~Alexey@user/alexxey) has quit (Ping timeout: 246 seconds)
+2021-07-16 21:57:07	gggp_	impl<'_, T> Deref for &'_ T  ,can the anonymous lifetime be elided?
+2021-07-16 21:57:36	j`ey	it is, in the code
+2021-07-16 21:57:41	j`ey	thats for the docs
+2021-07-16 21:58:44	<--	DNH (~DNH@2a02:8108:1100:16d8:c4df:67d7:d0ec:2764) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-07-16 22:00:13	-->	gggp__ (~gggp@60.10.23.164) has joined ##rust
+2021-07-16 22:00:28	gggp__	may i ask :  for the docs ,so what :D
+2021-07-16 22:00:38	--	gggp__ is now known as gggp
+2021-07-16 22:00:51	gggp	docs need lifetime notion ?
+2021-07-16 22:01:04	cehteh	anyone of you knowing a crate that coalescing strings in a HashSet<Arc<String>> or similar?
+2021-07-16 22:01:46	j`ey	gggp: i dont know of the decision of why to put it explicitly in the docs
+2021-07-16 22:01:55	<--	tims (~tims@193-82-234-90.tpgi.com.au) has quit (Ping timeout: 268 seconds)
+2021-07-16 22:01:56	j`ey	maybe it's just the way the code gets parsed
+2021-07-16 22:02:03	cehteh	and is Arc<str> a thing? :)
+2021-07-16 22:02:12	gggp	j`ey, okay ,thanks for reply
+2021-07-16 22:02:49	<--	gggp_ (~gggp@60.10.23.164) has quit (Ping timeout: 250 seconds)
+2021-07-16 22:06:11	Alexendoo	cehteh: Yeah Arc<str> is a thing. You could look for an interner crate. I haven't used one to know what's good out there
+2021-07-16 22:06:19	-->	DNH (~DNH@2a02:8108:1100:16d8:c4df:67d7:d0ec:2764) has joined ##rust
+2021-07-16 22:07:54	cehteh	i am searching for something thats coalescing strings, nothing found so far, i guess its simple to do, my idea was to start with a Mutex<HashSet<Arc<str>>> as storage and then just some very small api upfront
+2021-07-16 22:08:20	cehteh	i am a bit surprised that doesnt exist yet
+2021-07-16 22:08:32	cehteh	or i am to stupid to search
+2021-07-16 22:10:37	danieldg	cehteh: "string interning" is a good search term
+2021-07-16 22:10:43	danieldg	there are crates for it
+2021-07-16 22:10:53	cehteh	ah interning :)
+2021-07-16 22:11:22	cehteh	we need some better rules for keyword to search, i just found https://crates.io/crates/path-absolutize
+2021-07-16 22:11:36	cehteh	remember a week ago or so i dint found that and coded that by myself
+2021-07-16 22:13:27	fakegermano	if something is inside an Arc can multiple thread access(read) it at the same time?
+2021-07-16 22:13:33	fakegermano	dumb question probably
+2021-07-16 22:14:17	GreenJello	that's determined by the Sync auto-trait
+2021-07-16 22:14:33	GreenJello	Arc doesn't give you Sync, but Mutex does
+2021-07-16 22:15:05	-->	mekeor (~user@2001:a61:3430:c02:c476:bec9:4c08:b6b2) has joined ##rust
+2021-07-16 22:15:29	cehteh	readonly should work
+2021-07-16 22:16:18	GreenJello	to be clear, most things are already Sync
+2021-07-16 22:16:29	GreenJello	and Arc doesn't take that way eIther
+2021-07-16 22:16:56	-->	hnOsmium0001 (uid453710@id-453710.stonehaven.irccloud.com) has joined ##rust
+2021-07-16 22:17:30	fakegermano	oh I get it, it just "inherits" the sync/send of the type it envelops
+2021-07-16 22:17:33	danieldg	fakegermano: by default yes, things are read-only and available from any thread
+2021-07-16 22:17:53	danieldg	and if it's not safe to do so you won't be able to give the arc to another thread
+2021-07-16 22:18:52	danieldg	note some things are safe to send between threads, but not if they are in an arc (Send but not Sync)
+2021-07-16 22:19:00	mekeor	hello! how can i find the range of line numbers in which a thing (variable, function etc) begins, given by its identifier, is defined within a file.rs?
+2021-07-16 22:19:14	mekeor	s/begins//
+2021-07-16 22:20:18	-->	Dizidentu (~aresg@modemcable076.164-19-135.mc.videotron.ca) has joined ##rust
+2021-07-16 22:22:48	<--	Dizident1 (~aresg@modemcable076.164-19-135.mc.videotron.ca) has quit (Ping timeout: 252 seconds)
+2021-07-16 22:24:38	<--	Roughy (~mdaw45ns@user/roughy) has quit (Ping timeout: 255 seconds)
+2021-07-16 22:25:48	-->	kmh (~kmh@p200300df5f0e070036f57036993366d1.dip0.t-ipconnect.de) has joined ##rust
+2021-07-16 22:28:41	<--	karx (~yashkaran@user/karx) has quit (Quit: brb)
+2021-07-16 22:30:01	-->	karx (~yashkaran@user/karx) has joined ##rust
+2021-07-16 22:32:29	<--	explore (uid233125@id-233125.stonehaven.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-16 22:33:23	-->	arinov__ (~arinov@213.194.126.155) has joined ##rust
+2021-07-16 22:34:44	gggp	how to correctly sync the data mod through thread ?
+2021-07-16 22:36:05	gggp	immune to instruction order stuff
+2021-07-16 22:36:35	<--	vila (~vila@2a01:e0a:176:40d0:9499:5459:911c:9033) has quit (Remote host closed the connection)
+2021-07-16 22:37:35	<--	unlink2 (~unlink@p200300ebcf256c00b0a46696bea8ac50.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-07-16 22:38:01	-->	sgift (~madison@2001:a61:35b8:2401:9c02:b9b2:db67:6450) has joined ##rust
+2021-07-16 22:38:35	fakegermano	mutexes should be the basic
+2021-07-16 22:38:47	<--	sord937 (~sord937@gateway/tor-sasl/sord937) has quit (Remote host closed the connection)
+2021-07-16 22:39:12	<--	hegstal (~hegstal@2a02:c7f:7604:8a00:694c:cc5c:55d8:63b) has quit (Ping timeout: 268 seconds)
+2021-07-16 22:40:18	danieldg	gggp: read std::sync::atomic::Ordering (and for background, the C++ memory ordering docs)
+2021-07-16 22:40:41	fakegermano	I went on this same rabbithole yesterday
+2021-07-16 22:41:22	danieldg	it's a great topic that many people don't need to care about - just using channels and mutexes means it's std's job to make it work right
+2021-07-16 22:42:00	<--	fabic (~fabic@lfbn-reu-1-357-213.w92-130.abo.wanadoo.fr) has quit (Ping timeout: 268 seconds)
+2021-07-16 22:42:18	danieldg	(just don't use the timeout stuff in std)
+2021-07-16 22:42:47	gggp	danieldg, arc is telling me what  atomic ?
+2021-07-16 22:42:56	gggp	:)
+2021-07-16 22:43:02	danieldg	no, you don't need to worry about ordering with arc
+2021-07-16 22:43:28	-->	vila (~vila@2a01:e0a:176:40d0:a9bb:befe:f87d:75fc) has joined ##rust
+2021-07-16 22:43:34	gggp	what is mean of arc's atomic :(
+2021-07-16 22:43:55	fakegermano	the nomicon has an explanation about it (it even implements a barebones Arc)
+2021-07-16 22:44:13	fakegermano	https://doc.rust-lang.org/nomicon/arc.html
+2021-07-16 22:44:35	fakegermano	as a user of the Arc object you wont need to worry about ordering stuff, it does that for you
+2021-07-16 22:44:48	-->	Roughy (~mdaw45ns@user/roughy) has joined ##rust
+2021-07-16 22:45:17	gggp	rust nomicon is trying to reimplement std lib?
+2021-07-16 22:45:43	fakegermano	no no, its an example for helping us to understand whats under the hood and how it works
+2021-07-16 22:46:17	gggp	oh,that's good
+2021-07-16 22:46:23	danieldg	it's notes if you need to create your own thing like arc but different
+2021-07-16 22:46:25	fakegermano	but yes this examples reimplements stuff from the std lib "as the std lib does"
+2021-07-16 22:46:32	danieldg	but normally arc is good enough
+2021-07-16 22:46:33	-->	elf_fortrez (~elf_fortr@adsl-72-50-4-50.prtc.net) has joined ##rust
+2021-07-16 22:47:02	<--	elf_fortrez (~elf_fortr@adsl-72-50-4-50.prtc.net) has quit (Client Quit)
+2021-07-16 22:48:32	-->	dshikoh (~dshikoh@user/dshikoh) has joined ##rust
+2021-07-16 22:53:08	<--	penguino (~mrpenguin@user/mrpenguin) has quit (Remote host closed the connection)
+2021-07-16 22:57:45	<--	gggp (~gggp@60.10.23.164) has quit (Ping timeout: 255 seconds)
+2021-07-16 23:03:05	-->	MarderIII (~MarderIII@2001:985:e889:1:a86b:cb06:bf1:296e) has joined ##rust
+2021-07-16 23:04:08	<--	Swahili (~Swahili@cpc153693-lewi20-2-0-cust508.2-4.cable.virginm.net) has quit (Quit: Leaving...)
+2021-07-16 23:09:58	<--	TheAceOfHearts (~TheAceOfH@24.41.239.76) has quit (Quit: So long, and thanks for all the fish!)
+2021-07-16 23:10:18	<--	Roughy (~mdaw45ns@user/roughy) has quit (Quit: Meadow Fresh milk)
+2021-07-16 23:11:53	<--	mekeor (~user@2001:a61:3430:c02:c476:bec9:4c08:b6b2) has quit (Ping timeout: 255 seconds)
+2021-07-16 23:14:17	--	irc: disconnected from server
+2021-07-16 23:28:46	-->	amanr (~sarcastic@122.161.66.163) has joined ##rust
+2021-07-16 23:28:46	--	Topic for ##rust is "Unofficial channel for the Rust programming language | Don't ask to ask, just ask! | Code of conduct: https://rust-lang.org/policies/code-of-conduct | evalr2: «code» to run Rust code | Other chat/help venues: https://rust-lang.org/community"
+2021-07-16 23:28:46	--	Topic set by mrmonday (~robert@what.i.hope.is.not.a.tabernaevagant.es) on Sun, 30 May 2021 18:35:42
+2021-07-16 23:28:46	--	Channel ##rust: 663 nicks (1 op, 0 voices, 662 normals)
+2021-07-16 23:28:49	--	Channel created on Wed, 19 May 2021 17:50:38
+2021-07-16 23:29:04	-->	amanr (~sarcastic@122.161.66.163) has joined ##rust
+2021-07-16 23:29:04	--	Topic for ##rust is "Unofficial channel for the Rust programming language | Don't ask to ask, just ask! | Code of conduct: https://rust-lang.org/policies/code-of-conduct | evalr2: «code» to run Rust code | Other chat/help venues: https://rust-lang.org/community"
+2021-07-16 23:29:04	--	Topic set by mrmonday (~robert@what.i.hope.is.not.a.tabernaevagant.es) on Sun, 30 May 2021 18:35:42
+2021-07-16 23:29:04	--	Channel ##rust: 663 nicks (1 op, 0 voices, 662 normals)
+2021-07-16 23:29:06	--	Channel created on Wed, 19 May 2021 17:50:38

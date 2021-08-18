@@ -1,0 +1,200 @@
+2021-07-18 05:18:03	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-18 05:18:03	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-18 05:18:03	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-18 05:18:03	--	Channel #i3: 97 nicks (0 ops, 0 voices, 97 normals)
+2021-07-18 05:18:05	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-18 05:25:40	<--	tpefreedom (~tsomers@98-125-194-4.dyn.centurytel.net) has quit (Remote host closed the connection)
+2021-07-18 05:33:04	--	irc: disconnected from server
+2021-07-18 16:36:23	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-18 16:36:23	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-18 16:36:23	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-18 16:36:23	--	Channel #i3: 98 nicks (0 ops, 0 voices, 98 normals)
+2021-07-18 16:36:23	***	Buffer Playback...
+2021-07-18 16:36:23	serhat	[08:38:12] Hello
+2021-07-18 16:36:23	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-18 16:36:23	serhat	[08:39:28] hello
+2021-07-18 16:36:23	***	Playback Complete.
+2021-07-18 16:36:23	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-18 16:40:39	amanr	hey! I'm a complete newb too but I can try.
+2021-07-18 16:40:50	amanr	I currently use i3-gaps
+2021-07-18 16:40:58	amanr	What's the query
+2021-07-18 16:58:06	<--	theoceaniscool_ (~theoceani@93.177.120.255) has quit (Ping timeout: 480 seconds)
+2021-07-18 17:29:11	-->	sebastia- (~sebastian@103.203.72.103) has joined #i3
+2021-07-18 17:34:04	<--	sebastianos (~sebastian@103.203.72.103) has quit (Ping timeout: 480 seconds)
+2021-07-18 17:34:42	-->	sebastianos (~sebastian@103.203.72.161) has joined #i3
+2021-07-18 17:39:02	<--	sebastia- (~sebastian@103.203.72.103) has quit (Ping timeout: 480 seconds)
+2021-07-18 18:06:14	plitter	He has quit :) 
+2021-07-18 18:09:53	plitter	Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-18 19:01:50	-->	hook_ (~hook@93-103-13-254.static.t-2.net) has joined #i3
+2021-07-18 19:28:41	--	irc: disconnected from server
+2021-07-18 20:21:09	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-18 20:21:09	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-18 20:21:09	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-18 20:21:09	--	Channel #i3: 98 nicks (0 ops, 0 voices, 98 normals)
+2021-07-18 20:21:09	***	Buffer Playback...
+2021-07-18 20:21:09	serhat	[08:38:12] Hello
+2021-07-18 20:21:09	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-18 20:21:09	serhat	[08:39:28] hello
+2021-07-18 20:21:09	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-18 20:21:09	amanr	[11:10:50] I currently use i3-gaps
+2021-07-18 20:21:09	amanr	[11:10:58] What's the query
+2021-07-18 20:21:09	plitter	[12:36:14] He has quit :) 
+2021-07-18 20:21:09	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-18 20:21:09	***	Playback Complete.
+2021-07-18 20:21:09	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-18 21:20:17	--	irc: disconnected from server
+2021-07-19 11:15:18	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-19 11:15:18	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-19 11:15:18	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-19 11:15:18	--	Channel #i3: 99 nicks (0 ops, 0 voices, 99 normals)
+2021-07-19 11:15:18	***	Buffer Playback...
+2021-07-19 11:15:18	serhat	[08:38:12] Hello
+2021-07-19 11:15:18	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-19 11:15:18	serhat	[08:39:28] hello
+2021-07-19 11:15:18	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-19 11:15:18	amanr	[11:10:50] I currently use i3-gaps
+2021-07-19 11:15:18	amanr	[11:10:58] What's the query
+2021-07-19 11:15:18	plitter	[12:36:14] He has quit :) 
+2021-07-19 11:15:18	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-19 11:15:18	***	Playback Complete.
+2021-07-19 11:15:18	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-19 11:31:17	--	irc: disconnected from server
+2021-07-19 11:31:27	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-19 11:31:27	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-19 11:31:27	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-19 11:31:27	--	Channel #i3: 99 nicks (0 ops, 0 voices, 99 normals)
+2021-07-19 11:31:27	***	Buffer Playback...
+2021-07-19 11:31:27	serhat	[08:38:12] Hello
+2021-07-19 11:31:27	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-19 11:31:27	serhat	[08:39:28] hello
+2021-07-19 11:31:27	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-19 11:31:27	amanr	[11:10:50] I currently use i3-gaps
+2021-07-19 11:31:27	amanr	[11:10:58] What's the query
+2021-07-19 11:31:27	plitter	[12:36:14] He has quit :) 
+2021-07-19 11:31:27	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-19 11:31:27	***	Playback Complete.
+2021-07-19 11:31:29	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-19 12:08:27	--	irc: disconnected from server
+2021-07-19 12:08:37	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-19 12:08:37	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-19 12:08:37	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-19 12:08:37	--	Channel #i3: 99 nicks (0 ops, 0 voices, 99 normals)
+2021-07-19 12:08:37	***	Buffer Playback...
+2021-07-19 12:08:37	serhat	[08:38:12] Hello
+2021-07-19 12:08:37	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-19 12:08:37	serhat	[08:39:28] hello
+2021-07-19 12:08:37	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-19 12:08:37	amanr	[11:10:50] I currently use i3-gaps
+2021-07-19 12:08:37	amanr	[11:10:58] What's the query
+2021-07-19 12:08:37	plitter	[12:36:14] He has quit :) 
+2021-07-19 12:08:37	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-19 12:08:37	***	Playback Complete.
+2021-07-19 12:08:39	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-19 12:31:09	-->	Ultrabug__ (~Alexys@37.165.92.96) has joined #i3
+2021-07-19 13:33:25	peder	plitter: that dialog uses i3-sensible-pager for showing and i3-sensible-editor for editing the file, no reading from stdin at all
+2021-07-19 13:34:05	peder	i3-sensible-pager tries $PAGER less most w3m pg and then i3-sensible-editor i that order
+2021-07-19 13:35:28	peder	and i3-sensible-editor will try $VISUAL, $EDITOR, nano, nvim, vim, vi, emacs, pico, qe, mg, jed, gedit, mcedit and gvim
+2021-07-19 13:36:08	-->	Ultrabug_ (~Alexys@37.165.252.31) has joined #i3
+2021-07-19 13:39:57	<--	Ultrabug__ (~Alexys@37.165.92.96) has quit (Remote host closed the connection)
+2021-07-19 14:15:50	<--	netvor (~amahdal@ip-94-112-143-195.net.upcbroadband.cz) has quit (Quit: WeeChat 3.0.1)
+2021-07-19 14:16:07	-->	netvor (~amahdal@ip-94-112-143-195.net.upcbroadband.cz) has joined #i3
+2021-07-19 14:25:58	-->	theoceaniscool (~theoceani@93.177.120.255) has joined #i3
+2021-07-19 14:29:07	<--	johnny_bit (~johnnybit@2001:470:1af1:101::8353) has left #i3
+2021-07-19 14:46:30	<--	theoceaniscool (~theoceani@93.177.120.255) has quit (Ping timeout: 480 seconds)
+2021-07-19 14:51:05	--	irc: disconnected from server
+2021-07-19 18:40:02	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-19 18:40:02	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-19 18:40:02	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-19 18:40:02	--	Channel #i3: 99 nicks (0 ops, 0 voices, 99 normals)
+2021-07-19 18:40:02	***	Buffer Playback...
+2021-07-19 18:40:02	serhat	[08:38:12] Hello
+2021-07-19 18:40:02	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-19 18:40:02	serhat	[08:39:28] hello
+2021-07-19 18:40:02	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-19 18:40:02	amanr	[11:10:50] I currently use i3-gaps
+2021-07-19 18:40:02	amanr	[11:10:58] What's the query
+2021-07-19 18:40:02	plitter	[12:36:14] He has quit :) 
+2021-07-19 18:40:02	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-19 18:40:02	peder	[08:03:25] plitter: that dialog uses i3-sensible-pager for showing and i3-sensible-editor for editing the file, no reading from stdin at all
+2021-07-19 18:40:02	peder	[08:04:05] i3-sensible-pager tries $PAGER less most w3m pg and then i3-sensible-editor i that order
+2021-07-19 18:40:02	peder	[08:05:28] and i3-sensible-editor will try $VISUAL, $EDITOR, nano, nvim, vim, vi, emacs, pico, qe, mg, jed, gedit, mcedit and gvim
+2021-07-19 18:40:02	***	Playback Complete.
+2021-07-19 18:40:02	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-19 19:43:42	--	irc: disconnected from server
+2021-07-20 10:40:19	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-20 10:40:19	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-20 10:40:19	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-20 10:40:19	--	Channel #i3: 98 nicks (0 ops, 0 voices, 98 normals)
+2021-07-20 10:40:19	***	Buffer Playback...
+2021-07-20 10:40:19	serhat	[08:38:12] Hello
+2021-07-20 10:40:19	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-20 10:40:19	serhat	[08:39:28] hello
+2021-07-20 10:40:19	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-20 10:40:19	amanr	[11:10:50] I currently use i3-gaps
+2021-07-20 10:40:19	amanr	[11:10:58] What's the query
+2021-07-20 10:40:19	plitter	[12:36:14] He has quit :) 
+2021-07-20 10:40:19	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-20 10:40:19	peder	[08:03:25] plitter: that dialog uses i3-sensible-pager for showing and i3-sensible-editor for editing the file, no reading from stdin at all
+2021-07-20 10:40:19	peder	[08:04:05] i3-sensible-pager tries $PAGER less most w3m pg and then i3-sensible-editor i that order
+2021-07-20 10:40:19	peder	[08:05:28] and i3-sensible-editor will try $VISUAL, $EDITOR, nano, nvim, vim, vi, emacs, pico, qe, mg, jed, gedit, mcedit and gvim
+2021-07-20 10:40:19	***	Playback Complete.
+2021-07-20 10:40:19	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-20 10:40:35	-->	theoceaniscool (~theoceani@93.177.120.255) has joined #i3
+2021-07-20 10:40:36	--	irc: disconnected from server
+2021-07-20 10:40:40	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-20 10:40:40	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-20 10:40:40	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-20 10:40:40	--	Channel #i3: 99 nicks (0 ops, 0 voices, 99 normals)
+2021-07-20 10:40:40	***	Buffer Playback...
+2021-07-20 10:40:40	serhat	[08:38:12] Hello
+2021-07-20 10:40:40	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-20 10:40:40	serhat	[08:39:28] hello
+2021-07-20 10:40:40	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-20 10:40:40	amanr	[11:10:50] I currently use i3-gaps
+2021-07-20 10:40:40	amanr	[11:10:58] What's the query
+2021-07-20 10:40:40	plitter	[12:36:14] He has quit :) 
+2021-07-20 10:40:40	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-20 10:40:40	peder	[08:03:25] plitter: that dialog uses i3-sensible-pager for showing and i3-sensible-editor for editing the file, no reading from stdin at all
+2021-07-20 10:40:40	peder	[08:04:05] i3-sensible-pager tries $PAGER less most w3m pg and then i3-sensible-editor i that order
+2021-07-20 10:40:40	peder	[08:05:28] and i3-sensible-editor will try $VISUAL, $EDITOR, nano, nvim, vim, vi, emacs, pico, qe, mg, jed, gedit, mcedit and gvim
+2021-07-20 10:40:40	***	Playback Complete.
+2021-07-20 10:40:41	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-20 10:40:47	--	irc: disconnected from server
+2021-07-20 11:28:45	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-20 11:28:45	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-20 11:28:45	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-20 11:28:45	--	Channel #i3: 99 nicks (0 ops, 0 voices, 99 normals)
+2021-07-20 11:28:45	***	Buffer Playback...
+2021-07-20 11:28:45	serhat	[08:38:12] Hello
+2021-07-20 11:28:45	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-20 11:28:45	serhat	[08:39:28] hello
+2021-07-20 11:28:45	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-20 11:28:45	amanr	[11:10:50] I currently use i3-gaps
+2021-07-20 11:28:45	amanr	[11:10:58] What's the query
+2021-07-20 11:28:45	plitter	[12:36:14] He has quit :) 
+2021-07-20 11:28:45	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-20 11:28:45	peder	[08:03:25] plitter: that dialog uses i3-sensible-pager for showing and i3-sensible-editor for editing the file, no reading from stdin at all
+2021-07-20 11:28:45	peder	[08:04:05] i3-sensible-pager tries $PAGER less most w3m pg and then i3-sensible-editor i that order
+2021-07-20 11:28:45	peder	[08:05:28] and i3-sensible-editor will try $VISUAL, $EDITOR, nano, nvim, vim, vi, emacs, pico, qe, mg, jed, gedit, mcedit and gvim
+2021-07-20 11:28:45	***	Playback Complete.
+2021-07-20 11:28:45	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-20 11:28:56	--	irc: disconnected from server
+2021-07-20 11:28:59	-->	amanr (~therojjha@20.204.87.0) has joined #i3
+2021-07-20 11:28:59	--	Topic for #i3 is "i3 v4.19.2 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic "
+2021-07-20 11:28:59	--	Topic set by ChanServ (services@services.oftc.net) on Tue, 22 Jun 2021 17:59:44
+2021-07-20 11:28:59	--	Channel #i3: 99 nicks (0 ops, 0 voices, 99 normals)
+2021-07-20 11:28:59	***	Buffer Playback...
+2021-07-20 11:28:59	serhat	[08:38:12] Hello
+2021-07-20 11:28:59	serhat	[08:38:31] Is anyone there? I need help about i3-gaps.
+2021-07-20 11:28:59	serhat	[08:39:28] hello
+2021-07-20 11:28:59	amanr	[11:10:39] hey! I'm a complete newb too but I can try.
+2021-07-20 11:28:59	amanr	[11:10:50] I currently use i3-gaps
+2021-07-20 11:28:59	amanr	[11:10:58] What's the query
+2021-07-20 11:28:59	plitter	[12:36:14] He has quit :) 
+2021-07-20 11:28:59	plitter	[12:39:53] Sometimes I'm getting errors when I'm messing around with my i3 config, but I make mistake and I get an error. When I press the "show errors" button, it opens vim and starts reading from  stdin, but it never stops ... how can I make it show the error? The "edit config" opens the config file in vim, but is it possible for it to start with the errors in a quickfix list?
+2021-07-20 11:28:59	peder	[08:03:25] plitter: that dialog uses i3-sensible-pager for showing and i3-sensible-editor for editing the file, no reading from stdin at all
+2021-07-20 11:28:59	peder	[08:04:05] i3-sensible-pager tries $PAGER less most w3m pg and then i3-sensible-editor i that order
+2021-07-20 11:28:59	peder	[08:05:28] and i3-sensible-editor will try $VISUAL, $EDITOR, nano, nvim, vim, vi, emacs, pico, qe, mg, jed, gedit, mcedit and gvim
+2021-07-20 11:28:59	***	Playback Complete.
+2021-07-20 11:29:00	--	Channel created on Wed, 19 May 2021 21:18:06
+2021-07-20 11:38:34	--	irc: disconnected from server

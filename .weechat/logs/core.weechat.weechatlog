@@ -1,0 +1,1603 @@
+2021-01-07 17:13:39		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2021-01-07 17:13:39		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2021-01-07 17:13:39		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2021-01-07 17:13:39		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2021-01-07 17:13:39		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2021-01-07 17:13:39		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2021-01-07 17:13:39		New key binding (context "default"): meta-B => /buflist toggle
+2021-01-07 17:13:39		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2021-01-07 17:13:39		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2021-01-07 17:13:39		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2021-01-07 17:13:39		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2021-01-07 17:13:39		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2021-01-07 17:13:39		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2021-01-07 17:13:39		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2021-01-07 17:13:39		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2021-01-07 17:13:39		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-01-14 16:04:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-01-14 16:04:29		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-01-15 09:58:25		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-01-18 00:57:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-01-18 00:57:29		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-01-18 00:57:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/irc.conf, line 61: unknown option for section "look": smart_filter_account = on
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/irc.conf, line 78: unknown option for section "color": message_account = cyan
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/relay.conf, line 30: unknown option for section "network": auth_timeout = 60
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/relay.conf, line 36: unknown option for section "network": nonce_size = 16
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/relay.conf, line 38: unknown option for section "network": password_hash_algo = "*"
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/relay.conf, line 39: unknown option for section "network": password_hash_iterations = 100000
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/script.conf, line 53: unknown option for section "scripts": download_enabled = off
+2021-06-21 16:38:36	=!=	Warning: /home/therojjha/.weechat/fset.conf, line 13: unknown option for section "look": auto_refresh = "*"
+2021-06-21 16:38:36		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-06-21 16:38:38	=!=	You can not write text in this buffer
+2021-06-21 16:38:40	=!=	You can not write text in this buffer
+2021-06-21 16:38:42		fifo: pipe closed
+2021-06-21 16:39:03		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-06-21 16:39:12		All aliases:
+2021-06-21 16:39:12		  AAWAY => allserv /away
+2021-06-21 16:39:12		  ANICK => allserv /nick
+2021-06-21 16:39:12		  BEEP => print -beep
+2021-06-21 16:39:12		  BYE => quit
+2021-06-21 16:39:12		  C => buffer clear
+2021-06-21 16:39:12		  CHAT => dcc chat
+2021-06-21 16:39:12		  CL => buffer clear
+2021-06-21 16:39:12		  CLOSE => buffer close
+2021-06-21 16:39:12		  EXIT => quit
+2021-06-21 16:39:12		  IG => ignore
+2021-06-21 16:39:12		  J => join
+2021-06-21 16:39:12		  K => kick
+2021-06-21 16:39:12		  KB => kickban
+2021-06-21 16:39:12		  LEAVE => part
+2021-06-21 16:39:12		  M => msg
+2021-06-21 16:39:12		  MSGBUF => command -buffer $1 * /input send $2-  (completion: %(buffers_plugins_names))
+2021-06-21 16:39:12		  MUB => unban *
+2021-06-21 16:39:12		  N => names
+2021-06-21 16:39:12		  Q => query
+2021-06-21 16:39:12		  REDRAW => window refresh
+2021-06-21 16:39:12		  SAY => msg *
+2021-06-21 16:39:12		  SIGNOFF => quit
+2021-06-21 16:39:12		  T => topic
+2021-06-21 16:39:12		  UB => unban
+2021-06-21 16:39:12		  UMODE => mode $nick
+2021-06-21 16:39:12		  V => command core version
+2021-06-21 16:39:12		  W => who
+2021-06-21 16:39:12		  WC => window close
+2021-06-21 16:39:12		  WI => whois
+2021-06-21 16:39:12		  WII => whois $1 $1
+2021-06-21 16:39:12		  WM => window merge
+2021-06-21 16:39:12		  WW => whowas
+2021-06-21 16:39:19	=!=	You can not write text in this buffer
+2021-06-21 16:39:22	=!=	You can not write text in this buffer
+2021-06-21 16:40:14		[core]
+2021-06-21 16:40:14		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2021-06-21 16:40:14		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2021-06-21 16:40:14		[ruby]
+2021-06-21 16:40:14		  ruby
+2021-06-21 16:40:14		[buflist]
+2021-06-21 16:40:14		  buflist
+2021-06-21 16:40:14		[python]
+2021-06-21 16:40:14		  python
+2021-06-21 16:40:14		[logger]
+2021-06-21 16:40:14		  logger
+2021-06-21 16:40:14		[irc]
+2021-06-21 16:40:14		  admin       cap         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2021-06-21 16:40:14		  allchan     connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2021-06-21 16:40:14		  allpv       ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2021-06-21 16:40:14		  allserv     cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2021-06-21 16:40:14		  ban         dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2021-06-21 16:40:14		[relay]
+2021-06-21 16:40:14		  relay
+2021-06-21 16:40:14		[xfer]
+2021-06-21 16:40:14		  me  xfer
+2021-06-21 16:40:14		[fset]
+2021-06-21 16:40:14		  fset
+2021-06-21 16:40:14		[spell]
+2021-06-21 16:40:14		  spell
+2021-06-21 16:40:14		[trigger]
+2021-06-21 16:40:14		  trigger
+2021-06-21 16:40:14		[alias]
+2021-06-21 16:40:14		  AAWAY    ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       V        WC       WII      WW     
+2021-06-21 16:40:14		  alias    BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    W        WI       WM     
+2021-06-21 16:40:14		[exec]
+2021-06-21 16:40:14		  exec
+2021-06-21 16:40:14		[script]
+2021-06-21 16:40:14		  script
+2021-06-21 16:40:14		[perl]
+2021-06-21 16:40:14		  perl
+2021-06-21 16:40:14		[charset]
+2021-06-21 16:40:14		  charset
+2021-06-21 16:40:14		[fifo]
+2021-06-21 16:40:14		  fifo
+2021-06-21 16:40:24		[core]  /window  list
+2021-06-21 16:40:24		                 -1|+1|b#|up|down|left|right [-window <number>]
+2021-06-21 16:40:24		                 <number>
+2021-06-21 16:40:24		                 splith|splitv [-window <number>] [<pct>]
+2021-06-21 16:40:24		                 resize [-window <number>] [h|v][+|-]<pct>
+2021-06-21 16:40:24		                 balance
+2021-06-21 16:40:24		                 merge [-window <number>] [all]
+2021-06-21 16:40:24		                 close [-window <number>]
+2021-06-21 16:40:24		                 page_up|page_down [-window <number>]
+2021-06-21 16:40:24		                 refresh
+2021-06-21 16:40:24		                 scroll [-window <number>] [+|-]<value>[s|m|h|d|M|y]
+2021-06-21 16:40:24		                 scroll_horiz [-window <number>] [+|-]<value>[%]
+2021-06-21 16:40:24		                 scroll_up|scroll_down|scroll_top|scroll_bottom|scroll_beyond_end|scroll_previous_highlight|scroll_next_highlight|scroll_unread [-window <number>]
+2021-06-21 16:40:24		                 swap [-window <number>] [up|down|left|right]
+2021-06-21 16:40:24		                 zoom [-window <number>]
+2021-06-21 16:40:24		                 bare [<delay>]
+2021-06-21 16:40:24		manage windows
+2021-06-21 16:40:24		         list: list opened windows (without argument, this list is displayed)
+2021-06-21 16:40:24		           -1: jump to previous window
+2021-06-21 16:40:24		           +1: jump to next window
+2021-06-21 16:40:24		           b#: jump to next window displaying buffer number #
+2021-06-21 16:40:24		           up: switch to window above current one
+2021-06-21 16:40:24		         down: switch to window below current one
+2021-06-21 16:40:24		         left: switch to window on the left
+2021-06-21 16:40:24		        right: switch to window on the right
+2021-06-21 16:40:24		       number: window number (see /window list)
+2021-06-21 16:40:24		       splith: split current window horizontally (to undo: /window merge)
+2021-06-21 16:40:24		       splitv: split current window vertically (to undo: /window merge)
+2021-06-21 16:40:24		       resize: resize window size, new size is <pct> percentage of parent window
+2021-06-21 16:40:24		               if "h" or "v" is specified, the resize affects the nearest parent window with a split of this type (horizontal/vertical)
+2021-06-21 16:40:24		      balance: balance the sizes of all windows
+2021-06-21 16:40:24		        merge: merge window with another (all = keep only one window)
+2021-06-21 16:40:24		        close: close window
+2021-06-21 16:40:24		      page_up: scroll one page up
+2021-06-21 16:40:24		    page_down: scroll one page down
+2021-06-21 16:40:24		      refresh: refresh screen
+2021-06-21 16:40:24		       scroll: scroll a number of lines (+/-N) or with time: s=seconds, m=minutes, h=hours, d=days, M=months, y=years
+2021-06-21 16:40:24		 scroll_horiz: scroll horizontally a number of columns (+/-N) or percentage of window size (this scrolling is possible only on buffers with free content)
+2021-06-21 16:40:24		    scroll_up: scroll a few lines up
+2021-06-21 16:40:24		  scroll_down: scroll a few lines down
+2021-06-21 16:40:24		   scroll_top: scroll to top of buffer
+2021-06-21 16:40:24		scroll_bottom: scroll to bottom of buffer
+2021-06-21 16:40:24		scroll_beyond_end: scroll beyond the end of buffer
+2021-06-21 16:40:24		scroll_previous_highlight: scroll to previous highlight
+2021-06-21 16:40:24		scroll_next_highlight: scroll to next highlight
+2021-06-21 16:40:24		scroll_unread: scroll to unread marker
+2021-06-21 16:40:24		         swap: swap buffers of two windows (with optional direction for target window)
+2021-06-21 16:40:24		         zoom: zoom on window
+2021-06-21 16:40:24		         bare: toggle bare display (with optional delay in seconds for automatic return to standard display mode)
+2021-06-21 16:40:24		For splith and splitv, pct is a percentage which represents size of new window, computed with current window as size reference. For example 25 means create a new window with size = current_size / 4
+2021-06-21 16:40:24		Examples:
+2021-06-21 16:40:24		  jump to window displaying buffer #1:
+2021-06-21 16:40:24		    /window b1
+2021-06-21 16:40:24		  scroll 2 lines up:
+2021-06-21 16:40:24		    /window scroll -2
+2021-06-21 16:40:24		  scroll 2 days up:
+2021-06-21 16:40:24		    /window scroll -2d
+2021-06-21 16:40:24		  scroll to beginning of current day:
+2021-06-21 16:40:24		    /window scroll -d
+2021-06-21 16:40:24		  zoom on window #2:
+2021-06-21 16:40:24		    /window zoom -window 2
+2021-06-21 16:40:24		  split window horizontally using 30% of space for the window on top:
+2021-06-21 16:40:24		    /window splith 30
+2021-06-21 16:40:24		  resize window to 75% of the parent window size:
+2021-06-21 16:40:24		    /window resize 75
+2021-06-21 16:40:24		  resize vertical split, add 10% in size:
+2021-06-21 16:40:24		    /window resize v+10
+2021-06-21 16:40:24		  remove the split, keep the current window:
+2021-06-21 16:40:24		    /window merge
+2021-06-21 16:40:24		  close the current window:
+2021-06-21 16:40:24		    /window close
+2021-06-21 16:40:24		  enable bare display for 2 seconds:
+2021-06-21 16:40:24		    /window bare 2
+2021-06-21 16:52:03	=!=	Error: can not close window, there's no other window with same size near current one
+2021-06-21 16:52:15	=!=	Error: incorrect window number
+2021-06-21 16:52:26	=!=	Error: WeeChat main buffer can't be closed
+2021-06-21 16:52:27	=!=	You can not write text in this buffer
+2021-06-21 16:52:31		Buffers list:
+2021-06-21 16:52:31		  [1] core.weechat (notify: all)
+2021-06-21 16:52:35	=!=	Error with command "/buffer new" (help on command: /help buffer)
+2021-06-21 16:52:39		[core]  /buffer  list
+2021-06-21 16:52:39		                 add [-free] [-switch] <name>
+2021-06-21 16:52:39		                 clear [<number>|<name>|-merged|-all [<number>|<name>...]]
+2021-06-21 16:52:39		                 move <number>|-|+
+2021-06-21 16:52:39		                 swap <number1>|<name1> [<number2>|<name2>]
+2021-06-21 16:52:39		                 cycle <number>|<name> [<number>|<name>...]
+2021-06-21 16:52:39		                 merge <number>|<name>
+2021-06-21 16:52:39		                 unmerge [<number>|-all]
+2021-06-21 16:52:39		                 hide [<number>|<name>|-all [<number>|<name>...]]
+2021-06-21 16:52:39		                 unhide [<number>|<name>|-all [<number>|<name>...]]
+2021-06-21 16:52:39		                 renumber [<number1> [<number2> [<start>]]]
+2021-06-21 16:52:39		                 close [<n1>[-<n2>]|<name>...]
+2021-06-21 16:52:39		                 notify <level>
+2021-06-21 16:52:39		                 localvar [<number>|<name>]
+2021-06-21 16:52:39		                 set <property> [<value>]
+2021-06-21 16:52:39		                 get <property>
+2021-06-21 16:52:39		                 <number>|-|+|<name>
+2021-06-21 16:52:39		manage buffers
+2021-06-21 16:52:39		    list: list buffers (without argument, this list is displayed)
+2021-06-21 16:52:39		     add: add a new buffer (it can be closed with "/buffer close" or input "q")
+2021-06-21 16:52:39		   clear: clear buffer content (number for a buffer, -merged for merged buffers, -all for all buffers, or nothing for current buffer)
+2021-06-21 16:52:39		    move: move buffer in the list (may be relative, for example -1); "-" = move to first buffer number, "+" = move to last buffer number + 1
+2021-06-21 16:52:39		    swap: swap two buffers (swap with current buffer if only one number/name given)
+2021-06-21 16:52:39		   cycle: jump loop between a list of buffers
+2021-06-21 16:52:39		   merge: merge current buffer to another buffer (chat area will be mix of both buffers)
+2021-06-21 16:52:39		          (by default ctrl-x switches between merged buffers)
+2021-06-21 16:52:39		 unmerge: unmerge buffer from other buffers which have same number
+2021-06-21 16:52:39		    hide: hide the buffer
+2021-06-21 16:52:39		  unhide: unhide the buffer
+2021-06-21 16:52:39		renumber: renumber buffers (works only if option weechat.look.buffer_auto_renumber is off)
+2021-06-21 16:52:39		   close: close buffer (number/range or name is optional)
+2021-06-21 16:52:39		  notify: set notify level for current buffer: this level determines whether buffer will be added to hotlist or not:
+2021-06-21 16:52:39		               none: never
+2021-06-21 16:52:39		          highlight: for highlights only
+2021-06-21 16:52:39		            message: for messages from users + highlights
+2021-06-21 16:52:39		                all: all messages
+2021-06-21 16:52:39		              reset: reset to default value (all)
+2021-06-21 16:52:39		localvar: display local variables for the buffer
+2021-06-21 16:52:39		     set: set a property for current buffer
+2021-06-21 16:52:39		     get: display a property of current buffer
+2021-06-21 16:52:39		  number: jump to buffer by number, possible prefix:
+2021-06-21 16:52:39		          '+': relative jump, add number to current
+2021-06-21 16:52:39		          '-': relative jump, sub number to current
+2021-06-21 16:52:39		          '*': jump to number, using option "weechat.look.jump_current_to_previous_buffer"
+2021-06-21 16:52:39		       -: jump to first buffer number
+2021-06-21 16:52:39		       +: jump to last buffer number
+2021-06-21 16:52:39		    name: jump to buffer by (partial) name
+2021-06-21 16:52:39		Examples:
+2021-06-21 16:52:39		  clear current buffer:
+2021-06-21 16:52:39		    /buffer clear
+2021-06-21 16:52:39		  move buffer to number 5:
+2021-06-21 16:52:39		    /buffer move 5
+2021-06-21 16:52:39		  swap buffer 1 with 3:
+2021-06-21 16:52:39		    /buffer swap 1 3
+2021-06-21 16:52:39		  swap buffer #weechat with current buffer:
+2021-06-21 16:52:39		    /buffer swap #weechat
+2021-06-21 16:52:39		  jump on #chan1, #chan2, #chan3 and loop:
+2021-06-21 16:52:39		    /buffer cycle #chan1 #chan2 #chan3
+2021-06-21 16:52:39		  merge with core buffer:
+2021-06-21 16:52:39		    /buffer merge 1
+2021-06-21 16:52:39		  merge with #weechat buffer:
+2021-06-21 16:52:39		    /buffer merge #weechat
+2021-06-21 16:52:39		  unmerge buffer:
+2021-06-21 16:52:39		    /buffer unmerge
+2021-06-21 16:52:39		  close current buffer:
+2021-06-21 16:52:39		    /buffer close
+2021-06-21 16:52:39		  close buffers 5 to 7:
+2021-06-21 16:52:39		    /buffer close 5-7
+2021-06-21 16:52:39		  jump to #weechat:
+2021-06-21 16:52:39		    /buffer #weechat
+2021-06-21 16:52:39		  jump to next buffer:
+2021-06-21 16:52:39		    /buffer +1
+2021-06-21 16:52:39		  jump to last buffer number:
+2021-06-21 16:52:39		    /buffer +
+2021-06-21 16:52:46		fifo: pipe closed
+2021-07-10 12:19:09		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-07-10 12:19:12		[core]
+2021-07-10 12:19:12		  away     command  filter   key      plugin   reload   set      version
+2021-07-10 12:19:12		  bar      cursor   help     layout   print    repeat   unset    wait   
+2021-07-10 12:19:12		  buffer   debug    history  mouse    proxy    save     upgrade  window 
+2021-07-10 12:19:12		  color    eval     input    mute     quit     secure   uptime 
+2021-07-10 12:19:12		[ruby]
+2021-07-10 12:19:12		  ruby
+2021-07-10 12:19:12		[buflist]
+2021-07-10 12:19:12		  buflist
+2021-07-10 12:19:12		[python]
+2021-07-10 12:19:12		  python
+2021-07-10 12:19:12		[logger]
+2021-07-10 12:19:12		  logger
+2021-07-10 12:19:12		[irc]
+2021-07-10 12:19:12		  admin       deop        kickban     nick        reconnect   servlist    users     
+2021-07-10 12:19:12		  allchan     devoice     kill        notice      rehash      squery      version   
+2021-07-10 12:19:12		  allpv       die         links       notify      remove      squit       voice     
+2021-07-10 12:19:12		  allserv     disconnect  list        op          restart     stats       wallchops 
+2021-07-10 12:19:12		  ban         halfop      lusers      oper        sajoin      summon      wallops   
+2021-07-10 12:19:12		  cap         ignore      map         part        samode      time        who       
+2021-07-10 12:19:12		  connect     info        me          ping        sanick      topic       whois     
+2021-07-10 12:19:12		  ctcp        invite      mode        pong        sapart      trace       whowas    
+2021-07-10 12:19:12		  cycle       ison        motd        query       saquit      unban     
+2021-07-10 12:19:12		  dcc         join        msg         quiet       server      unquiet   
+2021-07-10 12:19:12		  dehalfop    kick        names       quote       service     userhost  
+2021-07-10 12:19:12		[relay]
+2021-07-10 12:19:12		  relay
+2021-07-10 12:19:12		[xfer]
+2021-07-10 12:19:12		  me  xfer
+2021-07-10 12:19:12		[fset]
+2021-07-10 12:19:12		  fset
+2021-07-10 12:19:12		[spell]
+2021-07-10 12:19:12		  spell
+2021-07-10 12:19:12		[trigger]
+2021-07-10 12:19:12		  trigger
+2021-07-10 12:19:12		[alias]
+2021-07-10 12:19:12		  AAWAY    BYE      CLOSE    K        MSGBUF   REDRAW   UB       WC       WW     
+2021-07-10 12:19:12		  alias    C        EXIT     KB       MUB      SAY      UMODE    WI     
+2021-07-10 12:19:12		  ANICK    CHAT     IG       LEAVE    N        SIGNOFF  V        WII    
+2021-07-10 12:19:12		  BEEP     CL       J        M        Q        T        W        WM     
+2021-07-10 12:19:12		[exec]
+2021-07-10 12:19:12		  exec
+2021-07-10 12:19:12		[script]
+2021-07-10 12:19:12		  script
+2021-07-10 12:19:12		[perl]
+2021-07-10 12:19:12		  perl
+2021-07-10 12:19:12		[charset]
+2021-07-10 12:19:12		  charset
+2021-07-10 12:19:12		[fifo]
+2021-07-10 12:19:12		  fifo
+2021-07-10 12:19:14		fifo: pipe closed
+2021-07-13 00:54:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-07-13 00:54:50	=!=	You can not write text in this buffer
+2021-07-13 00:54:53		[core]
+2021-07-13 00:54:53		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2021-07-13 00:54:53		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2021-07-13 00:54:53		[ruby]
+2021-07-13 00:54:53		  ruby
+2021-07-13 00:54:53		[buflist]
+2021-07-13 00:54:53		  buflist
+2021-07-13 00:54:53		[python]
+2021-07-13 00:54:53		  python
+2021-07-13 00:54:53		[logger]
+2021-07-13 00:54:53		  logger
+2021-07-13 00:54:53		[irc]
+2021-07-13 00:54:53		  admin       cap         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2021-07-13 00:54:53		  allchan     connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2021-07-13 00:54:53		  allpv       ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2021-07-13 00:54:53		  allserv     cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2021-07-13 00:54:53		  ban         dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2021-07-13 00:54:53		[relay]
+2021-07-13 00:54:53		  relay
+2021-07-13 00:54:53		[xfer]
+2021-07-13 00:54:53		  me  xfer
+2021-07-13 00:54:53		[fset]
+2021-07-13 00:54:53		  fset
+2021-07-13 00:54:53		[spell]
+2021-07-13 00:54:53		  spell
+2021-07-13 00:54:53		[trigger]
+2021-07-13 00:54:53		  trigger
+2021-07-13 00:54:53		[alias]
+2021-07-13 00:54:53		  AAWAY    ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       V        WC       WII      WW     
+2021-07-13 00:54:53		  alias    BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    W        WI       WM     
+2021-07-13 00:54:53		[exec]
+2021-07-13 00:54:53		  exec
+2021-07-13 00:54:53		[script]
+2021-07-13 00:54:53		  script
+2021-07-13 00:54:53		[perl]
+2021-07-13 00:54:53		  perl
+2021-07-13 00:54:53		[charset]
+2021-07-13 00:54:53		  charset
+2021-07-13 00:54:53		[fifo]
+2021-07-13 00:54:53		  fifo
+2021-07-13 00:55:02	=!=	You can not write text in this buffer
+2021-07-13 00:55:04		[core]
+2021-07-13 00:55:04		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2021-07-13 00:55:04		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2021-07-13 00:55:04		[ruby]
+2021-07-13 00:55:04		  ruby
+2021-07-13 00:55:04		[buflist]
+2021-07-13 00:55:04		  buflist
+2021-07-13 00:55:04		[python]
+2021-07-13 00:55:04		  python
+2021-07-13 00:55:04		[logger]
+2021-07-13 00:55:04		  logger
+2021-07-13 00:55:04		[irc]
+2021-07-13 00:55:04		  admin       cap         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2021-07-13 00:55:04		  allchan     connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2021-07-13 00:55:04		  allpv       ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2021-07-13 00:55:04		  allserv     cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2021-07-13 00:55:04		  ban         dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2021-07-13 00:55:04		[relay]
+2021-07-13 00:55:04		  relay
+2021-07-13 00:55:04		[xfer]
+2021-07-13 00:55:04		  me  xfer
+2021-07-13 00:55:04		[fset]
+2021-07-13 00:55:04		  fset
+2021-07-13 00:55:04		[spell]
+2021-07-13 00:55:04		  spell
+2021-07-13 00:55:04		[trigger]
+2021-07-13 00:55:04		  trigger
+2021-07-13 00:55:04		[alias]
+2021-07-13 00:55:04		  AAWAY    ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       V        WC       WII      WW     
+2021-07-13 00:55:04		  alias    BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    W        WI       WM     
+2021-07-13 00:55:04		[exec]
+2021-07-13 00:55:04		  exec
+2021-07-13 00:55:04		[script]
+2021-07-13 00:55:04		  script
+2021-07-13 00:55:04		[perl]
+2021-07-13 00:55:04		  perl
+2021-07-13 00:55:04		[charset]
+2021-07-13 00:55:04		  charset
+2021-07-13 00:55:04		[fifo]
+2021-07-13 00:55:04		  fifo
+2021-07-13 00:56:31	=!=	No help available, "config" is not a command or an option
+2021-07-13 00:56:35		[core]  /command  [-buffer <name>] <plugin> <command>
+2021-07-13 00:56:35		launch explicit WeeChat or plugin command
+2021-07-13 00:56:35		-buffer: execute the command on this buffer
+2021-07-13 00:56:35		 plugin: execute the command from this plugin; 'core' for a WeeChat command, '*' for automatic plugin (it depends on the buffer where the command is executed)
+2021-07-13 00:56:35		command: command to execute (a '/' is automatically added if not found at beginning of command)
+2021-07-13 00:56:40		[core]  /command  [-buffer <name>] <plugin> <command>
+2021-07-13 00:56:40		launch explicit WeeChat or plugin command
+2021-07-13 00:56:40		-buffer: execute the command on this buffer
+2021-07-13 00:56:40		 plugin: execute the command from this plugin; 'core' for a WeeChat command, '*' for automatic plugin (it depends on the buffer where the command is executed)
+2021-07-13 00:56:40		command: command to execute (a '/' is automatically added if not found at beginning of command)
+2021-07-13 00:57:11	=!=	No help available, "weechat.section.option" is not a command or an option
+2021-07-13 00:57:15	=!=	No help available, "weechat" is not a command or an option
+2021-07-13 00:57:18	=!=	No help available, "config" is not a command or an option
+2021-07-13 00:58:25		Plugins loaded:
+2021-07-13 00:58:25		  ruby: Support of ruby scripts
+2021-07-13 00:58:25		  buflist: Buffers list
+2021-07-13 00:58:25		  python: Support of python scripts
+2021-07-13 00:58:25		  logger: Log buffers to files
+2021-07-13 00:58:25		  irc: IRC (Internet Relay Chat) protocol
+2021-07-13 00:58:25		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2021-07-13 00:58:25		  xfer: DCC file transfer and direct chat
+2021-07-13 00:58:25		  fset: Fast set of WeeChat and plugins options
+2021-07-13 00:58:25		  spell: Spell checker for input
+2021-07-13 00:58:25		  trigger: Text replacement and command execution on events triggered by WeeChat/plugins
+2021-07-13 00:58:25		  alias: Alias commands
+2021-07-13 00:58:25		  exec: Execution of external commands in WeeChat
+2021-07-13 00:58:25		  script: Script manager
+2021-07-13 00:58:25		  perl: Support of perl scripts
+2021-07-13 00:58:25		  charset: Charset conversions
+2021-07-13 00:58:25		  fifo: FIFO pipe for remote control
+2021-07-13 00:59:02		irc: server added: libera
+2021-07-13 01:00:59	=!=	Error: unknown command "/clear" (type /help for help)
+2021-07-13 01:01:01		[core]
+2021-07-13 01:01:01		  away     command  filter   key      plugin   reload   set      version
+2021-07-13 01:01:01		  bar      cursor   help     layout   print    repeat   unset    wait   
+2021-07-13 01:01:01		  buffer   debug    history  mouse    proxy    save     upgrade  window 
+2021-07-13 01:01:01		  color    eval     input    mute     quit     secure   uptime 
+2021-07-13 01:01:01		[ruby]
+2021-07-13 01:01:01		  ruby
+2021-07-13 01:01:01		[buflist]
+2021-07-13 01:01:01		  buflist
+2021-07-13 01:01:01		[python]
+2021-07-13 01:01:01		  python
+2021-07-13 01:01:01		[logger]
+2021-07-13 01:01:01		  logger
+2021-07-13 01:01:01		[irc]
+2021-07-13 01:01:01		  admin       deop        kickban     nick        reconnect   servlist    users     
+2021-07-13 01:01:01		  allchan     devoice     kill        notice      rehash      squery      version   
+2021-07-13 01:01:01		  allpv       die         links       notify      remove      squit       voice     
+2021-07-13 01:01:01		  allserv     disconnect  list        op          restart     stats       wallchops 
+2021-07-13 01:01:01		  ban         halfop      lusers      oper        sajoin      summon      wallops   
+2021-07-13 01:01:01		  cap         ignore      map         part        samode      time        who       
+2021-07-13 01:01:01		  connect     info        me          ping        sanick      topic       whois     
+2021-07-13 01:01:01		  ctcp        invite      mode        pong        sapart      trace       whowas    
+2021-07-13 01:01:01		  cycle       ison        motd        query       saquit      unban     
+2021-07-13 01:01:01		  dcc         join        msg         quiet       server      unquiet   
+2021-07-13 01:01:01		  dehalfop    kick        names       quote       service     userhost  
+2021-07-13 01:01:01		[relay]
+2021-07-13 01:01:01		  relay
+2021-07-13 01:01:01		[xfer]
+2021-07-13 01:01:01		  me  xfer
+2021-07-13 01:01:01		[fset]
+2021-07-13 01:01:01		  fset
+2021-07-13 01:01:01		[spell]
+2021-07-13 01:01:01		  spell
+2021-07-13 01:01:01		[trigger]
+2021-07-13 01:01:01		  trigger
+2021-07-13 01:01:01		[alias]
+2021-07-13 01:01:01		  AAWAY    BYE      CLOSE    K        MSGBUF   REDRAW   UB       WC       WW     
+2021-07-13 01:01:01		  alias    C        EXIT     KB       MUB      SAY      UMODE    WI     
+2021-07-13 01:01:01		  ANICK    CHAT     IG       LEAVE    N        SIGNOFF  V        WII    
+2021-07-13 01:01:01		  BEEP     CL       J        M        Q        T        W        WM     
+2021-07-13 01:01:01		[exec]
+2021-07-13 01:01:01		  exec
+2021-07-13 01:01:01		[script]
+2021-07-13 01:01:01		  script
+2021-07-13 01:01:01		[perl]
+2021-07-13 01:01:01		  perl
+2021-07-13 01:01:01		[charset]
+2021-07-13 01:01:01		  charset
+2021-07-13 01:01:01		[fifo]
+2021-07-13 01:01:01		  fifo
+2021-07-13 01:01:04	=!=	Error: unknown command "/clear" (type /help for help)
+2021-07-13 01:01:23	=!=	Error: unknown command "/irc" (type /help for help)
+2021-07-13 01:01:25	=!=	Error: unknown command "/whoami" (type /help for help)
+2021-07-13 01:02:01		Option changed: irc.server.libera.nicks = "aman,amanr,therojjha"  (default if null: "therojjha,therojjha1,therojjha2,therojjha3,therojjha4")
+2021-07-13 01:02:20		Option changed: irc.server.libera.username = "sarcasticnastik"  (default if null: "therojjha")
+2021-07-13 01:02:31		Option changed: irc.server.libera.autoconnect = on  (default if null: off)
+2021-07-13 01:02:51		Option changed: irc.server.libera.sasl_username = "therojjha"  (default if null: "")
+2021-07-13 01:03:03		Option changed: irc.server.libera.sasl_password = "Aman@123"  (default if null: "")
+2021-07-13 01:03:25		[core]  /set  [<option> [<value>]]
+2021-07-13 01:03:25		              diff [<option> [<option>...]]
+2021-07-13 01:03:25		              env [<variable> [<value>]]
+2021-07-13 01:03:25		set config options and environment variables
+2021-07-13 01:03:25		option: name of an option (wildcard "*" is allowed to list options, if no value is specified)
+2021-07-13 01:03:25		 value: new value for option, according to type:
+2021-07-13 01:03:25		          boolean: on, off or toggle
+2021-07-13 01:03:25		          integer: number, ++number or --number
+2021-07-13 01:03:25		           string: any string ("" for empty string)
+2021-07-13 01:03:25		            color: color name, ++number or --number
+2021-07-13 01:03:25		        Note: for all types, you can use null to remove option value (undefined value). This works only for some special plugin variables.
+2021-07-13 01:03:25		  diff: display only changed options
+2021-07-13 01:03:25		   env: display or set an environment variable (use value "" to unset a variable)
+2021-07-13 01:03:25		Examples:
+2021-07-13 01:03:25		  display options about highlight:
+2021-07-13 01:03:25		    /set *highlight*
+2021-07-13 01:03:25		  add a word to highlight:
+2021-07-13 01:03:25		    /set weechat.look.highlight "word"
+2021-07-13 01:03:25		  display changed options:
+2021-07-13 01:03:25		    /set diff
+2021-07-13 01:03:25		  display changed options in irc plugin:
+2021-07-13 01:03:25		    /set diff irc.*
+2021-07-13 01:03:25		  display value of environment variable LANG:
+2021-07-13 01:03:25		    /set env LANG
+2021-07-13 01:03:25		  set environment variable LANG and use it:
+2021-07-13 01:03:25		    /set env LANG fr_FR.UTF-8
+2021-07-13 01:03:25		    /upgrade
+2021-07-13 01:03:25		  unset environment variable ABC:
+2021-07-13 01:03:25		    /set env ABC ""
+2021-07-13 01:03:28		[core]  /unset  <option>
+2021-07-13 01:03:28		                -mask <option>
+2021-07-13 01:03:28		unset/reset config options
+2021-07-13 01:03:28		option: name of an option
+2021-07-13 01:03:28		 -mask: use a mask in option (wildcard "*" is allowed to mass-reset options, use carefully!)
+2021-07-13 01:03:28		According to option, it's reset (for standard options) or removed (for optional settings, like server values).
+2021-07-13 01:03:28		Examples:
+2021-07-13 01:03:28		  reset one option:
+2021-07-13 01:03:28		    /unset weechat.look.item_time_format
+2021-07-13 01:03:28		  reset all color options:
+2021-07-13 01:03:28		    /unset -mask weechat.color.*
+2021-07-13 01:03:43		Option reset: irc.server.libera.sasl_password = null -> ""
+2021-07-13 01:03:43		1 option(s) reset, 0 option(s) removed
+2021-07-13 01:04:20		Passphrase added
+2021-07-13 01:04:30		Secured data "libera_password" set
+2021-07-13 01:04:30		Options saved to sec.conf
+2021-07-13 01:04:50		Option changed: irc.server.libera.sasl_password = "${sec.data.libera_password}"  (default if null: "")
+2021-07-13 01:09:07		Option changed: irc.server.libera.autojoin = "#miniscript,#math,#sysadmin"  (default if null: "")
+2021-07-13 01:09:48	=!=	irc: already connected to server "libera"!
+2021-07-13 01:09:55		fifo: pipe closed
+2021-07-13 01:10:08		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-07-13 01:10:58	=!=	No help available, "channel" is not a command or an option
+2021-07-13 01:11:03		[core]
+2021-07-13 01:11:03		  away     cursor   history  mute     reload   unset    window 
+2021-07-13 01:11:03		  bar      debug    input    plugin   repeat   upgrade
+2021-07-13 01:11:03		  buffer   eval     key      print    save     uptime 
+2021-07-13 01:11:03		  color    filter   layout   proxy    secure   version
+2021-07-13 01:11:03		  command  help     mouse    quit     set      wait   
+2021-07-13 01:11:03		[ruby]
+2021-07-13 01:11:03		  ruby
+2021-07-13 01:11:03		[buflist]
+2021-07-13 01:11:03		  buflist
+2021-07-13 01:11:03		[python]
+2021-07-13 01:11:03		  python
+2021-07-13 01:11:03		[logger]
+2021-07-13 01:11:03		  logger
+2021-07-13 01:11:03		[irc]
+2021-07-13 01:11:03		  admin       halfop      motd        rehash      time      
+2021-07-13 01:11:03		  allchan     ignore      msg         remove      topic     
+2021-07-13 01:11:03		  allpv       info        names       restart     trace     
+2021-07-13 01:11:03		  allserv     invite      nick        sajoin      unban     
+2021-07-13 01:11:03		  ban         ison        notice      samode      unquiet   
+2021-07-13 01:11:03		  cap         join        notify      sanick      userhost  
+2021-07-13 01:11:03		  connect     kick        op          sapart      users     
+2021-07-13 01:11:03		  ctcp        kickban     oper        saquit      version   
+2021-07-13 01:11:03		  cycle       kill        part        server      voice     
+2021-07-13 01:11:03		  dcc         links       ping        service     wallchops 
+2021-07-13 01:11:03		  dehalfop    list        pong        servlist    wallops   
+2021-07-13 01:11:03		  deop        lusers      query       squery      who       
+2021-07-13 01:11:03		  devoice     map         quiet       squit       whois     
+2021-07-13 01:11:03		  die         me          quote       stats       whowas    
+2021-07-13 01:11:03		  disconnect  mode        reconnect   summon    
+2021-07-13 01:11:03		[relay]
+2021-07-13 01:11:03		  relay
+2021-07-13 01:11:03		[xfer]
+2021-07-13 01:11:03		  me  xfer
+2021-07-13 01:11:03		[fset]
+2021-07-13 01:11:03		  fset
+2021-07-13 01:11:03		[spell]
+2021-07-13 01:11:03		  spell
+2021-07-13 01:11:03		[trigger]
+2021-07-13 01:11:03		  trigger
+2021-07-13 01:11:03		[alias]
+2021-07-13 01:11:03		  AAWAY    C        IG       M        REDRAW   UMODE    WII    
+2021-07-13 01:11:03		  alias    CHAT     J        MSGBUF   SAY      V        WM     
+2021-07-13 01:11:03		  ANICK    CL       K        MUB      SIGNOFF  W        WW     
+2021-07-13 01:11:03		  BEEP     CLOSE    KB       N        T        WC     
+2021-07-13 01:11:03		  BYE      EXIT     LEAVE    Q        UB       WI     
+2021-07-13 01:11:03		[exec]
+2021-07-13 01:11:03		  exec
+2021-07-13 01:11:03		[script]
+2021-07-13 01:11:03		  script
+2021-07-13 01:11:03		[perl]
+2021-07-13 01:11:03		  perl
+2021-07-13 01:11:03		[charset]
+2021-07-13 01:11:03		  charset
+2021-07-13 01:11:03		[fifo]
+2021-07-13 01:11:03		  fifo
+2021-07-13 01:11:07		[core]
+2021-07-13 01:11:07		  away     cursor   history  mute     reload   unset    window 
+2021-07-13 01:11:07		  bar      debug    input    plugin   repeat   upgrade
+2021-07-13 01:11:07		  buffer   eval     key      print    save     uptime 
+2021-07-13 01:11:07		  color    filter   layout   proxy    secure   version
+2021-07-13 01:11:07		  command  help     mouse    quit     set      wait   
+2021-07-13 01:11:07		[ruby]
+2021-07-13 01:11:07		  ruby
+2021-07-13 01:11:07		[buflist]
+2021-07-13 01:11:07		  buflist
+2021-07-13 01:11:07		[python]
+2021-07-13 01:11:07		  python
+2021-07-13 01:11:07		[logger]
+2021-07-13 01:11:07		  logger
+2021-07-13 01:11:07		[irc]
+2021-07-13 01:11:07		  admin       halfop      motd        rehash      time      
+2021-07-13 01:11:07		  allchan     ignore      msg         remove      topic     
+2021-07-13 01:11:07		  allpv       info        names       restart     trace     
+2021-07-13 01:11:07		  allserv     invite      nick        sajoin      unban     
+2021-07-13 01:11:07		  ban         ison        notice      samode      unquiet   
+2021-07-13 01:11:07		  cap         join        notify      sanick      userhost  
+2021-07-13 01:11:07		  connect     kick        op          sapart      users     
+2021-07-13 01:11:07		  ctcp        kickban     oper        saquit      version   
+2021-07-13 01:11:07		  cycle       kill        part        server      voice     
+2021-07-13 01:11:07		  dcc         links       ping        service     wallchops 
+2021-07-13 01:11:07		  dehalfop    list        pong        servlist    wallops   
+2021-07-13 01:11:07		  deop        lusers      query       squery      who       
+2021-07-13 01:11:07		  devoice     map         quiet       squit       whois     
+2021-07-13 01:11:07		  die         me          quote       stats       whowas    
+2021-07-13 01:11:07		  disconnect  mode        reconnect   summon    
+2021-07-13 01:11:07		[relay]
+2021-07-13 01:11:07		  relay
+2021-07-13 01:11:07		[xfer]
+2021-07-13 01:11:07		  me  xfer
+2021-07-13 01:11:07		[fset]
+2021-07-13 01:11:07		  fset
+2021-07-13 01:11:07		[spell]
+2021-07-13 01:11:07		  spell
+2021-07-13 01:11:07		[trigger]
+2021-07-13 01:11:07		  trigger
+2021-07-13 01:11:07		[alias]
+2021-07-13 01:11:07		  AAWAY    C        IG       M        REDRAW   UMODE    WII    
+2021-07-13 01:11:07		  alias    CHAT     J        MSGBUF   SAY      V        WM     
+2021-07-13 01:11:07		  ANICK    CL       K        MUB      SIGNOFF  W        WW     
+2021-07-13 01:11:07		  BEEP     CLOSE    KB       N        T        WC     
+2021-07-13 01:11:07		  BYE      EXIT     LEAVE    Q        UB       WI     
+2021-07-13 01:11:07		[exec]
+2021-07-13 01:11:07		  exec
+2021-07-13 01:11:07		[script]
+2021-07-13 01:11:07		  script
+2021-07-13 01:11:07		[perl]
+2021-07-13 01:11:07		  perl
+2021-07-13 01:11:07		[charset]
+2021-07-13 01:11:07		  charset
+2021-07-13 01:11:07		[fifo]
+2021-07-13 01:11:07		  fifo
+2021-07-13 01:29:45	=!=	Error: unknown command "/enable" (type /help for help)
+2021-07-13 01:29:53		Mouse enabled
+2021-07-13 01:51:05		fifo: pipe closed
+2021-07-13 02:13:55		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-07-13 02:15:28		Option reset: irc.server.libera.nicks = null -> "therojjha,therojjha1,therojjha2,therojjha3,therojjha4"
+2021-07-13 02:15:28		1 option(s) reset, 0 option(s) removed
+2021-07-13 02:16:01		Option changed: irc.server.libera.nicks = "amanr,therojjha"  (default if null: "therojjha,therojjha1,therojjha2,therojjha3,therojjha4")
+2021-07-13 02:16:35		Option changed: irc.server.libera.autojoin = "##miniscript"  (default if null: "")
+2021-07-13 02:16:39		fifo: pipe closed
+2021-07-13 02:16:43		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-07-13 02:17:08		Option changed: irc.server.libera.autojoin = "##miniscript,##math"  (default if null: "")
+2021-07-13 02:17:11		fifo: pipe closed
+2021-07-13 02:17:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-07-13 02:24:50		Option changed: weechat.bar.status.color_bg = 0  (default: blue)
+2021-07-13 02:25:05		Option changed: weechat.bar.status.color_bg = 1  (default: blue)
+2021-07-13 02:25:42		Option changed: weechat.color.chat_nick_self = _white  (default: white)
+2021-07-13 02:26:30		fifo: pipe closed
+2021-07-13 16:05:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-13 16:06:40	=!=	Option "irc.libera.autoconnect" not found
+2021-07-13 16:07:34	=!=	Failed to set option "irc.server.libera.autoconnect"
+2021-07-13 16:59:16		fifo: pipe closed
+2021-07-13 16:59:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-13 16:59:25		fifo: pipe closed
+2021-07-13 19:20:24		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-13 21:15:50		fifo: pipe closed
+2021-07-14 18:49:20		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-14 19:21:42		fifo: pipe closed
+2021-07-14 19:21:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-14 19:21:56	=!=	irc: command "join" must be executed on connected irc server
+2021-07-14 23:59:46		fifo: pipe closed
+2021-07-15 17:51:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-15 17:54:49		Option changed: irc.server.libera.sasl_mechanism = plain  (default if null: plain)
+2021-07-15 17:54:53		Options saved to sec.conf
+2021-07-15 17:54:53		Options saved to weechat.conf
+2021-07-15 17:54:53		Options saved to plugins.conf
+2021-07-15 17:54:53		Options saved to charset.conf
+2021-07-15 17:54:53		Options saved to logger.conf
+2021-07-15 17:54:53		Options saved to exec.conf
+2021-07-15 17:54:53		Options saved to trigger.conf
+2021-07-15 17:54:53		Options saved to spell.conf
+2021-07-15 17:54:53		Options saved to alias.conf
+2021-07-15 17:54:53		Options saved to buflist.conf
+2021-07-15 17:54:53		Options saved to fifo.conf
+2021-07-15 17:54:53		Options saved to xfer.conf
+2021-07-15 17:54:53		Options saved to irc.conf
+2021-07-15 17:54:53		Options saved to relay.conf
+2021-07-15 17:54:53		Options saved to ruby.conf
+2021-07-15 17:54:53		Options saved to python.conf
+2021-07-15 17:54:53		Options saved to tcl.conf
+2021-07-15 17:54:53		Options saved to guile.conf
+2021-07-15 17:54:53		Options saved to perl.conf
+2021-07-15 17:54:53		Options saved to lua.conf
+2021-07-15 17:54:53		Options saved to script.conf
+2021-07-15 17:54:53		Options saved to fset.conf
+2021-07-15 17:55:01		fifo: pipe closed
+2021-07-15 17:55:05		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-15 17:56:38		fifo: pipe closed
+2021-07-15 17:56:43		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-15 17:57:50	=!=	Option "irc.server.sasl_username" not found
+2021-07-15 17:58:03		Option changed: irc.server.libera.sasl_username = "amanr"  (default if null: "")
+2021-07-15 17:58:19		Option changed: irc.server.libera.sasl_password = "Aman@123"  (default if null: "")
+2021-07-15 17:58:38		0 option(s) reset, 0 option(s) removed
+2021-07-15 17:58:43		Option reset: irc.server.libera.sasl_password = null -> ""
+2021-07-15 17:58:43		1 option(s) reset, 0 option(s) removed
+2021-07-15 17:58:54		Secured data "libera_password" set
+2021-07-15 17:58:54		Options saved to sec.conf
+2021-07-15 17:59:14		Option changed: irc.server.libera.sasl_password = "${sec.data.libera_password}"  (default if null: "")
+2021-07-15 17:59:24	=!=	irc: already connected to server "libera"!
+2021-07-15 17:59:27		fifo: pipe closed
+2021-07-15 17:59:31		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-15 18:01:10		fifo: pipe closed
+2021-07-15 18:12:28		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-15 18:12:31	=!=	irc: command "join" must be executed on connected irc server
+2021-07-15 18:12:58		fifo: pipe closed
+2021-07-15 18:13:05		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-15 18:13:09	=!=	irc: command "join" must be executed on connected irc server
+2021-07-15 18:30:07		fifo: pipe closed
+2021-07-15 18:47:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-15 18:50:41	=!=	script: download of scripts is disabled by default; see /help script.scripts.download_enabled
+2021-07-15 18:50:55		Option "script.scripts.download_enabled":
+2021-07-15 18:50:55		  description: enable download of files from the scripts repository when the /script command is used (list of scripts and scripts themselves); the list of scripts is downloaded from the URL specified in the option script.scripts.url; WeeChat will sometimes download again the list of scripts when you use the /script command, even if you don't install a script
+2021-07-15 18:50:55		  type: boolean
+2021-07-15 18:50:55		  values: on, off
+2021-07-15 18:50:55		  default value: off
+2021-07-15 18:50:55		  current value: off
+2021-07-15 18:51:07		Option changed: script.scripts.download_enabled = on  (default: off)
+2021-07-15 18:51:12		script: downloading list of scripts...
+2021-07-15 18:51:14		script: 366 scripts for WeeChat 3.2
+2021-07-15 18:51:16		python: loading script "/home/therojjha/.weechat/python/autosort.py"
+2021-07-15 18:51:16		python: registered script "autosort", version 3.9 (Flexible automatic (or manual) buffer sorting based on eval expressions.)
+2021-07-15 18:51:22		script: autoload enabled for script "autosort.py"
+2021-07-15 18:51:38		Option changed: irc.look.server_buffer = independent  (default: merge_with_core)
+2021-07-15 19:15:32	=!=	Unknown command "/username" (type /help for help)
+2021-07-15 19:15:37	=!=	No help available, "username" is not a command or an option
+2021-07-15 19:15:44		Option "irc.server.libera.username":
+2021-07-15 19:15:44		  description: user name to use on server (note: content is evaluated, see /help eval; server options are evaluated with ${irc_server.xxx} and ${server} is replaced by the server name)
+2021-07-15 19:15:44		  type: string
+2021-07-15 19:15:44		  values: any string
+2021-07-15 19:15:44		  default value: (undefined)
+2021-07-15 19:15:44		  current value: "sarcasticnastik"
+2021-07-15 19:15:44		  undefined value allowed (null)
+2021-07-15 21:44:48		fifo: pipe closed
+2021-07-16 19:15:01		python scripts loaded: autosort
+2021-07-16 19:15:01		script: 366 scripts for WeeChat 3.2
+2021-07-16 19:15:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-16 21:29:58	=!=	Error with command "/server 20.204.87.0 4000 amanr:Aman@123" (help on command: /help server)
+2021-07-16 21:30:04		[irc]  /server  list|listfull [<name>]
+2021-07-16 21:30:04		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2021-07-16 21:30:04		                copy|rename <name> <new_name>
+2021-07-16 21:30:04		                reorder <name> [<name>...]
+2021-07-16 21:30:04		                open <name>|-all [<name>...]
+2021-07-16 21:30:04		                del|keep <name>
+2021-07-16 21:30:04		                deloutq|jump
+2021-07-16 21:30:04		                raw [<filter>]
+2021-07-16 21:30:04		list, add or remove IRC servers
+2021-07-16 21:30:04		    list: list servers (without argument, this list is displayed)
+2021-07-16 21:30:04		listfull: list servers with detailed info for each server
+2021-07-16 21:30:04		     add: add a new server
+2021-07-16 21:30:04		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2021-07-16 21:30:04		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2021-07-16 21:30:04		   -temp: add a temporary server (not saved)
+2021-07-16 21:30:04		  option: set option for server (for boolean option, value can be omitted)
+2021-07-16 21:30:04		nooption: set boolean option to 'off' (for example: -nossl)
+2021-07-16 21:30:04		    copy: duplicate a server
+2021-07-16 21:30:04		  rename: rename a server
+2021-07-16 21:30:04		 reorder: reorder list of servers
+2021-07-16 21:30:04		    open: open the server buffer without connecting
+2021-07-16 21:30:04		    keep: keep server in config file (for temporary servers only)
+2021-07-16 21:30:04		     del: delete a server
+2021-07-16 21:30:04		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2021-07-16 21:30:04		    jump: jump to server buffer
+2021-07-16 21:30:04		     raw: open buffer with raw IRC data
+2021-07-16 21:30:04		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2021-07-16 21:30:04		            *       show all messages (no filter)
+2021-07-16 21:30:04		            xxx     show only messages containing "xxx"
+2021-07-16 21:30:04		            s:xxx   show only messages for server "xxx"
+2021-07-16 21:30:04		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2021-07-16 21:30:04		            m:xxx   show only IRC command "xxx"
+2021-07-16 21:30:04		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2021-07-16 21:30:04		Examples:
+2021-07-16 21:30:04		  /server listfull
+2021-07-16 21:30:04		  /server add libera irc.libera.chat
+2021-07-16 21:30:04		  /server add libera irc.libera.chat/6697 -ssl -autoconnect
+2021-07-16 21:30:04		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2021-07-16 21:30:04		  /server copy libera libera-test
+2021-07-16 21:30:04		  /server rename libera-test libera2
+2021-07-16 21:30:04		  /server reorder libera2 libera
+2021-07-16 21:30:04		  /server del libera
+2021-07-16 21:30:04		  /server deloutq
+2021-07-16 21:30:04		  /server raw
+2021-07-16 21:30:04		  /server raw s:libera
+2021-07-16 21:30:04		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2021-07-16 21:30:23		irc: server added: bouncer
+2021-07-16 21:35:23	=!=	irc: server "bouncer" already exists, can't add it!
+2021-07-16 21:35:37		0 option(s) reset, 0 option(s) removed
+2021-07-16 21:35:42		All servers:
+2021-07-16 21:35:42		Server: libera [connected], nick: amanr
+2021-07-16 21:35:42		  addresses. . . . . . : 'irc.libera.chat/6697'
+2021-07-16 21:35:42		  proxy. . . . . . . . :   ('')
+2021-07-16 21:35:42		  ipv6 . . . . . . . . :   (on)
+2021-07-16 21:35:42		  ssl. . . . . . . . . : on
+2021-07-16 21:35:42		  ssl_cert . . . . . . :   ('')
+2021-07-16 21:35:42		  ssl_password . . . . :   (hidden)
+2021-07-16 21:35:42		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2021-07-16 21:35:42		  ssl_dhkey_size . . . :   (2048)
+2021-07-16 21:35:42		  ssl_fingerprint. . . :   ('')
+2021-07-16 21:35:42		  ssl_verify . . . . . :   (on)
+2021-07-16 21:35:42		  password . . . . . . :   (hidden)
+2021-07-16 21:35:42		  capabilities . . . . :   ('')
+2021-07-16 21:35:42		  sasl_mechanism . . . : 'plain'
+2021-07-16 21:35:42		  sasl_username. . . . : 'amanr'
+2021-07-16 21:35:42		  sasl_password. . . . : (hidden)
+2021-07-16 21:35:42		  sasl_key. .  . . . . :   ('')
+2021-07-16 21:35:42		  sasl_timeout . . . . :   (15 seconds)
+2021-07-16 21:35:42		  sasl_fail. . . . . . :   ('continue')
+2021-07-16 21:35:42		  autoconnect. . . . . : on
+2021-07-16 21:35:42		  autoreconnect. . . . :   (on)
+2021-07-16 21:35:42		  autoreconnect_delay. :   (10 seconds)
+2021-07-16 21:35:42		  nicks. . . . . . . . : 'amanr,therojjha'
+2021-07-16 21:35:42		  nicks_alternate. . . :   (on)
+2021-07-16 21:35:42		  username . . . . . . : 'sarcasticnastik'
+2021-07-16 21:35:42		  realname . . . . . . :   ('')
+2021-07-16 21:35:42		  local_hostname . . . :   ('')
+2021-07-16 21:35:42		  usermode . . . . . . :   ('')
+2021-07-16 21:35:42		  command. . . . . . . :   ('')
+2021-07-16 21:35:42		  command_delay. . . . :   (0 seconds)
+2021-07-16 21:35:42		  autojoin . . . . . . : '##miniscript,##math'
+2021-07-16 21:35:42		  autorejoin . . . . . :   (off)
+2021-07-16 21:35:42		  autorejoin_delay . . :   (30 seconds)
+2021-07-16 21:35:42		  connection_timeout . :   (60 seconds)
+2021-07-16 21:35:42		  anti_flood_prio_high :   (2 seconds)
+2021-07-16 21:35:42		  anti_flood_prio_low. :   (2 seconds)
+2021-07-16 21:35:42		  away_check . . . . . :   (0 minutes)
+2021-07-16 21:35:42		  away_check_max_nicks :   (25)
+2021-07-16 21:35:42		  msg_kick . . . . . . :   ('')
+2021-07-16 21:35:42		  msg_part . . . . . . :   ('WeeChat ${info:version}')
+2021-07-16 21:35:42		  msg_quit . . . . . . :   ('WeeChat ${info:version}')
+2021-07-16 21:35:42		  notify . . . . . . . :   ('')
+2021-07-16 21:35:42		  split_msg_max_length :   (512)
+2021-07-16 21:35:42		  charset_message. . . :   ('message')
+2021-07-16 21:35:42		  default_chantypes. . :   ('#&')
+2021-07-16 21:35:42		Server: bouncer [not connected]
+2021-07-16 21:35:42		  addresses. . . . . . : '20.204.87.0'
+2021-07-16 21:35:42		  proxy. . . . . . . . :   ('')
+2021-07-16 21:35:42		  ipv6 . . . . . . . . :   (on)
+2021-07-16 21:35:42		  ssl. . . . . . . . . :   (off)
+2021-07-16 21:35:42		  ssl_cert . . . . . . :   ('')
+2021-07-16 21:35:42		  ssl_password . . . . :   (hidden)
+2021-07-16 21:35:42		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2021-07-16 21:35:42		  ssl_dhkey_size . . . :   (2048)
+2021-07-16 21:35:42		  ssl_fingerprint. . . :   ('')
+2021-07-16 21:35:42		  ssl_verify . . . . . :   (on)
+2021-07-16 21:35:42		  password . . . . . . :   (hidden)
+2021-07-16 21:35:42		  capabilities . . . . :   ('')
+2021-07-16 21:35:42		  sasl_mechanism . . . :   ('plain')
+2021-07-16 21:35:42		  sasl_username. . . . :   ('')
+2021-07-16 21:35:42		  sasl_password. . . . :   (hidden)
+2021-07-16 21:35:42		  sasl_key. .  . . . . :   ('')
+2021-07-16 21:35:42		  sasl_timeout . . . . :   (15 seconds)
+2021-07-16 21:35:42		  sasl_fail. . . . . . :   ('continue')
+2021-07-16 21:35:42		  autoconnect. . . . . :   (off)
+2021-07-16 21:35:42		  autoreconnect. . . . :   (on)
+2021-07-16 21:35:42		  autoreconnect_delay. :   (10 seconds)
+2021-07-16 21:35:42		  nicks. . . . . . . . :   ('therojjha,therojjha1,therojjha2,therojjha3,therojjha4')
+2021-07-16 21:35:42		  nicks_alternate. . . :   (on)
+2021-07-16 21:35:42		  username . . . . . . :   ('therojjha')
+2021-07-16 21:35:42		  realname . . . . . . :   ('')
+2021-07-16 21:35:42		  local_hostname . . . :   ('')
+2021-07-16 21:35:42		  usermode . . . . . . :   ('')
+2021-07-16 21:35:42		  command. . . . . . . :   ('')
+2021-07-16 21:35:42		  command_delay. . . . :   (0 seconds)
+2021-07-16 21:35:42		  autojoin . . . . . . :   ('')
+2021-07-16 21:35:42		  autorejoin . . . . . :   (off)
+2021-07-16 21:35:42		  autorejoin_delay . . :   (30 seconds)
+2021-07-16 21:35:42		  connection_timeout . :   (60 seconds)
+2021-07-16 21:35:42		  anti_flood_prio_high :   (2 seconds)
+2021-07-16 21:35:42		  anti_flood_prio_low. :   (2 seconds)
+2021-07-16 21:35:42		  away_check . . . . . :   (0 minutes)
+2021-07-16 21:35:42		  away_check_max_nicks :   (25)
+2021-07-16 21:35:42		  msg_kick . . . . . . :   ('')
+2021-07-16 21:35:42		  msg_part . . . . . . :   ('WeeChat ${info:version}')
+2021-07-16 21:35:42		  msg_quit . . . . . . :   ('WeeChat ${info:version}')
+2021-07-16 21:35:42		  notify . . . . . . . :   ('')
+2021-07-16 21:35:42		  split_msg_max_length :   (512)
+2021-07-16 21:35:42		  charset_message. . . :   ('message')
+2021-07-16 21:35:42		  default_chantypes. . :   ('#&')
+2021-07-16 21:36:01	=!=	Option "bouncer.ssl" not found
+2021-07-16 21:36:08	=!=	Option "server.bouncer.ssl" not found
+2021-07-16 21:36:22	=!=	irc: unable to add temporary server "bounver" because the addition of temporary servers with command /connect is currently disabled
+2021-07-16 21:36:22	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2021-07-16 21:37:08		[irc]  /server  list|listfull [<name>]
+2021-07-16 21:37:08		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2021-07-16 21:37:08		                copy|rename <name> <new_name>
+2021-07-16 21:37:08		                reorder <name> [<name>...]
+2021-07-16 21:37:08		                open <name>|-all [<name>...]
+2021-07-16 21:37:08		                del|keep <name>
+2021-07-16 21:37:08		                deloutq|jump
+2021-07-16 21:37:08		                raw [<filter>]
+2021-07-16 21:37:08		list, add or remove IRC servers
+2021-07-16 21:37:08		    list: list servers (without argument, this list is displayed)
+2021-07-16 21:37:08		listfull: list servers with detailed info for each server
+2021-07-16 21:37:08		     add: add a new server
+2021-07-16 21:37:08		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2021-07-16 21:37:08		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2021-07-16 21:37:08		   -temp: add a temporary server (not saved)
+2021-07-16 21:37:08		  option: set option for server (for boolean option, value can be omitted)
+2021-07-16 21:37:08		nooption: set boolean option to 'off' (for example: -nossl)
+2021-07-16 21:37:08		    copy: duplicate a server
+2021-07-16 21:37:08		  rename: rename a server
+2021-07-16 21:37:08		 reorder: reorder list of servers
+2021-07-16 21:37:08		    open: open the server buffer without connecting
+2021-07-16 21:37:08		    keep: keep server in config file (for temporary servers only)
+2021-07-16 21:37:08		     del: delete a server
+2021-07-16 21:37:08		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2021-07-16 21:37:08		    jump: jump to server buffer
+2021-07-16 21:37:08		     raw: open buffer with raw IRC data
+2021-07-16 21:37:08		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2021-07-16 21:37:08		            *       show all messages (no filter)
+2021-07-16 21:37:08		            xxx     show only messages containing "xxx"
+2021-07-16 21:37:08		            s:xxx   show only messages for server "xxx"
+2021-07-16 21:37:08		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2021-07-16 21:37:08		            m:xxx   show only IRC command "xxx"
+2021-07-16 21:37:08		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2021-07-16 21:37:08		Examples:
+2021-07-16 21:37:08		  /server listfull
+2021-07-16 21:37:08		  /server add libera irc.libera.chat
+2021-07-16 21:37:08		  /server add libera irc.libera.chat/6697 -ssl -autoconnect
+2021-07-16 21:37:08		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2021-07-16 21:37:08		  /server copy libera libera-test
+2021-07-16 21:37:08		  /server rename libera-test libera2
+2021-07-16 21:37:08		  /server reorder libera2 libera
+2021-07-16 21:37:08		  /server del libera
+2021-07-16 21:37:08		  /server deloutq
+2021-07-16 21:37:08		  /server raw
+2021-07-16 21:37:08		  /server raw s:libera
+2021-07-16 21:37:08		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2021-07-16 21:37:19		irc: server bouncer has been deleted
+2021-07-16 21:37:28		irc: server added: bouncer
+2021-07-16 21:38:34		irc: server bouncer has been deleted
+2021-07-16 21:38:40		irc: server added: bouncer
+2021-07-16 21:38:45	=!=	irc: unable to add temporary server "bounce" because the addition of temporary servers with command /connect is currently disabled
+2021-07-16 21:38:45	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2021-07-16 23:13:56	=!=	Unknown command "/lose" (type /help for help)
+2021-07-16 23:14:17		fifo: pipe closed
+2021-07-16 23:14:21		python scripts loaded: autosort
+2021-07-16 23:14:21		script: 366 scripts for WeeChat 3.2
+2021-07-16 23:14:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-16 23:15:47	=!=	Unknown command "/znc" (type /help for help)
+2021-07-16 23:20:37		fifo: pipe closed
+2021-07-16 23:20:40		python scripts loaded: autosort
+2021-07-16 23:20:40		script: 366 scripts for WeeChat 3.2
+2021-07-16 23:20:40		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-16 23:21:11	=!=	Unknown command "/znc" (type /help for help)
+2021-07-16 23:28:40	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2021-07-16 23:31:54		fifo: pipe closed
+2021-07-16 23:31:59		python scripts loaded: autosort
+2021-07-16 23:31:59		script: 366 scripts for WeeChat 3.2
+2021-07-16 23:31:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-16 23:32:15		irc: server bouncer has been deleted
+2021-07-16 23:32:18		fifo: pipe closed
+2021-07-16 23:32:21		python scripts loaded: autosort
+2021-07-16 23:32:21		script: 366 scripts for WeeChat 3.2
+2021-07-16 23:32:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-16 23:34:22		irc: server added: znc_libera
+2021-07-16 23:34:41		Options saved to sec.conf
+2021-07-16 23:34:41		Options saved to weechat.conf
+2021-07-16 23:34:41		Options saved to plugins.conf
+2021-07-16 23:34:41		Options saved to charset.conf
+2021-07-16 23:34:41		Options saved to logger.conf
+2021-07-16 23:34:41		Options saved to exec.conf
+2021-07-16 23:34:41		Options saved to trigger.conf
+2021-07-16 23:34:41		Options saved to spell.conf
+2021-07-16 23:34:41		Options saved to alias.conf
+2021-07-16 23:34:41		Options saved to buflist.conf
+2021-07-16 23:34:41		Options saved to fifo.conf
+2021-07-16 23:34:41		Options saved to xfer.conf
+2021-07-16 23:34:41		Options saved to irc.conf
+2021-07-16 23:34:41		Options saved to relay.conf
+2021-07-16 23:34:41		Options saved to ruby.conf
+2021-07-16 23:34:41		Options saved to python.conf
+2021-07-16 23:34:41		Options saved to autosort.conf
+2021-07-16 23:34:41		Options saved to tcl.conf
+2021-07-16 23:34:41		Options saved to guile.conf
+2021-07-16 23:34:41		Options saved to perl.conf
+2021-07-16 23:34:41		Options saved to lua.conf
+2021-07-16 23:34:41		Options saved to script.conf
+2021-07-16 23:34:41		Options saved to fset.conf
+2021-07-16 23:36:24		irc: server znc_libera has been deleted
+2021-07-16 23:37:34		irc: server added: znc_libera
+2021-07-16 23:38:05		Options saved to sec.conf
+2021-07-16 23:38:05		Options saved to weechat.conf
+2021-07-16 23:38:05		Options saved to plugins.conf
+2021-07-16 23:38:05		Options saved to charset.conf
+2021-07-16 23:38:05		Options saved to logger.conf
+2021-07-16 23:38:05		Options saved to exec.conf
+2021-07-16 23:38:05		Options saved to trigger.conf
+2021-07-16 23:38:05		Options saved to spell.conf
+2021-07-16 23:38:05		Options saved to alias.conf
+2021-07-16 23:38:05		Options saved to buflist.conf
+2021-07-16 23:38:05		Options saved to fifo.conf
+2021-07-16 23:38:05		Options saved to xfer.conf
+2021-07-16 23:38:05		Options saved to irc.conf
+2021-07-16 23:38:05		Options saved to relay.conf
+2021-07-16 23:38:05		Options saved to ruby.conf
+2021-07-16 23:38:05		Options saved to python.conf
+2021-07-16 23:38:05		Options saved to autosort.conf
+2021-07-16 23:38:05		Options saved to tcl.conf
+2021-07-16 23:38:05		Options saved to guile.conf
+2021-07-16 23:38:05		Options saved to perl.conf
+2021-07-16 23:38:05		Options saved to lua.conf
+2021-07-16 23:38:05		Options saved to script.conf
+2021-07-16 23:38:05		Options saved to fset.conf
+2021-07-16 23:41:33		fifo: pipe closed
+2021-07-16 23:55:06		python scripts loaded: autosort
+2021-07-16 23:55:06		script: 366 scripts for WeeChat 3.2
+2021-07-16 23:55:06		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-16 23:56:10	=!=	irc: server "znc_libera" already exists, can't add it!
+2021-07-16 23:56:20	=!=	irc: already connected to server "znc_libera"!
+2021-07-16 23:56:25		Options saved to sec.conf
+2021-07-16 23:56:25		Options saved to weechat.conf
+2021-07-16 23:56:25		Options saved to plugins.conf
+2021-07-16 23:56:25		Options saved to charset.conf
+2021-07-16 23:56:25		Options saved to logger.conf
+2021-07-16 23:56:25		Options saved to exec.conf
+2021-07-16 23:56:25		Options saved to trigger.conf
+2021-07-16 23:56:25		Options saved to spell.conf
+2021-07-16 23:56:25		Options saved to alias.conf
+2021-07-16 23:56:25		Options saved to buflist.conf
+2021-07-16 23:56:25		Options saved to fifo.conf
+2021-07-16 23:56:25		Options saved to xfer.conf
+2021-07-16 23:56:25		Options saved to irc.conf
+2021-07-16 23:56:25		Options saved to relay.conf
+2021-07-16 23:56:25		Options saved to ruby.conf
+2021-07-16 23:56:25		Options saved to python.conf
+2021-07-16 23:56:25		Options saved to autosort.conf
+2021-07-16 23:56:25		Options saved to tcl.conf
+2021-07-16 23:56:25		Options saved to guile.conf
+2021-07-16 23:56:25		Options saved to perl.conf
+2021-07-16 23:56:25		Options saved to lua.conf
+2021-07-16 23:56:25		Options saved to script.conf
+2021-07-16 23:56:25		Options saved to fset.conf
+2021-07-16 23:57:24		Option reset: irc.server.libera.autojoin = null -> ""
+2021-07-16 23:57:24		1 option(s) reset, 0 option(s) removed
+2021-07-16 23:57:25		Options saved to sec.conf
+2021-07-16 23:57:25		Options saved to weechat.conf
+2021-07-16 23:57:25		Options saved to plugins.conf
+2021-07-16 23:57:25		Options saved to charset.conf
+2021-07-16 23:57:25		Options saved to logger.conf
+2021-07-16 23:57:25		Options saved to exec.conf
+2021-07-16 23:57:25		Options saved to trigger.conf
+2021-07-16 23:57:25		Options saved to spell.conf
+2021-07-16 23:57:25		Options saved to alias.conf
+2021-07-16 23:57:25		Options saved to buflist.conf
+2021-07-16 23:57:25		Options saved to fifo.conf
+2021-07-16 23:57:25		Options saved to xfer.conf
+2021-07-16 23:57:25		Options saved to irc.conf
+2021-07-16 23:57:25		Options saved to relay.conf
+2021-07-16 23:57:25		Options saved to ruby.conf
+2021-07-16 23:57:25		Options saved to python.conf
+2021-07-16 23:57:25		Options saved to autosort.conf
+2021-07-16 23:57:25		Options saved to tcl.conf
+2021-07-16 23:57:25		Options saved to guile.conf
+2021-07-16 23:57:25		Options saved to perl.conf
+2021-07-16 23:57:25		Options saved to lua.conf
+2021-07-16 23:57:25		Options saved to script.conf
+2021-07-16 23:57:25		Options saved to fset.conf
+2021-07-16 23:57:27		fifo: pipe closed
+2021-07-16 23:57:30		python scripts loaded: autosort
+2021-07-16 23:57:30		script: 366 scripts for WeeChat 3.2
+2021-07-16 23:57:30		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-16 23:59:58		fifo: pipe closed
+2021-07-17 00:00:02		python scripts loaded: autosort
+2021-07-17 00:00:02		script: 366 scripts for WeeChat 3.2
+2021-07-17 00:00:02		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 00:03:38		fifo: pipe closed
+2021-07-17 00:03:41		python scripts loaded: autosort
+2021-07-17 00:03:41		script: 366 scripts for WeeChat 3.2
+2021-07-17 00:03:41		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 00:03:51		fifo: pipe closed
+2021-07-17 00:03:53		python scripts loaded: autosort
+2021-07-17 00:03:53		script: 366 scripts for WeeChat 3.2
+2021-07-17 00:03:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 00:04:05		fifo: pipe closed
+2021-07-17 04:19:38		python scripts loaded: autosort
+2021-07-17 04:19:38		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:19:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:23:55		Option changed: irc.server.znc_libera.nicks = "amanr,therojjha"  (default if null: "therojjha,therojjha1,therojjha2,therojjha3,therojjha4")
+2021-07-17 04:24:07	=!=	Unknown command "/znc" (type /help for help)
+2021-07-17 04:24:45	=!=	No help available, "znc" is not a command or an option
+2021-07-17 04:24:52		[core]
+2021-07-17 04:24:52		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2021-07-17 04:24:52		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2021-07-17 04:24:52		[ruby]
+2021-07-17 04:24:52		  ruby
+2021-07-17 04:24:52		[buflist]
+2021-07-17 04:24:52		  buflist
+2021-07-17 04:24:52		[python]
+2021-07-17 04:24:52		  autosort  python
+2021-07-17 04:24:52		[logger]
+2021-07-17 04:24:52		  logger
+2021-07-17 04:24:52		[irc]
+2021-07-17 04:24:52		  admin       cap         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2021-07-17 04:24:52		  allchan     connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2021-07-17 04:24:52		  allpv       ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2021-07-17 04:24:52		  allserv     cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2021-07-17 04:24:52		  ban         dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2021-07-17 04:24:52		[relay]
+2021-07-17 04:24:52		  relay
+2021-07-17 04:24:52		[xfer]
+2021-07-17 04:24:52		  me  xfer
+2021-07-17 04:24:52		[fset]
+2021-07-17 04:24:52		  fset
+2021-07-17 04:24:52		[spell]
+2021-07-17 04:24:52		  spell
+2021-07-17 04:24:52		[trigger]
+2021-07-17 04:24:52		  trigger
+2021-07-17 04:24:52		[alias]
+2021-07-17 04:24:52		  AAWAY    ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       V        WC       WII      WW     
+2021-07-17 04:24:52		  alias    BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    W        WI       WM     
+2021-07-17 04:24:52		[tcl]
+2021-07-17 04:24:52		  tcl
+2021-07-17 04:24:52		[exec]
+2021-07-17 04:24:52		  exec
+2021-07-17 04:24:52		[script]
+2021-07-17 04:24:52		  script
+2021-07-17 04:24:52		[guile]
+2021-07-17 04:24:52		  guile
+2021-07-17 04:24:52		[perl]
+2021-07-17 04:24:52		  perl
+2021-07-17 04:24:52		[charset]
+2021-07-17 04:24:52		  charset
+2021-07-17 04:24:52		[fifo]
+2021-07-17 04:24:52		  fifo
+2021-07-17 04:24:52		[lua]
+2021-07-17 04:24:52		  lua
+2021-07-17 04:24:55	=!=	No help available, "znc" is not a command or an option
+2021-07-17 04:24:59		[lua]  /lua  list|listfull [<name>]
+2021-07-17 04:24:59		             load [-q] <filename>
+2021-07-17 04:24:59		             autoload
+2021-07-17 04:24:59		             reload|unload [-q] [<name>]
+2021-07-17 04:24:59		             eval [-o|-oc] <code>
+2021-07-17 04:24:59		             version
+2021-07-17 04:24:59		list/load/unload scripts
+2021-07-17 04:24:59		    list: list loaded scripts
+2021-07-17 04:24:59		listfull: list loaded scripts (verbose)
+2021-07-17 04:24:59		    load: load a script
+2021-07-17 04:24:59		autoload: load all scripts in "autoload" directory
+2021-07-17 04:24:59		  reload: reload a script (if no name given, unload all scripts, then load all scripts in "autoload" directory)
+2021-07-17 04:24:59		  unload: unload a script (if no name given, unload all scripts)
+2021-07-17 04:24:59		filename: script (file) to load
+2021-07-17 04:24:59		      -q: quiet mode: do not display messages
+2021-07-17 04:24:59		    name: a script name (name used in call to "register" function)
+2021-07-17 04:24:59		    eval: evaluate source code and display result on current buffer
+2021-07-17 04:24:59		      -o: send evaluation result to the buffer without executing commands
+2021-07-17 04:24:59		     -oc: send evaluation result to the buffer and execute commands
+2021-07-17 04:24:59		    code: source code to evaluate
+2021-07-17 04:24:59		 version: display the version of interpreter used
+2021-07-17 04:24:59		Without argument, this command lists all loaded scripts.
+2021-07-17 04:25:20		fifo: pipe closed
+2021-07-17 04:26:49		python scripts loaded: autosort
+2021-07-17 04:26:49		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:26:49		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:27:01		Option changed: irc.server.libera.autoconnect = off  (default if null: off)
+2021-07-17 04:27:07		fifo: pipe closed
+2021-07-17 04:27:10		python scripts loaded: autosort
+2021-07-17 04:27:10		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:27:10		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:27:37		fifo: pipe closed
+2021-07-17 04:27:40		python scripts loaded: autosort
+2021-07-17 04:27:40		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:27:40		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:28:40	=!=	Unknown command "/znc" (type /help for help)
+2021-07-17 04:30:27		Option changed: irc.network.send_unknown_commands = on  (default: off)
+2021-07-17 04:30:36		Alias "znc" => "/quote znc" created
+2021-07-17 04:31:02	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2021-07-17 04:31:08		fifo: pipe closed
+2021-07-17 04:31:13		python scripts loaded: autosort
+2021-07-17 04:31:13		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:31:13		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:31:35		Option changed: irc.server.znc_libera.autoconnect = on  (default if null: off)
+2021-07-17 04:31:41		Option changed: irc.server.libera.autoconnect = on  (default if null: off)
+2021-07-17 04:31:43		fifo: pipe closed
+2021-07-17 04:31:52		python scripts loaded: autosort
+2021-07-17 04:31:52		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:31:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:33:01		Option changed: irc.server.libera.autoconnect = off  (default if null: off)
+2021-07-17 04:33:03		fifo: pipe closed
+2021-07-17 04:33:07		python scripts loaded: autosort
+2021-07-17 04:33:07		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:33:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:35:43		fifo: pipe closed
+2021-07-17 04:35:48		python scripts loaded: autosort
+2021-07-17 04:35:48		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:35:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:38:13		fifo: pipe closed
+2021-07-17 04:41:53		python scripts loaded: autosort
+2021-07-17 04:41:53		script: 366 scripts for WeeChat 3.2
+2021-07-17 04:41:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 04:55:40		Option changed: weechat.look.prefix_same_nick = "⤷"  (default: "")
+2021-07-17 04:55:55		Options saved to sec.conf
+2021-07-17 04:55:55		Options saved to weechat.conf
+2021-07-17 04:55:55		Options saved to plugins.conf
+2021-07-17 04:55:55		Options saved to charset.conf
+2021-07-17 04:55:55		Options saved to logger.conf
+2021-07-17 04:55:55		Options saved to exec.conf
+2021-07-17 04:55:55		Options saved to trigger.conf
+2021-07-17 04:55:55		Options saved to spell.conf
+2021-07-17 04:55:55		Options saved to alias.conf
+2021-07-17 04:55:55		Options saved to buflist.conf
+2021-07-17 04:55:55		Options saved to fifo.conf
+2021-07-17 04:55:55		Options saved to xfer.conf
+2021-07-17 04:55:55		Options saved to irc.conf
+2021-07-17 04:55:55		Options saved to relay.conf
+2021-07-17 04:55:55		Options saved to ruby.conf
+2021-07-17 04:55:55		Options saved to python.conf
+2021-07-17 04:55:55		Options saved to autosort.conf
+2021-07-17 04:55:55		Options saved to tcl.conf
+2021-07-17 04:55:55		Options saved to guile.conf
+2021-07-17 04:55:55		Options saved to perl.conf
+2021-07-17 04:55:55		Options saved to lua.conf
+2021-07-17 04:55:55		Options saved to script.conf
+2021-07-17 04:55:55		Options saved to fset.conf
+2021-07-17 05:05:17		fifo: pipe closed
+2021-07-17 05:05:21		python scripts loaded: autosort
+2021-07-17 05:05:21		script: 366 scripts for WeeChat 3.2
+2021-07-17 05:05:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 05:05:27		fifo: pipe closed
+2021-07-17 05:24:16		python scripts loaded: autosort
+2021-07-17 05:24:16		script: 366 scripts for WeeChat 3.2
+2021-07-17 05:24:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 05:25:11		fifo: pipe closed
+2021-07-17 05:25:15		python scripts loaded: autosort
+2021-07-17 05:25:15		script: 366 scripts for WeeChat 3.2
+2021-07-17 05:25:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 05:26:40		fifo: pipe closed
+2021-07-17 05:30:00		python scripts loaded: autosort
+2021-07-17 05:30:00		script: 366 scripts for WeeChat 3.2
+2021-07-17 05:30:00		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 05:32:19		Option changed: irc.server.znc_libera.nicks = "amanr"  (default if null: "therojjha,therojjha1,therojjha2,therojjha3,therojjha4")
+2021-07-17 05:35:49		fifo: pipe closed
+2021-07-17 05:35:54		python scripts loaded: autosort
+2021-07-17 05:35:54		script: 366 scripts for WeeChat 3.2
+2021-07-17 05:35:54		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 05:36:16		fifo: pipe closed
+2021-07-17 15:00:01		python scripts loaded: autosort
+2021-07-17 15:00:01		script: 366 scripts for WeeChat 3.2
+2021-07-17 15:00:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 15:00:37		fifo: pipe closed
+2021-07-17 15:00:41		python scripts loaded: autosort
+2021-07-17 15:00:41		script: 366 scripts for WeeChat 3.2
+2021-07-17 15:00:41		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 15:09:19		irc: server added: znc_dark
+2021-07-17 15:09:44		Options saved to sec.conf
+2021-07-17 15:09:44		Options saved to weechat.conf
+2021-07-17 15:09:44		Options saved to plugins.conf
+2021-07-17 15:09:44		Options saved to charset.conf
+2021-07-17 15:09:44		Options saved to logger.conf
+2021-07-17 15:09:44		Options saved to exec.conf
+2021-07-17 15:09:44		Options saved to trigger.conf
+2021-07-17 15:09:44		Options saved to spell.conf
+2021-07-17 15:09:44		Options saved to alias.conf
+2021-07-17 15:09:44		Options saved to buflist.conf
+2021-07-17 15:09:44		Options saved to fifo.conf
+2021-07-17 15:09:44		Options saved to xfer.conf
+2021-07-17 15:09:44		Options saved to irc.conf
+2021-07-17 15:09:44		Options saved to relay.conf
+2021-07-17 15:09:44		Options saved to ruby.conf
+2021-07-17 15:09:44		Options saved to python.conf
+2021-07-17 15:09:44		Options saved to autosort.conf
+2021-07-17 15:09:44		Options saved to tcl.conf
+2021-07-17 15:09:44		Options saved to guile.conf
+2021-07-17 15:09:44		Options saved to perl.conf
+2021-07-17 15:09:44		Options saved to lua.conf
+2021-07-17 15:09:44		Options saved to script.conf
+2021-07-17 15:09:44		Options saved to fset.conf
+2021-07-17 23:35:12		fifo: pipe closed
+2021-07-17 23:35:18		python scripts loaded: autosort
+2021-07-17 23:35:18		script: 366 scripts for WeeChat 3.2
+2021-07-17 23:35:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 23:37:14		fifo: pipe closed
+2021-07-17 23:37:26		python scripts loaded: autosort
+2021-07-17 23:37:26		script: 366 scripts for WeeChat 3.2
+2021-07-17 23:37:26		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 23:45:09		fifo: pipe closed
+2021-07-17 23:53:30		python scripts loaded: autosort
+2021-07-17 23:53:30		script: 366 scripts for WeeChat 3.2
+2021-07-17 23:53:30		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 23:54:10		fifo: pipe closed
+2021-07-17 23:54:16		python scripts loaded: autosort
+2021-07-17 23:54:16		script: 366 scripts for WeeChat 3.2
+2021-07-17 23:54:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-17 23:55:39		fifo: pipe closed
+2021-07-17 23:58:53		python scripts loaded: autosort
+2021-07-17 23:58:53		script: 366 scripts for WeeChat 3.2
+2021-07-17 23:58:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-18 00:00:10	=!=	Too few arguments for command "/dcc" (help on command: /help dcc)
+2021-07-18 00:00:42		fifo: pipe closed
+2021-07-18 00:01:21		python scripts loaded: autosort
+2021-07-18 00:01:21		script: 366 scripts for WeeChat 3.2
+2021-07-18 00:01:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-18 00:03:17	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2021-07-18 00:03:24	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2021-07-18 00:03:26		[core]
+2021-07-18 00:03:26		  away     command  filter   key      plugin   reload   set      version
+2021-07-18 00:03:26		  bar      cursor   help     layout   print    repeat   unset    wait   
+2021-07-18 00:03:26		  buffer   debug    history  mouse    proxy    save     upgrade  window 
+2021-07-18 00:03:26		  color    eval     input    mute     quit     secure   uptime 
+2021-07-18 00:03:26		[ruby]
+2021-07-18 00:03:26		  ruby
+2021-07-18 00:03:26		[buflist]
+2021-07-18 00:03:26		  buflist
+2021-07-18 00:03:26		[python]
+2021-07-18 00:03:26		  autosort  python
+2021-07-18 00:03:26		[logger]
+2021-07-18 00:03:26		  logger
+2021-07-18 00:03:26		[irc]
+2021-07-18 00:03:26		  admin       die         lusers      ping        saquit      userhost  
+2021-07-18 00:03:26		  allchan     disconnect  map         pong        server      users     
+2021-07-18 00:03:26		  allpv       halfop      me          query       service     version   
+2021-07-18 00:03:26		  allserv     ignore      mode        quiet       servlist    voice     
+2021-07-18 00:03:26		  ban         info        motd        quote       squery      wallchops 
+2021-07-18 00:03:26		  cap         invite      msg         reconnect   squit       wallops   
+2021-07-18 00:03:26		  connect     ison        names       rehash      stats       who       
+2021-07-18 00:03:26		  ctcp        join        nick        remove      summon      whois     
+2021-07-18 00:03:26		  cycle       kick        notice      restart     time        whowas    
+2021-07-18 00:03:26		  dcc         kickban     notify      sajoin      topic     
+2021-07-18 00:03:26		  dehalfop    kill        op          samode      trace     
+2021-07-18 00:03:26		  deop        links       oper        sanick      unban     
+2021-07-18 00:03:26		  devoice     list        part        sapart      unquiet   
+2021-07-18 00:03:26		[relay]
+2021-07-18 00:03:26		  relay
+2021-07-18 00:03:26		[xfer]
+2021-07-18 00:03:26		  me  xfer
+2021-07-18 00:03:26		[fset]
+2021-07-18 00:03:26		  fset
+2021-07-18 00:03:26		[spell]
+2021-07-18 00:03:26		  spell
+2021-07-18 00:03:26		[trigger]
+2021-07-18 00:03:26		  trigger
+2021-07-18 00:03:26		[alias]
+2021-07-18 00:03:26		  AAWAY    BYE      CLOSE    K        MSGBUF   REDRAW   UB       WC       WW     
+2021-07-18 00:03:26		  alias    C        EXIT     KB       MUB      SAY      UMODE    WI       znc    
+2021-07-18 00:03:26		  ANICK    CHAT     IG       LEAVE    N        SIGNOFF  V        WII    
+2021-07-18 00:03:26		  BEEP     CL       J        M        Q        T        W        WM     
+2021-07-18 00:03:26		[tcl]
+2021-07-18 00:03:26		  tcl
+2021-07-18 00:03:26		[exec]
+2021-07-18 00:03:26		  exec
+2021-07-18 00:03:26		[script]
+2021-07-18 00:03:26		  script
+2021-07-18 00:03:26		[guile]
+2021-07-18 00:03:26		  guile
+2021-07-18 00:03:26		[perl]
+2021-07-18 00:03:26		  perl
+2021-07-18 00:03:26		[charset]
+2021-07-18 00:03:26		  charset
+2021-07-18 00:03:26		[fifo]
+2021-07-18 00:03:26		  fifo
+2021-07-18 00:03:26		[lua]
+2021-07-18 00:03:26		  lua
+2021-07-18 00:03:32	=!=	Unknown command "/clear" (type /help for help)
+2021-07-18 00:03:56	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2021-07-18 00:04:37		Alias "bl" => "msg *backlog $channel $1" created
+2021-07-18 00:06:46		fifo: pipe closed
+2021-07-18 01:15:16		python scripts loaded: autosort
+2021-07-18 01:15:17		script: 366 scripts for WeeChat 3.2
+2021-07-18 01:15:17		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-18 01:21:30		Filter "joinquit" added:
+2021-07-18 01:21:30		  [joinquit] buffer: * / tags: irc_join,irc_part,irc_quit / regex: * 
+2021-07-18 01:21:33		Options saved to sec.conf
+2021-07-18 01:21:33		Options saved to weechat.conf
+2021-07-18 01:21:33		Options saved to plugins.conf
+2021-07-18 01:21:33		Options saved to charset.conf
+2021-07-18 01:21:33		Options saved to logger.conf
+2021-07-18 01:21:33		Options saved to exec.conf
+2021-07-18 01:21:33		Options saved to trigger.conf
+2021-07-18 01:21:33		Options saved to spell.conf
+2021-07-18 01:21:33		Options saved to alias.conf
+2021-07-18 01:21:33		Options saved to buflist.conf
+2021-07-18 01:21:33		Options saved to fifo.conf
+2021-07-18 01:21:33		Options saved to xfer.conf
+2021-07-18 01:21:33		Options saved to irc.conf
+2021-07-18 01:21:33		Options saved to relay.conf
+2021-07-18 01:21:33		Options saved to ruby.conf
+2021-07-18 01:21:33		Options saved to python.conf
+2021-07-18 01:21:33		Options saved to autosort.conf
+2021-07-18 01:21:33		Options saved to tcl.conf
+2021-07-18 01:21:33		Options saved to guile.conf
+2021-07-18 01:21:33		Options saved to perl.conf
+2021-07-18 01:21:33		Options saved to lua.conf
+2021-07-18 01:21:33		Options saved to script.conf
+2021-07-18 01:21:33		Options saved to fset.conf
+2021-07-18 01:22:08		[xfer]  /xfer  [list|listfull]
+2021-07-18 01:22:08		xfer control
+2021-07-18 01:22:08		    list: list xfer
+2021-07-18 01:22:08		listfull: list xfer (verbose)
+2021-07-18 01:22:08		Without argument, this command opens buffer with xfer list.
+2021-07-18 01:22:14		[relay]  /relay  list|listfull|listrelay
+2021-07-18 01:22:14		                 add <name> <port>|<path>
+2021-07-18 01:22:14		                 del|start|restart|stop <name>
+2021-07-18 01:22:14		                 raw
+2021-07-18 01:22:14		                 sslcertkey
+2021-07-18 01:22:14		relay control
+2021-07-18 01:22:14		         list: list relay clients (only active relays)
+2021-07-18 01:22:14		     listfull: list relay clients (verbose, all relays)
+2021-07-18 01:22:14		    listrelay: list relays (name and port)
+2021-07-18 01:22:14		          add: add a relay (listen on a port/path)
+2021-07-18 01:22:14		          del: remove a relay (clients remain connected)
+2021-07-18 01:22:14		        start: listen on port
+2021-07-18 01:22:14		      restart: close the server socket and listen again on port (clients remain connected)
+2021-07-18 01:22:14		         stop: close the server socket (clients remain connected)
+2021-07-18 01:22:14		         name: relay name (see format below)
+2021-07-18 01:22:14		         port: port used for relay
+2021-07-18 01:22:14		         path: path used for relay (for UNIX domain socket only); path is evaluated (see function string_eval_path_home in plugin API reference)
+2021-07-18 01:22:14		          raw: open buffer with raw Relay data
+2021-07-18 01:22:14		   sslcertkey: set SSL certificate/key using path in option relay.network.ssl_cert_key
+2021-07-18 01:22:14		Relay name is: [ipv4.][ipv6.][ssl.]<protocol.name> or unix.[ssl.]<protocol.name>
+2021-07-18 01:22:14		         ipv4: force use of IPv4
+2021-07-18 01:22:14		         ipv6: force use of IPv6
+2021-07-18 01:22:14		          ssl: enable SSL
+2021-07-18 01:22:14		         unix: use UNIX domain socket
+2021-07-18 01:22:14		protocol.name: protocol and name to relay:
+2021-07-18 01:22:14		                 - protocol "irc": name is the server to share (optional, if not given, the server name must be sent by client in command "PASS", with format: "PASS server:password")
+2021-07-18 01:22:14		                 - protocol "weechat" (name is not used)
+2021-07-18 01:22:14		The "irc" protocol allows any IRC client (including WeeChat itself) to connect on the port.
+2021-07-18 01:22:14		The "weechat" protocol allows a remote interface to connect on the port, see the list here: https://weechat.org/about/interfaces
+2021-07-18 01:22:14		Without argument, this command opens buffer with list of relay clients.
+2021-07-18 01:22:14		Examples:
+2021-07-18 01:22:14		  irc proxy, for server "libera":
+2021-07-18 01:22:14		    /relay add irc.libera 8000
+2021-07-18 01:22:14		  irc proxy, for server "libera", with SSL:
+2021-07-18 01:22:14		    /relay add ssl.irc.libera 8001
+2021-07-18 01:22:14		  irc proxy, for all servers (client will choose), with SSL:
+2021-07-18 01:22:14		    /relay add ssl.irc 8002
+2021-07-18 01:22:14		  weechat protocol:
+2021-07-18 01:22:14		    /relay add weechat 9000
+2021-07-18 01:22:14		  weechat protocol with SSL:
+2021-07-18 01:22:14		    /relay add ssl.weechat 9001
+2021-07-18 01:22:14		  weechat protocol with SSL, using only IPv4:
+2021-07-18 01:22:14		    /relay add ipv4.ssl.weechat 9001
+2021-07-18 01:22:14		  weechat protocol with SSL, using only IPv6:
+2021-07-18 01:22:14		    /relay add ipv6.ssl.weechat 9001
+2021-07-18 01:22:14		  weechat protocol with SSL, using IPv4 + IPv6:
+2021-07-18 01:22:14		    /relay add ipv4.ipv6.ssl.weechat 9001
+2021-07-18 01:22:14		  weechat protocol over UNIX domain socket:
+2021-07-18 01:22:14		    /relay add unix.weechat ${weechat_runtime_dir}/relay_socket
+2021-07-18 01:22:51	=!=	relay: error: unknown protocol "ipv5"
+2021-07-18 01:22:58	=!=	relay: error: unknown protocol "sl"
+2021-07-18 01:23:05		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-18 01:23:05		relay: relay "ipv4.ipv6.ssl.weechat" (port: 9001) added
+2021-07-18 01:23:15		[relay]  /relay  list|listfull|listrelay
+2021-07-18 01:23:15		                 add <name> <port>|<path>
+2021-07-18 01:23:15		                 del|start|restart|stop <name>
+2021-07-18 01:23:15		                 raw
+2021-07-18 01:23:15		                 sslcertkey
+2021-07-18 01:23:15		relay control
+2021-07-18 01:23:15		         list: list relay clients (only active relays)
+2021-07-18 01:23:15		     listfull: list relay clients (verbose, all relays)
+2021-07-18 01:23:15		    listrelay: list relays (name and port)
+2021-07-18 01:23:15		          add: add a relay (listen on a port/path)
+2021-07-18 01:23:15		          del: remove a relay (clients remain connected)
+2021-07-18 01:23:15		        start: listen on port
+2021-07-18 01:23:15		      restart: close the server socket and listen again on port (clients remain connected)
+2021-07-18 01:23:15		         stop: close the server socket (clients remain connected)
+2021-07-18 01:23:15		         name: relay name (see format below)
+2021-07-18 01:23:15		         port: port used for relay
+2021-07-18 01:23:15		         path: path used for relay (for UNIX domain socket only); path is evaluated (see function string_eval_path_home in plugin API reference)
+2021-07-18 01:23:15		          raw: open buffer with raw Relay data
+2021-07-18 01:23:15		   sslcertkey: set SSL certificate/key using path in option relay.network.ssl_cert_key
+2021-07-18 01:23:15		Relay name is: [ipv4.][ipv6.][ssl.]<protocol.name> or unix.[ssl.]<protocol.name>
+2021-07-18 01:23:15		         ipv4: force use of IPv4
+2021-07-18 01:23:15		         ipv6: force use of IPv6
+2021-07-18 01:23:15		          ssl: enable SSL
+2021-07-18 01:23:15		         unix: use UNIX domain socket
+2021-07-18 01:23:15		protocol.name: protocol and name to relay:
+2021-07-18 01:23:15		                 - protocol "irc": name is the server to share (optional, if not given, the server name must be sent by client in command "PASS", with format: "PASS server:password")
+2021-07-18 01:23:15		                 - protocol "weechat" (name is not used)
+2021-07-18 01:23:15		The "irc" protocol allows any IRC client (including WeeChat itself) to connect on the port.
+2021-07-18 01:23:15		The "weechat" protocol allows a remote interface to connect on the port, see the list here: https://weechat.org/about/interfaces
+2021-07-18 01:23:15		Without argument, this command opens buffer with list of relay clients.
+2021-07-18 01:23:15		Examples:
+2021-07-18 01:23:15		  irc proxy, for server "libera":
+2021-07-18 01:23:15		    /relay add irc.libera 8000
+2021-07-18 01:23:15		  irc proxy, for server "libera", with SSL:
+2021-07-18 01:23:15		    /relay add ssl.irc.libera 8001
+2021-07-18 01:23:15		  irc proxy, for all servers (client will choose), with SSL:
+2021-07-18 01:23:15		    /relay add ssl.irc 8002
+2021-07-18 01:23:15		  weechat protocol:
+2021-07-18 01:23:15		    /relay add weechat 9000
+2021-07-18 01:23:15		  weechat protocol with SSL:
+2021-07-18 01:23:15		    /relay add ssl.weechat 9001
+2021-07-18 01:23:15		  weechat protocol with SSL, using only IPv4:
+2021-07-18 01:23:15		    /relay add ipv4.ssl.weechat 9001
+2021-07-18 01:23:15		  weechat protocol with SSL, using only IPv6:
+2021-07-18 01:23:15		    /relay add ipv6.ssl.weechat 9001
+2021-07-18 01:23:15		  weechat protocol with SSL, using IPv4 + IPv6:
+2021-07-18 01:23:15		    /relay add ipv4.ipv6.ssl.weechat 9001
+2021-07-18 01:23:15		  weechat protocol over UNIX domain socket:
+2021-07-18 01:23:15		    /relay add unix.weechat ${weechat_runtime_dir}/relay_socket
+2021-07-18 01:24:48	=!=	WeeChat main buffer can't be closed
+2021-07-18 01:24:57	=!=	WeeChat main buffer can't be closed
+2021-07-18 01:25:11		fifo: pipe closed
+2021-07-18 01:25:11		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-18 04:50:59		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-18 04:50:59		python scripts loaded: autosort
+2021-07-18 04:50:59		script: 366 scripts for WeeChat 3.2
+2021-07-18 04:50:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-18 05:11:39		irc: server added: znc_oftc
+2021-07-18 05:12:15		fifo: pipe closed
+2021-07-18 05:12:15		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-18 05:12:19		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-18 05:12:19		python scripts loaded: autosort
+2021-07-18 05:12:19		script: 366 scripts for WeeChat 3.2
+2021-07-18 05:12:19		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-18 05:12:32		irc: server znc_oftc has been deleted
+2021-07-18 05:15:17		irc: server added: znc_oftc
+2021-07-18 05:15:32		Options saved to sec.conf
+2021-07-18 05:15:32		Options saved to weechat.conf
+2021-07-18 05:15:32		Options saved to plugins.conf
+2021-07-18 05:15:32		Options saved to charset.conf
+2021-07-18 05:15:32		Options saved to logger.conf
+2021-07-18 05:15:32		Options saved to exec.conf
+2021-07-18 05:15:32		Options saved to trigger.conf
+2021-07-18 05:15:32		Options saved to spell.conf
+2021-07-18 05:15:32		Options saved to alias.conf
+2021-07-18 05:15:32		Options saved to buflist.conf
+2021-07-18 05:15:32		Options saved to fifo.conf
+2021-07-18 05:15:32		Options saved to xfer.conf
+2021-07-18 05:15:32		Options saved to irc.conf
+2021-07-18 05:15:32		Options saved to relay.conf
+2021-07-18 05:15:32		Options saved to ruby.conf
+2021-07-18 05:15:32		Options saved to python.conf
+2021-07-18 05:15:32		Options saved to autosort.conf
+2021-07-18 05:15:32		Options saved to tcl.conf
+2021-07-18 05:15:32		Options saved to guile.conf
+2021-07-18 05:15:32		Options saved to perl.conf
+2021-07-18 05:15:32		Options saved to lua.conf
+2021-07-18 05:15:32		Options saved to script.conf
+2021-07-18 05:15:32		Options saved to fset.conf
+2021-07-18 05:33:04		fifo: pipe closed
+2021-07-18 05:33:04		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-18 16:36:23		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-18 16:36:23		python scripts loaded: autosort
+2021-07-18 16:36:23		script: 366 scripts for WeeChat 3.2
+2021-07-18 16:36:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-18 19:28:41		fifo: pipe closed
+2021-07-18 19:28:41		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-18 20:21:08		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-18 20:21:08		python scripts loaded: autosort
+2021-07-18 20:21:08		script: 366 scripts for WeeChat 3.2
+2021-07-18 20:21:08		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-18 21:20:17		fifo: pipe closed
+2021-07-18 21:20:17		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-19 11:15:17		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-19 11:15:17		python scripts loaded: autosort
+2021-07-19 11:15:17		script: 366 scripts for WeeChat 3.2
+2021-07-19 11:15:17		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-19 14:51:05		fifo: pipe closed
+2021-07-19 14:51:05		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-19 18:40:01		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-19 18:40:01		python scripts loaded: autosort
+2021-07-19 18:40:01		script: 366 scripts for WeeChat 3.2
+2021-07-19 18:40:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-19 19:43:42		fifo: pipe closed
+2021-07-19 19:43:42		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-20 10:40:19		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-20 10:40:19		python scripts loaded: autosort
+2021-07-20 10:40:19		script: 366 scripts for WeeChat 3.2
+2021-07-20 10:40:19		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-20 10:40:36		fifo: pipe closed
+2021-07-20 10:40:36		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-20 10:40:40		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-20 10:40:40		python scripts loaded: autosort
+2021-07-20 10:40:40		script: 366 scripts for WeeChat 3.2
+2021-07-20 10:40:40		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-20 10:40:46		fifo: pipe closed
+2021-07-20 10:40:46		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-20 11:28:45		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-20 11:28:45		python scripts loaded: autosort
+2021-07-20 11:28:45		script: 366 scripts for WeeChat 3.2
+2021-07-20 11:28:45		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-20 11:28:55		fifo: pipe closed
+2021-07-20 11:28:55		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)
+2021-07-20 11:28:59		relay: listening on port 9001 (relay: ipv4.ipv6.ssl.weechat, IPv4+6, max 5 clients)
+2021-07-20 11:28:59		python scripts loaded: autosort
+2021-07-20 11:28:59		script: 366 scripts for WeeChat 3.2
+2021-07-20 11:28:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-07-20 11:38:34		fifo: pipe closed
+2021-07-20 11:38:34		relay: socket closed for ipv4.ipv6.ssl.weechat (port: 9001)

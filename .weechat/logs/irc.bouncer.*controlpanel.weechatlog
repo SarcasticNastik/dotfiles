@@ -1,0 +1,62 @@
+2021-07-16 23:16:55	*controlpanel	+--------------------------------------------------------+-----------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| Command                                                | Description                                               |
+2021-07-16 23:16:55	*controlpanel	+--------------------------------------------------------+-----------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| AddCTCP <username> <ctcp> [reply]                      | Configure a new CTCP reply                                |
+2021-07-16 23:16:55	*controlpanel	| AddChan <username> <network> <chan>                    | Adds a new channel                                        |
+2021-07-16 23:16:55	*controlpanel	| AddNetwork [username] <network>                        | Add a network for a user                                  |
+2021-07-16 23:16:55	*controlpanel	| AddServer <username> <network> <server>                | Adds a new IRC server for the given or current user       |
+2021-07-16 23:16:55	*controlpanel	| AddUser <username> <password>                          | Adds a new user                                           |
+2021-07-16 23:16:55	*controlpanel	| CloneUser <old username> <new username>                | Clones a user                                             |
+2021-07-16 23:16:55	*controlpanel	| DelCTCP <username> <ctcp>                              | Remove a CTCP reply                                       |
+2021-07-16 23:16:55	*controlpanel	| DelChan <username> <network> <chan>                    | Deletes a channel                                         |
+2021-07-16 23:16:55	*controlpanel	| DelNetwork [username] <network>                        | Delete a network for a user                               |
+2021-07-16 23:16:55	*controlpanel	| DelServer <username> <network> <server>                | Deletes an IRC server from the given or current user      |
+2021-07-16 23:16:55	*controlpanel	| DelUser <username>                                     | Deletes a user                                            |
+2021-07-16 23:16:55	*controlpanel	| Disconnect <username> <network>                        | Disconnects the user from their IRC server                |
+2021-07-16 23:16:55	*controlpanel	| Get <variable> [username]                              | Prints the variable's value for the given or current user |
+2021-07-16 23:16:55	*controlpanel	| GetChan <variable> [username] <network> <chan>         | Prints the variable's value for the given channel         |
+2021-07-16 23:16:55	*controlpanel	| GetNetwork <variable> [username] [network]             | Prints the variable's value for the given network         |
+2021-07-16 23:16:55	*controlpanel	| Help [command] [variable]                              | Prints help for matching commands and variables           |
+2021-07-16 23:16:55	*controlpanel	| ListCTCPs <username>                                   | List the configured CTCP replies                          |
+2021-07-16 23:16:55	*controlpanel	| ListMods <username>                                    | Get the list of modules for a user                        |
+2021-07-16 23:16:55	*controlpanel	| ListNetMods <username> <network>                       | Get the list of modules for a network                     |
+2021-07-16 23:16:55	*controlpanel	| ListNetworks [username]                                | List all networks for a user                              |
+2021-07-16 23:16:55	*controlpanel	| ListUsers                                              | Lists users                                               |
+2021-07-16 23:16:55	*controlpanel	| LoadModule <username> <modulename> [args]              | Loads a Module for a user                                 |
+2021-07-16 23:16:55	*controlpanel	| LoadNetModule <username> <network> <modulename> [args] | Loads a Module for a network                              |
+2021-07-16 23:16:55	*controlpanel	| Reconnect <username> <network>                         | Cycles the user's IRC server connection                   |
+2021-07-16 23:16:55	*controlpanel	| Set <variable> <username> <value>                      | Sets the variable's value for the given user              |
+2021-07-16 23:16:55	*controlpanel	| SetChan <variable> <username> <network> <chan> <value> | Sets the variable's value for the given channel           |
+2021-07-16 23:16:55	*controlpanel	| SetNetwork <variable> <username> <network> <value>     | Sets the variable's value for the given network           |
+2021-07-16 23:16:55	*controlpanel	| UnLoadModule <username> <modulename>                   | Removes a Module of a user                                |
+2021-07-16 23:16:55	*controlpanel	| UnLoadNetModule <username> <network> <modulename>      | Removes a Module of a network                             |
+2021-07-16 23:16:55	*controlpanel	+--------------------------------------------------------+-----------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	The following variables are available when using the Set/Get commands:
+2021-07-16 23:16:55	*controlpanel	+----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| Type                 | Variables                                                                                                                                                     |
+2021-07-16 23:16:55	*controlpanel	+----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| Boolean (true/false) | MultiClients, DenyLoadMod, DenySetBindHost, AutoClearChanBuffer, AutoClearQueryBuffer, Admin, AppendTimestamp, PrependTimestamp, AuthOnlyViaModule            |
+2021-07-16 23:16:55	*controlpanel	| Integer              | ChanBufferSize, QueryBufferSize, JoinTries, MaxJoins, MaxNetworks, MaxQueryBuffers                                                                            |
+2021-07-16 23:16:55	*controlpanel	| String               | Nick, Altnick, Ident, RealName, BindHost, DefaultChanModes, QuitMsg, Password, Timezone, TimestampFormat, DCCBindHost, StatusPrefix, Language, ClientEncoding |
+2021-07-16 23:16:55	*controlpanel	+----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	The following variables are available when using the SetNetwork/GetNetwork commands:
+2021-07-16 23:16:55	*controlpanel	+----------------------+-------------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| Type                 | Variables                                                   |
+2021-07-16 23:16:55	*controlpanel	+----------------------+-------------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| Boolean (true/false) | TrustAllCerts, TrustPKI                                     |
+2021-07-16 23:16:55	*controlpanel	| Integer              | FloodBurst, JoinDelay                                       |
+2021-07-16 23:16:55	*controlpanel	| Number               | FloodRate                                                   |
+2021-07-16 23:16:55	*controlpanel	| String               | Nick, Altnick, Ident, RealName, BindHost, Encoding, QuitMsg |
+2021-07-16 23:16:55	*controlpanel	+----------------------+-------------------------------------------------------------+
+2021-07-16 23:16:55	*controlpanel	The following variables are available when using the SetChan/GetChan commands:
+2021-07-16 23:16:55	*controlpanel	+----------------------+-----------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| Type                 | Variables                               |
+2021-07-16 23:16:55	*controlpanel	+----------------------+-----------------------------------------+
+2021-07-16 23:16:55	*controlpanel	| Boolean (true/false) | InConfig, AutoClearChanBuffer, Detached |
+2021-07-16 23:16:55	*controlpanel	| Integer              | BufferSize                              |
+2021-07-16 23:16:55	*controlpanel	| String               | DefModes, Key                           |
+2021-07-16 23:16:55	*controlpanel	+----------------------+-----------------------------------------+
+2021-07-16 23:16:55	*controlpanel	You can use $user as the user name and $network as the network name for modifying your own user and network.
+2021-07-16 23:20:34	therojjha	close
+2021-07-16 23:20:34	*controlpanel	Unknown command!
+2021-07-16 23:20:37	--	irc: disconnected from server

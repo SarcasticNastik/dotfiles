@@ -1,0 +1,570 @@
+2021-07-14 19:22:15	-->	amanr (~sarcastic@122.161.66.39) has joined ##programming
+2021-07-14 19:22:15	--	Topic for ##programming is "Programming/Computer Science Discussion & Community Chat | Be respectful and friendly. Full channel rules: https://libera-programming.github.io | Put pastes in a pastebin, e.g. https://bpaste.net https://ideone.com"
+2021-07-14 19:22:15	--	Topic set by InPhase (~InPhase@openscad/inphase) on Fri, 09 Jul 2021 18:27:37
+2021-07-14 19:22:15	--	Channel ##programming: 546 nicks (2 ops, 0 voices, 544 normals)
+2021-07-14 19:22:18	--	Channel created on Wed, 19 May 2021 17:42:33
+2021-07-14 19:23:20	<--	Pickchea (~private@user/pickchea) has quit (Ping timeout: 252 seconds)
+2021-07-14 19:24:40	-->	Guest88 (~Guest88@5.112.179.123) has joined ##programming
+2021-07-14 19:24:53	<--	otisolsen70 (~otisolsen@xd4ed80b5.cust.hiper.dk) has quit (Quit: Leaving)
+2021-07-14 19:28:08	<--	interop_madness (~interop_m@user/interop-madness/x-0950004) has quit (Quit: Leaving)
+2021-07-14 19:28:47	<--	audgirka (~audgirka@2402:e280:3e16:e48:d5ba:7034:2ac9:4275) has quit (Remote host closed the connection)
+2021-07-14 19:29:04	-->	tarsier (tarsier@user/paulo/x-9032687) has joined ##programming
+2021-07-14 19:29:08	-->	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has joined ##programming
+2021-07-14 19:30:29	<--	jazzy (~jaziz@2600:380:8451:9914:745f:c6b0:8b18:af60) has quit (Ping timeout: 255 seconds)
+2021-07-14 19:30:54	<--	Dwoffi (~doffi@91.132.197.188) has quit (Ping timeout: 272 seconds)
+2021-07-14 19:31:50	tarsier	o/
+2021-07-14 19:37:37	-->	Blackpajamas (~Blackpaja@167.167.46.2) has joined ##programming
+2021-07-14 19:38:11	-->	t3nj1n (~t3nj1n@pool-96-246-146-100.nycmny.fios.verizon.net) has joined ##programming
+2021-07-14 19:38:29	-->	xerxes (~xerxes@117.222.70.17) has joined ##programming
+2021-07-14 19:40:45	<--	goldmund (~goldmund@45.131.194.54) has quit (Remote host closed the connection)
+2021-07-14 19:41:07	-->	wadammar (~wadammar@pool-100-12-209-172.nycmny.fios.verizon.net) has joined ##programming
+2021-07-14 19:42:17	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 19:43:07	<--	xerxes (~xerxes@117.222.70.17) has quit (Quit: leaving)
+2021-07-14 19:43:33	-->	xerxes (~xerxes@117.222.70.17) has joined ##programming
+2021-07-14 19:43:57	<--	khanred (~khanred@user/khanred) has quit (Quit: Leaving)
+2021-07-14 19:44:25	<--	Blackpajamas (~Blackpaja@167.167.46.2) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-07-14 19:45:04	<--	biberu (~biberu@user/biberu) has quit (Read error: Connection reset by peer)
+2021-07-14 19:47:18	-->	Pickchea (~private@user/pickchea) has joined ##programming
+2021-07-14 19:47:56	-->	Doffi (~doffi@91.132.197.188) has joined ##programming
+2021-07-14 19:48:00	-->	Inari (~Pinkishu@p508ef1cf.dip0.t-ipconnect.de) has joined ##programming
+2021-07-14 19:48:33	-->	ahungry (~user@99-40-9-245.lightspeed.livnmi.sbcglobal.net) has joined ##programming
+2021-07-14 19:49:01	-->	Blackpajamas (~Blackpaja@167.167.46.2) has joined ##programming
+2021-07-14 19:49:57	<--	Blackpajamas (~Blackpaja@167.167.46.2) has quit (Client Quit)
+2021-07-14 19:52:07	-->	biberu (~biberu@user/biberu) has joined ##programming
+2021-07-14 19:53:22	-->	Blackpajamas (~Blackpaja@167.167.46.2) has joined ##programming
+2021-07-14 19:55:01	<--	wadammar (~wadammar@pool-100-12-209-172.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2021-07-14 19:55:29	-->	Hanii (~textual@2a00:23c5:c587:6d00:5ca4:fa04:b487:ba6e) has joined ##programming
+2021-07-14 19:56:09	-->	dan01 (~dan01@2a02:2f09:3416:2500:1896:2662:f197:8ca1) has joined ##programming
+2021-07-14 19:56:40	<--	xerxes (~xerxes@117.222.70.17) has quit (Quit: leaving)
+2021-07-14 19:57:03	-->	wadammar (~wadammar@pool-100-12-209-172.nycmny.fios.verizon.net) has joined ##programming
+2021-07-14 19:57:16	-->	white_wabbit (~white_wab@efaa-4747-76ea-9085-2880-8c5d-07d0-2001.dyn.estpak.ee) has joined ##programming
+2021-07-14 19:57:45	-->	xerxes (~xerxes@117.222.70.17) has joined ##programming
+2021-07-14 19:58:04	<--	xerxes (~xerxes@117.222.70.17) has quit (Client Quit)
+2021-07-14 19:58:53	-->	xerxes (~xerxes@117.222.70.17) has joined ##programming
+2021-07-14 19:59:53	<--	wadammar (~wadammar@pool-100-12-209-172.nycmny.fios.verizon.net) has quit (Client Quit)
+2021-07-14 20:00:11	<--	Pickchea (~private@user/pickchea) has quit (Ping timeout: 255 seconds)
+2021-07-14 20:00:54	<--	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has quit (Quit: Leaving)
+2021-07-14 20:00:56	<--	freakazoid333 (~freakazoi@72.168.176.214) has quit (Read error: Connection reset by peer)
+2021-07-14 20:01:13	<--	elnavigator (~elnavigat@105.196.63.39) has quit (Ping timeout: 268 seconds)
+2021-07-14 20:01:27	-->	freakazoid333 (~freakazoi@72.168.176.214) has joined ##programming
+2021-07-14 20:01:48	<--	Doffi (~doffi@91.132.197.188) has quit (Ping timeout: 255 seconds)
+2021-07-14 20:02:19	-->	Inline (~Inline@2a02:908:1252:7a80:c035:deeb:51be:5431) has joined ##programming
+2021-07-14 20:03:42	<--	xerxes (~xerxes@117.222.70.17) has quit (Quit: leaving)
+2021-07-14 20:04:40	-->	xerxes (~xerxes@117.222.70.17) has joined ##programming
+2021-07-14 20:06:53	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##programming
+2021-07-14 20:06:56	--	__jmcantrell__ is now known as jmcantrell
+2021-07-14 20:07:08	-->	walton (~walton@2a02:a03f:6afc:f400:525e:10d4:8484:a9a9) has joined ##programming
+2021-07-14 20:07:12	<--	zeedo_ (~zeedo@cpc157903-grth13-2-0-cust152.16-4.cable.virginm.net) has quit (Ping timeout: 255 seconds)
+2021-07-14 20:08:07	-->	zeedo (~zeedo@cpc157903-grth13-2-0-cust152.16-4.cable.virginm.net) has joined ##programming
+2021-07-14 20:08:27	-->	Doffi (~doffi@91.132.197.188) has joined ##programming
+2021-07-14 20:10:35	<--	walton (~walton@2a02:a03f:6afc:f400:525e:10d4:8484:a9a9) has quit (Remote host closed the connection)
+2021-07-14 20:10:48	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Ping timeout: 255 seconds)
+2021-07-14 20:11:17	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##programming
+2021-07-14 20:12:39	-->	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has joined ##programming
+2021-07-14 20:13:01	<--	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-07-14 20:13:55	-->	amahl (~amahl@dsl-jklbng12-54fbca-64.dhcp.inet.fi) has joined ##programming
+2021-07-14 20:14:51	-->	snake (~snake@user/snake) has joined ##programming
+2021-07-14 20:15:58	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 20:17:39	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Read error: Connection reset by peer)
+2021-07-14 20:18:12	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 20:19:42	<--	snake (~snake@user/snake) has quit (Remote host closed the connection)
+2021-07-14 20:19:49	-->	tsujp (~tsujp@sourcehut/user/tsujp) has joined ##programming
+2021-07-14 20:20:00	-->	snake (~snake@user/snake) has joined ##programming
+2021-07-14 20:23:10	<--	rifl (~user@user/rifl) has quit (Remote host closed the connection)
+2021-07-14 20:23:11	<--	Blackpajamas (~Blackpaja@167.167.46.2) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-07-14 20:24:44	-->	elnavigator (~elnavigat@105.196.63.39) has joined ##programming
+2021-07-14 20:25:25	-->	Blackpajamas (~Blackpaja@167.167.46.2) has joined ##programming
+2021-07-14 20:26:15	-->	koolazer (~koo@user/koolazer) has joined ##programming
+2021-07-14 20:30:01	<--	moose (~moose@user/moose) has quit (Read error: Connection reset by peer)
+2021-07-14 20:30:20	pyzozord	NICE! Another medium level leetcode problem solved in 5 min
+2021-07-14 20:30:23	pyzozord	https://leetcode.com/problems/custom-sort-string/submissions/
+2021-07-14 20:30:29	pyzozord	I'm pretty lucky lately
+2021-07-14 20:31:48	pyzozord	honestly this one should have been in easy category imo
+2021-07-14 20:33:31	<--	Blackpajamas (~Blackpaja@167.167.46.2) has quit (Read error: Connection reset by peer)
+2021-07-14 20:34:00	-->	Blackpajamas (~Blackpaja@167.167.46.2) has joined ##programming
+2021-07-14 20:34:28	sandman13	"I know what you are thinking. 'Did he solve 6 shots or only 5?' Well, to tell you the truth, in all this excitement, I've kinda lost track myself. But being as this is a .com.leetcode, the most advanced challenge in the world, and would blow your head clean off, you've got to ask yourself one question: 'Do I feel lucky?'. Well, do ya, punk?"
+2021-07-14 20:34:35	sandman13	damn
+2021-07-14 20:34:46	sandman13	my chance to glory failed
+2021-07-14 20:34:52	sandman13	s/shots/challenges
+2021-07-14 20:36:02	pyzozord	what movie is that from?
+2021-07-14 20:36:29	GeDaMo	Dirty Harry?
+2021-07-14 20:36:31	sandman13	Dirty Harry
+2021-07-14 20:36:48	pyzozord	oh never watched it, but I think I was familiar with that last bit
+2021-07-14 20:36:52	pyzozord	of the quote
+2021-07-14 20:36:56	sandman13	pyzozord: https://www.youtube.com/watch?v=8Xjr2hnOHiM
+2021-07-14 20:37:24	<--	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has quit (Ping timeout: 252 seconds)
+2021-07-14 20:37:31	pyzozord	i gotta watch this movie
+2021-07-14 20:37:42	tarsier	hi
+2021-07-14 20:38:03	GeDaMo	Hi tarsier :)
+2021-07-14 20:38:17	tarsier	if the employer schedules the 2nd tech interview and the final interview, that's a good sign, right?
+2021-07-14 20:38:28	tarsier	1 day apart
+2021-07-14 20:38:30	GeDaMo	The actor Harry's pointing his gun at appears as different characters in other Dirty Harry movies
+2021-07-14 20:38:39	-->	visualshock (~visualsho@38.51-175-121.customer.lyse.net) has joined ##programming
+2021-07-14 20:39:39	sandman13	GeDaMo: IIRC nobody asks that "I got to know" part other than the character in the clip I linked
+2021-07-14 20:40:08	GeDaMo	Yeah
+2021-07-14 20:40:41	pyzozord	sandman13: hahah i did not see this, I love the ending
+2021-07-14 20:40:50	tarsier	does that mean they have confidence I'll pass the 2nd tech interview?
+2021-07-14 20:41:03	sandman13	tarsier: It's a process
+2021-07-14 20:41:15	tarsier	sandman13: what do you mean
+2021-07-14 20:41:17	sandman13	tarsier: But this might also imply that you are already selected
+2021-07-14 20:41:26	sandman13	Congrats
+2021-07-14 20:41:38	GeDaMo	https://en.wikipedia.org/wiki/Albert_Popwell
+2021-07-14 20:41:43	tarsier	sandman13: that's good to hear
+2021-07-14 20:42:40	sandman13	If you don't fuck up there, you will be hired tarsier
+2021-07-14 20:43:18	pyzozord	sandman13: actually I love the whole clip, like the cinematography is cool, the moment there is a camera looks at the gun and it zooms out to Eastwood's face. That shot was remarkable too
+2021-07-14 20:43:35	<--	white_wabbit (~white_wab@efaa-4747-76ea-9085-2880-8c5d-07d0-2001.dyn.estpak.ee) has quit (Quit: Client closed)
+2021-07-14 20:43:48	pyzozord	tarsier: yeah that's good sign
+2021-07-14 20:44:23	pyzozord	tarsier: although don't get too excited there might just internal scheduling rasons, your interviewr goes on vaction later or whatever else
+2021-07-14 20:44:37	<--	varaindemian (~varaindem@86.124.78.162) has quit (Quit: Client closed)
+2021-07-14 20:44:46	sandman13	pyzozord: hahaha
+2021-07-14 20:45:04	sandman13	Have you seen The Good, The Bad and The Ugly?
+2021-07-14 20:45:07	<--	inky (~inky@141.136.76.30) has quit (Ping timeout: 245 seconds)
+2021-07-14 20:45:21	GeDaMo	That's also excellent
+2021-07-14 20:45:24	pyzozord	tarsier: but I agree with what sandman13 says, likely if you don't screw up chances are they will hire you unless there are stronger candidates
+2021-07-14 20:45:41	pyzozord	oh yeah The Good The bad and The Ugly is amazing. I wached it so many times
+2021-07-14 20:45:50	-->	inky (~inky@5.77.146.15) has joined ##programming
+2021-07-14 20:45:58	GeDaMo	It gets a nod in the most recent John Wick film
+2021-07-14 20:46:03	tarsier	pyzozord: okay
+2021-07-14 20:46:04	tarsier	noted
+2021-07-14 20:46:11	pyzozord	And it's been a budget B-class movie. I don't know what is it about that kind of movies but I feel like that's the best cinema
+2021-07-14 20:46:21	GeDaMo	They do a version of the bit where Tuco walks out of the desert and goes to the gun shop
+2021-07-14 20:47:09	-->	BrianG61UK (~BrianG61U@2a02:8010:66b7:dddd:cd03:ace1:a8da:7078) has joined ##programming
+2021-07-14 20:48:07	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##programming
+2021-07-14 20:48:19	sandman13	John Wick is wicked
+2021-07-14 20:48:22	<--	Blackpajamas (~Blackpaja@167.167.46.2) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-07-14 20:48:25	sandman13	wickedly good
+2021-07-14 20:48:49	GeDaMo	The first one was OK, not so keen on the sequels
+2021-07-14 20:49:30	GeDaMo	There were bits of the last one which felt like a corporate instructional video: "Here, Mr Wick demonstrates an effective means of killing a lot of people"
+2021-07-14 20:49:42	sandman13	Best movie I have watched is The Shawshank Redemption
+2021-07-14 20:50:12	sandman13	GeDaMo: yeah. It becomes monotonous quickly.
+2021-07-14 20:50:13	<--	chomwitt (~Pitsikoko@2a02:587:dc04:e00:12c3:7bff:fe6d:d374) has quit (Ping timeout: 268 seconds)
+2021-07-14 20:51:23	<--	jmcantrell (~weechat@user/jmcantrell) has quit (Ping timeout: 258 seconds)
+2021-07-14 20:51:24	pyzozord	I think one of my fav movies are actualy Alien, all three :P But first by far. It's not like critically aclaimd. And I'm not into horrors tbh I hate them.
+2021-07-14 20:52:45	pyzozord	Just B class / older / budget movies with good acting and good cinematography and good practical effects
+2021-07-14 20:52:57	pyzozord	could watch them all day
+2021-07-14 20:52:58	pulse	my favorite movie is fear&loathing in las vegas, or pulp fiction
+2021-07-14 20:53:04	pulse	the original starwars trilogy is superb as well
+2021-07-14 20:53:22	pulse	as for tv shows my favorite starts and ends with seinfeld :p
+2021-07-14 20:53:37	pyzozord	yeah pretty much everything by Tarantino
+2021-07-14 20:54:01	sandman13	Never bothered with Star Wars or Star Trek
+2021-07-14 20:54:02	xerxes	pulse: i like Seinfeld too.
+2021-07-14 20:54:06	GeDaMo	"B class / older / budget movies with good acting and good cinematography and good practical effects" Tremors! :P
+2021-07-14 20:54:15	pulse	the original star wars is like, masterclass in storytelling
+2021-07-14 20:54:26	pulse	so is seinfeld for that matter, particularly in later seasons
+2021-07-14 20:54:35	<--	danielrparks (~quassel@2600:1700:3f7b:20f:e253:72e3:c676:e737) has quit (Quit: No Ping reply in 180 seconds.)
+2021-07-14 20:54:36	xerxes	pulse: i've never watched one sitcom that comes even close to Seinfeld by an order of magnitude.
+2021-07-14 20:54:47	sandman13	"saga"-esque movie that I like is Lord of The Rings Triology
+2021-07-14 20:54:49	pulse	xerxes, same. i mean, some get close. allo' allo is the one i'd point out
+2021-07-14 20:55:10	pulse	i liked it crowd a lot too, but it's a bit too quirky to really be in the top spot
+2021-07-14 20:55:16	pulse	and only fools and horses
+2021-07-14 20:55:35	pulse	but seinfeld is top notch. just perfect cast chemistry, and bloody brilliant writing
+2021-07-14 20:55:40	pulse	not to mention the hilarity
+2021-07-14 20:55:50	-->	danielrparks (~quassel@2600:1700:3f7b:20f:bbb7:f67f:ddca:749b) has joined ##programming
+2021-07-14 20:55:56	xerxes	pulse: i don't think i would like it. most British comedies tend to be too highbrow for me to be funny. i hate Monty Python. i don't know what's the deal with it.
+2021-07-14 20:56:07	pulse	allo allo is brilliant
+2021-07-14 20:56:18	pulse	it's just impossibly good
+2021-07-14 20:56:27	pulse	still, i like seinfeld more. but i think allo allo is a 2nd
+2021-07-14 20:56:38	pulse	monty python is mostly an acquired taste tbh
+2021-07-14 20:56:45	pyzozord	GeDaMo: yeah looks like something up my lane :D I'm that big on horror and gore movies tbh, but if a movie is good then it's good
+2021-07-14 20:56:45	pulse	it's british humor turned to 11
+2021-07-14 20:57:08	GeDaMo	Apparently there are a whole lot of sequels to Tremors but I've never seen them
+2021-07-14 20:57:10	xerxes	pulse: once i had to sit through a Monty Python movie. that was not a good experience. i didn't find anything funny. clever, yeah. but not funny.
+2021-07-14 20:57:14	GeDaMo	The original is excellent though
+2021-07-14 20:57:19	pulse	i'm pretty sure allo' allo would offend modern audiences though
+2021-07-14 20:57:23	pulse	it's not very politically correct
+2021-07-14 20:57:30	pulse	in fact it makes fun of almost every single politically correct thing in existence
+2021-07-14 20:57:41	pulse	but it does so in a humorous way
+2021-07-14 20:57:54	xerxes	pulse: Seinfeld had exceptionally brilliant actors in George and Kramer.
+2021-07-14 20:58:08	pulse	xerxes, all 4 were great, and not only that, all supporting cast was great too
+2021-07-14 20:58:16	pulse	the guy who played mr. peterman cracks me up
+2021-07-14 20:58:21	pulse	or jackie chiles
+2021-07-14 20:58:29	pulse	and newman. god, newman
+2021-07-14 20:58:30	xerxes	pulse: Jerry was not a very good actor.
+2021-07-14 20:58:36	pulse	xerxes, that only makes it funnier imo
+2021-07-14 20:58:40	pulse	he played himself
+2021-07-14 20:58:42	xerxes	pulse: Newman's character was the best.
+2021-07-14 20:58:48	pulse	yeah newman was fantastic
+2021-07-14 20:59:11	pulse	i mean the chemistry in seinfeld is just above and beyond what you usually find in any show
+2021-07-14 20:59:25	xerxes	pulse: unlike other sitcoms, there are very few jokes which are forced in Seinfeld.
+2021-07-14 20:59:39	pulse	it all just fits together. everyone's neurotic, it's a perfect caricature of modern society
+2021-07-14 20:59:42	xerxes	pulse: everything fits.
+2021-07-14 20:59:42	-->	bdeshi (~bdeshi@bdeshi.space) has joined ##programming
+2021-07-14 20:59:52	pulse	george's dad always cracked me up too
+2021-07-14 21:00:01	pulse	RIP btw, such a good actor
+2021-07-14 21:00:10	pulse	jerry stiller
+2021-07-14 21:00:25	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Read error: Connection reset by peer)
+2021-07-14 21:00:32	<--	mnd999_ (~mark@2001:8b0:da3:76a2:b30d:a07c:7290:5ed6) has quit (Ping timeout: 245 seconds)
+2021-07-14 21:00:34	xerxes	pulse: i still like the "it's like finding Plutonium, by accident." LOL
+2021-07-14 21:00:40	pulse	:p
+2021-07-14 21:00:41	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 21:00:55	pulse	don't test me. i think i can quote every single line from seinfeld ever made
+2021-07-14 21:00:58	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Read error: Connection reset by peer)
+2021-07-14 21:01:12	<--	gitesh (uid423739@id-423739.charlton.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-14 21:01:14	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 21:02:02	pulse	"so you're moving in out of spite?" "that's right, nobody tells Frank Costanza what NOT to do!"
+2021-07-14 21:02:07	xerxes	pulse: "this table's mine."
+2021-07-14 21:02:12	pulse	heh
+2021-07-14 21:02:59	xerxes	pulse: Seinfeld had no qualms about depicting negative Jewish stereotypes. i don't know about Jerry Seinfeld personally, but they made fun of the anti-Semitic stereotype back then.
+2021-07-14 21:04:01	xerxes	pulse: plus his stingy dad.
+2021-07-14 21:04:03	pulse	jerry cracks me up because of his reactions, when everyone's overreacting he's like, "ok" lol
+2021-07-14 21:04:25	<--	koolazer (~koo@user/koolazer) has quit (Ping timeout: 258 seconds)
+2021-07-14 21:05:00	xerxes	pulse: writing is good enough but if it wasn't for Kramer's and George's delivery, they won't even be 10% as funny.
+2021-07-14 21:05:18	pulse	they're all equally important imo
+2021-07-14 21:05:26	<--	mobidrop (~mobidrop@217-62-121-57.cable.dynamic.v4.ziggo.nl) has quit (Remote host closed the connection)
+2021-07-14 21:05:29	pulse	and the writing in some eps is pure masterclass
+2021-07-14 21:05:33	<--	scaleww (~scaleww@77-41-20-31.ftth.glasoperator.nl) has quit (Quit: Leaving)
+2021-07-14 21:05:48	pulse	the way completely unrelated storylines come together to deliver some kind of hilarious effect, i haven't seen that in many shows
+2021-07-14 21:05:58	pulse	yet in seinfeld almost every single episode is like that
+2021-07-14 21:06:28	xerxes	pulse: yeah.
+2021-07-14 21:06:49	xerxes	pulse: they can afford to do that because of the nature of the show.
+2021-07-14 21:07:00	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Quit: Segmentation dump (core fault))
+2021-07-14 21:07:04	pulse	it takes a touch of genius to write like that
+2021-07-14 21:07:21	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 21:07:39	-->	Blackpajamas (~Blackpaja@167.167.46.2) has joined ##programming
+2021-07-14 21:07:42	xerxes	pulse: "i've suck 'em down like coca-cola."
+2021-07-14 21:07:45	-->	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has joined ##programming
+2021-07-14 21:07:47	pulse	heheh
+2021-07-14 21:08:17	pulse	"you stay in the car, i might need you" "why do you need me in the car for?" "i may need you to get me a soda"
+2021-07-14 21:08:44	xerxes	pulse: "big broker houses killed my father."
+2021-07-14 21:08:59	xerxes	pulse: the car one is one of the jokes i don't like.
+2021-07-14 21:09:00	-->	compscipunk (~compscipu@2600:1700:cca0:4d1f:f0fd:58b7:d21:6675) has joined ##programming
+2021-07-14 21:09:10	xerxes	pulse: it feels like a one liner. too lazy to me.
+2021-07-14 21:09:35	<--	mmlj4 (~mmlj4@ip68-230-228-233.no.no.cox.net) has quit (Read error: Connection reset by peer)
+2021-07-14 21:09:47	xerxes	pulse: Jerry has some lines like that.
+2021-07-14 21:09:49	pulse	how about "whyd you put the bananas in there"
+2021-07-14 21:10:02	pulse	"GEORGE LIKE THE BANANAS" "SO LET HIM HAVE BANANAS ON THE SIDE"
+2021-07-14 21:10:05	<--	pandakekok9 (~job@user/job) has quit (Remote host closed the connection)
+2021-07-14 21:10:05	xerxes	pulse: which is this from?
+2021-07-14 21:10:11	pulse	the hand model episode
+2021-07-14 21:10:31	pulse	https://www.youtube.com/watch?v=In97zxijrLk
+2021-07-14 21:10:40	pulse	these two crack me up
+2021-07-14 21:10:50	xerxes	pulse: it's good enough. but not as good as, "bear in mind, i'm in a smaller office."
+2021-07-14 21:11:01	pulse	lol
+2021-07-14 21:11:04	xerxes	pulse: the whole pensky episode is funny.
+2021-07-14 21:11:06	pulse	the pensky file
+2021-07-14 21:11:10	xerxes	pulse: you're not pensky material.
+2021-07-14 21:11:13	pulse	yeah that one's just hilarious
+2021-07-14 21:11:46	pulse	this conversation's making me realize how much of seinfeld's dialogue i have internalized
+2021-07-14 21:11:52	pulse	somewhat depressing
+2021-07-14 21:12:58	<--	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has quit (Ping timeout: 252 seconds)
+2021-07-14 21:13:20	-->	Thedarkb-Desktop (~beno@2001:bb6:b404:188f:e876:712:129d:36b6) has joined ##programming
+2021-07-14 21:13:21	xerxes	pulse: i've never ever seen physical comedy being done so good as Kramer does it.
+2021-07-14 21:13:35	pulse	well. ace ventura maybe
+2021-07-14 21:13:43	pyzozord	pulse: I should see some of that seinfeld stuff too
+2021-07-14 21:13:47	pulse	kramer is definitely a favorite
+2021-07-14 21:13:50	xerxes	pulse: Nothing's ever worked out for me with tuna on toast. I want the complete opposite of on toast. Chicken salad, on rye, untoasted... and a cup of tea.
+2021-07-14 21:14:01	pulse	pyzozord, bear in mind it doesn't really get ultra-hilarious until about season 4
+2021-07-14 21:14:14	pulse	actually seinfeld is one of those rare shows that gets better and better
+2021-07-14 21:14:14	xerxes	pulse: i just realised the hu-ha he does in the end is part of my behaviour now.
+2021-07-14 21:14:18	xerxes	pyzozord: i disagree.
+2021-07-14 21:14:25	xerxes	pyzozord: it's best from Season 1.
+2021-07-14 21:14:32	pulse	yeah no you should watch it from start
+2021-07-14 21:14:35	xerxes	pyzozord: not a lot happens though.
+2021-07-14 21:14:42	xerxes	pyzozord: so you might feel bored.
+2021-07-14 21:14:48	pulse	just know that it really opens at about season 4
+2021-07-14 21:15:00	pulse	at season 7 it's basically a cartoon
+2021-07-14 21:15:03	pulse	it's beyond hilarious
+2021-07-14 21:15:05	xerxes	pulse: The Stock Tip is one of the best episode.
+2021-07-14 21:15:13	pulse	eh :p
+2021-07-14 21:15:16	pulse	not my favorite
+2021-07-14 21:15:28	xerxes	pulse: The Sniffing Accountant too.
+2021-07-14 21:15:30	pulse	the parking garage is my favorite early ep
+2021-07-14 21:15:40	xerxes	pulse: The Parking Garage is mine too.
+2021-07-14 21:15:51	xerxes	pulse: the quirk about the feminists, that won't stand today.
+2021-07-14 21:15:52	pulse	apparently the last scene wasn't acted
+2021-07-14 21:15:57	pulse	where kramer hits himself
+2021-07-14 21:15:57	xerxes	pulse: quip*
+2021-07-14 21:16:09	pulse	the actors were just so tired that it happens organically. and the car not starting up wasn't scripted either
+2021-07-14 21:16:14	xerxes	pulse: the show would be downvoted into oblivion.
+2021-07-14 21:16:16	pulse	some trivia
+2021-07-14 21:16:28	pulse	yeah audiences are touchy nowadays
+2021-07-14 21:16:30	xerxes	pulse: when does Kramer hit himdelf?
+2021-07-14 21:16:35	xerxes	himself*
+2021-07-14 21:16:39	pulse	very last scene in parking garage ep
+2021-07-14 21:16:46	xerxes	pulse: Oh! I'm sorry.
+2021-07-14 21:16:46	pulse	where he's shoving the air conditioner into the car
+2021-07-14 21:16:54	pulse	apparently he really bled from it
+2021-07-14 21:17:04	xerxes	pulse: i was thinking of the one where they park into the handicap spot.
+2021-07-14 21:17:08	xerxes	pulse: which one is that/
+2021-07-14 21:17:22	xerxes	pulse: The Parking Garage is also very good.
+2021-07-14 21:17:36	<--	Guest88 (~Guest88@5.112.179.123) has quit (Quit: Client closed)
+2021-07-14 21:17:38	pulse	one of my favorite is the conversion episode
+2021-07-14 21:17:46	xerxes	pulse: Latvian orthodox.
+2021-07-14 21:17:47	pulse	idk why the premise is so ludicrous
+2021-07-14 21:17:49	pulse	yeah :p
+2021-07-14 21:17:50	xerxes	pulse: yeah
+2021-07-14 21:18:01	pulse	kavorka
+2021-07-14 21:18:28	xerxes	pulse: Kramer is playing with a slinky. that's how you build a flirting lol.
+2021-07-14 21:18:32	pulse	and showerhead
+2021-07-14 21:18:35	-->	Guest88 (~Guest88@5.112.179.123) has joined ##programming
+2021-07-14 21:18:36	xerxes	pulse: LOL
+2021-07-14 21:18:41	<--	elnavigator (~elnavigat@105.196.63.39) has quit (Quit: "Squawk 7600")
+2021-07-14 21:18:42	xerxes	pulse: like silkwood.
+2021-07-14 21:18:45	pulse	any episode with peterman is just an insta 10/10 really
+2021-07-14 21:18:47	-->	AbleBacon (~AbleBacon@user/AbleBacon) has joined ##programming
+2021-07-14 21:18:51	xerxes	pulse: we'll pay anything you want.
+2021-07-14 21:18:55	pulse	:p
+2021-07-14 21:19:07	xerxes	pulse: Peterman was very good.
+2021-07-14 21:19:13	pulse	or the russian hat episode
+2021-07-14 21:19:26	xerxes	pulse: yeah. cos-tanza.
+2021-07-14 21:19:55	pulse	anyway i think we're turning this chan into #seinfeld
+2021-07-14 21:19:59	<--	dislabled (~dislabled@115.229.164.82.customer.cdi.no) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-07-14 21:20:01	 *	pulse recedes into the fog
+2021-07-14 21:20:02	xerxes	pulse: haha
+2021-07-14 21:20:06	xerxes	pulse: yeah
+2021-07-14 21:20:22	 *	xerxes thinks about watching seinfeld again after a long time lol
+2021-07-14 21:20:35	<--	dan01 (~dan01@2a02:2f09:3416:2500:1896:2662:f197:8ca1) has quit (Read error: Connection reset by peer)
+2021-07-14 21:20:46	xerxes	pulse: some people commented when it came out that it was *deconstructionist*.
+2021-07-14 21:20:53	xerxes	pulse: and asked Derrida about it lol.
+2021-07-14 21:20:59	-->	dan01 (~dan01@2a02:2f09:3416:2500:1896:2662:f197:8ca1) has joined ##programming
+2021-07-14 21:21:07	xerxes	pulse: he said one should read books instead of watching TV.
+2021-07-14 21:21:11	xerxes	pulse: LOL
+2021-07-14 21:21:15	-->	yaboiburner_ (~yaboiburn@c-69-180-160-103.hsd1.mn.comcast.net) has joined ##programming
+2021-07-14 21:22:00	pulse	books are nice tbh
+2021-07-14 21:22:11	xerxes	pulse: not Derrida's, i suppose. but he's not wrong.
+2021-07-14 21:22:23	pulse	any medium where your imagination fills in the blanks is good
+2021-07-14 21:22:40	-->	extor (~xtor@192.99.217.240) has joined ##programming
+2021-07-14 21:22:58	xerxes	pulse: Paul Graham once wrote that sitcoms were like Java, things made by smarter people who don't consume it.
+2021-07-14 21:23:10	<--	Blackpajamas (~Blackpaja@167.167.46.2) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-07-14 21:23:24	pulse	i think comedy is higher order than drama
+2021-07-14 21:23:37	pulse	most people disagree though, that's probably why i get funny looks when i claim seinfeld is one of the best written shows
+2021-07-14 21:23:44	pulse	they say "oh but what about... uh, breaking bad?"
+2021-07-14 21:23:52	pulse	yes, breaking bad is well written. but it aint no seinfeld!
+2021-07-14 21:23:59	pulse	maybe it's just me
+2021-07-14 21:24:08	xerxes	pulse: i never got any pleasure out of watching dramatic TV.
+2021-07-14 21:24:31	xerxes	pulse: i don't watch them. don't get the whole binge watching series obsession.
+2021-07-14 21:24:49	pulse	some shows are ok
+2021-07-14 21:24:50	xerxes	pulse: be it Breaking Bad or Game of Thrones.
+2021-07-14 21:24:59	pulse	eh, i have very mixed opinons on GoT
+2021-07-14 21:25:04	pulse	BB is good i suppose
+2021-07-14 21:25:08	pulse	better call saul is nice too
+2021-07-14 21:25:23	pulse	mr robot i finished binge-watching the other day, and i didn't like it. too edgy / 10
+2021-07-14 21:25:33	xerxes	pulse: i haven't really watched much TV, though.
+2021-07-14 21:25:39	<--	t3nj1n (~t3nj1n@pool-96-246-146-100.nycmny.fios.verizon.net) has quit (Quit: WeeChat 2.8)
+2021-07-14 21:25:47	bihtori	but what if you write java to make $, £ or €, isn't that a smart thing to do 🤔
+2021-07-14 21:25:48	-->	Blackpajamas (~Blackpaja@167.167.46.2) has joined ##programming
+2021-07-14 21:25:52	xerxes	pulse: i hate stuff like Mr. Robot. from what i understand, it's anti-establishment.
+2021-07-14 21:26:21	xerxes	bihtori: probably, if you're like is centered totally on money.
+2021-07-14 21:26:28	pulse	bihtori, nah. the smart thing to do is to write brilliant code that performs well, and treat money as a happy side-effect
+2021-07-14 21:26:42	pulse	if you focus on money, how can you focus on code
+2021-07-14 21:26:48	pulse	easy philosophy
+2021-07-14 21:27:02	xerxes	pulse: i hate stuff like that. they are kinda like surrogate activism.
+2021-07-14 21:27:15	pulse	and the funny thing is by focusing on code, you end up with more money than if you focused on money
+2021-07-14 21:27:35	pulse	xerxes, two shows that were recommended to me "because i'm a techie" were mr. robot and halt&catch fire, and i hated both
+2021-07-14 21:27:37	xerxes	pulse: oh, you hate the BigCorp but are too weak to lose the job and go solo. no problem. here, watch a show and feel like a rebel LOL
+2021-07-14 21:27:49	xerxes	pulse: give me a break LOL
+2021-07-14 21:28:03	pulse	i'd rather watch stargate sg-1
+2021-07-14 21:28:14	pulse	at least it teaches good values
+2021-07-14 21:28:33	pulse	and not some paranoid existential nihilism sprinkled with teenage angst
+2021-07-14 21:28:47	pulse	not that mr. robot is entirely bad, some scenes cracked me up
+2021-07-14 21:29:07	xerxes	pulse: if i would have to pretend to be an activist, i'd read some crackpot anarchist magazines and show up at a local protest. not binge watch some stupid TV and put pronouns in my Twitter bios.
+2021-07-14 21:29:11	pulse	and some hacking scenes were interesting, but seen on the whole, i didn't like it all that much
+2021-07-14 21:29:14	pulse	the ending was stupid too
+2021-07-14 21:29:25	pulse	xerxes, hey. to each their own
+2021-07-14 21:29:28	xerxes	pulse: all such shows are equally stupid.
+2021-07-14 21:29:54	bihtori	pulse: I see you have Platonic ideals for art, and that's fair
+2021-07-14 21:30:07	pulse	bihtori, yeah i think so
+2021-07-14 21:30:32	xerxes	pulse: like Game of Thrones. i've not watched much but does it have anything else other than high English accent and a frequent foreplay.
+2021-07-14 21:30:44	pulse	xerxes, yes, it fetishizes gore
+2021-07-14 21:30:53	pulse	so if you're into that, GoT is great :p
+2021-07-14 21:32:13	pyzozord	I watched only first season but it didn't seem like it did. It's not Army of Darkness. Althought there was something fun about Army of Darkness :P
+2021-07-14 21:32:18	xerxes	pulse: probably the books are better. i haven't read them anyway.
+2021-07-14 21:32:33	xerxes	pyzozord: what's Army of Darkness?
+2021-07-14 21:32:48	pyzozord	xerxes: https://www.youtube.com/watch?v=GULItNlBvJc
+2021-07-14 21:32:50	xerxes	pyzozord: i see.
+2021-07-14 21:33:05	-->	dakudos (~dakudos@2607:fb90:6c32:84e0:c917:7bb6:e5d0:86e4) has joined ##programming
+2021-07-14 21:33:42	xerxes	any show trying to be anti-establishment is just another flavour from the culture industry designed to pacify the spectators. it's a well-known phenomenon. Adorno, etc.
+2021-07-14 21:34:35	-->	xsperry (~as@user/xsperry) has joined ##programming
+2021-07-14 21:34:41	-->	elnavigator (~elnavigat@105.196.63.39) has joined ##programming
+2021-07-14 21:34:58	xerxes	i would rather watch reruns of shonen anime, thank you.
+2021-07-14 21:35:28	-->	mnd999_ (~mark@2001:8b0:da3:76a2:b30d:a07c:7290:5ed6) has joined ##programming
+2021-07-14 21:38:17	<--	dakudos (~dakudos@2607:fb90:6c32:84e0:c917:7bb6:e5d0:86e4) has quit (Ping timeout: 255 seconds)
+2021-07-14 21:38:54	<--	elnavigator (~elnavigat@105.196.63.39) has quit (Client Quit)
+2021-07-14 21:39:05	<--	xerxes (~xerxes@117.222.70.17) has quit (Quit: leaving)
+2021-07-14 21:39:19	-->	elnavigator (~elnavigat@105.196.63.39) has joined ##programming
+2021-07-14 21:40:22	-->	arcatech (~arcatech@user/arcatech) has joined ##programming
+2021-07-14 21:40:32	<--	mnd999_ (~mark@2001:8b0:da3:76a2:b30d:a07c:7290:5ed6) has quit (Ping timeout: 255 seconds)
+2021-07-14 21:40:49	-->	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has joined ##programming
+2021-07-14 21:41:17	<--	src (~src@user/src) has quit (Quit: leaving)
+2021-07-14 21:41:19	-->	hposca (~hposca@node-1w7jr9phoke2sektanidvb94u.ipv6.telus.net) has joined ##programming
+2021-07-14 21:42:30	<--	Shapeshifter (~Shapeshif@parakeet.ifi.uzh.ch) has quit (Remote host closed the connection)
+2021-07-14 21:42:47	<--	spacecraft (spacecraft@c-73-169-93-26.hsd1.co.comcast.net) has quit (Ping timeout: 265 seconds)
+2021-07-14 21:43:37	-->	dislabled (~dislabled@115.229.164.82.customer.cdi.no) has joined ##programming
+2021-07-14 21:43:45	<--	dislabled (~dislabled@115.229.164.82.customer.cdi.no) has quit (Client Quit)
+2021-07-14 21:45:24	-->	elf_fortrez (~elf_fortr@adsl-72-50-4-118.prtc.net) has joined ##programming
+2021-07-14 21:46:22	-->	Beyondo (inhahe@107-213-219-122.lightspeed.miamfl.sbcglobal.net) has joined ##programming
+2021-07-14 21:47:37	-->	dislabled (~dislabled@115.229.164.82.customer.cdi.no) has joined ##programming
+2021-07-14 21:47:52	<--	Booster2ooo (~Booster2o@user/booster2ooo) has quit (Read error: Connection reset by peer)
+2021-07-14 21:48:04	elf_fortrez	how do i get a github gradle app running in android?
+2021-07-14 21:48:25	-->	lockywolf (~lockywolf@117.136.81.150) has joined ##programming
+2021-07-14 21:48:31	<--	unixpro1970 (~unixpro19@c-73-181-185-205.hsd1.wa.comcast.net) has quit (Ping timeout: 268 seconds)
+2021-07-14 21:51:01	-->	lockywolf__ (~lockywolf@117.136.81.150) has joined ##programming
+2021-07-14 21:51:21	<--	lockywolf (~lockywolf@117.136.81.150) has quit (Read error: Connection reset by peer)
+2021-07-14 21:51:34	-->	dakudos (~dakudos@c-73-229-175-50.hsd1.co.comcast.net) has joined ##programming
+2021-07-14 21:52:14	-->	unixpro1970 (~unixpro19@c-73-181-185-205.hsd1.wa.comcast.net) has joined ##programming
+2021-07-14 21:53:47	-->	quartz (~quartz@2603-8001-7700-61a4-0000-0000-0000-0acb.res6.spectrum.com) has joined ##programming
+2021-07-14 21:55:27	-->	gitgood (~gitgood@80-44-9-45.dynamic.dsl.as9105.com) has joined ##programming
+2021-07-14 21:58:27	<--	unixpro1970 (~unixpro19@c-73-181-185-205.hsd1.wa.comcast.net) has quit (Ping timeout: 245 seconds)
+2021-07-14 21:58:28	<--	Hanii (~textual@2a00:23c5:c587:6d00:5ca4:fa04:b487:ba6e) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-07-14 22:00:03	xcombelle	elf_fortrez: I would bet that you want build an app with graddle on your PC/mac and run the said app on android
+2021-07-14 22:00:05	-->	mnd999_ (~mark@2001:8b0:da3:76a2:b30d:a07c:7290:5ed6) has joined ##programming
+2021-07-14 22:00:30	elf_fortrez	on my linuxbox
+2021-07-14 22:00:45	elf_fortrez	i woulld preferably use kotlin
+2021-07-14 22:03:07	<--	lockywolf__ (~lockywolf@117.136.81.150) has quit (Quit: Leaving)
+2021-07-14 22:04:15	-->	hexfive (~eric@50.35.83.177) has joined ##programming
+2021-07-14 22:05:03	<--	tarsier (tarsier@user/paulo/x-9032687) has quit (Remote host closed the connection)
+2021-07-14 22:05:59	<--	dan01 (~dan01@2a02:2f09:3416:2500:1896:2662:f197:8ca1) has quit (Read error: Connection reset by peer)
+2021-07-14 22:06:23	<--	rsx (~dummy@ppp-188-174-140-73.dynamic.mnet-online.de) has quit (Quit: rsx)
+2021-07-14 22:06:26	<--	kron (~weechat@user/qaph) has quit (Quit: kron)
+2021-07-14 22:07:05	<--	mnd999_ (~mark@2001:8b0:da3:76a2:b30d:a07c:7290:5ed6) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:08:19	-->	unixpro1970 (~unixpro19@c-73-181-185-205.hsd1.wa.comcast.net) has joined ##programming
+2021-07-14 22:10:10	-->	blahboybaz (~blahboyba@c-67-183-225-44.hsd1.wa.comcast.net) has joined ##programming
+2021-07-14 22:11:09	-->	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has joined ##programming
+2021-07-14 22:13:10	-->	lockywolf (~lockywolf@vultr-seoul-openbsd.lockywolf.net) has joined ##programming
+2021-07-14 22:15:00	<--	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has quit (Ping timeout: 255 seconds)
+2021-07-14 22:15:19	<--	absc (~absc@81.31.144.178) has quit (Quit: Leaving.)
+2021-07-14 22:20:05	-->	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has joined ##programming
+2021-07-14 22:25:31	<--	elnavigator (~elnavigat@105.196.63.39) has quit (Ping timeout: 268 seconds)
+2021-07-14 22:26:11	<--	gitgood (~gitgood@80-44-9-45.dynamic.dsl.as9105.com) has quit (Remote host closed the connection)
+2021-07-14 22:26:33	-->	gitgood (~gitgood@80-44-9-45.dynamic.dsl.as9105.com) has joined ##programming
+2021-07-14 22:27:22	<--	exvicesindaco (~exvicio@user/exvicesindaco) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-07-14 22:28:06	-->	chomwitt (~Pitsikoko@ppp-94-67-202-202.home.otenet.gr) has joined ##programming
+2021-07-14 22:30:23	Jigsy	I don't know any programming languages, but I have a question.
+2021-07-14 22:30:30	Jigsy	Do sockets have a write buffer limit?
+2021-07-14 22:30:37	<--	arcatech (~arcatech@user/arcatech) has quit (Quit: Bye.)
+2021-07-14 22:30:38	Jigsy	Well, queue limit?
+2021-07-14 22:33:25	CoJaBo	presumably they would
+2021-07-14 22:34:06	sandman13	Yes.
+2021-07-14 22:34:22	-->	FastZ (~FastZ@pool-72-83-101-219.washdc.east.verizon.net) has joined ##programming
+2021-07-14 22:36:15	<--	FastZ (~FastZ@pool-72-83-101-219.washdc.east.verizon.net) has quit (Client Quit)
+2021-07-14 22:36:28	-->	todda7 (~torstein@static-qvn-qvu-160026.business.bouyguestelecom.com) has joined ##programming
+2021-07-14 22:36:40	Jigsy	Is there a rough limit?
+2021-07-14 22:36:49	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Ping timeout: 246 seconds)
+2021-07-14 22:38:11	-->	no_gravity (~no_gravit@user/no-gravity/x-5639427) has joined ##programming
+2021-07-14 22:38:28	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 22:40:23	-->	Izem (~Izem@bras-base-london1483w-grc-42-65-95-172-41.dsl.bell.ca) has joined ##programming
+2021-07-14 22:40:39	no_gravity	Is it possible to show a diff of what "git commit --fixup <somecommit> + git rebase -i --autosquash <somecommit>^" will do?
+2021-07-14 22:40:42	GeDaMo	https://unix.stackexchange.com/questions/424380/what-values-may-linux-use-for-the-default-unix-socket-buffer-size
+2021-07-14 22:41:22	Jigsy	160KB huh...
+2021-07-14 22:41:27	Jigsy	I'm limited to 16KB.
+2021-07-14 22:42:36	Jigsy	I guess I could loop until queue is 0.
+2021-07-14 22:42:53	<--	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has quit (Quit: shibboleth)
+2021-07-14 22:45:05	-->	Pickchea (~private@user/pickchea) has joined ##programming
+2021-07-14 22:47:16	-->	tarsier (~tarsier@user/paulo/x-9032687) has joined ##programming
+2021-07-14 22:49:12	tarsier	https://www.quora.com/I-am-not-ready-to-have-a-technical-interview-yet-How-can-I-ask-companies-to-reschedule-my-interviews
+2021-07-14 22:49:43	-->	koolazer (~koo@user/koolazer) has joined ##programming
+2021-07-14 22:50:14	AlexDelarge	someone actually wrote an article on that?  WOW
+2021-07-14 22:50:24	-->	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has joined ##programming
+2021-07-14 22:51:06	Jigsy	That person has upper management written all over them.
+2021-07-14 22:51:07	tarsier	it's a question and answer website
+2021-07-14 22:51:44	no_gravity	In Git, is there a way to show the diff between commit 123 in branch a and commit 456 in branch b?
+2021-07-14 22:51:58	-->	Joanna (uid57472@id-57472.tooting.irccloud.com) has joined ##programming
+2021-07-14 22:52:12	-->	delial (~delial@47.185.98.253) has joined ##programming
+2021-07-14 22:52:32	tarsier	no_gravity: https://emacs.stackexchange.com/questions/27545/magit-git-diff-between-two-specific-shas
+2021-07-14 22:52:47	tarsier	oh, you mean commits
+2021-07-14 22:53:02	<--	Izem (~Izem@bras-base-london1483w-grc-42-65-95-172-41.dsl.bell.ca) has quit (Quit: Izem)
+2021-07-14 22:53:15	-->	Izem (~Izem@bras-base-london1483w-grc-42-65-95-172-41.dsl.bell.ca) has joined ##programming
+2021-07-14 22:54:08	no_gravity	tarsier: Ah yes, thanks!
+2021-07-14 22:54:23	no_gravity	tarsier: It works: git diff 123..456
+2021-07-14 22:54:28	no_gravity	No need to mention the branches.
+2021-07-14 22:55:38	<--	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has quit (Ping timeout: 252 seconds)
+2021-07-14 22:56:13	Izem	goes gcc require a 32 bit compiler to build itself? seems so
+2021-07-14 23:00:30	-->	zoey (~zoey@2a02:8084:a080:9e00:3fae:994c:3fdc:274d) has joined ##programming
+2021-07-14 23:00:47	Izem	darn, have to quit my client to get some memory
+2021-07-14 23:00:49	<--	Izem (~Izem@bras-base-london1483w-grc-42-65-95-172-41.dsl.bell.ca) has quit (Quit: Izem)
+2021-07-14 23:01:15	-->	qu4nt1n (~qu4nt1n@78.198.214.34) has joined ##programming
+2021-07-14 23:03:32	-->	Hanii (~textual@2a00:23c5:c587:6d00:5ca4:fa04:b487:ba6e) has joined ##programming
+2021-07-14 23:03:52	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Ping timeout: 245 seconds)
+2021-07-14 23:04:23	-->	dan01 (~dan01@2a02:2f09:3416:2500:bd3a:3f19:e975:e60f) has joined ##programming
+2021-07-14 23:06:18	<--	zoey (~zoey@2a02:8084:a080:9e00:3fae:994c:3fdc:274d) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:07:00	<--	no_gravity (~no_gravit@user/no-gravity/x-5639427) has quit (Quit: leaving)
+2021-07-14 23:07:17	-->	Tempesta_ (Tempesta@user/tempesta) has joined ##programming
+2021-07-14 23:07:23	<--	Tempesta_ (Tempesta@user/tempesta) has quit (Remote host closed the connection)
+2021-07-14 23:07:39	<--	__jmcantrell__ (~weechat@user/jmcantrell) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:08:02	-->	elnavigator (~elnavigat@105.196.63.39) has joined ##programming
+2021-07-14 23:09:48	<--	qu4nt1n (~qu4nt1n@78.198.214.34) has quit (Quit: KVIrc 5.0.0 Aria http://www.kvirc.net/)
+2021-07-14 23:10:05	<--	Tempesta (Tempesta@user/tempesta) has quit (Ping timeout: 245 seconds)
+2021-07-14 23:11:31	dan01	Is it not ironical that Windows MikeTEX can automatically resolve missing packages, but neither Linux nor macOS TeX systems do that?
+2021-07-14 23:11:56	<--	todda7 (~torstein@static-qvn-qvu-160026.business.bouyguestelecom.com) has quit (Quit: Konversation terminated!)
+2021-07-14 23:12:16	tarsier	what;s MikeTEX
+2021-07-14 23:12:45	dan01	miktext sorry
+2021-07-14 23:12:46	dan01	https://miktex.org/
+2021-07-14 23:12:46	yitz	Linux, by and large, uses package managers to install things
+2021-07-14 23:12:49	-->	arcatech (~arcatech@user/arcatech) has joined ##programming
+2021-07-14 23:13:06	yitz	If you want a package, you install it. Random tools don't install packages for you
+2021-07-14 23:13:17	dan01	yitz: yes, but it's kind of annoying to install tex packages like that...
+2021-07-14 23:13:48	yitz	It's even more annoying when any executable can install any package or when packages are not centrally managed
+2021-07-14 23:14:07	dan01	yitz: You have a point, I see
+2021-07-14 23:14:33	yitz	Windows and Linux have a very, very different approach to system management
+2021-07-14 23:15:14	dan01	I guess and I might be mistake here but, I see tex packages as mere text files
+2021-07-14 23:15:19	<--	elf_fortrez (~elf_fortr@adsl-72-50-4-118.prtc.net) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:15:29	dan01	so having the tex system installing it for you should not be a problem
+2021-07-14 23:15:36	yitz	Are they packaged as ... uh, OS packages?
+2021-07-14 23:15:39	dan01	It's like an internal detail of tex
+2021-07-14 23:15:41	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 23:15:58	dan01	yitz: OS packages?
+2021-07-14 23:16:08	yitz	Python packages are (mostly) just text and internal to Python
+2021-07-14 23:16:26	yitz	And binary packages are just binary data blobs and internal to whatever wants to run them
+2021-07-14 23:16:42	dan01	yitz: good example! There, you can install python packages via pip or via apt/dnf/whatever
+2021-07-14 23:16:56	yitz	If they land under /home then you can argue for a tool that downloads random crap there
+2021-07-14 23:17:06	yitz	If they land elsewhere, they should be managed by the system
+2021-07-14 23:17:09	bihtori	I tried to install some Python library (pillow, or PIL, or Python Imaging Library) to Mac but it failed because it needed some libraries for clang that I didn't have, so it's not all just text.
+2021-07-14 23:17:27	dan01	bihtori: ah
+2021-07-14 23:17:31	bihtori	I would have needed to install xcode or something but I solved it by... running that code on Windows.
+2021-07-14 23:19:05	bihtori	Some obscure experimental QGIS plugin depended on PIL and it was 3 hours of failure to get it run it on Mac, so I switched over to Windows.
+2021-07-14 23:19:24	-->	zoey (~zoey@2a02:8084:a080:9e00:7c8c:4b88:b1b8:70e1) has joined ##programming
+2021-07-14 23:19:55	dan01	yitz: but yeah, you're right I remember if you want to uninstall TeX from mac it's a pain in the butt, because it's not system managed, as opposed to apt remove ....
+2021-07-14 23:20:17	yitz	Package managers make managing packages easy :)
+2021-07-14 23:20:24	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Ping timeout: 268 seconds)
+2021-07-14 23:20:25	dan01	how come Apple doesn't have an official package manager I wonder?
+2021-07-14 23:20:35	yitz	But that means that package management needs to be done via package managers
+2021-07-14 23:20:36	-->	magla (~gelignite@55d46309.access.ecotel.net) has joined ##programming
+2021-07-14 23:21:47	bihtori	There is some thing called "wheels" in Python world that I'm not sure what they are exactly, but I think they are binaries for given architectures and OS's.
+2021-07-14 23:22:21	yitz	pip and venv and all that?
+2021-07-14 23:23:06	-->	Booster2ooo (~Booster2o@user/booster2ooo) has joined ##programming
+2021-07-14 23:24:04	<--	koolazer (~koo@user/koolazer) has quit (Ping timeout: 246 seconds)
+2021-07-14 23:25:53	<--	dan01 (~dan01@2a02:2f09:3416:2500:bd3a:3f19:e975:e60f) has quit (Read error: Connection reset by peer)
+2021-07-14 23:27:02	-->	merijn (~merijn@83-160-49-249.ip.xs4all.nl) has joined ##programming
+2021-07-14 23:27:46	-->	exvicesindaco (~exvicio@user/exvicesindaco) has joined ##programming
+2021-07-14 23:31:10	-->	Tempesta (Tempesta@user/tempesta) has joined ##programming
+2021-07-14 23:33:15	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 23:33:47	-->	NEYi (~NEYi@109.251.216.38) has joined ##programming
+2021-07-14 23:36:16	 *	tarsier is bored
+2021-07-14 23:39:52	pikapika	tarsier, hi
+2021-07-14 23:40:09	GeDaMo	I'm just reading https://bootstrapping.miraheze.org/wiki/Main_Page
+2021-07-14 23:42:02	CuriousErnestBro	programmers are opinionated
+2021-07-14 23:42:20	CuriousErnestBro	it sucks that they are often wrong and present their misguided opinions as fact to beginners
+2021-07-14 23:42:30	CuriousErnestBro	also their value judgements are often completely out of wack
+2021-07-14 23:43:08	<--	tarsier (~tarsier@user/paulo/x-9032687) has quit (Ping timeout: 265 seconds)
+2021-07-14 23:46:16	<--	thesemicolons (~thesemico@user/thesemicolons) has quit (Quit: leaving)
+2021-07-14 23:47:24	wovixo	Cool story bro.
+2021-07-14 23:47:59	<--	amigojapan (uid86330@id-86330.brockwell.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-07-14 23:48:56	<--	nekonibble (~nekonIsAD@user/nekobit) has quit (Ping timeout: 265 seconds)
+2021-07-14 23:49:37	-->	nekonibble (~nekonIsAD@user/nekobit) has joined ##programming
+2021-07-14 23:50:10	InPhase	CuriousErnestBro: Good demo of your description.  ;)
+2021-07-14 23:52:10	InPhase	CuriousErnestBro: If you perhaps say things like "Some" in front of opinions like that, then your statement would not be provably wrong.  It takes only the existence of one programmer who is not opinionated for everything you said to be incorrect.  And more than one such programmer exists.
+2021-07-14 23:52:16	-->	quippy (~quippy@47-220-146-143.gtwncmkt04.res.dyn.suddenlink.net) has joined ##programming
+2021-07-14 23:54:22	-->	Akuli (~Akuli@213.216.211.133) has joined ##programming
+2021-07-14 23:54:49	InPhase	CuriousErnestBro: Some is easy, but doesn't say much.  Many says you think it is a lot.  Too many is a value judgment, that you think it should be a smaller number.  "Most" is a stronger statement about a population, which can be counterargued if people think the distribution is different.  But declarations about all are almost always just wrong in large numbers of people.
+2021-07-14 23:56:46	<--	meks (~nekohacke@95.165.15.201) has quit (Quit: WeeChat 3.1)
+2021-07-14 23:57:36	<--	blahboybaz (~blahboyba@c-67-183-225-44.hsd1.wa.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-07-14 23:58:03	<--	elnavigator (~elnavigat@105.196.63.39) has quit (Ping timeout: 255 seconds)
+2021-07-14 23:58:25	-->	__jmcantrell__ (~weechat@user/jmcantrell) has joined ##programming
+2021-07-14 23:59:46	--	irc: disconnected from server
+2021-07-16 23:04:18	-->	amanr (~sarcastic@122.161.66.163) has joined ##programming
+2021-07-16 23:04:18	--	Topic for ##programming is "Programming/Computer Science Discussion & Community Chat | Be respectful and friendly. Full channel rules: https://libera-programming.github.io | Put pastes in a pastebin, e.g. https://bpaste.net https://ideone.com"
+2021-07-16 23:04:18	--	Topic set by InPhase (~InPhase@openscad/inphase) on Fri, 09 Jul 2021 18:27:37
+2021-07-16 23:04:18	--	Channel ##programming: 548 nicks (2 ops, 0 voices, 546 normals)
+2021-07-16 23:04:19	--	Channel created on Wed, 19 May 2021 17:42:33
+2021-07-16 23:05:23	-->	smultron (~smultron@c-73-239-231-28.hsd1.wa.comcast.net) has joined ##programming
+2021-07-16 23:05:59	--	entuland_ is now known as entuland
+2021-07-16 23:07:27	-->	Pixi_ (~Pixi@user/pixi) has joined ##programming
+2021-07-16 23:07:28	-->	exvicesindaco_ (~exvicio@87.13.83.31) has joined ##programming
+2021-07-16 23:07:43	soulisson	blahboybaz, doing ok, thank you. What about you?
+2021-07-16 23:09:58	<--	TheAceOfHearts (~TheAceOfH@24.41.239.76) has quit (Quit: So long, and thanks for all the fish!)
+2021-07-16 23:10:06	<--	exvicesindaco (~exvicio@user/exvicesindaco) has quit (Ping timeout: 252 seconds)
+2021-07-16 23:10:12	--	exvicesindaco_ is now known as exvicesindaco
+2021-07-16 23:10:28	<--	Pixi (~Pixi@user/pixi) has quit (Ping timeout: 252 seconds)
+2021-07-16 23:11:03	blahboybaz	soulisson: I'm gettin' there
+2021-07-16 23:11:52	blahboybaz	Learning new things
+2021-07-16 23:14:17	--	irc: disconnected from server
