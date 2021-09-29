@@ -193,14 +193,15 @@ mode "$mode_gaps_outer" {
 # Allow scripts to interface with dbus
 # exec_always --no-startup-id ~/scripts/misc/Xdbus.sh
 
-# Start notification daemon
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Startup daemons for compositor and status bar
 exec_always --no-startup-id "pkill picom; picom --no-use-damage -b"
-exec_always --no-startup-id "pkill dunst; dunst"
-exec_always --no-startup-id "pkill pulseaudio; pulseaudio -vvv"
+exec_always --no-startup-id "pkill dunst;sleep 0.2; dunst"
+exec_always --no-startup-id "pkill pulseaudio; sleep 0.2; pulseaudio -vvv" 
+exec_always --no-startup-id "pkill nm-applet; sleep 0.2; nm-applet"
+# exec_always --no-startup-id ~/scripts/app.sh
 
-exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Opens up a scratchpad
 exec --no-startup-id kitty --name dropdown 
