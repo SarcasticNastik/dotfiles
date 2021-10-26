@@ -11,9 +11,16 @@ return require('packer').startup(function()
   
   -- LSP and completion
   use { 'neovim/nvim-lspconfig' }
-  use { 'nvim-lua/completion-nvim' }
+  use { 'ms-jpq/coq_nvim',
+      branch = 'coq',
+      --- event = "VimEnter",
+      -- config = 'vim.cmd[[COQnow]]',
+      requires = { {'ms-jpq/coq.artifacts', branch = 'artifacts'}}
+  }
 
+  -- Theme
   use { 'navarasu/onedark.nvim' }
+
 
   -- Status bar
   use {
@@ -21,6 +28,13 @@ return require('packer').startup(function()
   requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
   
+  -- Nvim-Tree
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = 'kyazdani42/nvim-web-devicons',
+      config = function() require'nvim-tree'.setup {} end
+  }
+
   -- Snippets
   use { 'honza/vim-snippets' }
   use { 'SirVer/ultisnips' } 
@@ -33,5 +47,9 @@ return require('packer').startup(function()
 
   -- Fugitive for Git
   use { 'tpope/vim-fugitive' }
+
+  -- Dashboard-nvim
+  use  { 'glepnir/dashboard-nvim' }
+
 
   end)

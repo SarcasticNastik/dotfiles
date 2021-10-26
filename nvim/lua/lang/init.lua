@@ -1,6 +1,4 @@
 local on_attach = function(client, bufnr)
-    require('completion').on_attach()
-
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
     local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
@@ -49,6 +47,7 @@ end
 
 
 local nvim_lsp = require('lspconfig')
+local coq = require('coq')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 -- Code actions
@@ -76,15 +75,16 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true;
 -- LSPs
 local servers = {"pyright", "rust_analyzer"}
 for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup { 
-        capabilities = capabilities;
-        on_attach = on_attach;
-        init_options = {
-            onlyAnalyzeProjectsWithOpenFiles = true,
-            suggestFromUnimportedLibraries = false,
-            closingLabels = true,
-        };
-    }
+    nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities(vim.tbl_deep_extend("force", {
+        capabilities = capabilities,
+        on_attach = on_attach,
+        flags = { debounce_text_changes = 150 },
+    }, {})))
+    local cfg = nvim_lsp[lsp]
+    if not (cfg and cfg.cmd and vim.fn.executable(cfg.cmd[1]) == 1)
+        then
+            print(servers .. ": cmd not found: " .. vim.inspect(cfg.cmd))
+        end
 end
 
 -- Lua LSP. NOTE: This replaces the calls where you would have before done `require('nvim_lsp').sumneko_lua.setup()`
