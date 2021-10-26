@@ -24,4 +24,6 @@ require('lsp_lua')
 
 require('config')
 
+require('lang')
 
+-- require('dbg')

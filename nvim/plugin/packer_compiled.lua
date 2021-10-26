@@ -69,13 +69,13 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["completion-nvim"] = {
-    loaded = true,
-    path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/completion-nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
+  ["nlua.nvim"] = {
+    loaded = true,
+    path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/nlua.nvim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -106,6 +106,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
+  ultisnips = {
+    loaded = true,
+    path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
   ["vim-dispatch"] = {
     loaded = true,
     path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/vim-dispatch"
@@ -113,6 +117,10 @@ _G.packer_plugins = {
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/home/therojjha/.local/share/nvim/site/pack/packer/start/vim-snippets"
   }
 }
 
