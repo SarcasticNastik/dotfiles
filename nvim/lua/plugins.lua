@@ -13,8 +13,6 @@ return require('packer').startup(function()
   use { 'neovim/nvim-lspconfig' }
   use { 'ms-jpq/coq_nvim',
       branch = 'coq',
-      event = "VimEnter",
-      config = 'vim.cmd[[COQnow]]',
       requires = { {'ms-jpq/coq.artifacts', branch = 'artifacts'}}
   }
 
@@ -34,10 +32,6 @@ return require('packer').startup(function()
       requires = 'kyazdani42/nvim-web-devicons',
       config = function() require'nvim-tree'.setup {} end
   }
-
-  -- Snippets
-  use { 'honza/vim-snippets' }
-  use { 'SirVer/ultisnips' } 
 
   -- Lua lsp
   use { 'tjdevries/nlua.nvim' }
