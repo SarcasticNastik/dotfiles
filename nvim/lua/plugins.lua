@@ -13,8 +13,8 @@ return require('packer').startup(function()
   use { 'neovim/nvim-lspconfig' }
   use { 'ms-jpq/coq_nvim',
       branch = 'coq',
-      --- event = "VimEnter",
-      -- config = 'vim.cmd[[COQnow]]',
+      event = "VimEnter",
+      config = 'vim.cmd[[COQnow]]',
       requires = { {'ms-jpq/coq.artifacts', branch = 'artifacts'}}
   }
 

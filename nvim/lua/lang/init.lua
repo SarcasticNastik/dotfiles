@@ -45,7 +45,6 @@ local on_attach = function(client, bufnr)
     end
 end
 
-
 local nvim_lsp = require('lspconfig')
 local coq = require('coq')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -74,16 +73,17 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true;
 
 -- LSPs
 local servers = {"pyright", "rust_analyzer"}
-for _, lsp in ipairs(servers) do
+for config, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities(vim.tbl_deep_extend("force", {
         capabilities = capabilities,
         on_attach = on_attach,
         flags = { debounce_text_changes = 150 },
+        init_options = config
     }, {})))
     local cfg = nvim_lsp[lsp]
-    if not (cfg and cfg.cmd and vim.fn.executable(cfg.cmd[1]) == 1)
+    if not (cfg and cfg.cmd)
         then
-            print(servers .. ": cmd not found: " .. vim.inspect(cfg.cmd))
+            print(lsp .. ": cmd not found: " .. vim.inspect(cfg.cmd))
         end
 end
 

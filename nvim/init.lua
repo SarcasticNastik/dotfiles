@@ -23,4 +23,3 @@ require('keymappings')
 require('config')
 
 require('lang')
-
